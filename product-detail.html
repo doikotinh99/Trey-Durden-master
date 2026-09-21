@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equipment Detail | Trey Durden - HVAC Broker</title>
+  <meta name="description" content="Detailed equipment specifications, hardware matrix, and turnkey installation scheduling for premium HVAC systems sourced by Trey Durden Brokerage.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Allura&family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Dancing+Script:wght@600;700&family=Great+Vibes&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=7.0">
+  <link rel="stylesheet" href="css/product-detail.css?v=7.0">
+  <link rel="shortcut icon" href="images/favicon.svg" type="image/svg+xml">
+</head>
+<body class="pdp-page">
+
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement">
+    <div class="container">
+      <div class="top-left-badges">
+        <span class="badge-live"><span class="live-dot"></span> HVAC Consultant &amp; Broker</span>
+        <span>⚡ Thermal Dynamic Engineering &amp; Design</span>
+        <span style="color: var(--color-cyan);">✉️ contact@treydurden.com</span>
+      </div>
+      <div class="top-right-contact">
+        <span>Direct Consultation:</span>
+        <a href="tel:8155560660" class="top-phone-link" id="topEmergencyCall">📞 815-556-0660</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-symbol">🔥❄️</div>
+        <div class="brand-text">
+          <h1>TREY<span>DURDEN</span></h1>
+          <p>Consultant • Broker • Engineer</p>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <div class="mobile-nav-top-bar">
+          <span class="mobile-nav-heading">TREY DURDEN MENU</span>
+          <button type="button" class="mobile-nav-close" id="mobileNavClose" aria-label="Close Menu">✕</button>
+        </div>
+        <a href="index.html">Home</a>
+        <a href="products.html" class="active">Brokerage Portfolio</a>
+        <a href="about.html">About Trey</a>
+        <div class="nav-item-dropdown">
+          <a href="services.html">Services <span class="dropdown-caret">▼</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="services.html#hvac-consulting">🤝 HVAC Consultants</a></li>
+            <li><a href="services.html#hvac-broker">📦 HVAC Brokerage</a></li>
+            <li><a href="services.html#thermal-dynamic">🔥 Thermal Dynamic Engineering</a></li>
+            <li><a href="services.html#thermal-design">📐 Thermal Applications Design</a></li>
+          </ul>
+        </div>
+        <a href="services.html#consulting">Consulting</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="header-right">
+        <a href="contact.html" class="btn btn-primary" style="padding: 10px 22px; font-size: 0.9rem;">Book Consultation 📅</a>
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle Navigation">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumbs -->
+  <section class="container" style="padding-top: 0.5rem;">
+    <div class="pdp-breadcrumbs">
+      <a href="index.html">HVAC Systems</a>
+      <span>/</span>
+      <a href="products.html">Brokerage Portfolio</a>
+      <span>/</span>
+      <span id="pdpBreadcrumbCurrent" style="color: var(--text-white); font-weight: 600;">Equipment Detail</span>
+    </div>
+  </section>
+
+  <!-- Main PDP Layout -->
+  <main class="pdp-main-container">
+    <div class="pdp-layout-grid">
+
+      <!-- Left Column: Gallery + Hardware Matrix + Specs -->
+      <div class="pdp-left-col">
+
+        <!-- Hero Card: Gallery -->
+        <section class="pdp-hero-card" aria-label="Equipment Media Gallery">
+
+          <div class="pdp-gallery-frame">
+            <img id="pdpMainImg" src="images/boiler-img-1.jpg"
+              onerror="this.src='https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80'"
+              alt="HVAC Equipment" class="pdp-gallery-main-img">
+          </div>
+
+          <!-- Thumbnail Strip -->
+          <div class="pdp-thumbnails-strip" role="tablist" aria-label="Media thumbnails">
+            <button type="button" class="pdp-thumb-btn active" data-img="images/boiler-img-1.jpg" aria-label="View main image">
+              <img src="images/boiler-img-1.jpg"
+                onerror="this.src='https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=200&q=80'"
+                alt="Main Thumbnail">
+            </button>
+            <button type="button" class="pdp-thumb-btn" data-img="images/boiler-img-2.jpg" aria-label="View image 2">
+              <img src="images/boiler-img-2.jpg"
+                onerror="this.src='https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=200&q=80'"
+                alt="Thumbnail 2">
+            </button>
+            <button type="button" class="pdp-thumb-btn" data-img="images/boiler-img-3.jpg" aria-label="View image 3">
+              <img src="images/boiler-img-3.jpg"
+                onerror="this.src='https://images.unsplash.com/photo-1585338107529-13afc5f02586?auto=format&fit=crop&w=200&q=80'"
+                alt="Thumbnail 3">
+            </button>
+            <button type="button" class="pdp-thumb-btn" data-img="images/boiler-img-4.jpg" aria-label="View image 4">
+              <img src="images/boiler-img-4.jpg"
+                onerror="this.src='https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=200&q=80'"
+                alt="Thumbnail 4">
+            </button>
+            <button type="button" class="pdp-thumb-btn" data-img="images/boiler-img-5.jpg" aria-label="View image 5">
+              <img src="images/boiler-img-5.jpg"
+                onerror="this.src='https://images.unsplash.com/photo-1545259741-2ea3ebf61fa3?auto=format&fit=crop&w=200&q=80'"
+                alt="Thumbnail 5">
+            </button>
+          </div>
+
+          <!-- Trust Badges Grid -->
+          <div class="pdp-trust-badges-grid">
+            <div class="pdp-trust-badge-item">
+              <svg class="svg-icon" style="color:var(--cyan);width:20px;height:20px;" aria-hidden="true"><use href="#icon-shield"></use></svg>
+              <span class="pdp-trust-badge-label">10-Yr Parts Warranty</span>
+            </div>
+            <div class="pdp-trust-badge-item">
+              <svg class="svg-icon" style="color:var(--green);width:20px;height:20px;" aria-hidden="true"><use href="#icon-leaf"></use></svg>
+              <span class="pdp-trust-badge-label">A2L Low-GWP Ready</span>
+            </div>
+            <div class="pdp-trust-badge-item">
+              <svg class="svg-icon" style="color:var(--cyan);width:20px;height:20px;" aria-hidden="true"><use href="#icon-award"></use></svg>
+              <span class="pdp-trust-badge-label">Energy Star Certified</span>
+            </div>
+            <div class="pdp-trust-badge-item">
+              <svg class="svg-icon" style="color:var(--green);width:20px;height:20px;" aria-hidden="true"><use href="#icon-check-circle"></use></svg>
+              <span class="pdp-trust-badge-label">AHRI Certified</span>
+            </div>
+          </div>
+
+          <!-- Product Identity Block -->
+          <div class="pdp-identity-block">
+            <h1 id="pdpProductTitle" class="pdp-product-title">
+              Loading Equipment Specifications...
+            </h1>
+            <div class="pdp-rating-strip">
+              <div class="pdp-rating-stars">
+                <svg class="svg-icon" style="color:var(--yellow);width:15px;height:15px;" aria-hidden="true"><use href="#icon-star"></use></svg>
+                <span id="pdpRatingVal" style="margin-left: 3px; color: var(--text-white); font-weight: 700;">4.9</span>
+                <span id="pdpReviewsCount" class="pdp-mono" style="color: var(--text-muted); margin-left: 4px; font-size: 0.75rem;">(287 reviews)</span>
+              </div>
+              <span style="color: var(--line);">•</span>
+              <span id="pdpEfficiencyTag" class="pdp-efficiency-tag">Certified High Efficiency</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- System Hardware Matrix -->
+        <section class="pdp-card" aria-label="System Hardware Matrix">
+          <div class="pdp-card-header">
+            <div class="pdp-card-title">
+              <svg class="svg-icon" style="color:var(--cyan);width:18px;height:18px;" aria-hidden="true"><use href="#icon-cpu"></use></svg>
+              <span>System Hardware Matrix</span>
+            </div>
+            <span class="pdp-chip-badge pdp-chip-teal">Factory Engineered</span>
+          </div>
+
+          <div class="pdp-matrix-stack">
+
+            <!-- Boiler/Furnace Row -->
+            <div class="pdp-matrix-item" id="pdpRowFurnace">
+              <div class="pdp-matrix-left">
+                <div class="pdp-unit-avatar pdp-avatar-furnace" title="Boiler (B)">
+                  <svg class="svg-icon" style="width:16px;height:16px;color:var(--coral);" aria-hidden="true"><use href="#icon-fire"></use></svg>
+                </div>
+                <div class="pdp-unit-meta">
+                  <div class="pdp-unit-header">
+                    <span class="pdp-unit-model" id="pdpHwModelBoiler">Loading...</span>
+                    <span class="pdp-unit-name">Boiler</span>
+                  </div>
+                  <p class="pdp-unit-desc" id="pdpHwDescBoiler">Loading specifications...</p>
+                </div>
+              </div>
+              <span class="pdp-matrix-badge pdp-chip-teal" id="pdpHwBadgeBoiler">—</span>
+            </div>
+
+            <!-- Flue/Venting Row -->
+            <div class="pdp-matrix-item" id="pdpRowCoil">
+              <div class="pdp-matrix-left">
+                <div class="pdp-unit-avatar pdp-avatar-coil" title="Venting (V)">
+                  <svg class="svg-icon" style="width:16px;height:16px;color:var(--cyan);" aria-hidden="true"><use href="#icon-wind"></use></svg>
+                </div>
+                <div class="pdp-unit-meta">
+                  <div class="pdp-unit-header">
+                    <span class="pdp-unit-model" id="pdpHwModelFlue">Loading...</span>
+                    <span class="pdp-unit-name">Flue / Venting</span>
+                  </div>
+                  <p class="pdp-unit-desc" id="pdpHwDescFlue">Loading specifications...</p>
+                </div>
+              </div>
+              <span class="pdp-matrix-badge pdp-chip-cyan" id="pdpHwBadgeFlue">—</span>
+            </div>
+
+            <!-- Pump Row -->
+            <div class="pdp-matrix-item" id="pdpRowCondenser">
+              <div class="pdp-matrix-left">
+                <div class="pdp-unit-avatar pdp-avatar-condenser" title="Circulator (P)">
+                  <svg class="svg-icon" style="width:16px;height:16px;color:var(--cyan);" aria-hidden="true"><use href="#icon-sliders"></use></svg>
+                </div>
+                <div class="pdp-unit-meta">
+                  <div class="pdp-unit-header">
+                    <span class="pdp-unit-model" id="pdpHwModelPump">Loading...</span>
+                    <span class="pdp-unit-name">Circulator Pump</span>
+                  </div>
+                  <p class="pdp-unit-desc" id="pdpHwDescPump">Loading specifications...</p>
+                </div>
+              </div>
+              <span class="pdp-matrix-badge pdp-chip-cyan" id="pdpHwBadgePump">—</span>
+            </div>
+
+            <!-- Gateway/Optional Row (hidden by default) -->
+            <div class="pdp-matrix-item" id="pdpRowWaterHeater" style="display: none;">
+              <div class="pdp-matrix-left">
+                <div class="pdp-unit-avatar pdp-avatar-water" title="BMS Gateway (G)">
+                  <svg class="svg-icon" style="width:16px;height:16px;color:var(--green);" aria-hidden="true"><use href="#icon-wifi"></use></svg>
+                </div>
+                <div class="pdp-unit-meta">
+                  <div class="pdp-unit-header">
+                    <span class="pdp-unit-model" id="pdpHwModelGateway">BMS Gateway</span>
+                    <span class="pdp-unit-name">BACnet / Modbus</span>
+                  </div>
+                  <p class="pdp-unit-desc" id="pdpHwDescGateway">Optional BMS interface board for building automation systems.</p>
+                </div>
+              </div>
+              <span class="pdp-matrix-badge pdp-chip-teal" id="pdpHwBadgeGateway">Optional</span>
+            </div>
+          </div>
+
+          <!-- Addon Buttons -->
+          <div class="pdp-addons-row">
+            <button type="button" id="pdpBtnAddWaterHeater" class="pdp-addon-btn">
+              <div class="pdp-addon-left">
+                <svg class="svg-icon" style="width:16px;height:16px;color:var(--cyan);"><use href="#icon-wifi"></use></svg>
+                <span>+ BMS Gateway</span>
+              </div>
+              <svg class="svg-icon" style="width:14px;height:14px;color:var(--text-muted);"><use href="#icon-sparkles"></use></svg>
+            </button>
+
+            <button type="button" id="pdpBtnAddBoiler" class="pdp-addon-btn" title="Contact Trey Durden for cascading boiler configurations">
+              <div class="pdp-addon-left">
+                <svg class="svg-icon" style="width:16px;height:16px;color:var(--coral);"><use href="#icon-fire"></use></svg>
+                <span>+ Cascade Array</span>
+              </div>
+              <svg class="svg-icon" style="width:14px;height:14px;color:var(--coral);"><use href="#icon-alert"></use></svg>
+            </button>
+          </div>
+        </section>
+
+        <!-- Interactive Technical Specifications -->
+        <section class="pdp-card" aria-label="Interactive Technical Specifications">
+          <div class="pdp-card-header">
+            <div class="pdp-card-title">
+              <svg class="svg-icon" style="color:var(--cyan);width:18px;height:18px;" aria-hidden="true"><use href="#icon-sliders"></use></svg>
+              <span>Interactive Technical Specifications</span>
+            </div>
+            <span class="pdp-mono" style="font-size:0.75rem; color:var(--text-muted);">Live Telemetry</span>
+          </div>
+
+          <!-- Spec Tabs Scroller - dynamically populated by product-detail.js -->
+          <div class="pdp-tabs-scroller" role="tablist" aria-label="Component specifications">
+            <!-- Tabs injected by JS based on componentSpecs keys -->
+          </div>
+
+          <!-- 2x2 Bento Tiles -->
+          <div id="pdpBentoGrid" class="pdp-bento-grid">
+            <!-- Filled by JS -->
+          </div>
+
+          <!-- Full Engineering Specs Accordion -->
+          <details class="pdp-accordion-details">
+            <summary class="pdp-accordion-summary">
+              <div style="display: flex; align-items: center; gap: 0.5rem;">
+                <svg class="svg-icon" style="color:var(--cyan);width:18px;height:18px;" aria-hidden="true"><use href="#icon-tools"></use></svg>
+                <span class="pdp-display" style="font-weight: 800; font-size: 0.9rem; color: var(--text-white);">Full Engineering &amp; Compliance Specifications</span>
+              </div>
+              <svg class="svg-icon pdp-accordion-chevron" style="color:var(--text-muted);width:16px;height:16px;" aria-hidden="true"><use href="#icon-chevron-down"></use></svg>
+            </summary>
+            <div id="pdpTechSpecsList" class="pdp-specs-table-list">
+              <!-- Filled by JS -->
+            </div>
+          </details>
+        </section>
+
+      </div>
+
+      <!-- Right Column: Installer Card (Sticky Sidebar) -->
+      <div class="pdp-sidebar-sticky" id="schedule">
+
+        <section class="pdp-installer-card" aria-label="Assigned Local Certified Installer">
+
+          <div class="pdp-partner-top-row">
+            <div class="pdp-partner-banner">
+              <svg class="svg-icon" style="width:14px;height:14px;color:var(--cyan);" aria-hidden="true"><use href="#icon-award"></use></svg>
+              <span>Designated Fulfillment Partner</span>
+            </div>
+            <div class="pdp-rating-stars">
+              <svg class="svg-icon" style="color:var(--yellow);width:14px;height:14px;" aria-hidden="true"><use href="#icon-star"></use></svg>
+              <span style="font-weight:700; color:var(--text-white); margin-left:3px;">4.9</span>
+              <span class="pdp-mono" style="font-size:0.75rem; color:var(--text-muted); margin-left:3px;">(312 installs)</span>
+            </div>
+          </div>
+
+          <!-- Dealer Profile -->
+          <div class="pdp-dealer-profile">
+            <div class="pdp-dealer-logo-box">
+              <img src="images/logos/td.jpg" alt="Trey Durden HVAC Logo">
+            </div>
+            <div class="pdp-dealer-info">
+              <div class="pdp-dealer-name">
+                <span>Trey Durden HVAC &amp; Plumbing</span>
+                <svg class="svg-icon" style="color:var(--cyan);width:18px;height:18px;" aria-hidden="true"><use href="#icon-check-circle"></use></svg>
+              </div>
+              <span class="pdp-dealer-badge-sub">National HVAC Consulting &amp; Brokerage</span>
+            </div>
+          </div>
+
+          <!-- Fulfillment Chips -->
+          <div class="pdp-fulfillment-chips">
+            <button type="button" id="pdpDeliveryPill" class="pdp-status-pill" title="Click to toggle pickup vs delivery">
+              <svg class="svg-icon" style="width:14px;height:14px;color:var(--green);" aria-hidden="true"><use href="#icon-truck"></use></svg>
+              <span>Local Delivery Included</span>
+            </button>
+            <div class="pdp-status-pill" style="cursor:default; color:var(--cyan);">
+              <svg class="svg-icon" style="width:14px;height:14px;" aria-hidden="true"><use href="#icon-calendar"></use></svg>
+              <span>Earliest Install: Thursday, Oct 19</span>
+            </div>
+          </div>
+
+          <!-- Turnkey Scope of Work -->
+          <div class="pdp-scope-box">
+            <div style="display:flex; align-items:center; gap:6px; font-weight:700; color:var(--text-white); margin-bottom:0.5rem; font-size:0.8125rem;">
+              <svg class="svg-icon" style="width:14px;height:14px;color:var(--green);" aria-hidden="true"><use href="#icon-check-circle"></use></svg>
+              <span>Turnkey Scope of Work Included</span>
+            </div>
+            <ul class="pdp-scope-list" style="margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:0.35rem; font-size:0.775rem; color:var(--text-muted);">
+              <li style="display:flex; align-items:center; gap:6px;">
+                <svg class="svg-icon" style="width:13px;height:13px;color:var(--green);flex-shrink:0;" aria-hidden="true"><use href="#icon-check"></use></svg>
+                <span>Full certified installation &amp; digital commissioning</span>
+              </li>
+              <li style="display:flex; align-items:center; gap:6px;">
+                <svg class="svg-icon" style="width:13px;height:13px;color:var(--green);flex-shrink:0;" aria-hidden="true"><use href="#icon-check"></use></svg>
+                <span>Municipal mechanical permits &amp; inspector sign-off</span>
+              </li>
+              <li style="display:flex; align-items:center; gap:6px;">
+                <svg class="svg-icon" style="width:13px;height:13px;color:var(--green);flex-shrink:0;" aria-hidden="true"><use href="#icon-check"></use></svg>
+                <span>Old equipment haul-away &amp; EPA certified recovery</span>
+              </li>
+              <li style="display:flex; align-items:center; gap:6px;">
+                <svg class="svg-icon" style="width:13px;height:13px;color:var(--green);flex-shrink:0;" aria-hidden="true"><use href="#icon-check"></use></svg>
+                <span id="pdpScopeGuarantee">1-Year craftsmanship &amp; emergency labor guarantee</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Pricing Row -->
+          <div class="pdp-pricing-row">
+            <div>
+              <div id="pdpTotalPrice" class="pdp-total-price">$—</div>
+              <div class="pdp-price-sub">Turnkey Total Installed</div>
+            </div>
+            <div style="text-align: right;">
+              <div id="pdpFinancePrice" class="pdp-finance-price">$—/mo</div>
+              <div class="pdp-price-sub">60 mo 0% APR Financing</div>
+            </div>
+          </div>
+
+          <!-- CTA Button -->
+          <button type="button" id="pdpBtnOpenModal" class="pdp-cta-btn">
+            <span>Confirm Installation &amp; Schedule Visit</span>
+            <svg class="svg-icon" style="width:18px;height:18px;" aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
+          </button>
+
+          <!-- Dispatch Link -->
+          <a href="tel:8155560660" class="pdp-dispatch-link">
+            <svg class="svg-icon" style="width:15px;height:15px;color:var(--cyan);" aria-hidden="true"><use href="#icon-phone"></use></svg>
+            <span>Have questions? Call Trey Durden: <strong class="pdp-mono" style="color:var(--text-white);">(815) 556-0660</strong></span>
+          </a>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Installation Protocol Section -->
+  <section class="pdp-protocol-section" aria-labelledby="protocolHeading">
+    <div class="container">
+      <div class="section-header">
+        <div class="kicker" style="color:var(--cyan);">Standard Installation Protocol</div>
+        <h2 style="color:var(--text-white);">What's Included in Every Turnkey HVAC Installation</h2>
+        <p id="pdpProtocolVendorDesc" style="color:var(--text-muted);">Every system installed by Trey Durden includes municipal permits, factory commissioning, and comprehensive warranties.</p>
+      </div>
+
+      <div class="grid grid-4 pdp-protocol-grid" style="margin-top: 2rem;">
+        <div class="card">
+          <div style="color:var(--cyan); margin-bottom:0.75rem;"><svg class="svg-icon" style="width:28px;height:28px;"><use href="#icon-tools"></use></svg></div>
+          <h4 style="margin-bottom:0.5rem; color:var(--text-white);">Custom Sheet Metal Transit</h4>
+          <p style="font-size:0.85rem; color:var(--text-muted); margin:0;">Heavy-gauge galvanized steel duct transitions sealed with mastic and foil tape to prevent static air pressure drop.</p>
+        </div>
+
+        <div class="card">
+          <div style="color:var(--green); margin-bottom:0.75rem;"><svg class="svg-icon" style="width:28px;height:28px;"><use href="#icon-shield"></use></svg></div>
+          <h4 style="margin-bottom:0.5rem; color:var(--text-white);">Nitrogen Purge Line Set</h4>
+          <p style="font-size:0.85rem; color:var(--text-muted); margin:0;">Oxygen-free nitrogen brazing and deep vacuum triple-evacuation under 500 microns for optimal refrigerant life.</p>
+        </div>
+
+        <div class="card">
+          <div style="color:var(--cyan); margin-bottom:0.75rem;"><svg class="svg-icon" style="width:28px;height:28px;"><use href="#icon-check-circle"></use></svg></div>
+          <h4 style="margin-bottom:0.5rem; color:var(--text-white);">A2L Leak Detection Interlock</h4>
+          <p style="font-size:0.85rem; color:var(--text-muted); margin:0;">Complies with 2025 UL 60335-2-40 standards with factory sensors and mechanical ventilation shutoff sequence.</p>
+        </div>
+
+        <div class="card">
+          <div style="color:var(--coral); margin-bottom:0.75rem;"><svg class="svg-icon" style="width:28px;height:28px;"><use href="#icon-bolt"></use></svg></div>
+          <h4 style="margin-bottom:0.5rem; color:var(--text-white);">Combustion Calibration</h4>
+          <p style="font-size:0.85rem; color:var(--text-muted); margin:0;">Electronic digital flue gas testing (CO, CO2, draft, manifold gas pressure) to certify factory efficiency rating.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking / Scheduling Modal -->
+  <div id="pdpBookingModal" class="pdp-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="pdp-modal-card">
+      <div class="pdp-modal-header">
+        <div>
+          <h3 id="modalTitle" style="font-size:1.25rem; font-weight:800; color:var(--text-white); margin:0;">
+            Schedule Certified Installation
+          </h3>
+          <p id="pdpModalVendorDistrict" style="font-size:0.75rem; color:var(--text-muted); margin:0.25rem 0 0 0;">
+            Trey Durden HVAC &amp; Plumbing • National Consulting District
+          </p>
+        </div>
+        <button type="button" id="pdpBtnCloseModal" class="pdp-modal-close" aria-label="Close modal">
+          <svg class="svg-icon" style="width:18px;height:18px;"><use href="#icon-close"></use></svg>
+        </button>
+      </div>
+
+      <!-- Summary Row -->
+      <div style="background:var(--panel2); border:1px solid var(--line); border-radius:var(--radius-sm); padding:0.75rem; display:flex; justify-content:space-between; align-items:center;">
+        <div>
+          <span class="pdp-mono" style="font-size:0.6875rem; color:var(--green); font-weight:700;">Trey Durden Brokerage System</span>
+          <div style="font-size:0.8125rem; color:var(--text-white); font-weight:600;">Turnkey In-Home Visit</div>
+        </div>
+        <div style="text-align:right;">
+          <span id="pdpModalPrice" style="font-size:1.25rem; font-weight:800; color:var(--cyan);">$—</span>
+          <div class="pdp-mono" style="font-size:0.625rem; color:var(--text-muted);">No deposit required</div>
+        </div>
+      </div>
+
+      <form id="pdpBookingForm" style="display:flex; flex-direction:column; gap:0.875rem;">
+        <div class="pdp-input-group">
+          <label for="pdpInputDate" class="pdp-input-label" style="display:flex; align-items:center; gap:6px;">
+            <svg class="svg-icon" style="width:14px;height:14px;color:var(--cyan);" aria-hidden="true"><use href="#icon-calendar"></use></svg>
+            <span>Preferred Installation / Inspection Date</span>
+          </label>
+          <input type="date" id="pdpInputDate" class="pdp-input-field" value="2026-10-19" required>
+        </div>
+
+        <div class="pdp-input-group">
+          <label for="pdpInputSlot" class="pdp-input-label" style="display:flex; align-items:center; gap:6px;">
+            <svg class="svg-icon" style="width:14px;height:14px;color:var(--cyan);" aria-hidden="true"><use href="#icon-clock"></use></svg>
+            <span>Preferred Time Slot</span>
+          </label>
+          <select id="pdpInputSlot" class="pdp-input-field" style="cursor:pointer;">
+            <option value="morning">Morning (8:00 AM - 12:00 PM) - Guaranteed Dispatch</option>
+            <option value="afternoon">Afternoon (12:00 PM - 4:00 PM)</option>
+            <option value="emergency">First Available Urgent Inspection</option>
+          </select>
+        </div>
+
+        <div class="pdp-modal-grid-2">
+          <div class="pdp-input-group">
+            <label for="pdpInputName" class="pdp-input-label" style="display:flex; align-items:center; gap:6px;">
+              <svg class="svg-icon" style="width:14px;height:14px;color:var(--cyan);" aria-hidden="true"><use href="#icon-home"></use></svg>
+              <span>Your Name</span>
+            </label>
+            <input type="text" id="pdpInputName" class="pdp-input-field" placeholder="John Doe" required>
+          </div>
+          <div class="pdp-input-group">
+            <label for="pdpInputPhone" class="pdp-input-label" style="display:flex; align-items:center; gap:6px;">
+              <svg class="svg-icon" style="width:14px;height:14px;color:var(--cyan);" aria-hidden="true"><use href="#icon-phone"></use></svg>
+              <span>Phone Number</span>
+            </label>
+            <input type="tel" id="pdpInputPhone" class="pdp-input-field" placeholder="(815) 556-0660" required>
+          </div>
+        </div>
+
+        <div class="pdp-input-group">
+          <label for="pdpInputAddress" class="pdp-input-label" style="display:flex; align-items:center; gap:6px;">
+            <svg class="svg-icon" style="width:14px;height:14px;color:var(--cyan);" aria-hidden="true"><use href="#icon-map-pin"></use></svg>
+            <span>Installation Address / ZIP Code</span>
+          </label>
+          <input type="text" id="pdpInputAddress" class="pdp-input-field" placeholder="Street Address, City, State" required>
+        </div>
+
+        <button type="submit" class="pdp-cta-btn" style="margin-top:0.5rem;">
+          <span>Confirm Dispatch &amp; Lock Slot</span>
+          <svg class="svg-icon" style="width:18px;height:18px;"><use href="#icon-check-circle"></use></svg>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="pdpToast" class="pdp-toast" role="status" aria-live="polite"></div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="brand-logo" style="margin-bottom: 18px;">
+            <div class="brand-symbol">🔥❄️</div>
+            <div class="brand-text">
+              <h1 style="color: #fff;">TREY<span>DURDEN</span></h1>
+              <p>Consultant • Broker • Engineer</p>
+            </div>
+          </div>
+          <p style="font-size: 0.92rem; margin-bottom: 15px; color: #94a3b8;">
+            Premier HVAC Consulting, Brokerage, and Thermal Dynamic Engineering.
+          </p>
+          <p style="color: var(--color-salmon); font-weight: 800; font-size: 1.1rem;">📞 815-556-0660</p>
+          <p style="color: var(--color-cyan); font-size: 0.88rem; margin-top: 6px;">✉️ contact@treydurden.com</p>
+          <p style="color: #cbd5e1; font-size: 0.88rem;">🌐 TreyDurden.com</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">🏡 Home Overview</a></li>
+            <li><a href="products.html">📦 Brokerage Portfolio</a></li>
+            <li><a href="about.html">👥 About Trey Durden</a></li>
+            <li><a href="services.html">🛠️ Consulting Services</a></li>
+            <li><a href="contact.html">📅 Book Consultation</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Core Pillars</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#hvac-consulting">🤝 HVAC Consultants</a></li>
+            <li><a href="services.html#hvac-broker">📦 HVAC Brokerage</a></li>
+            <li><a href="services.html#thermal-dynamic">🔥 Thermal Dynamic Engineering</a></li>
+            <li><a href="services.html#thermal-design">📐 Thermal Applications Design</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Engineering Practice</h4>
+          <p style="font-size: 0.85rem; color: #cbd5e1; margin-bottom: 8px;">
+            <strong>Consultation:</strong> Mon–Fri: 8:00 AM – 6:00 PM<br>
+            <strong>Coverage:</strong> National Consulting
+          </p>
+          <p style="color: var(--color-cyan); font-size: 0.85rem; margin-top: 10px;">
+            NATE-Certified • EPA Universal • Thermal Applications
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Trey Durden. All rights reserved. TreyDurden.com — HVAC Consulting &amp; Brokerage.</p>
+        <p>100% Pure Handcrafted HTML5/CSS3/Vanilla JS</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/icons.js"></script>
+  <script src="js/main.js?v=4.0"></script>
+  <script src="js/products-data.js"></script>
+  <script src="js/product-detail.js"></script>
+</body>
+</html>
