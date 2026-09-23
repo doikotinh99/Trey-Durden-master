@@ -1,61 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Allura&family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Dancing+Script:wght@600;700&family=Great+Vibes&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap');
+﻿@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Allura&family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Dancing+Script:wght@600;700&family=Great+Vibes&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap');
 
 /* TREY DURDEN - THERMAL APPLICATIONS ENGINEERING & HVAC SPECIALIST
    Modern Editorial Bento System & Interactive Climate Architecture
    Clean Vanilla CSS3 (Modular Tokens, Custom Properties & Responsive System) */
 
 :root {
-  /* Rich Midnight Blues */
-  --bg-darkest: #030914;
-  --bg-dark: #071933;
-  --bg-card-dark: #0b2246;
-  --bg-card-dark-hover: #102e5c;
-  --color-blue-deep: #071933;
-  --color-blue-mid: #0f366d;
-  --color-blue-light: #1d5cb0;
-  --color-blue-ice: #eaf4fc;
-  
-  /* Electric Salmon & Hot Pinks */
-  --color-salmon: #ff4d30;
-  --color-salmon-light: #ff6c54;
-  --color-pink: #ff1a75;
-  --color-pink-light: #ff458f;
-  --color-cyan: #00e5ff;
-  --color-amber: #ffb703;
-  --color-white: #ffffff;
-  
-  /* Neutrals */
-  --color-text-main: #0f172a;
-  --color-text-muted: #475569;
-  --color-text-light: #94a3b8;
-  --color-bg-page: #f8fafc;
-  --color-bg-card: #ffffff;
-  --color-border: #e2e8f0;
-  --color-border-dark: rgba(255, 255, 255, 0.12);
+  /* ── TREY DURDEN LUXURY BRAND PALETTE ── */
+  /* Dark Espresso Foundations */
+  --bg-darkest: #0d0d0b;
+  --bg-dark: #171610;
+  --bg-card-dark: #211e18;
+  --bg-card-dark-hover: #2b261f;
+  --color-blue-deep: #292721;
+  --color-blue-mid: #685a48;
+  --color-blue-light: #a6875b;
+  --color-blue-ice: #f2ede3;
 
-  /* Gradients */
-  --grad-salmon-pink: linear-gradient(135deg, #ff4d30 0%, #ff1a75 100%);
-  --grad-cyan-blue: linear-gradient(135deg, #00e5ff 0%, #0f366d 100%);
-  --grad-dark-bento: linear-gradient(145deg, #071933 0%, #0b2246 100%);
-  --grad-hero-glow: radial-gradient(circle at top right, rgba(255, 26, 117, 0.28), transparent 50%),
-                     radial-gradient(circle at bottom left, rgba(255, 77, 48, 0.22), transparent 45%);
+  /* Warm Gold & Tan Accents */
+  --color-salmon: #b18a57;
+  --color-salmon-light: #d0ad77;
+  --color-pink: #806653;
+  --color-pink-light: #ab8a6c;
+  --color-cyan: #d4b574;
+  --color-amber: #c5a161;
+  --color-white: #fffdfa;
 
-  /* UI Tokens */
-  --radius-xs: 8px;
-  --radius-sm: 12px;
-  --radius-md: 18px;
-  --radius-lg: 26px;
-  --radius-xl: 36px;
+  /* Light Cream Neutrals */
+  --color-text-main: #2d2a24;
+  --color-text-muted: #746d62;
+  --color-text-light: #aaa195;
+  --color-bg-page: #f7f4ee;
+  --color-bg-card: #fffdfa;
+  --color-border: #e5ded2;
+  --color-border-dark: rgba(220, 193, 140, 0.27);
+
+  /* Warm Gold Gradients */
+  --grad-salmon-pink: linear-gradient(135deg, #d0af7b 0%, #a87f4e 100%);
+  --grad-cyan-blue: linear-gradient(135deg, #dbc287 0%, #80664a 100%);
+  --grad-dark-bento: linear-gradient(145deg, #211e18 0%, #15140f 100%);
+  --grad-hero-glow: radial-gradient(circle at 82% 18%, rgba(205, 170, 108, 0.17), transparent 26%), radial-gradient(circle at 12% 100%, rgba(143, 110, 68, 0.18), transparent 40%);
+
+  /* UI Tokens — refined luxury scale */
+  --radius-xs: 3px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
   --radius-pill: 9999px;
-  
-  --shadow-sm: 0 4px 14px rgba(4, 13, 26, 0.06);
-  --shadow-md: 0 10px 30px rgba(4, 13, 26, 0.10);
-  --shadow-lg: 0 20px 45px rgba(4, 13, 26, 0.16);
-  --shadow-glow-salmon: 0 10px 30px rgba(255, 77, 48, 0.35);
-  --shadow-glow-cyan: 0 10px 30px rgba(0, 229, 255, 0.35);
-  
-  --font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+
+  --shadow-sm: 0 9px 24px rgba(48, 39, 28, 0.06);
+  --shadow-md: 0 18px 45px rgba(48, 39, 28, 0.09);
+  --shadow-lg: 0 25px 65px rgba(20, 16, 10, 0.20);
+  --shadow-glow-salmon: 0 14px 32px rgba(124, 91, 48, 0.20);
+  --shadow-glow-cyan: 0 14px 32px rgba(124, 91, 48, 0.18);
+
+  --font-sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-display: 'Playfair Display', 'Cormorant Garamond', 'Iowan Old Style', Baskerville, Georgia, serif;
+  --font-display-hero: 'Playfair Display', 'Cormorant Garamond', 'Cinzel', serif;
+  --font-signature-handwritten: 'Great Vibes', 'Kaushan Script', 'Alex Brush', 'Dancing Script', 'Allura', cursive;
+  --transition: all 0.32s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 /* Base & Reset */
@@ -409,10 +412,10 @@ h1, h2, h3, h4, h5, h6 {
   top: 100%;
   left: 0;
   min-width: 270px;
-  background: rgba(10, 25, 47, 0.98);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: var(--radius-md, 12px);
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+  background: var(--bg-dark);
+  border: 1px solid var(--color-border-dark);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-lg);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   padding: 8px 0;
@@ -420,7 +423,7 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0;
   visibility: hidden;
   transform: translateY(8px);
-  transition: all 0.25s ease;
+  transition: var(--transition);
   z-index: 1000;
   list-style: none;
 }
@@ -442,10 +445,10 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   gap: 10px;
   padding: 10px 18px !important;
-  color: #cbd5e1 !important;
+  color: var(--color-text-light) !important;
   font-size: 0.88rem !important;
   font-weight: 600;
-  transition: var(--transition, all 0.3s ease);
+  transition: var(--transition);
 }
 
 .dropdown-menu a::after {
@@ -453,8 +456,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .dropdown-menu a:hover {
-  background: rgba(255, 77, 48, 0.14);
-  color: #ffffff !important;
+  background: color-mix(in srgb, var(--color-salmon) 14%, transparent);
+  color: var(--color-white) !important;
   padding-left: 22px !important;
 }
 
@@ -1441,53 +1444,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* MODERN LUXURY OVERLAY — tailored editorial treatment for the bento system */
-
-@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Allura&family=Cinzel:wght@600;700;800&family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Dancing+Script:wght@600;700&family=Great+Vibes&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Sacramento&display=swap');
-
-:root {
-  --bg-darkest: #0d0d0b;
-  --bg-dark: #171610;
-  --bg-card-dark: #211e18;
-  --bg-card-dark-hover: #2b261f;
-  --color-blue-deep: #292721;
-  --color-blue-mid: #685a48;
-  --color-blue-light: #a6875b;
-  --color-blue-ice: #f2ede3;
-  --color-salmon: #b18a57;
-  --color-salmon-light: #d0ad77;
-  --color-pink: #806653;
-  --color-pink-light: #ab8a6c;
-  --color-cyan: #d4b574;
-  --color-amber: #c5a161;
-  --color-white: #fffdfa;
-  --color-text-main: #2d2a24;
-  --color-text-muted: #746d62;
-  --color-text-light: #aaa195;
-  --color-bg-page: #f7f4ee;
-  --color-bg-card: #fffdfa;
-  --color-border: #e5ded2;
-  --color-border-dark: rgba(220, 193, 140, 0.27);
-  --grad-salmon-pink: linear-gradient(135deg, #d0af7b 0%, #a87f4e 100%);
-  --grad-cyan-blue: linear-gradient(135deg, #dbc287 0%, #80664a 100%);
-  --grad-dark-bento: linear-gradient(145deg, #211e18 0%, #15140f 100%);
-  --grad-hero-glow: radial-gradient(circle at 82% 18%, rgba(205, 170, 108, 0.17), transparent 26%), radial-gradient(circle at 12% 100%, rgba(143, 110, 68, 0.18), transparent 40%);
-  --radius-xs: 3px;
-  --radius-sm: 6px;
-  --radius-md: 10px;
-  --radius-lg: 16px;
-  --radius-xl: 24px;
-  --shadow-sm: 0 9px 24px rgba(48, 39, 28, 0.06);
-  --shadow-md: 0 18px 45px rgba(48, 39, 28, 0.09);
-  --shadow-lg: 0 25px 65px rgba(20, 16, 10, 0.20);
-  --shadow-glow-salmon: 0 14px 32px rgba(124, 91, 48, 0.20);
-  --shadow-glow-cyan: 0 14px 32px rgba(124, 91, 48, 0.18);
-  --font-sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --font-display: 'Playfair Display', 'Cormorant Garamond', 'Iowan Old Style', Baskerville, Georgia, serif;
-  --font-display-hero: 'Playfair Display', 'Cormorant Garamond', 'Cinzel', serif;
-  --font-signature-handwritten: 'Great Vibes', 'Kaushan Script', 'Alex Brush', 'Dancing Script', 'Allura', cursive;
-  --transition: all 0.32s cubic-bezier(0.16, 1, 0.3, 1);
-}
 
 body {
   background-color: var(--color-bg-page);
@@ -1999,16 +1955,16 @@ h1, h2, h3, h4, h5, h6 {
 
   /* Hamburger Menu Categories (Air Conditioning, Broker, Engineering, Boiler) */
   .menu-cat-block {
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(220, 193, 140, 0.22);
-    border-radius: var(--radius-xs, 6px);
+    background: color-mix(in srgb, var(--bg-card-dark) 50%, transparent);
+    border: 1px solid var(--color-border-dark);
+    border-radius: var(--radius-xs);
     overflow: hidden;
     transition: var(--transition);
   }
 
   .menu-cat-block.is-open {
     border-color: var(--color-salmon);
-    background: rgba(255, 77, 48, 0.08);
+    background: color-mix(in srgb, var(--color-salmon) 8%, var(--bg-dark));
   }
 
   .menu-cat-btn {
@@ -2019,7 +1975,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 12px 14px !important;
     background: transparent !important;
     border: none !important;
-    color: #ffffff !important;
+    color: var(--color-white) !important;
     font-size: 0.92rem !important;
     font-weight: 750 !important;
     cursor: pointer !important;
@@ -2041,8 +1997,8 @@ h1, h2, h3, h4, h5, h6 {
   .menu-cat-dropdown {
     display: none;
     padding: 6px 10px 12px;
-    background: rgba(0, 0, 0, 0.45);
-    border-top: 1px solid rgba(220, 193, 140, 0.15);
+    background: var(--bg-darkest);
+    border-top: 1px solid var(--color-border-dark);
   }
 
   .menu-cat-block.is-open .menu-cat-dropdown {
@@ -2067,13 +2023,13 @@ h1, h2, h3, h4, h5, h6 {
     min-height: 40px !important;
     padding: 7px 10px 7px 14px !important;
     font-size: 0.84rem !important;
-    color: #ded6c8 !important;
+    color: var(--color-text-light) !important;
     text-transform: none !important;
     font-weight: 500 !important;
     letter-spacing: normal !important;
     border: none !important;
     background: transparent !important;
-    border-left: 2px solid rgba(220, 193, 140, 0.2) !important;
+    border-left: 2px solid var(--color-border-dark) !important;
     border-radius: 0 !important;
     margin: 2px 0 !important;
     text-decoration: none !important;
@@ -2082,8 +2038,8 @@ h1, h2, h3, h4, h5, h6 {
 
   .menu-item-link:hover,
   .menu-item-link:active {
-    color: #ffffff !important;
-    background: rgba(220, 193, 140, 0.15) !important;
+    color: var(--color-white) !important;
+    background: color-mix(in srgb, var(--color-salmon) 15%, transparent) !important;
     border-left-color: var(--color-salmon) !important;
     padding-left: 18px !important;
   }
@@ -5362,9 +5318,9 @@ body.menu-open .floating-hotline {
 }
 
 .hero-trust-bullet {
-  background: rgba(7, 25, 51, 0.85);
-  border: 1px solid var(--color-border-dark);
-  border-left: 4px solid var(--bullet-accent, var(--color-salmon));
+  background: var(--bg-card-dark) !important;
+  border: 1px solid var(--color-border-dark) !important;
+  border-left: 4px solid var(--bullet-accent, var(--color-salmon)) !important;
   border-radius: var(--radius-sm);
   padding: 14px 16px;
   display: flex;
@@ -5384,32 +5340,36 @@ body.menu-open .floating-hotline {
 
 .hero-trust-bullet:hover {
   transform: translateY(-3px);
-  border-color: var(--bullet-accent, var(--color-salmon));
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  border-color: var(--bullet-accent, var(--color-salmon)) !important;
+  box-shadow: var(--shadow-md) !important;
 }
 
 .hero-trust-bullet.bullet-emergency {
   --bullet-accent: var(--color-salmon);
-  background: linear-gradient(135deg, rgba(255, 77, 48, 0.16) 0%, rgba(7, 25, 51, 0.9) 100%);
-  border-color: rgba(255, 77, 48, 0.4);
+  background: linear-gradient(135deg, color-mix(in srgb, var(--color-salmon) 16%, transparent) 0%, var(--bg-card-dark) 100%) !important;
+  border-color: color-mix(in srgb, var(--color-salmon) 40%, transparent) !important;
+  border-left-color: var(--color-salmon) !important;
 }
 
 .hero-trust-bullet.bullet-fees {
   --bullet-accent: var(--color-amber);
-  background: linear-gradient(135deg, rgba(255, 183, 3, 0.14) 0%, rgba(7, 25, 51, 0.9) 100%);
-  border-color: rgba(255, 183, 3, 0.35);
+  background: linear-gradient(135deg, color-mix(in srgb, var(--color-amber) 16%, transparent) 0%, var(--bg-card-dark) 100%) !important;
+  border-color: color-mix(in srgb, var(--color-amber) 40%, transparent) !important;
+  border-left-color: var(--color-amber) !important;
 }
 
 .hero-trust-bullet.bullet-broker {
   --bullet-accent: var(--color-cyan);
-  background: linear-gradient(135deg, rgba(0, 229, 255, 0.14) 0%, rgba(7, 25, 51, 0.9) 100%);
-  border-color: rgba(0, 229, 255, 0.35);
+  background: linear-gradient(135deg, color-mix(in srgb, var(--color-cyan) 16%, transparent) 0%, var(--bg-card-dark) 100%) !important;
+  border-color: color-mix(in srgb, var(--color-cyan) 40%, transparent) !important;
+  border-left-color: var(--color-cyan) !important;
 }
 
 .hero-trust-bullet.bullet-repair {
   --bullet-accent: var(--color-pink);
-  background: linear-gradient(135deg, rgba(255, 26, 117, 0.14) 0%, rgba(7, 25, 51, 0.9) 100%);
-  border-color: rgba(255, 26, 117, 0.35);
+  background: linear-gradient(135deg, color-mix(in srgb, var(--color-pink) 16%, transparent) 0%, var(--bg-card-dark) 100%) !important;
+  border-color: color-mix(in srgb, var(--color-pink) 40%, transparent) !important;
+  border-left-color: var(--color-pink) !important;
 }
 
 .bullet-icon {
@@ -5427,14 +5387,14 @@ body.menu-open .floating-hotline {
 .bullet-text strong {
   font-size: 0.92rem;
   font-weight: 800;
-  color: #ffffff;
+  color: var(--color-white) !important;
   line-height: 1.25;
   letter-spacing: -0.01em;
 }
 
 .bullet-text span {
   font-size: 0.76rem;
-  color: #94a3b8;
+  color: var(--color-text-light) !important;
   margin-top: 2px;
   font-weight: 500;
 }
@@ -5464,17 +5424,17 @@ body.menu-open .floating-hotline {
 
 .btn-hero-call {
   background: var(--grad-salmon-pink) !important;
-  color: #ffffff !important;
+  color: var(--color-white) !important;
   padding: 10px 24px !important;
-  box-shadow: var(--shadow-glow-salmon), 0 6px 20px rgba(0, 0, 0, 0.4) !important;
+  box-shadow: var(--shadow-glow-salmon) !important;
   gap: 12px !important;
-  border: 2px solid rgba(255, 255, 255, 0.25) !important;
+  border: 2px solid color-mix(in srgb, var(--color-white) 25%, transparent) !important;
 }
 
 .btn-hero-call:hover {
   transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 12px 35px rgba(255, 77, 48, 0.6) !important;
-  border-color: #ffffff !important;
+  box-shadow: var(--shadow-glow-salmon) !important;
+  border-color: var(--color-white) !important;
 }
 
 .btn-icon-pulse {
@@ -5500,28 +5460,28 @@ body.menu-open .floating-hotline {
   font-weight: 800;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.85);
+  color: color-mix(in srgb, var(--color-white) 85%, transparent);
   line-height: 1.1;
 }
 
 .btn-call-main {
   font-size: 1.08rem;
   font-weight: 900;
-  color: #ffffff;
+  color: var(--color-white);
   letter-spacing: 0.02em;
   line-height: 1.15;
 }
 
 .btn-hero-estimate {
-  background: var(--color-salmon, #b58d57) !important;
-  color: #ffffff !important;
+  background: var(--color-salmon) !important;
+  color: var(--color-white) !important;
   border: 2px solid transparent !important;
 }
 
 .btn-hero-estimate:hover {
-  background: #c99a5e !important;
+  background: var(--color-salmon-light) !important;
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(181, 141, 87, 0.4) !important;
+  box-shadow: var(--shadow-glow-salmon) !important;
 }
 
 /* Compact Practice Mode Controls (Desktop & Shared) */
@@ -5529,7 +5489,7 @@ body.menu-open .floating-hotline {
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  background: rgba(14, 23, 38, 0.75);
+  background: var(--bg-dark);
   border: 1px solid var(--color-border-dark);
   border-radius: var(--radius-pill);
   padding: 6px 18px;
@@ -5542,7 +5502,7 @@ body.menu-open .floating-hotline {
 .hero-mode-label {
   font-size: 0.76rem;
   font-weight: 750;
-  color: #94a3b8;
+  color: var(--color-text-light);
   letter-spacing: 0.05em;
   text-transform: uppercase;
   margin-right: 2px;
@@ -5562,28 +5522,28 @@ body.menu-open .floating-hotline {
 }
 
 .hero-compact-modes .mode-btn:not(.active) {
-  background: rgba(255, 255, 255, 0.04) !important;
-  color: #cbd5e1 !important;
-  border-color: rgba(255, 255, 255, 0.12) !important;
+  background: color-mix(in srgb, var(--color-white) 4%, transparent) !important;
+  color: var(--color-text-light) !important;
+  border-color: var(--color-border-dark) !important;
 }
 
 .hero-compact-modes .mode-btn:not(.active):hover {
-  background: rgba(255, 255, 255, 0.1) !important;
-  color: #ffffff !important;
+  background: color-mix(in srgb, var(--color-white) 10%, transparent) !important;
+  color: var(--color-white) !important;
 }
 
 .hero-compact-modes .mode-btn.active.heat {
   background: var(--grad-salmon-pink) !important;
-  color: #ffffff !important;
-  box-shadow: 0 3px 12px rgba(255, 77, 48, 0.4) !important;
-  border-color: rgba(255, 77, 48, 0.5) !important;
+  color: var(--color-white) !important;
+  box-shadow: var(--shadow-glow-salmon) !important;
+  border-color: var(--color-salmon) !important;
 }
 
 .hero-compact-modes .mode-btn.active.cool {
-  background: linear-gradient(135deg, #00e5ff 0%, #0f366d 100%) !important;
-  color: #ffffff !important;
-  box-shadow: 0 3px 12px rgba(0, 229, 255, 0.4) !important;
-  border-color: rgba(0, 229, 255, 0.5) !important;
+  background: var(--grad-cyan-blue) !important;
+  color: var(--color-white) !important;
+  box-shadow: var(--shadow-glow-cyan) !important;
+  border-color: var(--color-cyan) !important;
 }
 
 /* 2. Mobile Drawer 24/7 Emergency Header (Hidden on Desktop by default) */
@@ -5594,19 +5554,19 @@ body.menu-open .floating-hotline {
 }
 
 .mobile-nav-hotline {
-  background: linear-gradient(135deg, rgba(255, 77, 48, 0.18) 0%, rgba(255, 26, 117, 0.1) 100%);
+  background: linear-gradient(135deg, color-mix(in srgb, var(--color-salmon) 18%, transparent) 0%, color-mix(in srgb, var(--color-pink) 10%, transparent) 100%);
   border: 1.5px solid var(--color-salmon);
   border-radius: var(--radius-sm);
   padding: 12px 14px;
   margin-bottom: 12px;
   text-align: center;
-  box-shadow: 0 4px 18px rgba(255, 77, 48, 0.15);
+  box-shadow: var(--shadow-glow-salmon);
 }
 
 .mobile-hotline-badge {
   font-size: 0.74rem;
   font-weight: 800;
-  color: var(--color-salmon-light, #ff6c54);
+  color: var(--color-salmon-light);
   letter-spacing: 0.04em;
   text-transform: uppercase;
   margin-bottom: 4px;
@@ -5623,7 +5583,7 @@ body.menu-open .floating-hotline {
   gap: 8px !important;
   font-size: 1.05rem !important;
   font-weight: 900 !important;
-  color: #ffffff !important;
+  color: var(--color-white) !important;
   background: var(--grad-salmon-pink) !important;
   padding: 8px 16px !important;
   border-radius: var(--radius-pill) !important;
@@ -5644,9 +5604,9 @@ body.menu-open .floating-hotline {
 
 .nav-accordion-btn {
   display: none;
-  background: rgba(255, 255, 255, 0.08);
+  background: color-mix(in srgb, var(--color-white) 8%, transparent);
   border: 1px solid var(--color-border-dark);
-  color: #cbd5e1;
+  color: var(--color-text-light);
   width: 38px;
   height: 38px;
   border-radius: var(--radius-xs);
@@ -5661,7 +5621,7 @@ body.menu-open .floating-hotline {
 .nav-accordion-btn:hover,
 .nav-accordion-btn.is-active {
   background: var(--color-salmon);
-  color: #ffffff;
+  color: var(--color-white);
   border-color: var(--color-salmon);
 }
 
@@ -5699,10 +5659,10 @@ body.menu-open .floating-hotline {
     margin-top: 0 !important;
     left: 0;
     width: 295px;
-    background: rgba(7, 25, 51, 0.98);
-    border: 1.5px solid var(--color-border-dark);
-    border-radius: var(--radius-sm, 8px);
-    box-shadow: 0 22px 55px rgba(0, 0, 0, 0.7);
+    background: var(--bg-dark, #171610) !important;
+    border: 1.5px solid var(--color-border-dark) !important;
+    border-radius: var(--radius-sm, 8px) !important;
+    box-shadow: var(--shadow-lg, 0 22px 55px rgba(0, 0, 0, 0.7)) !important;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     padding: 8px;
@@ -5755,7 +5715,7 @@ body.menu-open .floating-hotline {
     align-items: center !important;
     justify-content: space-between !important;
     padding: 11px 14px !important;
-    color: #cbd5e1 !important;
+    color: var(--color-text-light) !important;
     font-size: 0.88rem !important;
     font-weight: 700 !important;
     border-radius: var(--radius-xs, 6px);
@@ -5776,7 +5736,7 @@ body.menu-open .floating-hotline {
 
   .cascade-arrow {
     font-size: 1.15rem;
-    color: #64748b;
+    color: var(--color-text-muted);
     transition: transform 0.2s ease, color 0.2s ease;
     line-height: 1;
     font-weight: 800;
@@ -5785,8 +5745,8 @@ body.menu-open .floating-hotline {
   .cascade-item:hover > .cascade-link,
   .cascade-item:focus-within > .cascade-link,
   .cascade-item.is-flyout-open > .cascade-link {
-    background: rgba(255, 77, 48, 0.14) !important;
-    color: #ffffff !important;
+    background: color-mix(in srgb, var(--color-salmon) 14%, transparent) !important;
+    color: var(--color-white) !important;
     border-left-color: var(--color-salmon) !important;
   }
 
@@ -5803,10 +5763,10 @@ body.menu-open .floating-hotline {
     left: calc(100% + 8px); /* 8px clean separation - ZERO physical overlap */
     top: 0; /* Aligns cleanly with the hovered item, no vertical collision */
     width: 335px;
-    background: rgba(7, 25, 51, 0.98);
-    border: 1.5px solid var(--color-border-dark);
+    background: var(--bg-dark, #171610) !important;
+    border: 1.5px solid var(--color-border-dark) !important;
     border-radius: var(--radius-sm, 8px);
-    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.75);
+    box-shadow: var(--shadow-lg, 0 25px 60px rgba(0, 0, 0, 0.75)) !important;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     padding: 14px 16px;
@@ -5849,7 +5809,7 @@ body.menu-open .floating-hotline {
   .cascade-flyout-header {
     font-size: 0.82rem;
     font-weight: 800;
-    color: #ffffff;
+    color: var(--color-white);
     text-transform: uppercase;
     letter-spacing: 0.05em;
     padding-bottom: 8px;
@@ -5884,7 +5844,7 @@ body.menu-open .floating-hotline {
     display: block !important;
     padding: 6px 10px !important;
     font-size: 0.83rem !important;
-    color: #cbd5e1 !important;
+    color: var(--color-text-light) !important;
     border-radius: var(--radius-xs, 4px);
     transition: var(--transition);
     text-transform: none !important;
@@ -5896,8 +5856,8 @@ body.menu-open .floating-hotline {
   }
 
   .cascade-sub-list a:hover {
-    color: #ffffff !important;
-    background: rgba(255, 77, 48, 0.16) !important;
+    color: var(--color-white) !important;
+    background: color-mix(in srgb, var(--color-salmon) 16%, transparent) !important;
     padding-left: 14px !important;
   }
 }
