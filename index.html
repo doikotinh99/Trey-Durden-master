@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Allura&family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Dancing+Script:wght@600;700&family=Great+Vibes&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=6.9">
+  <link rel="stylesheet" href="css/style.css?v=8.7">
   <link rel="shortcut icon" href="images/favicon.svg" type="image/svg+xml">
 </head>
 <body>
@@ -44,20 +44,184 @@
           <span class="mobile-nav-heading">TREY DURDEN MENU</span>
           <button type="button" class="mobile-nav-close" id="mobileNavClose" aria-label="Close Menu">✕</button>
         </div>
+
+        <!-- 24/7 Emergency Service Callout for Mobile Drawer -->
+        <div class="mobile-nav-hotline">
+          <div class="mobile-hotline-badge">🚨 24 Hours Emergency Service • No Service Call Fees</div>
+          <a href="tel:8155560660" class="mobile-hotline-btn">📞 Call 815-556-0660</a>
+        </div>
+
         <a href="index.html" class="active">Home</a>
         <a href="products.html">Brokerage Portfolio</a>
         <a href="about.html">About Trey</a>
-        <div class="nav-item-dropdown">
-          <a href="services.html">Services <span class="dropdown-caret">▼</span></a>
-          <ul class="dropdown-menu">
-            <li><a href="services.html#hvac-consulting">🤝 HVAC Consultants</a></li>
-            <li><a href="services.html#hvac-broker">📦 HVAC Brokerage</a></li>
-            <li><a href="services.html#thermal-dynamic">🔥 Thermal Dynamic Engineering</a></li>
-            <li><a href="services.html#thermal-design">📐 Thermal Applications Design</a></li>
+
+        <!-- Desktop Services 3-Level Menu (Cấp 1: Services -> Cấp 2: 4 Trụ Cột -> Cấp 3: Chi tiết) -->
+        <div class="nav-item-dropdown desktop-only-nav" id="servicesDropdown">
+          <div class="nav-dropdown-trigger-row">
+            <a href="services.html" class="nav-main-link">Services <span class="dropdown-caret">▼</span></a>
+          </div>
+
+          <!-- Cấp 2: Danh sách 4 Trụ Cột Gọn Gàng -->
+          <ul class="dropdown-menu nav-cascade-dropdown">
+            <!-- Cấp 2.1: Air Conditioning Service -->
+            <li class="cascade-item">
+              <a href="services.html#air-conditioning" class="cascade-link">
+                <span class="cascade-title">❄️ Air Conditioning Service</span>
+                <span class="cascade-arrow">›</span>
+              </a>
+              <!-- Cấp 3: Flyout chi tiết -->
+              <div class="cascade-flyout">
+                <div class="cascade-flyout-header">
+                  <span>❄️ Air Conditioning Practice</span>
+                </div>
+                <div class="cascade-tier-label">Residential AC</div>
+                <ul class="cascade-sub-list">
+                  <li><a href="services.html#residential-ac-repair">~Residential Air Conditioning Repair</a></li>
+                  <li><a href="services.html#residential-ac-service">~Residential Air Conditioning Service</a></li>
+                  <li><a href="services.html#residential-ac-installation">~Residential Air Conditioning Installation</a></li>
+                  <li><a href="services.html#residential-ac-inspections">~Residential HVAC Reports and Inspections</a></li>
+                </ul>
+                <div class="cascade-tier-label">Commercial AC</div>
+                <ul class="cascade-sub-list">
+                  <li><a href="services.html#commercial-ac-repair">~Commercial Air Conditioning Repair</a></li>
+                  <li><a href="services.html#commercial-ac-service">~Commercial Air Conditioning Service</a></li>
+                  <li><a href="services.html#commercial-ac-installation">~Commercial Air Conditioning Installation</a></li>
+                  <li><a href="services.html#commercial-ac-inspections">~Commercial HVAC Reports and Inspections</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <!-- Cấp 2.2: HVAC Broker -->
+            <li class="cascade-item">
+              <a href="services.html#hvac-broker" class="cascade-link">
+                <span class="cascade-title">📦 HVAC Broker</span>
+                <span class="cascade-arrow">›</span>
+              </a>
+              <!-- Cấp 3: Flyout chi tiết -->
+              <div class="cascade-flyout">
+                <div class="cascade-flyout-header">
+                  <span>📦 Direct HVAC Brokerage</span>
+                </div>
+                <div class="cascade-tier-label">Estimates &amp; Procurement</div>
+                <ul class="cascade-sub-list">
+                  <li><a href="services.html#residential-broker">~Residential Estimates Broker</a></li>
+                  <li><a href="services.html#commercial-broker">~Commercial Estimates Broker</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <!-- Cấp 2.3: Thermal Application Engineering -->
+            <li class="cascade-item">
+              <a href="services.html#thermal-dynamic" class="cascade-link">
+                <span class="cascade-title">🔥 Thermal Applications</span>
+                <span class="cascade-arrow">›</span>
+              </a>
+              <!-- Cấp 3: Flyout chi tiết -->
+              <div class="cascade-flyout">
+                <div class="cascade-flyout-header">
+                  <span>🔥 Thermal Applications</span>
+                </div>
+                <div class="cascade-tier-label">Practice Scope</div>
+                <ul class="cascade-sub-list">
+                  <li><a href="services.html#residential-concerns">~Residential Concerns</a></li>
+                  <li><a href="services.html#commercial-concerns">~Commercial Concerns</a></li>
+                  <li><a href="services.html#industrial-concerns">~Industrial Concerns</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <!-- Cấp 2.4: Boiler Services -->
+            <li class="cascade-item">
+              <a href="services.html#boiler-services" class="cascade-link">
+                <span class="cascade-title">⚙️ Boiler Services</span>
+                <span class="cascade-arrow">›</span>
+              </a>
+              <!-- Cấp 3: Flyout chi tiết -->
+              <div class="cascade-flyout">
+                <div class="cascade-flyout-header">
+                  <span>⚙️ Certified Boiler Practice</span>
+                </div>
+                <div class="cascade-tier-label">Master Engineering</div>
+                <ul class="cascade-sub-list">
+                  <li><a href="services.html#boiler-consulting">~Boiler Consulting</a></li>
+                  <li><a href="services.html#boiler-inspections">~Boiler Inspections and Reports</a></li>
+                  <li><a href="services.html#boiler-repair">~Boiler Service and Repair</a></li>
+                  <li><a href="services.html#boiler-installation">~Boiler Installation</a></li>
+                </ul>
+              </div>
+            </li>
           </ul>
         </div>
-        <a href="services.html#consulting">Consulting</a>
-        <a href="contact.html">Contact</a>
+
+        <!-- Mobile Categories Accordion (Directly inside Hamburger Drawer on Mobile) -->
+        <div class="mobile-only-categories">
+          <!-- 1. Air Conditioning Service -->
+          <div class="menu-cat-block is-open">
+            <button type="button" class="menu-cat-btn" aria-expanded="true">
+              <span>❄️ Air Conditioning Service</span>
+              <span class="menu-cat-arrow">▾</span>
+            </button>
+            <div class="menu-cat-dropdown">
+              <div class="menu-tier-heading">Residential AC</div>
+              <a href="services.html#residential-ac-repair" class="menu-item-link">~Residential Air Conditioning Repair</a>
+              <a href="services.html#residential-ac-service" class="menu-item-link">~Residential Air Conditioning Service</a>
+              <a href="services.html#residential-ac-installation" class="menu-item-link">~Residential Air Conditioning Installation</a>
+              <a href="services.html#residential-ac-inspections" class="menu-item-link">~Residential HVAC Reports and Inspections</a>
+              <div class="menu-tier-heading">Commercial AC</div>
+              <a href="services.html#commercial-ac-repair" class="menu-item-link">~Commercial Air Conditioning Repair</a>
+              <a href="services.html#commercial-ac-service" class="menu-item-link">~Commercial Air Conditioning Service</a>
+              <a href="services.html#commercial-ac-installation" class="menu-item-link">~Commercial Air Conditioning Installation</a>
+              <a href="services.html#commercial-ac-inspections" class="menu-item-link">~Commercial HVAC Reports and Inspections</a>
+            </div>
+          </div>
+
+          <!-- 2. HVAC Broker -->
+          <div class="menu-cat-block">
+            <button type="button" class="menu-cat-btn" aria-expanded="false">
+              <span>📦 HVAC Broker</span>
+              <span class="menu-cat-arrow">▾</span>
+            </button>
+            <div class="menu-cat-dropdown">
+              <a href="services.html#residential-broker" class="menu-item-link">~Residential Estimates Broker</a>
+              <a href="services.html#commercial-broker" class="menu-item-link">~Commercial Estimates Broker</a>
+            </div>
+          </div>
+
+          <!-- 3. Thermal Application Engineering -->
+          <div class="menu-cat-block">
+            <button type="button" class="menu-cat-btn" aria-expanded="false">
+              <span>🔥 Thermal Application Engineering</span>
+              <span class="menu-cat-arrow">▾</span>
+            </button>
+            <div class="menu-cat-dropdown">
+              <a href="services.html#residential-concerns" class="menu-item-link">~Residential Concerns</a>
+              <a href="services.html#commercial-concerns" class="menu-item-link">~Commercial Concerns</a>
+              <a href="services.html#industrial-concerns" class="menu-item-link">~Industrial Concerns</a>
+            </div>
+          </div>
+
+          <!-- 4. Boiler Services -->
+          <div class="menu-cat-block">
+            <button type="button" class="menu-cat-btn" aria-expanded="false">
+              <span>⚙️ Boiler Services</span>
+              <span class="menu-cat-arrow">▾</span>
+            </button>
+            <div class="menu-cat-dropdown">
+              <a href="services.html#boiler-consulting" class="menu-item-link">~Boiler Consulting</a>
+              <a href="services.html#boiler-inspections" class="menu-item-link">~Boiler Inspections and Reports</a>
+              <a href="services.html#boiler-repair" class="menu-item-link">~Boiler Service and Repair</a>
+              <a href="services.html#boiler-installation" class="menu-item-link">~Boiler Installation</a>
+            </div>
+          </div>
+        </div>
+
+        <a href="services.html#consulting" class="nav-main-link">Consulting</a>
+        <a href="contact.html" class="nav-main-link">Contact</a>
+
+        <div class="mobile-nav-footer-cta">
+          <a href="tel:8155560660" class="btn btn-hero-call" style="width: 100%; justify-content: center;">📞 Call 815-556-0660</a>
+          <a href="contact.html" class="btn btn-primary" style="width: 100%; justify-content: center;">📅 Book Consultation</a>
+        </div>
       </nav>
 
       <div class="header-right">
@@ -67,85 +231,101 @@
     </div>
   </header>
 
-  <!-- Bento Grid Hero Section with Interactive Climate Switcher -->
+  <!-- High-Converting Hero Section with NO SCROLL Focus & Direct CTAs -->
   <section class="hero-bento-section" style="position: relative;">
     <!-- Burner Flame Background bleeding into foreground -->
     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('images/heating-flame.webp') center 20%/cover no-repeat; opacity: 0.65; mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 100%); -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 100%); z-index: 0; pointer-events: none; mix-blend-mode: screen;"></div>
+    
     <div class="container" style="position: relative; z-index: 1;">
       
-      <!-- Interactive Heat vs Cool Live Switcher Bar -->
-      <div class="climate-mode-bar">
-        <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
-          <span class="badge badge-gradient">⚡ THERMAL ENGINEERING PRACTICE</span>
-          <span style="font-size: 0.88rem; color: #cbd5e1;">THERMODYNAMIC SYSTEM DESIGN • HIGH-EFFICIENCY HVAC ARCHITECTURE</span>
+      <!-- Single Clean Badge -->
+      <div class="hero-badge-wrap">
+        <span class="badge badge-salmon">🔥❄️ HVAC BROKERAGE • THERMAL ENGINEERING • BOILER REPAIR</span>
+      </div>
+
+      <!-- High-Impact Hero Headline -->
+      <div style="max-width: 980px;">
+        <h1 class="bento-hero-title hero-dynamic-title" id="heroDynamicTitle" style="margin: 4px 0 8px;">
+          <span class="trey-hero-brand">Trey Durden</span> <span class="text-gradient hero-title-sub">Heating, Cooling, Brokerage &amp; Boiler Services</span>
+        </h1>
+        <p class="bento-lead" id="heroDynamicDesc" style="margin-bottom: 12px; max-width: 860px;">
+          Direct manufacturer HVAC equipment brokerage, master thermodynamic engineering, and certified 24/7 emergency boiler service and repair.
+        </p>
+      </div>
+
+      <!-- 4 High-Impact Value Bullets (Bold Colors & Strong Values) -->
+      <div class="hero-trust-bullets">
+        <!-- Bullet 1: 24 Hours Emergency Service -->
+        <div class="hero-trust-bullet bullet-emergency">
+          <span class="bullet-icon">🚨</span>
+          <div class="bullet-text">
+            <strong>24 Hours Emergency Service</strong>
+            <span>Priority 24/7 Dispatch</span>
+          </div>
         </div>
-        <div class="mode-toggle-group">
-          <button type="button" class="mode-btn active heat" id="heatModeBtn">🔥 Heating Engineering</button>
-          <button type="button" class="mode-btn" id="coolModeBtn">❄️ Cooling Engineering</button>
+
+        <!-- Bullet 2: No Service Call Fees -->
+        <div class="hero-trust-bullet bullet-fees">
+          <span class="bullet-icon">💰</span>
+          <div class="bullet-text">
+            <strong>No Service Call Fees</strong>
+            <span>Zero Hidden Upfront Costs</span>
+          </div>
+        </div>
+
+        <!-- Bullet 3: Direct HVAC Brokerage -->
+        <div class="hero-trust-bullet bullet-broker">
+          <span class="bullet-icon">📦</span>
+          <div class="bullet-text">
+            <strong>Direct HVAC Brokerage</strong>
+            <span>Wholesale Manufacturer Pricing</span>
+          </div>
+        </div>
+
+        <!-- Bullet 4: Certified Boiler & Climate Repair -->
+        <div class="hero-trust-bullet bullet-repair">
+          <span class="bullet-icon">⚙️</span>
+          <div class="bullet-text">
+            <strong>Boiler &amp; HVAC Repair</strong>
+            <span>Certified Master Engineering</span>
+          </div>
         </div>
       </div>
 
-      <!-- Bento Grid Layout -->
-      <div class="bento-grid">
-        
-        <!-- Bento Main Hero Card -->
-        <div class="bento-card bento-card-main">
-          <div>
-            <span class="badge badge-salmon">🏆 HVAC CONSULTANT, BROKER &amp; THERMAL DESIGNER</span>
-            <h1 class="bento-hero-title" id="heroDynamicTitle">
-              <span class="trey-hero-brand">Trey Durden</span> <span class="text-gradient">Thermal Engineering &amp; Brokerage</span>
-            </h1>
-            <p class="bento-lead" id="heroDynamicDesc">
-              Premier HVAC Consulting &amp; Brokerage firm delivering high-performance Thermal Dynamic Engineering, application design, and exclusive equipment sourcing for elite residential and commercial infrastructure.
-            </p>
-
-            <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 25px;">
-              <a href="contact.html" class="btn btn-primary">Book Consultation ⚡</a>
-              <a href="products.html" class="btn btn-outline-white">Explore Brokerage Portfolio 📦</a>
-            </div>
+      <!-- High-Converting CTA Action Group (PROMINENT CALL TO ACTION - NO SCROLL) -->
+      <div class="hero-cta-group">
+        <a href="tel:8155560660" class="btn btn-hero-call">
+          <span class="btn-icon-pulse">📞</span>
+          <div class="btn-call-text">
+            <span class="btn-call-sub">24/7 IMMEDIATE DISPATCH</span>
+            <span class="btn-call-main">CALL 815-556-0660</span>
           </div>
+        </a>
 
-          <!-- Live Engineering Load Widget -->
-          <div class="weather-load-widget">
-            <div>
-              <span style="font-size: 0.8rem; color: #94a3b8; text-transform: uppercase; font-weight: 700;">Engineered Climate Performance</span>
-              <h4 style="color: #ffffff; font-size: 1.15rem; margin-top: 4px;">Precision Thermal Equilibrium</h4>
-              <p style="color: var(--color-cyan); font-size: 0.85rem; margin: 0;">100% Optimized Thermodynamic Efficiency</p>
-            </div>
-            <div class="temp-gauge-circle" id="heroTempGauge">99.8%</div>
-          </div>
+        <a href="contact.html" class="btn btn-primary btn-hero-estimate">
+          📅 Request Free Estimate / Book Consultation ➔
+        </a>
+
+        <a href="products.html" class="btn btn-outline-white">
+          📦 Brokerage Portfolio
+        </a>
+      </div>
+
+      <!-- Compact Mode Toggle below CTAs -->
+      <div class="hero-compact-modes">
+        <span class="hero-mode-label">⚡ Practice Mode:</span>
+        <button type="button" class="mode-btn active heat" id="heatModeBtn">🔥 Heating Engineering</button>
+        <button type="button" class="mode-btn" id="coolModeBtn">❄️ Cooling Engineering</button>
+      </div>
+
+      <!-- Compact Technical Performance Bar -->
+      <div class="weather-load-widget" style="margin-top: 0; background: rgba(3, 9, 20, 0.7); border: 1px solid var(--color-border-dark);">
+        <div>
+          <span style="font-size: 0.78rem; color: #94a3b8; text-transform: uppercase; font-weight: 700; letter-spacing: 0.05em;">Engineered Performance Guarantee</span>
+          <h4 style="color: #ffffff; font-size: 1.05rem; margin-top: 2px;">Precision Thermal Equilibrium &amp; Efficiency</h4>
+          <p style="color: var(--color-cyan); font-size: 0.82rem; margin: 0;">NATE-Certified • EPA Universal • Commercial &amp; Residential Coverage</p>
         </div>
-
-        <!-- Bento Card 2: Professional Diagnostic Dispatch -->
-        <div class="bento-card" style="display: flex; flex-direction: column; justify-content: space-between;">
-          <div>
-            <span class="badge badge-pink" style="margin-bottom: 12px;">🤝 Strategic Advisory</span>
-            <h3 style="font-size: 1.35rem; color: #fff; margin-bottom: 8px;">HVAC Consulting &amp; Brokerage</h3>
-            <p style="color: #94a3b8; font-size: 0.88rem;">Expert guidance in system selection, load modeling, and direct manufacturer brokerage for large-scale thermal applications.</p>
-          </div>
-          <div style="margin-top: 15px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
-            <span style="color: var(--color-salmon); font-weight: 800; font-size: 1.1rem;">📞 815-556-0660</span>
-            <a href="contact.html" class="btn btn-outline-salmon" style="padding: 6px 14px; font-size: 0.8rem;">Consult Trey ➔</a>
-          </div>
-        </div>
-
-        <!-- Bento Card 3: Instant Consultation Request -->
-        <div class="bento-card bento-form-card">
-          <span class="badge badge-gradient">⚡ Priority Connect</span>
-          <h3>Immediate Advisory</h3>
-          <p style="color: #cbd5e1; font-size: 0.85rem; margin-bottom: 25px;">
-            For the fastest response to engineering and brokerage inquiries, please call us directly. Our direct line connects you with Trey Durden immediately.
-          </p>
-
-          <a href="tel:8155560660" class="btn btn-primary" style="display: block; width: 100%; text-align: center; padding: 16px; font-size: 1.1rem; margin-bottom: 12px;">
-            📞 Call 815-556-0660
-          </a>
-          
-          <a href="mailto:contact@treydurden.com" class="btn btn-outline-dark" style="display: block; width: 100%; text-align: center; padding: 16px; font-size: 1.1rem;">
-            ✉️ Email Us
-          </a>
-        </div>
-
+        <div class="temp-gauge-circle" id="heroTempGauge" style="width: 58px; height: 58px; font-size: 0.95rem;">99.8%</div>
       </div>
 
     </div>
@@ -156,8 +336,8 @@
     <div class="container">
       <div class="section-header">
         <span class="badge badge-salmon">🛠️ Core Disciplines</span>
-        <h2>Precision Thermal Engineering &amp; <span>HVAC Systems</span></h2>
-        <p class="section-subtitle">Engineered thermal solutions, system optimizations, and high-efficiency climate architecture designed by Trey Durden.</p>
+        <h2><span class="heading-phrase">Precision Thermal Engineering</span> <span class="heading-phrase nowrap-phrase">&amp; HVAC Systems</span></h2>
+        <p class="section-subtitle">Engineered thermal solutions, system optimizations, and high-efficiency climate architecture designed by&nbsp;Trey&nbsp;Durden.</p>
       </div>
 
       <div class="grid-3">
@@ -233,7 +413,7 @@
     <div class="container">
       <div class="section-header">
         <span class="badge badge-salmon">⚡ Engineering Consultations</span>
-        <h2>Engineering Audits &amp; <span>Diagnostic Services</span></h2>
+        <h2><span class="heading-phrase">Engineering Audits</span> <span class="heading-phrase nowrap-phrase">&amp; Diagnostic Services</span></h2>
         <p class="section-subtitle">High-impact thermodynamic audits and precision failure evaluations for facility owners and residential developers.</p>
       </div>
 
@@ -270,7 +450,7 @@
     <div class="container">
       <div class="section-header">
         <span class="badge badge-pink">📋 Engineering FAQ</span>
-        <h2>Frequently Asked Questions About <span>Thermal Engineering</span></h2>
+        <h2><span class="heading-phrase">Frequently Asked Questions</span> <span class="heading-phrase nowrap-phrase">About Thermal Engineering</span></h2>
       </div>
 
       <div class="accordion-wrapper" style="max-width: 860px; margin: 0 auto;">
@@ -350,13 +530,12 @@
         </div>
 
         <div class="footer-col">
-          <h4>Disciplines</h4>
+          <h4>Core Pillars</h4>
           <ul class="footer-links">
-            <li><a href="services.html#thermal-design">🔥 Thermal Systems Design</a></li>
-            <li><a href="services.html#hvac-architecture">❄️ HVAC Architecture</a></li>
-            <li><a href="services.html#commercial-rtu">🏢 Commercial RTU &amp; Chillers</a></li>
-            <li><a href="services.html#energy-audits">⚡ Energy Audits &amp; Rebates</a></li>
-            <li><a href="services.html#diagnostics">🛠️ Failure Forensics</a></li>
+            <li><a href="services.html#air-conditioning">❄️ Air Conditioning Service</a></li>
+            <li><a href="services.html#hvac-broker">📦 HVAC Brokerage</a></li>
+            <li><a href="services.html#thermal-dynamic">🔥 Thermal Applications</a></li>
+            <li><a href="services.html#boiler-services">⚙️ Boiler Services &amp; Repair</a></li>
           </ul>
         </div>
 
@@ -380,6 +559,6 @@
     </div>
   </footer>
 
-  <script src="js/main.js?v=4.0"></script>
+  <script src="js/main.js?v=8.7"></script>
 </body>
 </html>

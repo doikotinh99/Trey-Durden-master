@@ -55,13 +55,186 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    // Close when clicking any nav links
+    // Close when clicking any nav links (terminal links only)
     navMenu.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         if (window.innerWidth <= 992) {
           closeMenu();
         }
       });
+    });
+
+    // Mobile Hamburger Multi-Level Accordion Handlers
+    const navAccordionBtn = navMenu.querySelector('.nav-accordion-btn');
+    if (navAccordionBtn) {
+      navAccordionBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const dropdown = navAccordionBtn.closest('.nav-item-dropdown');
+        if (dropdown) {
+          dropdown.classList.toggle('is-open');
+          navAccordionBtn.classList.toggle('is-active');
+        }
+      });
+    }
+
+    // Mobile Hamburger Categories Toggle
+    const menuCatButtons = navMenu.querySelectorAll('.menu-cat-btn');
+    menuCatButtons.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const block = btn.closest('.menu-cat-block');
+        if (block) {
+          const isOpen = block.classList.contains('is-open');
+          // Close sibling blocks in mobile drawer for smooth single-accordion
+          const siblings = block.parentElement.querySelectorAll('.menu-cat-block');
+          siblings.forEach(s => {
+            if (s !== block) s.classList.remove('is-open');
+          });
+          block.classList.toggle('is-open', !isOpen);
+          btn.setAttribute('aria-expanded', String(!isOpen));
+        }
+      });
+    });
+
+    const navGroupHeaders = navMenu.querySelectorAll('.nav-group-header');
+    navGroupHeaders.forEach(header => {
+      header.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const parentGroup = header.closest('.nav-service-group');
+        if (parentGroup) {
+          const wasOpen = parentGroup.classList.contains('is-open');
+          if (window.innerWidth <= 992) {
+            const siblingGroups = parentGroup.parentElement.querySelectorAll('.nav-service-group');
+            siblingGroups.forEach(g => {
+              if (g !== parentGroup) g.classList.remove('is-open');
+            });
+          }
+          parentGroup.classList.toggle('is-open', !wasOpen);
+        }
+      });
+    });
+  }
+
+  // 1.1 Desktop 3-Level Cascade Dropdown Controller
+  // Fixes: "lỗi khi đưa chuột ra bị mất box k kịp chọn"
+  // Features:
+  // - Diagonal traversal protection: switching between pillars is debounced by 140ms so diagonal moves don't flicker.
+  // - Dropdown close grace buffer: 350ms grace period on mouseleave prevents accidental closing.
+  // - Flyout persistent hover: while inside .cascade-flyout, the flyout and its parent pillar stay 100% active.
+  // - Click-to-Pin: on desktop, clicking a pillar header toggles/pins its flyout open for relaxed browsing.
+  const servicesDropdown = document.getElementById('servicesDropdown');
+  if (servicesDropdown) {
+    const cascadeItems = servicesDropdown.querySelectorAll('.cascade-item');
+    let closeTimer = null;
+    let switchTimer = null;
+    let activeItem = null;
+
+    function openFlyout(item) {
+      if (!item) return;
+      cascadeItems.forEach(ci => {
+        if (ci !== item) ci.classList.remove('is-flyout-open');
+      });
+      item.classList.add('is-flyout-open');
+      activeItem = item;
+    }
+
+    function closeAllFlyouts() {
+      cascadeItems.forEach(ci => ci.classList.remove('is-flyout-open'));
+      activeItem = null;
+    }
+
+    // Keep entire dropdown open on enter
+    servicesDropdown.addEventListener('mouseenter', () => {
+      if (closeTimer) {
+        clearTimeout(closeTimer);
+        closeTimer = null;
+      }
+      servicesDropdown.classList.add('is-open');
+    });
+
+    servicesDropdown.addEventListener('mouseleave', () => {
+      if (switchTimer) {
+        clearTimeout(switchTimer);
+        switchTimer = null;
+      }
+      // 350ms grace period before closing dropdown
+      closeTimer = setTimeout(() => {
+        servicesDropdown.classList.remove('is-open');
+        closeAllFlyouts();
+      }, 350);
+    });
+
+    cascadeItems.forEach(item => {
+      const flyout = item.querySelector('.cascade-flyout');
+      const link = item.querySelector('.cascade-link');
+
+      item.addEventListener('mouseenter', () => {
+        if (closeTimer) {
+          clearTimeout(closeTimer);
+          closeTimer = null;
+        }
+
+        // If another item is already open, wait 140ms before switching.
+        // This allows user to move diagonally from pillar to flyout without triggering sibling items!
+        if (activeItem && activeItem !== item) {
+          if (switchTimer) clearTimeout(switchTimer);
+          switchTimer = setTimeout(() => {
+            openFlyout(item);
+          }, 140);
+        } else {
+          openFlyout(item);
+        }
+      });
+
+      item.addEventListener('mouseleave', () => {
+        if (switchTimer) {
+          clearTimeout(switchTimer);
+          switchTimer = null;
+        }
+      });
+
+      if (flyout) {
+        // Entering the flyout instantly cancels any switch or close timer
+        flyout.addEventListener('mouseenter', () => {
+          if (switchTimer) {
+            clearTimeout(switchTimer);
+            switchTimer = null;
+          }
+          if (closeTimer) {
+            clearTimeout(closeTimer);
+            closeTimer = null;
+          }
+          openFlyout(item);
+        });
+      }
+
+      // Desktop & Touch: Click to Pin / Explore
+      if (link) {
+        link.addEventListener('click', (e) => {
+          if (window.innerWidth >= 993) {
+            // If this flyout is not already open, open it and don't navigate immediately
+            if (activeItem !== item || !item.classList.contains('is-flyout-open')) {
+              e.preventDefault();
+              openFlyout(item);
+            }
+          }
+        });
+      }
+    });
+
+    // Close on click outside or Escape
+    document.addEventListener('click', (e) => {
+      if (!servicesDropdown.contains(e.target)) {
+        servicesDropdown.classList.remove('is-open');
+        closeAllFlyouts();
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        servicesDropdown.classList.remove('is-open');
+        closeAllFlyouts();
+      }
     });
   }
 
@@ -78,10 +251,10 @@ document.addEventListener('DOMContentLoaded', () => {
       coolModeBtn.classList.remove('active', 'cool');
       
       if (heroDynamicTitle) {
-        heroDynamicTitle.innerHTML = '<span class="trey-hero-brand">Trey Durden</span> <span class="text-gradient">Thermal Engineering &amp; HVAC</span>';
+        heroDynamicTitle.innerHTML = '<span class="trey-hero-brand">Trey Durden</span> <span class="text-gradient hero-title-sub">Heating, Cooling, Brokerage &amp; Boiler Services</span>';
       }
       if (heroDynamicDesc) {
-        heroDynamicDesc.textContent = 'High-performance thermodynamic analysis, residential system design, and commercial HVAC engineering with field-tested precision.';
+        heroDynamicDesc.textContent = 'Direct manufacturer HVAC equipment brokerage, master thermodynamic engineering, and certified 24/7 emergency boiler service and repair.';
       }
       if (heroTempGauge) {
         heroTempGauge.textContent = '24/7';
@@ -95,10 +268,10 @@ document.addEventListener('DOMContentLoaded', () => {
       heatModeBtn.classList.remove('active', 'heat');
 
       if (heroDynamicTitle) {
-        heroDynamicTitle.innerHTML = 'Precision Load Balancing <span class="text-gradient-cyan">&amp; Cooling Architectures</span>';
+        heroDynamicTitle.innerHTML = '<span class="trey-hero-brand">Trey Durden</span> <span class="text-gradient-cyan hero-title-sub">Cooling Engineering &amp; Precision Climate Systems</span>';
       }
       if (heroDynamicDesc) {
-        heroDynamicDesc.textContent = 'Keep facilities and residential estates optimized during extreme temperature peaks with high-SEER2 multi-zone and geothermal systems.';
+        heroDynamicDesc.textContent = 'Direct manufacturer AC equipment sourcing, high-SEER2 multi-zone cooling engineering, and 24/7 emergency air conditioning repair.';
       }
       if (heroTempGauge) {
         heroTempGauge.textContent = '68°F';
@@ -137,17 +310,26 @@ document.addEventListener('DOMContentLoaded', () => {
   // 4. Hash Link & Deep-Link Accordion Auto-Open
   function handleAccordionHash() {
     const hash = window.location.hash;
-    if (hash) {
-      const targetElement = document.querySelector(hash);
-      if (targetElement && targetElement.classList.contains('accordion-item')) {
-        const parentWrapper = targetElement.closest('.accordion-wrapper');
-        if (parentWrapper) {
-          parentWrapper.querySelectorAll('.accordion-item').forEach(item => item.classList.remove('active'));
+    if (hash && hash.length > 1) {
+      try {
+        const targetElement = document.querySelector(hash);
+        if (targetElement) {
+          const parentAccordion = targetElement.classList.contains('accordion-item') 
+            ? targetElement 
+            : targetElement.closest('.accordion-item');
+          if (parentAccordion) {
+            const parentWrapper = parentAccordion.closest('.accordion-wrapper');
+            if (parentWrapper) {
+              parentWrapper.querySelectorAll('.accordion-item').forEach(item => item.classList.remove('active'));
+            }
+            parentAccordion.classList.add('active');
+          }
+          setTimeout(() => {
+            targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }, 150);
         }
-        targetElement.classList.add('active');
-        setTimeout(() => {
-          targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }, 150);
+      } catch (err) {
+        // graceful fallback
       }
     }
   }
