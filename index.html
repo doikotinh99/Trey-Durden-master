@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Allura&family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Dancing+Script:wght@600;700&family=Great+Vibes&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=8.15">
+  <link rel="stylesheet" href="css/style.css?v=8.12">
   <link rel="shortcut icon" href="images/favicon.svg" type="image/svg+xml">
 </head>
 <body>
@@ -233,96 +233,93 @@
 
   <!-- High-Converting Hero Section with NO SCROLL Focus & Direct CTAs -->
   <section class="hero-bento-section" style="position: relative;">
-    <!-- Ambient Warm Glow Background -->
-    <div class="hero-mobile-glow"></div>
-    <div class="hero-flame-bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('images/heating-flame.webp') center 20%/cover no-repeat; opacity: 0.28; mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 100%); -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 100%); z-index: 0; pointer-events: none; mix-blend-mode: screen;"></div>
+    <!-- Burner Flame Background bleeding into foreground -->
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('images/heating-flame.webp') center 20%/cover no-repeat; opacity: 0.65; mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 100%); -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 100%); z-index: 0; pointer-events: none; mix-blend-mode: screen;"></div>
     
-    <div class="container hero-container-mobile" style="position: relative; z-index: 1;">
+    <div class="container" style="position: relative; z-index: 1;">
       
-      <!-- Top Pill Badge -->
+      <!-- Single Clean Badge -->
       <div class="hero-badge-wrap">
-        <span class="badge badge-salmon">🔥❄️ HVAC BROKERAGE • THERMAL ENG. • BOILER REPAIR</span>
+        <span class="badge badge-salmon">🔥❄️ HVAC BROKERAGE • THERMAL ENGINEERING • BOILER REPAIR</span>
       </div>
 
       <!-- High-Impact Hero Headline -->
-      <div class="hero-heading-block">
-        <h1 class="bento-hero-title hero-dynamic-title" id="heroDynamicTitle">
-          <span class="trey-hero-brand">Trey Durden</span>
-          <span class="text-gradient hero-title-sub">Heating, Cooling, Brokerage &amp; Boiler Services</span>
+      <div style="max-width: 980px;">
+        <h1 class="bento-hero-title hero-dynamic-title" id="heroDynamicTitle" style="margin: 4px 0 8px;">
+          <span class="trey-hero-brand">Trey Durden</span> <span class="text-gradient hero-title-sub">Heating, Cooling, Brokerage &amp; Boiler Services</span>
         </h1>
-        <p class="bento-lead" id="heroDynamicDesc">
+        <p class="bento-lead" id="heroDynamicDesc" style="margin-bottom: 12px; max-width: 860px;">
           Direct manufacturer HVAC equipment brokerage, master thermodynamic engineering, and certified 24/7 emergency boiler service and repair.
         </p>
       </div>
 
-      <!-- Primary Action: Signature Pill CTA Button (btn-primary) -->
-      <div class="hero-primary-action">
-        <a href="contact.html" class="btn btn-primary btn-hero-main-cta">
-          <span class="cta-main-text">REQUEST FREE ESTIMATE / BOOK ➔</span>
-          <span class="cta-sub-text">Direct Master Engineer Assessment • Zero Obligation</span>
-        </a>
-      </div>
-
-      <!-- 24/7 Dispatch Phone Callout -->
-      <div class="hero-dispatch-line">
-        <span class="live-dot"></span>
-        <span class="dispatch-label">24/7 Priority Dispatch:</span>
-        <a href="tel:8155560660" class="dispatch-phone-link">📞 (815) 556-0660</a>
-      </div>
-
-      <!-- 2x2 Feature Trust Cards Grid -->
+      <!-- 4 High-Impact Value Bullets (Bold Colors & Strong Values) -->
       <div class="hero-trust-bullets">
-        <!-- Card 1: 24/7 Immediate -->
+        <!-- Bullet 1: 24 Hours Emergency Service -->
         <div class="hero-trust-bullet bullet-emergency">
           <span class="bullet-icon">🚨</span>
           <div class="bullet-text">
-            <strong>24/7 Immediate</strong>
-            <span>No Delay Dispatch</span>
+            <strong>24 Hours Emergency Service</strong>
+            <span>Priority 24/7 Dispatch</span>
           </div>
         </div>
 
-        <!-- Card 2: $0 Diagnostic -->
+        <!-- Bullet 2: No Service Call Fees -->
         <div class="hero-trust-bullet bullet-fees">
           <span class="bullet-icon">💰</span>
           <div class="bullet-text">
-            <strong>$0 Diagnostic</strong>
-            <span>Zero Service Call Fee</span>
+            <strong>No Service Call Fees</strong>
+            <span>Zero Hidden Upfront Costs</span>
           </div>
         </div>
 
-        <!-- Card 3: Direct Factory -->
+        <!-- Bullet 3: Direct HVAC Brokerage -->
         <div class="hero-trust-bullet bullet-broker">
           <span class="bullet-icon">📦</span>
           <div class="bullet-text">
-            <strong>Direct Factory</strong>
-            <span>Wholesale Procurement</span>
+            <strong>Direct HVAC Brokerage</strong>
+            <span>Wholesale Manufacturer Pricing</span>
           </div>
         </div>
 
-        <!-- Card 4: NATE & EPA Master -->
+        <!-- Bullet 4: Certified Boiler & Climate Repair -->
         <div class="hero-trust-bullet bullet-repair">
           <span class="bullet-icon">⚙️</span>
           <div class="bullet-text">
-            <strong>NATE &amp; EPA Master</strong>
-            <span>Universal Certified</span>
+            <strong>Boiler &amp; HVAC Repair</strong>
+            <span>Certified Master Engineering</span>
           </div>
         </div>
       </div>
 
-      <!-- Bottom License & Coverage Footer Line -->
-      <div class="hero-license-footer">
-        <span class="license-gold-dot">●</span> Licensed Master Engineer &nbsp;•&nbsp; Commercial &amp; Residential
+      <!-- High-Converting CTA Action Group (PROMINENT CALL TO ACTION - NO SCROLL) -->
+      <div class="hero-cta-group">
+        <a href="tel:8155560660" class="btn btn-hero-call">
+          <span class="btn-icon-pulse">📞</span>
+          <div class="btn-call-text">
+            <span class="btn-call-sub">24/7 IMMEDIATE DISPATCH</span>
+            <span class="btn-call-main">CALL 815-556-0660</span>
+          </div>
+        </a>
+
+        <a href="contact.html" class="btn btn-primary btn-hero-estimate">
+          📅 Request Free Estimate / Book Consultation ➔
+        </a>
+
+        <a href="products.html" class="btn btn-outline-white">
+          📦 Brokerage Portfolio
+        </a>
       </div>
 
-      <!-- Compact Mode Toggle below the fold on mobile / visible on desktop -->
+      <!-- Compact Mode Toggle below CTAs -->
       <div class="hero-compact-modes">
         <span class="hero-mode-label">⚡ Practice Mode:</span>
-        <button type="button" class="mode-btn active cool" id="coolModeBtn">❄️ Cooling Engineering</button>
-        <button type="button" class="mode-btn heat" id="heatModeBtn">🔥 Heating Engineering</button>
+        <button type="button" class="mode-btn active heat" id="heatModeBtn">🔥 Heating Engineering</button>
+        <button type="button" class="mode-btn" id="coolModeBtn">❄️ Cooling Engineering</button>
       </div>
 
-      <!-- Technical Performance Bar (Desktop & Secondary info) -->
-      <div class="weather-load-widget desktop-weather-widget" style="background: rgba(3, 9, 20, 0.7); border: 1px solid var(--color-border-dark);">
+      <!-- Compact Technical Performance Bar -->
+      <div class="weather-load-widget" style="margin-top: 0; background: rgba(3, 9, 20, 0.7); border: 1px solid var(--color-border-dark);">
         <div>
           <span style="font-size: 0.78rem; color: #94a3b8; text-transform: uppercase; font-weight: 700; letter-spacing: 0.05em;">Engineered Performance Guarantee</span>
           <h4 style="color: #ffffff; font-size: 1.05rem; margin-top: 2px;">Precision Thermal Equilibrium &amp; Efficiency</h4>
