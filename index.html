@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Allura&family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Dancing+Script:wght@600;700&family=Great+Vibes&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=8.12">
+  <link rel="stylesheet" href="css/style.css?v=8.36">
   <link rel="shortcut icon" href="images/favicon.svg" type="image/svg+xml">
 </head>
 <body>
@@ -18,12 +18,15 @@
     <div class="container">
       <div class="top-left-badges">
         <span class="badge-live"><span class="live-dot"></span> HVAC Consultant &amp; Broker</span>
-        <span>⚡ Thermal Dynamic Engineering &amp; Design</span>
-        <span style="color: var(--color-cyan);">✉️ contact@treydurden.com</span>
+        <span>Thermal Dynamic Engineering &amp; Design</span>
+        <span style="color: var(--color-cyan);">contact@treydurden.com</span>
       </div>
       <div class="top-right-contact">
-        <span>Direct Consultation:</span>
-        <a href="tel:8155560660" class="top-phone-link">📞 815-556-0660</a>
+        <span>Direct 24/7 Hotline:</span>
+        <a href="tel:6303617434" class="top-phone-link">
+          <svg class="svg-icon" style="width:14px;height:14px;margin-right:4px;"><use href="#icon-phone"></use></svg>
+          630-361-7434
+        </a>
       </div>
     </div>
   </div>
@@ -31,24 +34,26 @@
   <!-- Header Navigation -->
   <header class="site-header">
     <div class="container">
-      <a href="index.html" class="brand-logo">
-        <div class="brand-symbol">🔥❄️</div>
-        <div class="brand-text">
-          <h1>TREY<span>DURDEN</span></h1>
-          <p>Consultant • Broker • Engineer</p>
-        </div>
-      </a>
+      <div class="brand-logo-group">
+        <a href="index.html" class="brand-logo" aria-label="Trey Durden Home">
+          <span class="brand-script-name">Trey Durden</span>
+        </a>
+        <a href="tel:6303617434" class="header-phone-clean" aria-label="Call Trey Durden at 630-361-7434">
+          <svg class="header-phone-icon" viewBox="0 0 24 24"><use href="#icon-phone"></use></svg>
+          <span>630-361-7434</span>
+        </a>
+      </div>
 
       <nav class="nav-menu" id="navMenu">
         <div class="mobile-nav-top-bar">
           <span class="mobile-nav-heading">TREY DURDEN MENU</span>
-          <button type="button" class="mobile-nav-close" id="mobileNavClose" aria-label="Close Menu">✕</button>
+          <button type="button" class="mobile-nav-close" id="mobileNavClose" aria-label="Close Menu">&times;</button>
         </div>
 
         <!-- 24/7 Emergency Service Callout for Mobile Drawer -->
         <div class="mobile-nav-hotline">
-          <div class="mobile-hotline-badge">🚨 24 Hours Emergency Service • No Service Call Fees</div>
-          <a href="tel:8155560660" class="mobile-hotline-btn">📞 Call 815-556-0660</a>
+          <div class="mobile-hotline-badge">24 Hours Emergency Service &bull; No Service Call Fees</div>
+          <a href="tel:6303617434" class="mobile-hotline-btn">Call 630-361-7434</a>
         </div>
 
         <a href="index.html" class="active">Home</a>
@@ -66,13 +71,13 @@
             <!-- Cấp 2.1: Air Conditioning Service -->
             <li class="cascade-item">
               <a href="services.html#air-conditioning" class="cascade-link">
-                <span class="cascade-title">❄️ Air Conditioning Service</span>
+                <span class="cascade-title"><svg class="svg-icon" style="width:14px;height:14px;margin-right:6px;"><use href="#icon-snowflake"></use></svg>Air Conditioning Service</span>
                 <span class="cascade-arrow">›</span>
               </a>
               <!-- Cấp 3: Flyout chi tiết -->
               <div class="cascade-flyout">
                 <div class="cascade-flyout-header">
-                  <span>❄️ Air Conditioning Practice</span>
+                  <span>Air Conditioning Practice</span>
                 </div>
                 <div class="cascade-tier-label">Residential AC</div>
                 <ul class="cascade-sub-list">
@@ -94,13 +99,13 @@
             <!-- Cấp 2.2: HVAC Broker -->
             <li class="cascade-item">
               <a href="services.html#hvac-broker" class="cascade-link">
-                <span class="cascade-title">📦 HVAC Broker</span>
+                <span class="cascade-title"><svg class="svg-icon" style="width:14px;height:14px;margin-right:6px;"><use href="#icon-tools"></use></svg>HVAC Broker</span>
                 <span class="cascade-arrow">›</span>
               </a>
               <!-- Cấp 3: Flyout chi tiết -->
               <div class="cascade-flyout">
                 <div class="cascade-flyout-header">
-                  <span>📦 Direct HVAC Brokerage</span>
+                  <span>Direct HVAC Brokerage</span>
                 </div>
                 <div class="cascade-tier-label">Estimates &amp; Procurement</div>
                 <ul class="cascade-sub-list">
@@ -113,13 +118,13 @@
             <!-- Cấp 2.3: Thermal Application Engineering -->
             <li class="cascade-item">
               <a href="services.html#thermal-dynamic" class="cascade-link">
-                <span class="cascade-title">🔥 Thermal Applications</span>
+                <span class="cascade-title"><svg class="svg-icon" style="width:14px;height:14px;margin-right:6px;"><use href="#icon-fire"></use></svg>Thermal Applications</span>
                 <span class="cascade-arrow">›</span>
               </a>
               <!-- Cấp 3: Flyout chi tiết -->
               <div class="cascade-flyout">
                 <div class="cascade-flyout-header">
-                  <span>🔥 Thermal Applications</span>
+                  <span>Thermal Applications</span>
                 </div>
                 <div class="cascade-tier-label">Practice Scope</div>
                 <ul class="cascade-sub-list">
@@ -133,13 +138,13 @@
             <!-- Cấp 2.4: Boiler Services -->
             <li class="cascade-item">
               <a href="services.html#boiler-services" class="cascade-link">
-                <span class="cascade-title">⚙️ Boiler Services</span>
+                <span class="cascade-title"><svg class="svg-icon" style="width:14px;height:14px;margin-right:6px;"><use href="#icon-gear"></use></svg>Boiler Services</span>
                 <span class="cascade-arrow">›</span>
               </a>
               <!-- Cấp 3: Flyout chi tiết -->
               <div class="cascade-flyout">
                 <div class="cascade-flyout-header">
-                  <span>⚙️ Certified Boiler Practice</span>
+                  <span>Certified Boiler Practice</span>
                 </div>
                 <div class="cascade-tier-label">Master Engineering</div>
                 <ul class="cascade-sub-list">
@@ -158,7 +163,7 @@
           <!-- 1. Air Conditioning Service -->
           <div class="menu-cat-block is-open">
             <button type="button" class="menu-cat-btn" aria-expanded="true">
-              <span>❄️ Air Conditioning Service</span>
+              <span>Air Conditioning Service</span>
               <span class="menu-cat-arrow">▾</span>
             </button>
             <div class="menu-cat-dropdown">
@@ -178,7 +183,7 @@
           <!-- 2. HVAC Broker -->
           <div class="menu-cat-block">
             <button type="button" class="menu-cat-btn" aria-expanded="false">
-              <span>📦 HVAC Broker</span>
+              <span>HVAC Broker</span>
               <span class="menu-cat-arrow">▾</span>
             </button>
             <div class="menu-cat-dropdown">
@@ -190,7 +195,7 @@
           <!-- 3. Thermal Application Engineering -->
           <div class="menu-cat-block">
             <button type="button" class="menu-cat-btn" aria-expanded="false">
-              <span>🔥 Thermal Application Engineering</span>
+              <span>Thermal Application Engineering</span>
               <span class="menu-cat-arrow">▾</span>
             </button>
             <div class="menu-cat-dropdown">
@@ -203,7 +208,7 @@
           <!-- 4. Boiler Services -->
           <div class="menu-cat-block">
             <button type="button" class="menu-cat-btn" aria-expanded="false">
-              <span>⚙️ Boiler Services</span>
+              <span>Boiler Services</span>
               <span class="menu-cat-arrow">▾</span>
             </button>
             <div class="menu-cat-dropdown">
@@ -219,115 +224,642 @@
         <a href="contact.html" class="nav-main-link">Contact</a>
 
         <div class="mobile-nav-footer-cta">
-          <a href="tel:8155560660" class="btn btn-hero-call" style="width: 100%; justify-content: center;">📞 Call 815-556-0660</a>
-          <a href="contact.html" class="btn btn-primary" style="width: 100%; justify-content: center;">📅 Book Consultation</a>
+          <a href="tel:6303617434" class="btn btn-hero-call" style="width: 100%; justify-content: center;">
+            <svg class="svg-icon" style="width:14px;height:14px;margin-right:6px;"><use href="#icon-phone"></use></svg>
+            Call 630-361-7434
+          </a>
+          <a href="contact.html" class="btn btn-primary" style="width: 100%; justify-content: center;">Book Consultation &rarr;</a>
         </div>
       </nav>
 
       <div class="header-right">
-        <a href="contact.html" class="btn btn-primary" style="padding: 10px 22px; font-size: 0.9rem;">Book Consultation 📅</a>
-        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle Navigation">☰</button>
+        <a href="contact.html" class="btn btn-primary" style="padding: 10px 22px; font-size: 0.9rem;">Book Consultation &rarr;</a>
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle Navigation">
+          <svg class="svg-icon" style="width:20px;height:20px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
       </div>
     </div>
   </header>
 
-  <!-- High-Converting Hero Section with NO SCROLL Focus & Direct CTAs -->
-  <section class="hero-bento-section" style="position: relative;">
-    <!-- Burner Flame Background bleeding into foreground -->
-    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('images/heating-flame.webp') center 20%/cover no-repeat; opacity: 0.65; mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 100%); -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 100%); z-index: 0; pointer-events: none; mix-blend-mode: screen;"></div>
-    
-    <div class="container" style="position: relative; z-index: 1;">
-      
-      <!-- Single Clean Badge -->
-      <div class="hero-badge-wrap">
-        <span class="badge badge-salmon">🔥❄️ HVAC BROKERAGE • THERMAL ENGINEERING • BOILER REPAIR</span>
+  <!-- Direct-Response Emergency Hero Section (Wireframe Aligned) -->
+  <section class="wireframe-hero-section">
+    <div class="wireframe-hero-container">
+      <div class="hero-desktop-grid">
+        
+        <!-- Left Column: Offer & Bio -->
+        <div class="hero-col-left">
+          <!-- Unified Emergency Offer & Checklist Card (Wireframe Aligned) -->
+          <div class="emergency-unified-card">
+            <div class="offer-header-row">
+              <span class="offer-hours">24 Hours</span>
+              <span class="offer-same-price">SAME PRICE</span>
+              <span class="offer-stamp-7days">7 Days</span>
+              <span class="offer-week">a Week</span>
+            </div>
+
+            <div class="emergency-checklist">
+              <div class="checklist-item"><span class="checklist-dot"></span> Emergency Heating &amp; Cooling Repair</div>
+              <div class="checklist-item"><span class="checklist-dot"></span> Boiler Repair Service</div>
+              <div class="checklist-item"><span class="checklist-dot"></span> Water Heater Service and Replacement</div>
+              <div class="checklist-item"><span class="checklist-dot"></span> Air Conditioning Estimates</div>
+              <div class="checklist-item"><span class="checklist-dot"></span> Furnace Estimate</div>
+              <div class="checklist-item"><span class="checklist-dot"></span> Boiler Estimates</div>
+              <div class="checklist-item"><span class="checklist-dot"></span> Hot Water Heater Estimates</div>
+              <a href="#services-directory" class="checklist-item checklist-item-link" title="Explore All Services &amp; Practice Directory">
+                <span class="checklist-dot"></span>
+                <span class="checklist-link-text">And more&hellip;</span>
+                <svg class="checklist-link-arrow" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Engineer Bio Card -->
+          <div class="emergency-bio-card">
+            <h3 class="bio-card-title">Trey Durden Heating, Cooling, Boiler, &amp; Thermal Applications Engineering</h3>
+            <p class="bio-card-desc">
+              Very seasoned veteran in the HVAC industry. Specializing in Re-Engineering Applications, expansion, and growth from residential HVAC System reworks to commercial/industrial growth and expansion projects.
+            </p>
+          </div>
+        </div>
+
+        <!-- Right Column: Hotline Box & 4 Regional Dispatch Capsules -->
+        <div class="hero-col-right">
+          <!-- Primary Big Phone Call Box (Symmetrical Balanced Luxury Dispatch) -->
+          <div class="emergency-phone-card">
+            <a href="tel:6303617434" class="btn-emergency-call-main" aria-label="Call Emergency Dispatch at 630-361-7434">
+              <div class="phone-icon-circle">
+                <svg class="phone-card-icon" viewBox="0 0 24 24"><use href="#icon-phone"></use></svg>
+              </div>
+              <div class="phone-call-content">
+                <span class="phone-call-badge">24/7 Priority Emergency Hotline</span>
+                <span class="phone-card-number">630-361-7434</span>
+              </div>
+              <div class="phone-action-circle" aria-hidden="true">
+                <svg class="phone-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </div>
+            </a>
+          </div>
+
+          <!-- 4 Emergency Capsules (County Service Area) -->
+          <div class="emergency-capsules-grid">
+            <a href="tel:6303617434" class="capsule-card capsule-furnace">
+              <span class="capsule-title">Emergency Furnace Repair</span>
+              <span class="capsule-county">Cook, DuPage, Kane, Kendall &amp; Grundy County Service Area</span>
+            </a>
+
+            <a href="tel:6303617434" class="capsule-card capsule-ac">
+              <span class="capsule-title">Emergency Air Conditioning Repair</span>
+              <span class="capsule-county">Cook, DuPage, Kane, Kendall &amp; Grundy County Service Area</span>
+            </a>
+
+            <a href="tel:6303617434" class="capsule-card capsule-hotwater">
+              <span class="capsule-title">Emergency Hot Water Boiler Repair</span>
+              <span class="capsule-county">Cook, DuPage, Kane, Kendall &amp; Grundy County Service Area</span>
+            </a>
+
+            <a href="tel:6303617434" class="capsule-card capsule-steam">
+              <span class="capsule-title">Emergency Steam Boiler Repair</span>
+              <span class="capsule-county">Cook, DuPage, Kane, Kendall &amp; Grundy County Service Area</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Services & Coverage Directory (RockAuto-Style Accordion Tree) -->
+  <section class="directory-section" id="services-directory">
+    <div class="container">
+      <div class="directory-header-wrap">
+        <span class="directory-badge">Services</span>
+        <h2 class="directory-title">Our Services</h2>
       </div>
 
-      <!-- High-Impact Hero Headline -->
-      <div style="max-width: 980px;">
-        <h1 class="bento-hero-title hero-dynamic-title" id="heroDynamicTitle" style="margin: 4px 0 8px;">
-          <span class="trey-hero-brand">Trey Durden</span> <span class="text-gradient hero-title-sub">Heating, Cooling, Brokerage &amp; Boiler Services</span>
-        </h1>
-        <p class="bento-lead" id="heroDynamicDesc" style="margin-bottom: 12px; max-width: 860px;">
-          Direct manufacturer HVAC equipment brokerage, master thermodynamic engineering, and certified 24/7 emergency boiler service and repair.
+      <div class="directory-accordion-tree" id="directoryAccordionTree">
+
+          <!-- Node 0: Our Services at Best Comfort HVAC Joliet Office -->
+          <div class="tree-node-item is-open">
+          <button type="button" class="tree-node-btn" aria-expanded="true">
+            <div class="tree-node-left">
+              <span class="tree-badge-icon"><svg class="svg-icon" style="width:13px;height:13px;"><use href="#icon-check"></use></svg></span>
+              <span class="tree-node-label">Our Services at Best Comfort HVAC Joliet Office</span>
+            </div>
+            <div class="tree-node-right">
+              <span class="tree-node-count-badge">38 services</span>
+              <span class="tree-icon-indicator" aria-hidden="true"></span>
+            </div>
+          </button>
+          <div class="tree-node-content">
+            <ul class="tree-sub-list">
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Emergency 24/7 Heating &amp; Cooling Repair</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Residential AC Installation &amp; Service</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Commercial RTU Replacement &amp; Diagnostics</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> High AFUE Modulating Gas Furnace Repair</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Hydronic Boiler Efficiency Diagnostics</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Commercial &amp; Industrial Steam Boilers</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> High-Recovery Commercial Water Heaters</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Continuous Flow Tankless Arrays</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Thermal Engineering Application Reworks</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Licensed Regional HVAC Brokerage</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Node 1: Area's We Service -->
+        <div class="tree-node-item">
+          <button type="button" class="tree-node-btn" aria-expanded="false">
+            <div class="tree-node-left">
+              <span class="tree-badge-icon"><svg class="svg-icon" style="width:13px;height:13px;"><use href="#icon-check"></use></svg></span>
+              <span class="tree-node-label">Area's We Service</span>
+            </div>
+            <div class="tree-node-right">
+              <span class="tree-node-count-badge">258 Associative serves 1 state</span>
+              <span class="tree-icon-indicator" aria-hidden="true"></span>
+            </div>
+          </button>
+          <div class="tree-node-content">
+            <ul class="tree-sub-list">
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Cook County, IL</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> DuPage County, IL</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Kane County, IL</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Kendall County, IL</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Grundy County, IL</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Joliet &amp; Plainfield, IL</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Naperville &amp; Aurora, IL</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Bolingbrook &amp; Romeoville, IL</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Node 2: Brands We Install -->
+        <div class="tree-node-item">
+          <button type="button" class="tree-node-btn" aria-expanded="false">
+            <div class="tree-node-left">
+              <span class="tree-badge-icon"><svg class="svg-icon" style="width:13px;height:13px;"><use href="#icon-check"></use></svg></span>
+              <span class="tree-node-label">Brands We Install</span>
+            </div>
+            <div class="tree-node-right">
+              <span class="tree-node-count-badge">58 Brands</span>
+              <span class="tree-icon-indicator" aria-hidden="true"></span>
+            </div>
+          </button>
+          <div class="tree-node-content">
+            <ul class="tree-sub-list">
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Rheem &amp; Ruud</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> York &amp; Johnson Controls</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Carrier &amp; Bryant</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Trane &amp; American Standard</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Lennox Industries</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Navien Condensing</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Weil-McLain Hydronics</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Daikin &amp; Goodman</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Node 3: Brands We Service -->
+        <div class="tree-node-item">
+          <button type="button" class="tree-node-btn" aria-expanded="false">
+            <div class="tree-node-left">
+              <span class="tree-badge-icon"><svg class="svg-icon" style="width:13px;height:13px;"><use href="#icon-check"></use></svg></span>
+              <span class="tree-node-label">Brands We Service</span>
+            </div>
+            <div class="tree-node-right">
+              <span class="tree-node-count-badge">228 Brands</span>
+              <span class="tree-icon-indicator" aria-hidden="true"></span>
+            </div>
+          </button>
+          <div class="tree-node-content">
+            <ul class="tree-sub-list">
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> All Major Furnace Brands</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> All Commercial RTU Systems</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Inverter &amp; VRF Multi-Zone</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> High-Efficiency Heat Pumps</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Modulating Condensing Units</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Legacy Pneumatic &amp; DDC</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Node 4: Brands We Repair -->
+        <div class="tree-node-item">
+          <button type="button" class="tree-node-btn" aria-expanded="false">
+            <div class="tree-node-left">
+              <span class="tree-badge-icon"><svg class="svg-icon" style="width:13px;height:13px;"><use href="#icon-check"></use></svg></span>
+              <span class="tree-node-label">Brands We Repair</span>
+            </div>
+            <div class="tree-node-right">
+              <span class="tree-node-count-badge">10 Brands</span>
+              <span class="tree-icon-indicator" aria-hidden="true"></span>
+            </div>
+          </button>
+          <div class="tree-node-content">
+            <ul class="tree-sub-list">
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Rheem Pro Series</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> York Affinity Systems</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Carrier Infinity Series</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Trane XV / XR Platforms</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Weil-McLain Boilers</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Node 5: Plumbing Types We Install -->
+        <div class="tree-node-item">
+          <button type="button" class="tree-node-btn" aria-expanded="false">
+            <div class="tree-node-left">
+              <span class="tree-badge-icon"><svg class="svg-icon" style="width:13px;height:13px;"><use href="#icon-check"></use></svg></span>
+              <span class="tree-node-label">Plumbing Types We Install</span>
+            </div>
+            <div class="tree-node-right">
+              <span class="tree-node-count-badge">7 Types</span>
+              <span class="tree-icon-indicator" aria-hidden="true"></span>
+            </div>
+          </button>
+          <div class="tree-node-content">
+            <ul class="tree-sub-list">
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Hydronic Radiant In-Floor</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Tankless Continuous Flow</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Commercial Gas Header Lines</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> High-Pressure Steam Piping</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Backflow Prevention Valves</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Expansion Tank Systems</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Recirculation Loop Pumps</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Node 6: Plumbing Types We Service -->
+        <div class="tree-node-item">
+          <button type="button" class="tree-node-btn" aria-expanded="false">
+            <div class="tree-node-left">
+              <span class="tree-badge-icon"><svg class="svg-icon" style="width:13px;height:13px;"><use href="#icon-check"></use></svg></span>
+              <span class="tree-node-label">Plumbing Types We Service</span>
+            </div>
+            <div class="tree-node-right">
+              <span class="tree-node-count-badge">8 Types</span>
+              <span class="tree-icon-indicator" aria-hidden="true"></span>
+            </div>
+          </button>
+          <div class="tree-node-content">
+            <ul class="tree-sub-list">
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Closed-Loop Hydronics</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Steam Trap Forensics</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> De-scaling &amp; Chemical Flush</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Circulator Pump Overhaul</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> PRV Pressure Regulators</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Gas Supply Pressure Triage</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Node 7: Plumbing Types We Repair -->
+        <div class="tree-node-item">
+          <button type="button" class="tree-node-btn" aria-expanded="false">
+            <div class="tree-node-left">
+              <span class="tree-badge-icon"><svg class="svg-icon" style="width:13px;height:13px;"><use href="#icon-check"></use></svg></span>
+              <span class="tree-node-label">Plumbing Types We Repair</span>
+            </div>
+            <div class="tree-node-right">
+              <span class="tree-node-count-badge">4 Types</span>
+              <span class="tree-icon-indicator" aria-hidden="true"></span>
+            </div>
+          </button>
+          <div class="tree-node-content">
+            <ul class="tree-sub-list">
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Burst Hydronic Line Repair</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Leaking Steam Header Seals</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Defective Relief Valve Swap</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Corroded Flange Restorations</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Node 8: Boilers We Install -->
+        <div class="tree-node-item">
+          <button type="button" class="tree-node-btn" aria-expanded="false">
+            <div class="tree-node-left">
+              <span class="tree-badge-icon"><svg class="svg-icon" style="width:13px;height:13px;"><use href="#icon-check"></use></svg></span>
+              <span class="tree-node-label">Boilers We Install</span>
+            </div>
+            <div class="tree-node-right">
+              <span class="tree-node-count-badge">5 Items</span>
+              <span class="tree-icon-indicator" aria-hidden="true"></span>
+            </div>
+          </button>
+          <div class="tree-node-content">
+            <ul class="tree-sub-list">
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Modulating Condensing 95%+</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Commercial Cascading Arrays</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Cast-Iron Sectional Boilers</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Low-Pressure Steam Units</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Combi Space/DHW Boilers</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Node 9: Boilers We Service -->
+        <div class="tree-node-item">
+          <button type="button" class="tree-node-btn" aria-expanded="false">
+            <div class="tree-node-left">
+              <span class="tree-badge-icon"><svg class="svg-icon" style="width:13px;height:13px;"><use href="#icon-check"></use></svg></span>
+              <span class="tree-node-label">Boilers We Service</span>
+            </div>
+            <div class="tree-node-right">
+              <span class="tree-node-count-badge">3 Items</span>
+              <span class="tree-icon-indicator" aria-hidden="true"></span>
+            </div>
+          </button>
+          <div class="tree-node-content">
+            <ul class="tree-sub-list">
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Combustion Efficiency Tuning</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Low Water Cutoff Testing</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Annual Code Safety Audits</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Node 10: Boilers We Repair -->
+        <div class="tree-node-item">
+          <button type="button" class="tree-node-btn" aria-expanded="false">
+            <div class="tree-node-left">
+              <span class="tree-badge-icon"><svg class="svg-icon" style="width:13px;height:13px;"><use href="#icon-check"></use></svg></span>
+              <span class="tree-node-label">Boilers We Repair</span>
+            </div>
+            <div class="tree-node-right">
+              <span class="tree-node-count-badge">3 Items</span>
+              <span class="tree-icon-indicator" aria-hidden="true"></span>
+            </div>
+          </button>
+          <div class="tree-node-content">
+            <ul class="tree-sub-list">
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> 24/7 Immediate Burner &amp; Control Triage</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Heat Exchanger &amp; Sectional Leak Repairs</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Steam Pressure Relief &amp; Piping Diagnostics</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Node 11: Water Heaters We Install -->
+        <div class="tree-node-item">
+          <button type="button" class="tree-node-btn" aria-expanded="false">
+            <div class="tree-node-left">
+              <span class="tree-badge-icon"><svg class="svg-icon" style="width:13px;height:13px;"><use href="#icon-check"></use></svg></span>
+              <span class="tree-node-label">Water Heaters We Install</span>
+            </div>
+            <div class="tree-node-right">
+              <span class="tree-node-count-badge">2 Items</span>
+              <span class="tree-icon-indicator" aria-hidden="true"></span>
+            </div>
+          </button>
+          <div class="tree-node-content">
+            <ul class="tree-sub-list">
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Commercial High-Recovery Tank Units</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Multi-Zone Tankless Arrays</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Blended Brands & Equipment Showcase Section -->
+  <section class="blended-showcase-section">
+    <div class="container">
+      
+      <!-- Luxury Manufacturer Trust Bar (Option 1 Redesign) -->
+      <div class="brand-trust-container">
+        <div class="brand-trust-header">
+          <span class="trust-header-line"></span>
+          <span class="trust-header-text">Authorized Factory Alliances &amp; Direct Allocations</span>
+          <span class="trust-header-line"></span>
+        </div>
+
+        <div class="brand-trust-grid">
+          <div class="brand-trust-card" title="Rheem Manufacturing Partner">
+            <img src="images/logos/rheem.svg" alt="Rheem Manufacturing">
+          </div>
+          <div class="brand-trust-card" title="York HVAC Systems">
+            <img src="images/logos/york.svg" alt="York HVAC Systems">
+          </div>
+          <div class="brand-trust-card" title="Carrier HVAC Commercial &amp; Residential">
+            <img src="images/logos/carrier.svg" alt="Carrier HVAC">
+          </div>
+          <div class="brand-trust-card" title="Trane Heating &amp; Air Conditioning">
+            <img src="images/logos/trane.svg" alt="Trane Heating &amp; Cooling">
+          </div>
+          <div class="brand-trust-card" title="Lennox Industries OEM Equipment">
+            <img src="images/logos/lennox.svg" alt="Lennox Industries">
+          </div>
+          <div class="brand-trust-card" title="Weil-McLain Hydronic Heating Systems">
+            <img src="images/logos/weil-mclain.svg" alt="Weil-McLain Hydronics">
+          </div>
+        </div>
+
+        <div class="brand-trust-footer">
+          <span class="trust-foot-item">&bull; Direct Factory Procurement</span>
+          <span class="trust-foot-item">&bull; Full OEM Warranty Backing</span>
+          <span class="trust-foot-item">&bull; Certified Master Installation</span>
+        </div>
+      </div>
+
+      <!-- 3 Featured Equipment Cards -->
+      <div class="showcase-product-grid">
+        <!-- Product 1: Water Heater -->
+        <div class="product-showcase-card">
+          <div class="product-card-img-wrap">
+            <img src="images/boiler-img-2.jpg" alt="Commercial &amp; Residential Water Heater" class="product-card-img">
+            <span class="product-card-badge">Water Heater</span>
+          </div>
+          <div class="product-card-body">
+            <h3>High-Efficiency Water Heaters</h3>
+            <p>Direct wholesale allocations on high-recovery commercial tanks, condensing tankless arrays, and energy-star hybrid heat pump water heaters.</p>
+            <a href="contact.html" class="btn btn-primary" style="margin-top: auto; padding: 10px 18px; font-size: 0.88rem;">Request Water Heater Quote &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Product 2: Furnace -->
+        <div class="product-showcase-card">
+          <div class="product-card-img-wrap">
+            <img src="images/furnace-ac.jpg" alt="High AFUE Modulating Furnace" class="product-card-img">
+            <span class="product-card-badge">Furnace</span>
+          </div>
+          <div class="product-card-body">
+            <h3>Modulating Gas Furnaces</h3>
+            <p>Precision 98% AFUE dual-fuel heating systems engineered for harsh Illinois sub-zero winters with variable-speed ECM blower architecture.</p>
+            <a href="contact.html" class="btn btn-primary" style="margin-top: auto; padding: 10px 18px; font-size: 0.88rem;">Request Furnace Quote &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Product 3: Boiler -->
+        <div class="product-showcase-card">
+          <div class="product-card-img-wrap">
+            <img src="images/boiler-cascade.jpg" alt="Hydronic &amp; Steam Boilers" class="product-card-img">
+            <span class="product-card-badge">Boiler</span>
+          </div>
+          <div class="product-card-body">
+            <h3>Certified Hydronic Boilers</h3>
+            <p>Master thermodynamic hydronic design, high-pressure steam boilers, and modular cascading condensing systems for commercial and residential facilities.</p>
+            <a href="contact.html" class="btn btn-primary" style="margin-top: auto; padding: 10px 18px; font-size: 0.88rem;">Request Boiler Quote &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Re-Engineered "Our Partners" Network Section -->
+  <section class="partners-section">
+    <div class="container">
+      <div class="section-header" style="text-align: center; max-width: 720px; margin: 0 auto 35px;">
+        <span class="badge badge-salmon">Regional Network</span>
+        <h2 style="font-size: clamp(1.4rem, 3.2vw, 2.1rem); color: var(--color-text-main); margin: 10px 0 12px;">Our Partners</h2>
+        <p class="section-subtitle" style="color: var(--color-text-muted); font-size: 0.95rem;">
+          Trusted companies we work with to provide you the best service across Cook, DuPage, Kane, Kendall, and Grundy Counties.
         </p>
       </div>
 
-      <!-- 4 High-Impact Value Bullets (Bold Colors & Strong Values) -->
-      <div class="hero-trust-bullets">
-        <!-- Bullet 1: 24 Hours Emergency Service -->
-        <div class="hero-trust-bullet bullet-emergency">
-          <span class="bullet-icon">🚨</span>
-          <div class="bullet-text">
-            <strong>24 Hours Emergency Service</strong>
-            <span>Priority 24/7 Dispatch</span>
+      <div class="partners-network-grid">
+        <!-- Partner 1: Jerry's -->
+        <div class="partner-luxury-card">
+          <div class="partner-card-main">
+            <div class="partner-avatar-wrap">
+              <img src="images/logos/jerry.jpg" alt="Jerry's Heating and Cooling" class="partner-avatar-img">
+              <span class="partner-pulse-dot" title="Active Regional Dispatch"></span>
+            </div>
+            <div class="partner-text-wrap">
+              <div class="partner-meta-row">
+                <span class="partner-tag">Certified Partner</span>
+                <span class="partner-loc">Will County</span>
+              </div>
+              <h3 class="partner-title">Jerry's Heating &amp; Cooling</h3>
+              <p class="partner-sub">Plainfield &bull; Heating, AC &amp; Emergency Service</p>
+            </div>
           </div>
+          <a href="tel:8157915681" class="partner-call-action" aria-label="Call Jerry's Heating and Cooling at 815-791-5681">
+            <svg class="partner-call-icon" viewBox="0 0 24 24"><use href="#icon-phone"></use></svg>
+            <span class="partner-call-num">(815) 791-5681</span>
+            <span class="partner-call-badge">Direct Dispatch &rarr;</span>
+          </a>
         </div>
 
-        <!-- Bullet 2: No Service Call Fees -->
-        <div class="hero-trust-bullet bullet-fees">
-          <span class="bullet-icon">💰</span>
-          <div class="bullet-text">
-            <strong>No Service Call Fees</strong>
-            <span>Zero Hidden Upfront Costs</span>
+        <!-- Partner 2: Affordable -->
+        <div class="partner-luxury-card">
+          <div class="partner-card-main">
+            <div class="partner-avatar-wrap">
+              <img src="images/logos/affordable.png" alt="Affordable Heating & Cooling" class="partner-avatar-img">
+              <span class="partner-pulse-dot" title="Active Regional Dispatch"></span>
+            </div>
+            <div class="partner-text-wrap">
+              <div class="partner-meta-row">
+                <span class="partner-tag">Certified Partner</span>
+                <span class="partner-loc">Plainfield &amp; Suburbs</span>
+              </div>
+              <h3 class="partner-title">Affordable Heating &amp; Cooling</h3>
+              <p class="partner-sub">High-Efficiency Heat Pumps &amp; RTU Service</p>
+            </div>
           </div>
+          <a href="tel:6308016541" class="partner-call-action" aria-label="Call Affordable Heating and Cooling at 630-801-6541">
+            <svg class="partner-call-icon" viewBox="0 0 24 24"><use href="#icon-phone"></use></svg>
+            <span class="partner-call-num">(630) 801-6541</span>
+            <span class="partner-call-badge">Direct Dispatch &rarr;</span>
+          </a>
         </div>
 
-        <!-- Bullet 3: Direct HVAC Brokerage -->
-        <div class="hero-trust-bullet bullet-broker">
-          <span class="bullet-icon">📦</span>
-          <div class="bullet-text">
-            <strong>Direct HVAC Brokerage</strong>
-            <span>Wholesale Manufacturer Pricing</span>
+        <!-- Partner 3: PureFlo -->
+        <div class="partner-luxury-card">
+          <div class="partner-card-main">
+            <div class="partner-avatar-wrap">
+              <img src="images/logos/waters_hot.png" alt="PureFlo Plumbing & Water" class="partner-avatar-img">
+              <span class="partner-pulse-dot" title="Active Regional Dispatch"></span>
+            </div>
+            <div class="partner-text-wrap">
+              <div class="partner-meta-row">
+                <span class="partner-tag">Hydronics &amp; Clean Water</span>
+                <span class="partner-loc">Cook &amp; DuPage</span>
+              </div>
+              <h3 class="partner-title">PureFlo Plumbing &amp; Water</h3>
+              <p class="partner-sub">Boiler Hydronics, PRVs &amp; Water Heaters</p>
+            </div>
           </div>
+          <a href="tel:8152450125" class="partner-call-action" aria-label="Call PureFlo Plumbing and Water at 815-245-0125">
+            <svg class="partner-call-icon" viewBox="0 0 24 24"><use href="#icon-phone"></use></svg>
+            <span class="partner-call-num">(815) 245-0125</span>
+            <span class="partner-call-badge">Direct Dispatch &rarr;</span>
+          </a>
         </div>
 
-        <!-- Bullet 4: Certified Boiler & Climate Repair -->
-        <div class="hero-trust-bullet bullet-repair">
-          <span class="bullet-icon">⚙️</span>
-          <div class="bullet-text">
-            <strong>Boiler &amp; HVAC Repair</strong>
-            <span>Certified Master Engineering</span>
+        <!-- Partner 4: Arctic Comfort -->
+        <div class="partner-luxury-card">
+          <div class="partner-card-main">
+            <div class="partner-avatar-wrap">
+              <img src="images/logos/blue_frame.jpg" alt="Arctic Comfort HVAC" class="partner-avatar-img">
+              <span class="partner-pulse-dot" title="Active Regional Dispatch"></span>
+            </div>
+            <div class="partner-text-wrap">
+              <div class="partner-meta-row">
+                <span class="partner-tag">Specialist Network</span>
+                <span class="partner-loc">Kane &amp; Kendall</span>
+              </div>
+              <h3 class="partner-title">Arctic Comfort HVAC</h3>
+              <p class="partner-sub">Commercial VRF &amp; Multi-Zone Cooling</p>
+            </div>
           </div>
+          <a href="tel:5552011001" class="partner-call-action" aria-label="Call Arctic Comfort HVAC at 555-201-1001">
+            <svg class="partner-call-icon" viewBox="0 0 24 24"><use href="#icon-phone"></use></svg>
+            <span class="partner-call-num">(555) 201-1001</span>
+            <span class="partner-call-badge">Direct Dispatch &rarr;</span>
+          </a>
+        </div>
+
+        <!-- Partner 5: SunWarm -->
+        <div class="partner-luxury-card">
+          <div class="partner-card-main">
+            <div class="partner-avatar-wrap">
+              <img src="images/logos/hg.jpg" alt="SunWarm Heating Solutions" class="partner-avatar-img">
+              <span class="partner-pulse-dot" title="Active Regional Dispatch"></span>
+            </div>
+            <div class="partner-text-wrap">
+              <div class="partner-meta-row">
+                <span class="partner-tag">Specialist Network</span>
+                <span class="partner-loc">Grundy County</span>
+              </div>
+              <h3 class="partner-title">SunWarm Heating Solutions</h3>
+              <p class="partner-sub">Radiant In-Floor &amp; Gas Heating Systems</p>
+            </div>
+          </div>
+          <a href="tel:5552011002" class="partner-call-action" aria-label="Call SunWarm Heating Solutions at 555-201-1002">
+            <svg class="partner-call-icon" viewBox="0 0 24 24"><use href="#icon-phone"></use></svg>
+            <span class="partner-call-num">(555) 201-1002</span>
+            <span class="partner-call-badge">Direct Dispatch &rarr;</span>
+          </a>
+        </div>
+
+        <!-- Partner 6: GreenLeaf -->
+        <div class="partner-luxury-card">
+          <div class="partner-card-main">
+            <div class="partner-avatar-wrap">
+              <img src="images/logos/poz.jpg" alt="GreenLeaf Energy Systems" class="partner-avatar-img">
+              <span class="partner-pulse-dot" title="Active Regional Dispatch"></span>
+            </div>
+            <div class="partner-text-wrap">
+              <div class="partner-meta-row">
+                <span class="partner-tag">Decarbonization Partner</span>
+                <span class="partner-loc">Chicagoland</span>
+              </div>
+              <h3 class="partner-title">GreenLeaf Energy Systems</h3>
+              <p class="partner-sub">Energy Audits &amp; Modern Heat Pump Reworks</p>
+            </div>
+          </div>
+          <a href="tel:5552011003" class="partner-call-action" aria-label="Call GreenLeaf Energy Systems at 555-201-1003">
+            <svg class="partner-call-icon" viewBox="0 0 24 24"><use href="#icon-phone"></use></svg>
+            <span class="partner-call-num">(555) 201-1003</span>
+            <span class="partner-call-badge">Direct Dispatch &rarr;</span>
+          </a>
         </div>
       </div>
-
-      <!-- High-Converting CTA Action Group (PROMINENT CALL TO ACTION - NO SCROLL) -->
-      <div class="hero-cta-group">
-        <a href="tel:8155560660" class="btn btn-hero-call">
-          <span class="btn-icon-pulse">📞</span>
-          <div class="btn-call-text">
-            <span class="btn-call-sub">24/7 IMMEDIATE DISPATCH</span>
-            <span class="btn-call-main">CALL 815-556-0660</span>
-          </div>
-        </a>
-
-        <a href="contact.html" class="btn btn-primary btn-hero-estimate">
-          📅 Request Free Estimate / Book Consultation ➔
-        </a>
-
-        <a href="products.html" class="btn btn-outline-white">
-          📦 Brokerage Portfolio
-        </a>
-      </div>
-
-      <!-- Compact Mode Toggle below CTAs -->
-      <div class="hero-compact-modes">
-        <span class="hero-mode-label">⚡ Practice Mode:</span>
-        <button type="button" class="mode-btn active heat" id="heatModeBtn">🔥 Heating Engineering</button>
-        <button type="button" class="mode-btn" id="coolModeBtn">❄️ Cooling Engineering</button>
-      </div>
-
-      <!-- Compact Technical Performance Bar -->
-      <div class="weather-load-widget" style="margin-top: 0; background: rgba(3, 9, 20, 0.7); border: 1px solid var(--color-border-dark);">
-        <div>
-          <span style="font-size: 0.78rem; color: #94a3b8; text-transform: uppercase; font-weight: 700; letter-spacing: 0.05em;">Engineered Performance Guarantee</span>
-          <h4 style="color: #ffffff; font-size: 1.05rem; margin-top: 2px;">Precision Thermal Equilibrium &amp; Efficiency</h4>
-          <p style="color: var(--color-cyan); font-size: 0.82rem; margin: 0;">NATE-Certified • EPA Universal • Commercial &amp; Residential Coverage</p>
-        </div>
-        <div class="temp-gauge-circle" id="heroTempGauge" style="width: 58px; height: 58px; font-size: 0.95rem;">99.8%</div>
-      </div>
-
     </div>
   </section>
 
@@ -335,7 +867,7 @@
   <section class="section">
     <div class="container">
       <div class="section-header">
-        <span class="badge badge-salmon">🛠️ Core Disciplines</span>
+        <span class="badge badge-salmon">Core Disciplines</span>
         <h2><span class="heading-phrase">Precision Thermal Engineering</span> <span class="heading-phrase nowrap-phrase">&amp; HVAC Systems</span></h2>
         <p class="section-subtitle">Engineered thermal solutions, system optimizations, and high-efficiency climate architecture designed by&nbsp;Trey&nbsp;Durden.</p>
       </div>
@@ -343,113 +875,55 @@
       <div class="grid-3">
         <!-- Discipline 1 -->
         <div class="feature-bento-card">
-          <div class="card-icon-frame">🔥</div>
+          <div class="card-icon-frame"><svg class="svg-icon" style="width:28px;height:28px;"><use href="#icon-fire"></use></svg></div>
           <span class="badge badge-salmon" style="margin-bottom: 8px;">Thermodynamics</span>
           <h3>Thermal Systems Design</h3>
           <p>Psychrometric analysis, Manual J/D/S precision load modeling, and stainless steel heat exchanger engineering.</p>
           <ul class="emoji-bullet-list">
-            <li><span class="bullet-emoji salmon">🔥</span> Modulating 98% AFUE furnace architectures</li>
-            <li><span class="bullet-emoji salmon">⚡</span> Dynamic heating load simulations</li>
-            <li><span class="bullet-emoji salmon">🛡️</span> Thermal boundary &amp; airflow optimization</li>
+            <li><span class="bullet-emoji salmon"><svg class="svg-icon" style="width:14px;height:14px;"><use href="#icon-check"></use></svg></span> Modulating 98% AFUE furnace architectures</li>
+            <li><span class="bullet-emoji salmon"><svg class="svg-icon" style="width:14px;height:14px;"><use href="#icon-check"></use></svg></span> Dynamic heating load simulations</li>
+            <li><span class="bullet-emoji salmon"><svg class="svg-icon" style="width:14px;height:14px;"><use href="#icon-check"></use></svg></span> Thermal boundary &amp; airflow optimization</li>
           </ul>
-          <a href="services.html#thermal-design" class="btn btn-outline-salmon" style="margin-top: auto;">Explore Design ➔</a>
+          <a href="services.html#thermal-design" class="btn btn-outline-salmon" style="margin-top: auto;">Explore Design &rarr;</a>
         </div>
 
         <!-- Discipline 2 -->
         <div class="feature-bento-card">
-          <div class="card-icon-frame">❄️</div>
+          <div class="card-icon-frame"><svg class="svg-icon" style="width:28px;height:28px;"><use href="#icon-snowflake"></use></svg></div>
           <span class="badge badge-pink" style="margin-bottom: 8px;">Cooling &amp; VRF</span>
           <h3>Advanced HVAC Architecture</h3>
           <p>Variable-speed inverter compressor integrations, multi-zone ductless systems, and whole-building dehumidification.</p>
           <ul class="emoji-bullet-list">
-            <li><span class="bullet-emoji pink">❄️</span> Up to 20.5+ SEER2 ultra-efficient cooling</li>
-            <li><span class="bullet-emoji pink">📱</span> Smart BAS &amp; IoT automation controls</li>
-            <li><span class="bullet-emoji pink">💰</span> Max utility rebate efficiency alignment</li>
+            <li><span class="bullet-emoji pink"><svg class="svg-icon" style="width:14px;height:14px;"><use href="#icon-check"></use></svg></span> Up to 20.5+ SEER2 ultra-efficient cooling</li>
+            <li><span class="bullet-emoji pink"><svg class="svg-icon" style="width:14px;height:14px;"><use href="#icon-check"></use></svg></span> Smart BAS &amp; IoT automation controls</li>
+            <li><span class="bullet-emoji pink"><svg class="svg-icon" style="width:14px;height:14px;"><use href="#icon-check"></use></svg></span> Max utility rebate efficiency alignment</li>
           </ul>
-          <a href="services.html#hvac-architecture" class="btn btn-pink" style="margin-top: auto;">Explore Cooling ➔</a>
+          <a href="services.html#hvac-architecture" class="btn btn-pink" style="margin-top: auto;">Explore Cooling &rarr;</a>
         </div>
 
         <!-- Discipline 3 -->
         <div class="feature-bento-card">
-          <div class="card-icon-frame">⚡</div>
+          <div class="card-icon-frame"><svg class="svg-icon" style="width:28px;height:28px;"><use href="#icon-bolt"></use></svg></div>
           <span class="badge badge-blue" style="margin-bottom: 8px;">Hybrid Electric</span>
           <h3>Cold-Climate Heat Pumps</h3>
           <p>Sub-zero electric heat pump engineering operating flawlessly down to -15°F ambient outdoor temperatures.</p>
           <ul class="emoji-bullet-list">
-            <li><span class="bullet-emoji blue">⚡</span> Dual-fuel hybrid intelligent staging</li>
-            <li><span class="bullet-emoji blue">🌱</span> Decarbonized building electrification</li>
-            <li><span class="bullet-emoji blue">💰</span> Federal 25C &amp; utility incentive capture</li>
+            <li><span class="bullet-emoji blue"><svg class="svg-icon" style="width:14px;height:14px;"><use href="#icon-check"></use></svg></span> Dual-fuel hybrid intelligent staging</li>
+            <li><span class="bullet-emoji blue"><svg class="svg-icon" style="width:14px;height:14px;"><use href="#icon-check"></use></svg></span> Decarbonized building electrification</li>
+            <li><span class="bullet-emoji blue"><svg class="svg-icon" style="width:14px;height:14px;"><use href="#icon-check"></use></svg></span> Federal 25C &amp; utility incentive capture</li>
           </ul>
-          <a href="services.html#energy-audits" class="btn btn-primary" style="margin-top: auto;">View Heat Pumps ➔</a>
+          <a href="services.html#energy-audits" class="btn btn-primary" style="margin-top: auto;">View Heat Pumps &rarr;</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Interactive Equipment Studio Preview -->
-  <section class="section">
-    <div class="container">
-      <div class="grid-2" style="align-items: center; gap: 45px;">
-        <div>
-          <span class="badge badge-gradient">HARDWARE &amp; BLUEPRINT STUDIO</span>
-          <h2>Interactive Thermal <span>Hardware Stage</span></h2>
-          <p class="section-subtitle" style="margin: 15px 0 25px;">
-            Explore interactive equipment breakdowns across outdoor compressors, titanium heat exchangers, smart Wi-Fi thermostats, and commercial packaged units.
-          </p>
-          <div style="display: flex; gap: 15px; flex-wrap: wrap;">
-            <a href="products.html" class="btn btn-primary">Open Equipment Studio 📦</a>
-            <a href="contact.html" class="btn btn-outline-salmon">Schedule Technical Review 📅</a>
-          </div>
-        </div>
-        <div style="border-radius: 12px; overflow: hidden; border: 1px solid var(--color-border); box-shadow: var(--shadow-md);">
-          <img src="images/hvac-install.jpg" alt="Trey Durden Thermal Engineering" style="width: 100%; height: 320px; object-fit: cover;">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Special Technical Value & Consultations -->
-  <section class="section" style="background: #f8fafc;">
-    <div class="container">
-      <div class="section-header">
-        <span class="badge badge-salmon">⚡ Engineering Consultations</span>
-        <h2><span class="heading-phrase">Engineering Audits</span> <span class="heading-phrase nowrap-phrase">&amp; Diagnostic Services</span></h2>
-        <p class="section-subtitle">High-impact thermodynamic audits and precision failure evaluations for facility owners and residential developers.</p>
-      </div>
-
-      <div class="coupon-grid">
-        <div class="coupon-card">
-          <div class="coupon-discount">DIAGNOSTIC</div>
-          <div class="coupon-title">Comprehensive System Evaluation</div>
-          <div class="coupon-code-pill">PRECISION AUDIT</div>
-        </div>
-
-        <div class="coupon-card">
-          <div class="coupon-discount">REBATE $</div>
-          <div class="coupon-title">IRA &amp; Utility Incentive Modeling</div>
-          <div class="coupon-code-pill">MAX EFFICIENCY</div>
-        </div>
-
-        <div class="coupon-card">
-          <div class="coupon-discount">MANUAL J</div>
-          <div class="coupon-title">Precision Heating &amp; Cooling Load Calc</div>
-          <div class="coupon-code-pill">ZERO GUESSWORK</div>
-        </div>
-
-        <div class="coupon-card">
-          <div class="coupon-discount">BMS / IOT</div>
-          <div class="coupon-title">Smart Automation &amp; Zoning Setup</div>
-          <div class="coupon-code-pill">INTELLIGENT CONTROL</div>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- Technical Accordion FAQ -->
-  <section class="section" style="background: #f1f5f9;">
+  <section class="section" style="background: var(--color-bg-page); border-top: 1px solid var(--color-border);">
     <div class="container">
       <div class="section-header">
-        <span class="badge badge-pink">📋 Engineering FAQ</span>
+        <span class="badge badge-pink">Engineering FAQ</span>
         <h2><span class="heading-phrase">Frequently Asked Questions</span> <span class="heading-phrase nowrap-phrase">About Thermal Engineering</span></h2>
       </div>
 
@@ -458,10 +932,10 @@
         <div class="accordion-item active">
           <button class="accordion-header" type="button">
             <div class="accordion-header-left">
-              <span class="accordion-badge-icon">🔬</span>
+              <span class="accordion-badge-icon"><svg class="svg-icon" style="width:14px;height:14px;"><use href="#icon-check"></use></svg></span>
               <span>What does a Thermal Applications Engineer do?</span>
             </div>
-            <span class="accordion-icon-indicator">+</span>
+            <span class="accordion-icon-indicator" aria-hidden="true"></span>
           </button>
           <div class="accordion-content">
             <p>A Thermal Applications Engineer analyzes heat transfer, fluid mechanics, psychrometrics, and thermodynamic cycles to design, optimize, and diagnose high-efficiency residential and commercial heating, cooling, and refrigeration systems.</p>
@@ -471,10 +945,10 @@
         <div class="accordion-item">
           <button class="accordion-header" type="button">
             <div class="accordion-header-left">
-              <span class="accordion-badge-icon">⚡</span>
+              <span class="accordion-badge-icon"><svg class="svg-icon" style="width:14px;height:14px;"><use href="#icon-check"></use></svg></span>
               <span>How do cold-climate heat pumps perform during extreme sub-zero freezes?</span>
             </div>
-            <span class="accordion-icon-indicator">+</span>
+            <span class="accordion-icon-indicator" aria-hidden="true"></span>
           </button>
           <div class="accordion-content">
             <p>Modern inverter-driven cold climate heat pumps maintain high coefficient of performance (COP) down to -15°F. Trey Durden designs custom hybrid dual-fuel systems that seamlessly blend electric heat pumps with modulating gas backup for 100% reliability.</p>
@@ -484,10 +958,10 @@
         <div class="accordion-item">
           <button class="accordion-header" type="button">
             <div class="accordion-header-left">
-              <span class="accordion-badge-icon">🏢</span>
+              <span class="accordion-badge-icon"><svg class="svg-icon" style="width:14px;height:14px;"><use href="#icon-check"></use></svg></span>
               <span>What commercial and industrial services are offered?</span>
             </div>
-            <span class="accordion-icon-indicator">+</span>
+            <span class="accordion-icon-indicator" aria-hidden="true"></span>
           </button>
           <div class="accordion-content">
             <p>Services include packaged rooftop unit (RTU) engineering, chilled water system optimization, building automation systems (BAS) commissioning, ventilation air quality compliance, and root-cause failure forensics.</p>
@@ -503,45 +977,55 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-col">
-          <div class="brand-logo" style="margin-bottom: 18px;">
-            <div class="brand-symbol">🔥❄️</div>
-            <div class="brand-text">
-              <h1 style="color: #fff;">TREY<span>DURDEN</span></h1>
-              <p>Thermal Applications Engineer</p>
-            </div>
+          <div class="footer-brand-wrap" style="margin-bottom: 18px;">
+            <a href="index.html" class="brand-logo" aria-label="Trey Durden Home">
+              <span class="brand-script-name" style="font-size: 2.2rem; color: #ebd7b2;">Trey Durden</span>
+            </a>
+            <p style="font-size: 0.72rem; color: var(--color-cyan); text-transform: uppercase; letter-spacing: 0.12em; font-weight: 700; margin: 4px 0 0 2px;">
+              Thermal Applications Engineer &bull; HVAC Broker
+            </p>
           </div>
-          <p style="font-size: 0.92rem; margin-bottom: 15px; color: #94a3b8;">
+          <p style="font-size: 0.92rem; margin-bottom: 15px; color: var(--color-text-light);">
             Precision thermodynamic systems design, high-efficiency HVAC engineering, and expert diagnostic consulting.
           </p>
-          <p style="color: var(--color-salmon); font-weight: 800; font-size: 1.1rem;">📞 815-556-0660</p>
-          <p style="color: var(--color-cyan); font-size: 0.88rem; margin-top: 6px;">✉️ contact@treydurden.com</p>
-          <p style="color: #cbd5e1; font-size: 0.88rem;">🌐 TreyDurden.com</p>
+          <p style="color: var(--color-salmon); font-weight: 800; font-size: 1.1rem; display: flex; align-items: center; gap: 8px;">
+            <svg class="svg-icon" style="width:18px;height:18px;"><use href="#icon-phone"></use></svg>
+            <a href="tel:6303617434" style="color: inherit; text-decoration: none;">630-361-7434</a>
+          </p>
+          <p style="color: var(--color-cyan); font-size: 0.88rem; margin-top: 6px; display: flex; align-items: center; gap: 8px;">
+            <svg class="svg-icon" style="width:16px;height:16px;"><use href="#icon-mail"></use></svg>
+            <a href="mailto:contact@treydurden.com" style="color: inherit; text-decoration: none;">contact@treydurden.com</a>
+          </p>
+          <p style="color: var(--color-text-light); font-size: 0.88rem; display: flex; align-items: center; gap: 8px; margin-top: 6px;">
+            <svg class="svg-icon" style="width:16px;height:16px;"><use href="#icon-globe"></use></svg>
+            <span>TreyDurden.com</span>
+          </p>
         </div>
 
         <div class="footer-col">
           <h4>Navigation</h4>
           <ul class="footer-links">
-            <li><a href="index.html">🏡 Home Overview</a></li>
-            <li><a href="products.html">📦 Equipment Studio</a></li>
-            <li><a href="about.html">👥 About Trey Durden</a></li>
-            <li><a href="services.html">🛠️ Engineering Services</a></li>
-            <li><a href="contact.html">📅 Book Consultation</a></li>
+            <li><a href="index.html">Home Overview</a></li>
+            <li><a href="products.html">Equipment Studio</a></li>
+            <li><a href="about.html">About Trey Durden</a></li>
+            <li><a href="services.html">Engineering Services</a></li>
+            <li><a href="contact.html">Book Consultation</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
           <h4>Core Pillars</h4>
           <ul class="footer-links">
-            <li><a href="services.html#air-conditioning">❄️ Air Conditioning Service</a></li>
-            <li><a href="services.html#hvac-broker">📦 HVAC Brokerage</a></li>
-            <li><a href="services.html#thermal-dynamic">🔥 Thermal Applications</a></li>
-            <li><a href="services.html#boiler-services">⚙️ Boiler Services &amp; Repair</a></li>
+            <li><a href="services.html#air-conditioning">Air Conditioning Service</a></li>
+            <li><a href="services.html#hvac-broker">HVAC Brokerage</a></li>
+            <li><a href="services.html#thermal-dynamic">Thermal Applications</a></li>
+            <li><a href="services.html#boiler-services">Boiler Services &amp; Repair</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
           <h4>Engineering Practice</h4>
-          <p style="font-size: 0.85rem; color: #cbd5e1; margin-bottom: 8px;">
+          <p style="font-size: 0.85rem; color: var(--color-text-light); margin-bottom: 8px;">
             <strong>Consultation:</strong> Mon–Fri: 8:00 AM – 6:00 PM<br>
             <strong>Critical Systems:</strong> 24/7 Diagnostic Dispatch<br>
             <strong>Coverage:</strong> Midwest &amp; National Consultations
@@ -559,6 +1043,7 @@
     </div>
   </footer>
 
-  <script src="js/main.js?v=8.12"></script>
+  <script src="js/icons.js"></script>
+  <script src="js/main.js?v=8.20"></script>
 </body>
 </html>

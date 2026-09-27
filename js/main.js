@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
       document.body.style.overflow = '';
       if (mobileNavToggle) {
         mobileNavToggle.setAttribute('aria-expanded', 'false');
-        mobileNavToggle.textContent = '☰';
+        mobileNavToggle.innerHTML = '<svg class="svg-icon" style="width:20px;height:20px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>';
       }
     };
 
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
       document.body.style.overflow = 'hidden';
       if (mobileNavToggle) {
         mobileNavToggle.setAttribute('aria-expanded', 'true');
-        mobileNavToggle.textContent = '✕';
+        mobileNavToggle.innerHTML = '<svg class="svg-icon" style="width:20px;height:20px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>';
       }
     };
 
@@ -238,7 +238,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 2. Interactive Heat Mode 🔥 vs Cool Mode ❄️ Climate Switcher (Hero Section)
+  // 2. Interactive Heat Mode vs Cool Mode Climate Switcher (Hero Section)
   const heatModeBtn = document.getElementById('heatModeBtn');
   const coolModeBtn = document.getElementById('coolModeBtn');
   const heroDynamicTitle = document.getElementById('heroDynamicTitle');
@@ -396,7 +396,7 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
       const name = document.getElementById('quoteName') ? document.getElementById('quoteName').value : 'Client';
       const service = document.getElementById('quoteService') ? document.getElementById('quoteService').value : 'Engineering Consultation';
-      alert(`🎉 Thank you, ${name}! Your consultation request for "${service}" has been received. Trey Durden will review your thermal specs and follow up within 24 hours.`);
+      alert(`Thank you, ${name}! Your consultation request for "${service}" has been received. Trey Durden will review your thermal specs and follow up within 24 hours.`);
       heroQuoteForm.reset();
     });
   }
@@ -431,4 +431,29 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+
+  // 9. RockAuto-Style Service Directory Tree Accordion Handler (Single-Open Mode)
+  const treeNodeButtons = document.querySelectorAll('.tree-node-btn');
+  treeNodeButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.tree-node-item');
+      if (!item) return;
+      const tree = item.closest('.directory-accordion-tree') || document;
+      const wasOpen = item.classList.contains('is-open');
+
+      // Close all accordion items in this tree
+      const allItems = tree.querySelectorAll('.tree-node-item');
+      allItems.forEach(otherItem => {
+        otherItem.classList.remove('is-open');
+        const otherBtn = otherItem.querySelector('.tree-node-btn');
+        if (otherBtn) otherBtn.setAttribute('aria-expanded', 'false');
+      });
+
+      // If it wasn't open, open it now (only 1 open at a time)
+      if (!wasOpen) {
+        item.classList.add('is-open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
 });

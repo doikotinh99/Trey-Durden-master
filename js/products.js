@@ -497,11 +497,11 @@ function renderCatalog() {
             Use the search bar, the tree menu on the left, or select a popular category below to view our catalog without being overwhelmed.
           </p>
           <div style="display:flex; flex-wrap:wrap; gap:12px; justify-content:center; max-width: 650px; margin: 0 auto;">
-            <button class="btn btn-outline quick-cat-btn" data-cat="hot-water-boilers" style="border-radius:20px; padding:8px 16px;">🔥 Hot Water Boilers</button>
-            <button class="btn btn-outline quick-cat-btn" data-cat="steam-boilers" style="border-radius:20px; padding:8px 16px;">💨 Steam Boilers</button>
-            <button class="btn btn-outline quick-cat-btn" data-cat="tankless-boilers" style="border-radius:20px; padding:8px 16px;">💧 Tankless Systems</button>
-            <button class="btn btn-outline quick-cat-btn" data-cat="hvac-systems" style="border-radius:20px; padding:8px 16px;">❄️ HVAC Systems</button>
-            <button class="btn btn-outline quick-cat-btn" data-cat="commercial" style="border-radius:20px; padding:8px 16px;">🏢 Commercial</button>
+            <button class="btn btn-outline quick-cat-btn" data-cat="hot-water-boilers" style="border-radius:20px; padding:8px 16px;">Hot Water Boilers</button>
+            <button class="btn btn-outline quick-cat-btn" data-cat="steam-boilers" style="border-radius:20px; padding:8px 16px;">Steam Boilers</button>
+            <button class="btn btn-outline quick-cat-btn" data-cat="tankless-boilers" style="border-radius:20px; padding:8px 16px;">Tankless Systems</button>
+            <button class="btn btn-outline quick-cat-btn" data-cat="hvac-systems" style="border-radius:20px; padding:8px 16px;">HVAC Systems</button>
+            <button class="btn btn-outline quick-cat-btn" data-cat="commercial" style="border-radius:20px; padding:8px 16px;">Commercial</button>
           </div>
         </div>
       `;
