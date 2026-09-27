@@ -251,7 +251,7 @@ document.addEventListener('DOMContentLoaded', () => {
       coolModeBtn.classList.remove('active', 'cool');
       
       if (heroDynamicTitle) {
-        heroDynamicTitle.innerHTML = '<span class="trey-hero-brand">Trey Durden</span> <span class="text-gradient hero-title-sub">Heating, Cooling, Brokerage &amp; Boiler Services</span>';
+        heroDynamicTitle.innerHTML = '<span class="trey-hero-brand">Trey Durden</span> <span class="hero-title-sub">Heating, Cooling, Brokerage &amp; Boiler Services</span>';
       }
       if (heroDynamicDesc) {
         heroDynamicDesc.textContent = 'Direct manufacturer HVAC equipment brokerage, master thermodynamic engineering, and certified 24/7 emergency boiler service and repair.';
@@ -268,7 +268,7 @@ document.addEventListener('DOMContentLoaded', () => {
       heatModeBtn.classList.remove('active', 'heat');
 
       if (heroDynamicTitle) {
-        heroDynamicTitle.innerHTML = '<span class="trey-hero-brand">Trey Durden</span> <span class="text-gradient-cyan hero-title-sub">Cooling Engineering &amp; Precision Climate Systems</span>';
+        heroDynamicTitle.innerHTML = '<span class="trey-hero-brand">Trey Durden</span> <span class="hero-title-sub">Cooling Engineering &amp; Precision Climate Systems</span>';
       }
       if (heroDynamicDesc) {
         heroDynamicDesc.textContent = 'Direct manufacturer AC equipment sourcing, high-SEER2 multi-zone cooling engineering, and 24/7 emergency air conditioning repair.';
