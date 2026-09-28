@@ -1,4 +1,4 @@
-let initialSearchDone = false;
+let initialSearchDone = true;
 let currentCategory = 'all';
 let currentBtu = 'all';
 let currentBrand = 'all';
@@ -489,46 +489,23 @@ function renderCatalog() {
     grid.innerHTML = '';
     if (emptyState) {
       emptyState.style.display = 'block';
-      emptyState.className = 'catalog-empty-state-card';
       emptyState.innerHTML = `
-        <div class="catalog-welcome-state">
-          <div class="welcome-icon-badge">
-            <svg class="svg-icon" style="width: 24px; height: 24px;" aria-hidden="true"><use href="#icon-search"></use></svg>
-          </div>
-          <h2 class="welcome-title">What are you looking for?</h2>
-          <p class="welcome-desc">
+        <div style="padding: 2rem 0;">
+          <svg class="svg-icon" style="width: 48px; height: 48px; color: var(--cyan); margin-bottom: 16px;" aria-hidden="true"><use href="#icon-search"></use></svg>
+          <h2 style="color: #fff; font-size: 1.5rem; margin-bottom: 12px;">What are you looking for?</h2>
+          <p style="color: var(--text-muted); font-size: 0.95rem; max-width: 500px; margin: 0 auto 24px;">
             Use the search bar, the tree menu on the left, or select a popular category below to view our catalog without being overwhelmed.
           </p>
-          <div class="welcome-categories-grid">
-            <button type="button" class="welcome-cat-btn" data-cat="hot-water-boilers">
-              <svg class="svg-icon" style="width:16px;height:16px;" aria-hidden="true"><use href="#icon-droplet"></use></svg>
-              <span>Hot Water Boilers</span>
-            </button>
-            <button type="button" class="welcome-cat-btn" data-cat="steam-boilers">
-              <svg class="svg-icon" style="width:16px;height:16px;" aria-hidden="true"><use href="#icon-fire"></use></svg>
-              <span>Steam Boilers</span>
-            </button>
-            <button type="button" class="welcome-cat-btn" data-cat="tankless-boilers">
-              <svg class="svg-icon" style="width:16px;height:16px;" aria-hidden="true"><use href="#icon-sparkles"></use></svg>
-              <span>Tankless &amp; Combi</span>
-            </button>
-            <button type="button" class="welcome-cat-btn" data-cat="hvac-systems">
-              <svg class="svg-icon" style="width:16px;height:16px;" aria-hidden="true"><use href="#icon-shield"></use></svg>
-              <span>HVAC Split Systems</span>
-            </button>
-            <button type="button" class="welcome-cat-btn" data-cat="commercial">
-              <svg class="svg-icon" style="width:16px;height:16px;" aria-hidden="true"><use href="#icon-building"></use></svg>
-              <span>Commercial Boilers</span>
-            </button>
-          </div>
-          <div class="welcome-browse-all">
-            <button type="button" class="welcome-all-btn" id="welcomeBrowseAllBtn">
-              View All 35 Equipment Models &rarr;
-            </button>
+          <div style="display:flex; flex-wrap:wrap; gap:12px; justify-content:center; max-width: 650px; margin: 0 auto;">
+            <button class="btn btn-outline quick-cat-btn" data-cat="hot-water-boilers" style="border-radius:20px; padding:8px 16px;">Hot Water Boilers</button>
+            <button class="btn btn-outline quick-cat-btn" data-cat="steam-boilers" style="border-radius:20px; padding:8px 16px;">Steam Boilers</button>
+            <button class="btn btn-outline quick-cat-btn" data-cat="tankless-boilers" style="border-radius:20px; padding:8px 16px;">Tankless Systems</button>
+            <button class="btn btn-outline quick-cat-btn" data-cat="hvac-systems" style="border-radius:20px; padding:8px 16px;">HVAC Systems</button>
+            <button class="btn btn-outline quick-cat-btn" data-cat="commercial" style="border-radius:20px; padding:8px 16px;">Commercial</button>
           </div>
         </div>
       `;
-      const quickBtns = emptyState.querySelectorAll('.welcome-cat-btn');
+      const quickBtns = emptyState.querySelectorAll('.quick-cat-btn');
       quickBtns.forEach(btn => {
         btn.addEventListener('click', () => {
           currentCategory = btn.getAttribute('data-cat');
@@ -544,23 +521,6 @@ function renderCatalog() {
           renderCatalog();
         });
       });
-
-      const browseAllBtn = emptyState.querySelector('#welcomeBrowseAllBtn');
-      if (browseAllBtn) {
-        browseAllBtn.addEventListener('click', () => {
-          currentCategory = 'all';
-          currentBtu = 'all';
-          currentBrand = 'all';
-          currentProductId = 'all';
-          currentSearch = '';
-          currentPage = 1;
-          initialSearchDone = true;
-          openBranches.clear();
-          initRockAutoTree();
-          renderBreadcrumbs();
-          renderCatalog();
-        });
-      }
     }
     if (countBadge) countBadge.textContent = 'Awaiting search or selection...';
     renderPagination(0, 0);
@@ -610,20 +570,15 @@ function renderCatalog() {
     grid.innerHTML = '';
     if (emptyState) {
       emptyState.style.display = 'block';
-      emptyState.className = 'catalog-empty-state-card';
       emptyState.innerHTML = `
-        <div class="catalog-welcome-state" style="padding: 32px 18px;">
-          <div class="welcome-icon-badge" style="margin-bottom: 14px;">
-            <svg class="svg-icon" style="width: 24px; height: 24px;" aria-hidden="true"><use href="#icon-search"></use></svg>
-          </div>
-          <h3 class="welcome-title" style="font-size: 1.35rem !important;">No matching equipment found</h3>
-          <p class="welcome-desc" style="margin-bottom: 20px !important;">
-            Try adjusting your search keywords, clearing selected filters, or browsing by category above.
-          </p>
-          <button type="button" class="welcome-cat-btn" id="resetEmptyFiltersBtn" style="background: var(--color-salmon); color: #ffffff; border-color: var(--color-salmon);">
-            Reset All Filters
-          </button>
-        </div>
+        <svg class="svg-icon" style="width: 44px; height: 44px; color: var(--text-muted); margin-bottom: 12px;" aria-hidden="true"><use href="#icon-search"></use></svg>
+        <h3 style="color: #fff; font-size: 1.2rem; margin-bottom: 8px;">No matching equipment found</h3>
+        <p style="color: var(--text-muted); font-size: 0.9rem; max-width: 460px; margin: 0 auto 16px;">
+          Try adjusting your search keywords, clearing selected filters, or browsing by category above.
+        </p>
+        <button type="button" class="btn btn-outline btn-sm" id="resetEmptyFiltersBtn">
+          Reset All Filters
+        </button>
       `;
       // Re-attach listener since we replaced innerHTML
       const resetBtn = document.getElementById('resetEmptyFiltersBtn');
