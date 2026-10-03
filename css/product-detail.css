@@ -1,6 +1,10 @@
 
 
 
+:root {
+  --max-width: 1560px;
+}
+
 html {
   overflow-x: clip;
   max-width: 100%;
@@ -246,7 +250,7 @@ body {
 
 @media (min-width: 992px) {
   .pdp-layout-grid {
-    grid-template-columns: minmax(0, 1.45fr) minmax(380px, 440px);
+    grid-template-columns: minmax(0, 1.2fr) minmax(400px, 460px);
     gap: 2.5rem;
     align-items: start;
   }
@@ -1521,3 +1525,31 @@ body.menu-open .floating-hotline {
     padding: 1.35rem 1.15rem;
   }
 }
+
+/* WIDE DESKTOP BALANCED GRID - FULL CONTAINER WIDTH */
+@media (min-width: 1200px) {
+  .pdp-main-container {
+    width: 100%;
+  }
+  .pdp-layout-grid {
+    grid-template-columns: minmax(0, 1.2fr) 460px;
+    gap: 4rem;
+  }
+  .pdp-main-image-wrap {
+    max-height: 560px;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+  }
+  .pdp-main-image-wrap img {
+    max-height: 560px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .pdp-protocol-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    margin-top: 2rem;
+  }
+}
+
+
