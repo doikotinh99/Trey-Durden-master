@@ -267,7 +267,7 @@
             </div>
 
             <div class="stat-card" style="text-align: left; display: flex; align-items: center; gap: 16px;">
-              <div style="font-size: 2rem;"></div>
+              <div class="card-icon-frame" style="width:48px;height:48px;min-width:48px;margin-bottom:0;border-radius:12px;"><svg class="svg-icon" style="width:24px;height:24px;color:var(--color-salmon);"><use href="#icon-mail"></use></svg></div>
               <div>
                 <div style="font-size: 0.8rem; color: #64748b; text-transform: uppercase; font-weight: 700;">Brokerage &amp; Submittals</div>
                 <div style="font-size: 1.1rem; font-weight: 800; color: var(--color-blue-deep); margin-top: 2px;">
@@ -299,24 +299,26 @@
           </div>
         </div>
 
-        <!-- Consultation Direct Contact Card -->
-        <div class="bento-card" style="background: #071933; border: 1px solid var(--color-border); box-shadow: var(--shadow-lg); position: relative; overflow: hidden;">
-          <!-- Red Ambient Glow -->
-          <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 200%; height: 200%; background: radial-gradient(circle, rgba(255, 63, 132, 0.2) 0%, rgba(255, 63, 132, 0) 70%); z-index: 0; pointer-events: none;"></div>
+        <!-- Consultation Direct Contact Card (High-Contrast Luxury Card) -->
+        <div class="advisory-card">
+          <!-- Ambient Glow Effect -->
+          <div class="advisory-card-glow"></div>
           
-          <div style="position: relative; z-index: 1;">
-            <span class="badge badge-gradient">Priority Connect</span>
-            <h3 style="color: #fff; font-size: 1.8rem; margin: 12px 0 6px;">Immediate Advisory</h3>
-            <p style="color: var(--color-text-muted); font-size: 0.9rem; margin-bottom: 20px;">
+          <div class="advisory-card-content">
+            <span class="advisory-card-badge">Priority Connect</span>
+            <h3 class="advisory-card-title">Immediate Advisory</h3>
+            <p class="advisory-card-desc">
               For the fastest response to engineering and brokerage inquiries, please call us directly. Our direct line connects you with Trey Durden immediately. Zero forms, direct dispatch.
             </p>
 
-            <a href="tel:6303617434" class="btn btn-primary" style="display: block; width: 100%; text-align: center; padding: 18px; font-size: 1.2rem; margin-bottom: 15px; background: linear-gradient(135deg, #ff3f84, #ff6550); border: none; box-shadow: 0 4px 15px rgba(255, 63, 132, 0.4);">
-              <svg class="svg-icon" style="width:14px;height:14px;margin-right:6px;"><use href="#icon-phone"></use></svg>Call 630-361-7434
+            <a href="tel:6303617434" class="advisory-btn-call" aria-label="Call Trey Durden directly">
+              <svg class="svg-icon"><use href="#icon-phone"></use></svg>
+              <span>Call (630) 361-7434</span>
             </a>
             
-            <a href="mailto:contact@treydurden.com" class="btn btn-outline-dark" style="display: block; width: 100%; text-align: center; padding: 18px; font-size: 1.2rem;">
-              Email Us
+            <a href="mailto:contact@treydurden.com" class="advisory-btn-email" aria-label="Email Trey Durden">
+              <svg class="svg-icon"><use href="#icon-mail"></use></svg>
+              <span>Email Us</span>
             </a>
           </div>
         </div>

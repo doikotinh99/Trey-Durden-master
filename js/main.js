@@ -456,4 +456,81 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  // 10. Wireframe Homepage Diagnostic Triage Selector
+  const diagButtons = document.querySelectorAll('.ex-diag-acc-btn');
+  const diagActiveTitle = document.getElementById('diagActiveTitle');
+  const diagActiveLink = document.getElementById('diagActiveLink');
+
+  const diagData = {
+    cooling: {
+      title: 'Air conditioning diagnostic triage: We inspect refrigerant charge, coils, compressor staging, and duct balance for peak summer reliability.',
+      url: 'services.html#air-conditioning',
+      text: 'Go to cooling services'
+    },
+    maintenance: {
+      title: 'Preventive seasonal care: Comprehensive system check, electrical testing, and burner tuning before extreme weather hits Chicagoland.',
+      url: 'services.html#boiler-services',
+      text: 'Schedule seasonal care'
+    },
+    comfort: {
+      title: 'Indoor air quality & humidity engineering: Whole-home humidifiers, HEPA filtration, UV purifiers, and multi-zone climate control.',
+      url: 'services.html#thermal-dynamic',
+      text: 'Explore indoor comfort options'
+    }
+  };
+
+  diagButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const parentItem = btn.closest('.ex-diag-accordion-item');
+      if (!parentItem) return;
+
+      const isAlreadyOpen = parentItem.classList.contains('is-open');
+      const allDiagItems = document.querySelectorAll('.ex-diag-accordion-item');
+      allDiagItems.forEach(item => {
+        item.classList.remove('is-open');
+        const indicator = item.querySelector('.ex-diag-acc-indicator');
+        if (indicator) indicator.textContent = '+';
+      });
+
+      if (!isAlreadyOpen) {
+        parentItem.classList.add('is-open');
+        const indicator = parentItem.querySelector('.ex-diag-acc-indicator');
+        if (indicator) indicator.textContent = '×';
+
+        const diagType = btn.getAttribute('data-diag');
+        if (diagType && diagData[diagType] && diagActiveTitle && diagActiveLink) {
+          diagActiveTitle.textContent = diagData[diagType].title;
+          diagActiveLink.setAttribute('href', diagData[diagType].url);
+          diagActiveLink.innerHTML = `<span>${diagData[diagType].text}</span> <span>&rarr;</span>`;
+        }
+      }
+    });
+  });
+
+  // 11. Wireframe Homepage Generic Accordions ("Why Trey Durden" & FAQ)
+  const exAccButtons = document.querySelectorAll('.ex-acc-header-btn');
+  exAccButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const card = btn.closest('.ex-accordion-card');
+      if (!card) return;
+      const wasOpen = card.classList.contains('is-open');
+      const parentGroup = card.parentElement;
+
+      if (parentGroup) {
+        parentGroup.querySelectorAll('.ex-accordion-card').forEach(c => {
+          c.classList.remove('is-open');
+          const ind = c.querySelector('.ex-acc-toggle-indicator');
+          if (ind) ind.textContent = '+';
+        });
+      }
+
+      if (!wasOpen) {
+        card.classList.add('is-open');
+        const ind = card.querySelector('.ex-acc-toggle-indicator');
+        if (ind) ind.textContent = '×';
+      }
+    });
+  });
 });
+
