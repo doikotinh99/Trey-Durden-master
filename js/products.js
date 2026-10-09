@@ -625,13 +625,13 @@ function renderCatalog() {
               <span class="badge ${p.tagClass || 'badge-cyan'}">${p.tag || p.categoryName}</span>
               <span class="badge badge-pink">${p.badge}</span>
             </div>
-            <h3 class="product-card-title"><a href="product-detail.html?id=${p.id}">${p.name}</a></h3>
-            <p class="product-card-desc">${p.description}</p>
+            <h3 class="product-card-title"><a href="product-detail.html?id=${p.id}" title="${(p.name || '').replace(/"/g, '&quot;')}">${p.name}</a></h3>
+            <p class="product-card-desc" title="${(p.description || '').replace(/"/g, '&quot;')}">${p.description}</p>
             <ul class="product-card-features">
               ${topFeatures.map(f => `
                 <li>
                   <svg class="svg-icon" style="color:var(--green); width:14px; height:14px; flex-shrink:0;" aria-hidden="true"><use href="#icon-check-circle"></use></svg>
-                  <span>${f}</span>
+                  <span title="${(f || '').replace(/"/g, '&quot;')}">${f}</span>
                 </li>
               `).join('')}
             </ul>
@@ -668,13 +668,13 @@ function renderCatalog() {
             <span class="badge ${p.tagClass || 'badge-cyan'}">${p.tag || p.categoryName}</span>
             <span class="badge badge-pink">${p.badge}</span>
           </div>
-          <h3 class="product-card-title"><a href="product-detail.html?id=${p.id}">${p.name}</a></h3>
-          <p class="product-card-desc">${p.description}</p>
+          <h3 class="product-card-title"><a href="product-detail.html?id=${p.id}" title="${(p.name || '').replace(/"/g, '&quot;')}">${p.name}</a></h3>
+          <p class="product-card-desc" title="${(p.description || '').replace(/"/g, '&quot;')}">${p.description}</p>
           <ul class="product-card-features">
             ${topFeatures.map(f => `
               <li>
                 <svg class="svg-icon" style="color:var(--green); width:14px; height:14px; flex-shrink:0;" aria-hidden="true"><use href="#icon-check-circle"></use></svg>
-                <span>${f}</span>
+                <span title="${(f || '').replace(/"/g, '&quot;')}">${f}</span>
               </li>
             `).join('')}
           </ul>

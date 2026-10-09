@@ -4,6 +4,61 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+  // Best Comfort Mobile Drawer & Global Handlers
+  const bcMobileToggle = document.getElementById('bcMobileToggle');
+  const bcMobileDrawer = document.getElementById('bcMobileDrawer');
+  const bcMobileClose = document.getElementById('bcMobileClose');
+  const bcScrollTop = document.getElementById('bcScrollTop') || document.getElementById('scrollTopBtn');
+
+  if (bcMobileToggle && bcMobileDrawer) {
+    bcMobileToggle.addEventListener('click', () => {
+      bcMobileDrawer.classList.add('is-open');
+      document.body.style.overflow = 'hidden';
+    });
+  }
+  if (bcMobileClose && bcMobileDrawer) {
+    bcMobileClose.addEventListener('click', () => {
+      bcMobileDrawer.classList.remove('is-open');
+      document.body.style.overflow = '';
+    });
+  }
+  if (bcMobileDrawer) {
+    bcMobileDrawer.addEventListener('click', (e) => {
+      if (e.target === bcMobileDrawer) {
+        bcMobileDrawer.classList.remove('is-open');
+        document.body.style.overflow = '';
+      }
+    });
+  }
+  if (bcScrollTop) {
+    bcScrollTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  // Best Comfort Accordions
+  document.querySelectorAll('.bc-acc-header').forEach(header => {
+    header.addEventListener('click', function() {
+      const card = this.closest('.bc-acc-card');
+      if (card) {
+        const group = card.closest('.bc-accordion-group, .bc-why-accordions, .bc-faq-accordions');
+        const isOpen = card.classList.contains('is-open');
+        if (group) {
+          group.querySelectorAll('.bc-acc-card').forEach(c => {
+            c.classList.remove('is-open');
+            const t = c.querySelector('.bc-acc-toggle-icon');
+            if (t) t.textContent = '+';
+          });
+        }
+        if (!isOpen) {
+          card.classList.add('is-open');
+          const t = card.querySelector('.bc-acc-toggle-icon');
+          if (t) t.textContent = '−';
+        }
+      }
+    });
+  });
+
   // 1. Mobile Navigation Toggle (Full-Screen 100vw / 100vh Modal Popup)
   const mobileNavToggle = document.getElementById('mobileNavToggle');
   const mobileNavClose = document.getElementById('mobileNavClose');

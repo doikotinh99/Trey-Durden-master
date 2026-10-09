@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   // 4. Scroll to Top Button
-  const scrollTopBtn = document.getElementById('scrollTopBtn');
+  const scrollTopBtn = document.getElementById('bcScrollTop') || document.getElementById('scrollTopBtn');
   if (scrollTopBtn) {
     scrollTopBtn.addEventListener('click', function () {
       window.scrollTo({
@@ -111,9 +111,9 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // 5. Mobile Navigation Drawer Toggle
-  const mobileToggle = document.getElementById('bcMobileToggle');
-  const mobileDrawer = document.getElementById('bcMobileDrawer');
-  const mobileClose = document.getElementById('bcMobileClose');
+  const mobileToggle = document.getElementById('bcMobileToggle') || document.getElementById('mobileNavToggle');
+  const mobileDrawer = document.getElementById('bcMobileDrawer') || document.getElementById('navMenu');
+  const mobileClose = document.getElementById('bcMobileClose') || document.getElementById('mobileNavClose');
 
   if (mobileToggle && mobileDrawer) {
     mobileToggle.addEventListener('click', function () {
@@ -128,4 +128,39 @@ document.addEventListener('DOMContentLoaded', function () {
       document.body.style.overflow = '';
     });
   }
+
+  // Close drawer when clicking backdrop outside drawer content
+  if (mobileDrawer) {
+    mobileDrawer.addEventListener('click', function (e) {
+      if (e.target === mobileDrawer) {
+        mobileDrawer.classList.remove('is-open');
+        document.body.style.overflow = '';
+      }
+    });
+  }
+
+  // 4. Hero Upper Section Action Hub Tab Switcher
+  window.switchHeroTab = function (tab) {
+    const btnServices = document.getElementById('tabBtnServices');
+    const btnStatements = document.getElementById('tabBtnStatements');
+    const panelServices = document.getElementById('panelServices');
+    const panelStatements = document.getElementById('panelStatements');
+    if (!btnServices || !btnStatements || !panelServices || !panelStatements) return;
+
+    if (tab === 'services') {
+      btnServices.classList.add('active');
+      btnServices.setAttribute('aria-selected', 'true');
+      btnStatements.classList.remove('active');
+      btnStatements.setAttribute('aria-selected', 'false');
+      panelServices.style.display = 'block';
+      panelStatements.style.display = 'none';
+    } else {
+      btnStatements.classList.add('active');
+      btnStatements.setAttribute('aria-selected', 'true');
+      btnServices.classList.remove('active');
+      btnServices.setAttribute('aria-selected', 'false');
+      panelStatements.style.display = 'block';
+      panelServices.style.display = 'none';
+    }
+  };
 });

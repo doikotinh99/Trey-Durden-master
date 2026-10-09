@@ -27,7 +27,7 @@ const BOILER_PRODUCTS = [
     "reviewsCount": 287,
     "rating": 4.9,
     "vendor": {
-      "name": "Blue Flame Heating & Cooling",
+      "name": "Best Comfort Heating & Cooling",
       "subtitle": "Premier Factory Authorized Carrier Dealer",
       "rating": 4.9,
       "reviews": 312,
@@ -36,7 +36,7 @@ const BOILER_PRODUCTS = [
       "phone": "(815) 556-0660",
       "district": "Chicago North & Northwest Suburbs",
       "scope": "Includes municipal mechanical permits, certified install, old equipment haul-away & 1-year labor guarantee.",
-      "logo": "images/logos/blue_frame.jpg"
+      "logo": "images/best-comfort-logo.svg"
     },
     "bundleMatrix": {
       "furnace": {
@@ -2935,7 +2935,7 @@ const BOILER_PRODUCTS = [
     "energyStar": true,
     "a2lReady": false,
     "vendor": {
-      "name": "Trey Durden HVAC • Plumbing",
+      "name": "Best Comfort Heating & Cooling",
       "subtitle": "Commercial & Industrial Mechanical Contractor #044-819231",
       "rating": 4.9,
       "reviews": 420,
@@ -2944,7 +2944,7 @@ const BOILER_PRODUCTS = [
       "phone": "(815) 556-0660",
       "district": "Chicagoland Commercial & Industrial District",
       "scope": "ASME CSD-1 sign-off, digital flue gas combustion commissioning & heavy machinery rigging.",
-      "logo": "images/logos/td.jpg"
+      "logo": "images/best-comfort-logo.svg"
     },
     "bundleMatrix": {
       "boiler": {
@@ -3097,7 +3097,7 @@ const BOILER_PRODUCTS = [
     "energyStar": true,
     "a2lReady": false,
     "vendor": {
-      "name": "Trey Durden HVAC • Plumbing",
+      "name": "Best Comfort Heating & Cooling",
       "subtitle": "Commercial & Industrial Mechanical Contractor #044-819231",
       "rating": 4.9,
       "reviews": 420,
@@ -3106,7 +3106,7 @@ const BOILER_PRODUCTS = [
       "phone": "(815) 556-0660",
       "district": "Chicagoland Commercial & Industrial District",
       "scope": "ASME CSD-1 sign-off, digital flue gas combustion commissioning & heavy machinery rigging.",
-      "logo": "images/logos/td.jpg"
+      "logo": "images/best-comfort-logo.svg"
     },
     "bundleMatrix": {
       "boiler": {
@@ -6824,7 +6824,7 @@ const BOILER_PRODUCTS = [
     "energyStar": true,
     "a2lReady": false,
     "vendor": {
-      "name": "Trey Durden HVAC • Plumbing",
+      "name": "Best Comfort Heating & Cooling",
       "subtitle": "Commercial & Industrial Mechanical Contractor #044-819231",
       "rating": 4.9,
       "reviews": 420,
@@ -6833,7 +6833,7 @@ const BOILER_PRODUCTS = [
       "phone": "(815) 556-0660",
       "district": "Chicagoland Commercial & Industrial District",
       "scope": "ASME CSD-1 sign-off, digital flue gas combustion commissioning & heavy machinery rigging.",
-      "logo": "images/logos/td.jpg"
+      "logo": "images/best-comfort-logo.svg"
     },
     "bundleMatrix": {
       "boiler": {
@@ -6986,7 +6986,7 @@ const BOILER_PRODUCTS = [
     "energyStar": true,
     "a2lReady": false,
     "vendor": {
-      "name": "Trey Durden HVAC • Plumbing",
+      "name": "Best Comfort Heating & Cooling",
       "subtitle": "Commercial & Industrial Mechanical Contractor #044-819231",
       "rating": 4.9,
       "reviews": 420,
@@ -6995,7 +6995,7 @@ const BOILER_PRODUCTS = [
       "phone": "(815) 556-0660",
       "district": "Chicagoland Commercial & Industrial District",
       "scope": "ASME CSD-1 sign-off, digital flue gas combustion commissioning & heavy machinery rigging.",
-      "logo": "images/logos/td.jpg"
+      "logo": "images/best-comfort-logo.svg"
     },
     "bundleMatrix": {
       "boiler": {

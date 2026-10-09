@@ -1,244 +1,95 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Engineering & Consulting Services | Trey Durden</title>
-  <meta name="description" content="Trey Durden offers elite HVAC Consulting, HVAC Brokerage, Thermal Dynamic Engineering, and Thermal Applications Design.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <title>HVAC Services &amp; Solutions | Best Comfort Heating &amp; Cooling</title>
+  <meta name="description" content="Comprehensive residential, commercial and industrial HVAC services in Chicago. Heating, cooling, boilers, ventilation, and 24/7 emergency repairs.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Allura&family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Dancing+Script:wght@600;700&family=Great+Vibes&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=8.43">
-  <link rel="shortcut icon" href="images/favicon.svg" type="image/svg+xml">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Alex+Brush&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=10.3">
+  <link rel="shortcut icon" href="images/best-comfort-logo.svg" type="image/svg+xml">
 </head>
 <body>
 
-  <!-- Top Announcement Bar -->
-  <div class="top-announcement">
+  <!-- =========================================================================
+       1. TOP ANNOUNCEMENT / EMERGENCY BAR (Coral Red Banner)
+       ========================================================================= -->
+  <div class="bc-top-bar">
     <div class="container">
-      <div class="top-left-badges">
-        <span class="badge-live"><span class="live-dot"></span> HVAC Consultant &amp; Broker</span>
-        <span>Thermal Dynamic Engineering &amp; Design</span>
-        <span style="color: var(--color-cyan);">contact@treydurden.com</span>
-      </div>
-      <div class="top-right-contact">
-        <span>Direct Consultation:</span>
-        <a href="tel:6303617434" class="top-phone-link"><svg class="svg-icon" style="width:14px;height:14px;margin-right:4px;"><use href="#icon-phone"></use></svg>630-361-7434</a>
-      </div>
+      <span class="bc-top-bar-content">
+        24/7 Emergency HVAC Service &bull; Chicago <a href="tel:7732494733" class="bc-top-phone-link">(773) 249-4733</a>
+      </span>
     </div>
   </div>
 
-  <!-- Header Navigation -->
-  <header class="site-header">
-    <div class="container">
-      <div class="brand-logo-group">
-        <a href="index.html" class="brand-logo" aria-label="Trey Durden Home">
-          <span class="brand-script-name">Trey Durden</span>
-        </a>
-        <a href="tel:6303617434" class="header-phone-clean" aria-label="Call Trey Durden at 630-361-7434">
-          <svg class="header-phone-icon" viewBox="0 0 24 24"><use href="#icon-phone"></use></svg>
-          <span>630-361-7434</span>
-        </a>
-      </div>
+  <!-- =========================================================================
+       2. HEADER / NAVIGATION (Crisp Pure White)
+       ========================================================================= -->
+  <header class="bc-header">
+    <div class="container bc-header-container">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="bc-brand-logo" aria-label="Best Comfort Heating &amp; Cooling Home">
+        <img src="images/best-comfort-logo.svg" alt="Best Comfort Heating &amp; Cooling Logo" width="52" height="52">
+      </a>
 
-      <nav class="nav-menu" id="navMenu">
-        <div class="mobile-nav-top-bar">
-          <span class="mobile-nav-heading">TREY DURDEN MENU</span>
-          <button type="button" class="mobile-nav-close" id="mobileNavClose" aria-label="Close Menu">&times;</button>
-        </div>
-
-        <!-- 24/7 Emergency Service Callout for Mobile Drawer -->
-        <div class="mobile-nav-hotline">
-          <div class="mobile-hotline-badge"><span class="live-dot"></span> 24 Hours Emergency Service &bull; No Service Call Fees</div>
-          <a href="tel:6303617434" class="mobile-hotline-btn"><svg class="svg-icon" style="width:16px;height:16px;"><use href="#icon-phone"></use></svg> Call 630-361-7434</a>
-        </div>
-
-        <a href="index.html">Home</a>
-        <a href="products.html">Brokerage Portfolio</a>
-        <a href="about.html">About Trey</a>
-
-        <!-- Desktop Services 3-Level Menu (C?p 1: Services -> C?p 2: 4 Tr? C?t -> C?p 3: Chi ti?t) -->
-        <div class="nav-item-dropdown desktop-only-nav" id="servicesDropdown">
-          <div class="nav-dropdown-trigger-row">
-            <a href="services.html" class="nav-main-link active">Services <span class="dropdown-caret">&#9662;</span></a>
-          </div>
-
-          <!-- Level 2: 4 Core Pillars -->
-          <ul class="dropdown-menu nav-cascade-dropdown">
-            <!-- Level 2.1: Air Conditioning Service -->
-            <li class="cascade-item">
-              <a href="services.html#air-conditioning" class="cascade-link">
-                <span class="cascade-title"><svg class="svg-icon" style="width:14px;height:14px;margin-right:6px;"><use href="#icon-snowflake"></use></svg>Air Conditioning Service</span>
-                <span class="cascade-arrow">&#8250;</span>
-              </a>
-              <!-- Level 3: Detail Flyout -->
-              <div class="cascade-flyout">
-                <div class="cascade-flyout-header">
-                  <span>Air Conditioning Practice</span>
-                </div>
-                <div class="cascade-tier-label">Residential AC</div>
-                <ul class="cascade-sub-list">
-                  <li><a href="services.html#residential-ac-repair">~Residential Air Conditioning Repair</a></li>
-                  <li><a href="services.html#residential-ac-service">~Residential Air Conditioning Service</a></li>
-                  <li><a href="services.html#residential-ac-installation">~Residential Air Conditioning Installation</a></li>
-                  <li><a href="services.html#residential-ac-inspections">~Residential HVAC Reports and Inspections</a></li>
-                </ul>
-                <div class="cascade-tier-label">Commercial AC</div>
-                <ul class="cascade-sub-list">
-                  <li><a href="services.html#commercial-ac-repair">~Commercial Air Conditioning Repair</a></li>
-                  <li><a href="services.html#commercial-ac-service">~Commercial Air Conditioning Service</a></li>
-                  <li><a href="services.html#commercial-ac-installation">~Commercial Air Conditioning Installation</a></li>
-                  <li><a href="services.html#commercial-ac-inspections">~Commercial HVAC Reports and Inspections</a></li>
-                </ul>
-              </div>
-            </li>
-
-            <!-- Level 2.2: HVAC Broker -->
-            <li class="cascade-item">
-              <a href="services.html#hvac-broker" class="cascade-link">
-                <span class="cascade-title"><svg class="svg-icon" style="width:14px;height:14px;margin-right:6px;"><use href="#icon-tools"></use></svg>HVAC Broker</span>
-                <span class="cascade-arrow">&#8250;</span>
-              </a>
-              <!-- Level 3: Detail Flyout -->
-              <div class="cascade-flyout">
-                <div class="cascade-flyout-header">
-                  <span>Direct HVAC Brokerage</span>
-                </div>
-                <div class="cascade-tier-label">Estimates &amp; Procurement</div>
-                <ul class="cascade-sub-list">
-                  <li><a href="services.html#residential-broker">~Residential Estimates Broker</a></li>
-                  <li><a href="services.html#commercial-broker">~Commercial Estimates Broker</a></li>
-                </ul>
-              </div>
-            </li>
-
-            <!-- Level 2.3: Thermal Application Engineering -->
-            <li class="cascade-item">
-              <a href="services.html#thermal-dynamic" class="cascade-link">
-                <span class="cascade-title"><svg class="svg-icon" style="width:14px;height:14px;margin-right:6px;"><use href="#icon-fire"></use></svg>Thermal Applications</span>
-                <span class="cascade-arrow">&#8250;</span>
-              </a>
-              <!-- Level 3: Detail Flyout -->
-              <div class="cascade-flyout">
-                <div class="cascade-flyout-header">
-                  <span>Thermal Applications</span>
-                </div>
-                <div class="cascade-tier-label">Practice Scope</div>
-                <ul class="cascade-sub-list">
-                  <li><a href="services.html#residential-concerns">~Residential Concerns</a></li>
-                  <li><a href="services.html#commercial-concerns">~Commercial Concerns</a></li>
-                  <li><a href="services.html#industrial-concerns">~Industrial Concerns</a></li>
-                </ul>
-              </div>
-            </li>
-
-            <!-- Level 2.4: Boiler Services -->
-            <li class="cascade-item">
-              <a href="services.html#boiler-services" class="cascade-link">
-                <span class="cascade-title"><svg class="svg-icon" style="width:14px;height:14px;margin-right:6px;"><use href="#icon-gear"></use></svg>Boiler Services</span>
-                <span class="cascade-arrow">&#8250;</span>
-              </a>
-              <!-- Level 3: Detail Flyout -->
-              <div class="cascade-flyout">
-                <div class="cascade-flyout-header">
-                  <span>Certified Boiler Practice</span>
-                </div>
-                <div class="cascade-tier-label">Master Engineering</div>
-                <ul class="cascade-sub-list">
-                  <li><a href="services.html#boiler-consulting">~Boiler Consulting</a></li>
-                  <li><a href="services.html#boiler-inspections">~Boiler Inspections and Reports</a></li>
-                  <li><a href="services.html#boiler-repair">~Boiler Service and Repair</a></li>
-                  <li><a href="services.html#boiler-installation">~Boiler Installation</a></li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Mobile Categories Accordion (Directly inside Hamburger Drawer on Mobile) -->
-        <div class="mobile-only-categories">
-          <!-- 1. Air Conditioning Service -->
-          <div class="menu-cat-block is-open">
-            <button type="button" class="menu-cat-btn" aria-expanded="true">
-              <span>Air Conditioning Service</span>
-              <span class="menu-cat-arrow">?</span>
-            </button>
-            <div class="menu-cat-dropdown">
-              <div class="menu-tier-heading">Residential AC</div>
-              <a href="services.html#residential-ac-repair" class="menu-item-link">~Residential Air Conditioning Repair</a>
-              <a href="services.html#residential-ac-service" class="menu-item-link">~Residential Air Conditioning Service</a>
-              <a href="services.html#residential-ac-installation" class="menu-item-link">~Residential Air Conditioning Installation</a>
-              <a href="services.html#residential-ac-inspections" class="menu-item-link">~Residential HVAC Reports and Inspections</a>
-              <div class="menu-tier-heading">Commercial AC</div>
-              <a href="services.html#commercial-ac-repair" class="menu-item-link">~Commercial Air Conditioning Repair</a>
-              <a href="services.html#commercial-ac-service" class="menu-item-link">~Commercial Air Conditioning Service</a>
-              <a href="services.html#commercial-ac-installation" class="menu-item-link">~Commercial Air Conditioning Installation</a>
-              <a href="services.html#commercial-ac-inspections" class="menu-item-link">~Commercial HVAC Reports and Inspections</a>
-            </div>
-          </div>
-
-          <!-- 2. HVAC Broker -->
-          <div class="menu-cat-block">
-            <button type="button" class="menu-cat-btn" aria-expanded="false">
-              <span>HVAC Broker</span>
-              <span class="menu-cat-arrow">?</span>
-            </button>
-            <div class="menu-cat-dropdown">
-              <a href="services.html#residential-broker" class="menu-item-link">~Residential Estimates Broker</a>
-              <a href="services.html#commercial-broker" class="menu-item-link">~Commercial Estimates Broker</a>
-            </div>
-          </div>
-
-          <!-- 3. Thermal Application Engineering -->
-          <div class="menu-cat-block">
-            <button type="button" class="menu-cat-btn" aria-expanded="false">
-              <span>Thermal Application Engineering</span>
-              <span class="menu-cat-arrow">?</span>
-            </button>
-            <div class="menu-cat-dropdown">
-              <a href="services.html#residential-concerns" class="menu-item-link">~Residential Concerns</a>
-              <a href="services.html#commercial-concerns" class="menu-item-link">~Commercial Concerns</a>
-              <a href="services.html#industrial-concerns" class="menu-item-link">~Industrial Concerns</a>
-            </div>
-          </div>
-
-          <!-- 4. Boiler Services -->
-          <div class="menu-cat-block">
-            <button type="button" class="menu-cat-btn" aria-expanded="false">
-              <span>Boiler Services</span>
-              <span class="menu-cat-arrow">?</span>
-            </button>
-            <div class="menu-cat-dropdown">
-              <a href="services.html#boiler-consulting" class="menu-item-link">~Boiler Consulting</a>
-              <a href="services.html#boiler-inspections" class="menu-item-link">~Boiler Inspections and Reports</a>
-              <a href="services.html#boiler-repair" class="menu-item-link">~Boiler Service and Repair</a>
-              <a href="services.html#boiler-installation" class="menu-item-link">~Boiler Installation</a>
-            </div>
-          </div>
-        </div>
-
-        <a href="services.html#consulting" class="nav-main-link">Consulting</a>
-        <a href="contact.html" class="nav-main-link">Contact</a>
-
-        <div class="mobile-nav-footer-cta">
-          <a href="tel:6303617434" class="btn btn-hero-call" style="width: 100%; justify-content: center;"><svg class="svg-icon" style="width:14px;height:14px;margin-right:6px;"><use href="#icon-phone"></use></svg>Call 630-361-7434</a>
-          <a href="contact.html" class="btn btn-primary" style="width: 100%; justify-content: center;">Book Consultation</a>
-        </div>
+      <!-- Desktop Nav Menu -->
+      <nav class="bc-nav-menu">
+        <a href="index.html" class="bc-nav-link">Home</a>
+        <a href="services.html" class="bc-nav-link active">Services</a>
+        <a href="products.html" class="bc-nav-link">Comfort Options</a>
+        <a href="about.html" class="bc-nav-link">About</a>
+        <a href="services.html#service-areas" class="bc-nav-link">Service Areas</a>
+        <a href="about.html#faq" class="bc-nav-link">FAQ</a>
+        <a href="contact.html" class="bc-nav-link">Contact</a>
       </nav>
 
-      <div class="header-right">
-        <a href="contact.html" class="btn btn-primary" style="padding: 10px 22px; font-size: 0.9rem;">Book Consultation</a>
-        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle Navigation"><svg class="svg-icon" style="width:20px;height:20px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+      <!-- Header Actions -->
+      <div class="bc-header-actions">
+        <a href="tel:7732494733" class="bc-header-phone">
+          <svg class="bc-header-phone-icon" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.21 2.2z"/></svg>
+          <span>Call (773) 249-4733</span>
+        </a>
+        <a href="contact.html" class="bc-btn-schedule">Schedule Service</a>
+        <button class="bc-mobile-toggle" id="bcMobileToggle" aria-label="Toggle Navigation">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
       </div>
+
     </div>
   </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="bc-mobile-drawer" id="bcMobileDrawer">
+    <div class="bc-drawer-content">
+      <div class="bc-drawer-header">
+        <img src="images/best-comfort-logo.svg" alt="Best Comfort Heating &amp; Cooling" height="42">
+        <button class="bc-drawer-close" id="bcMobileClose">&times;</button>
+      </div>
+      <div class="bc-drawer-links">
+        <a href="index.html">Home</a>
+        <a href="services.html" class="active">Services</a>
+        <a href="products.html">Comfort Options</a>
+        <a href="about.html">About</a>
+        <a href="services.html#service-areas">Service Areas</a>
+        <a href="about.html#faq">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div style="margin-top:auto; display:flex; flex-direction:column; gap:12px;">
+        <a href="tel:7732494733" class="bc-btn-outline" style="text-align:center;">Call (773) 249-4733</a>
+        <a href="contact.html" class="bc-btn-schedule" style="text-align:center;">Schedule Service</a>
+      </div>
+    </div>
+  </div>
 
   <!-- Subpage Hero -->
   <section class="subpage-hero">
     <div class="container">
       <span class="badge badge-gradient">Strategic Advisory &amp; Engineering</span>
       <h1>Consulting, Brokerage &amp; Boiler Services</h1>
-      <p>Elite HVAC Consulting, direct equipment brokerage, precision Thermal Dynamic Engineering, and certified 24/7 boiler repair by Trey Durden.</p>
+      <p>Elite HVAC Consulting, direct equipment brokerage, precision Thermal Dynamic Engineering, and certified 24/7 boiler repair by Best Comfort Heating &amp; Cooling.</p>
     </div>
   </section>
 
@@ -297,7 +148,7 @@
               </div>
             </div>
             <div style="margin-top: 18px; display: flex; gap: 12px; flex-wrap: wrap;">
-              <a href="tel:6303617434" class="btn btn-hero-call" style="padding: 10px 20px; font-size: 0.88rem;"><svg class="svg-icon" style="width:14px;height:14px;margin-right:6px;"><use href="#icon-phone"></use></svg>Call 630-361-7434 (24/7)</a>
+              <a href="tel:7732494733" class="btn btn-hero-call" style="padding: 10px 20px; font-size: 0.88rem;"><svg class="svg-icon" style="width:14px;height:14px;margin-right:6px;"><use href="#icon-phone"></use></svg>Call (773) 249-4733 (24/7)</a>
               <a href="contact.html" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.88rem;">Request AC Estimate &rarr;</a>
             </div>
           </div>
@@ -345,7 +196,7 @@
           <div class="accordion-content">
             <div class="grid-2" style="margin-top: 14px; gap: 20px; align-items: flex-start;">
               <div>
-                <p style="margin-top: 0;">Advanced thermodynamic analysis, fluid dynamics modeling, and micro-climate architectural design engineered by Trey Durden.</p>
+                <p style="margin-top: 0;">Advanced thermodynamic analysis, fluid dynamics modeling, and micro-climate architectural design engineered by Best Comfort mechanical specialists.</p>
                 <ul class="emoji-bullet-list" style="margin-top: 10px;">
                   <li id="residential-concerns"><span class="bullet-emoji salmon"><svg class="svg-icon" style="width:14px;height:14px;"><use href="#icon-check"></use></svg></span> <strong>Residential Concerns:</strong> Hot/cold spot remediation, building envelope heat gain/loss calculations (Manual J/D/S), and whisper-quiet acoustic baffles.</li>
                   <li id="commercial-concerns"><span class="bullet-emoji salmon"><svg class="svg-icon" style="width:14px;height:14px;"><use href="#icon-check"></use></svg></span> <strong>Commercial Concerns:</strong> Server room spot cooling, multi-story pressurization, and energy recovery ventilation (ERV).</li>
@@ -387,7 +238,7 @@
               </div>
             </div>
             <div style="margin-top: 18px; display: flex; gap: 12px; flex-wrap: wrap;">
-              <a href="tel:6303617434" class="btn btn-hero-call" style="padding: 10px 20px; font-size: 0.88rem;"><svg class="svg-icon" style="width:14px;height:14px;margin-right:6px;"><use href="#icon-phone"></use></svg>24/7 Boiler Hotline: 630-361-7434</a>
+              <a href="tel:7732494733" class="btn btn-hero-call" style="padding: 10px 20px; font-size: 0.88rem;"><svg class="svg-icon" style="width:14px;height:14px;margin-right:6px;"><use href="#icon-phone"></use></svg>24/7 Boiler Hotline: (773) 249-4733</a>
               <a href="contact.html" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.88rem;">Schedule Boiler Service &rarr;</a>
             </div>
           </div>
@@ -396,80 +247,102 @@
       </div>
     </div>
   </section>
-    </div>
-  </section>
 
-  <!-- Footer -->
-  <footer class="site-footer">
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="bc-footer">
     <div class="container">
-      <div class="footer-grid">
-        <div class="footer-col">
-                    <div class="footer-brand-wrap" style="margin-bottom: 18px;">
-            <a href="index.html" class="brand-logo" aria-label="Trey Durden Home">
-              <span class="brand-script-name" style="font-size: 2.2rem; color: #ebd7b2;">Trey Durden</span>
+      <div class="bc-footer-grid">
+        
+        <!-- Brand & Mission Column -->
+        <div class="bc-footer-logo-wrap">
+          <img src="images/best-comfort-logo.svg" alt="Best Comfort Heating &amp; Cooling Logo" width="64" height="64">
+          <p class="bc-footer-desc">
+            Heating, cooling, boiler, indoor air comfort, maintenance and equipment support for homes and businesses across Chicagoland.
+          </p>
+          <a href="contact.html" class="bc-btn-schedule" style="font-size:0.88rem; padding:9px 20px;">Schedule Service</a>
+          
+          <div class="bc-footer-socials">
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="bc-social-btn" aria-label="Facebook">
+              <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
             </a>
-            <p style="font-size: 0.72rem; color: var(--color-cyan); text-transform: uppercase; letter-spacing: 0.12em; font-weight: 700; margin: 4px 0 0 2px;">
-              Thermal Applications Engineer &bull; HVAC Broker
-            </p>
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="bc-social-btn" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="18" cy="6" r="1.5"/></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="bc-social-btn" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" class="bc-social-btn" aria-label="YouTube">
+              <svg viewBox="0 0 24 24"><path d="M21.58 7.19a2.5 2.5 0 00-1.76-1.77C18.26 5 12 5 12 5s-6.26 0-7.82.42A2.5 2.5 0 002.42 7.2 26.54 26.54 0 002 12a26.54 26.54 0 00.42 4.81 2.5 2.5 0 001.76 1.77C5.74 19 12 19 12 19s6.26 0 7.82-.42a2.5 2.5 0 001.76-1.77A26.54 26.54 0 0022 12a26.54 26.54 0 00-.42-4.81zM10 15V9l5.2 3L10 15z"/></svg>
+            </a>
           </div>
-          <p style="font-size: 0.92rem; margin-bottom: 15px; color: #94a3b8;">
-            Premier HVAC Consulting, Brokerage, and Thermal Dynamic Engineering.
-          </p>
-          <p style="font-weight: 800; font-size: 1.1rem; display: flex; align-items: center; gap: 8px;">
-            <svg class="svg-icon" style="width:18px;height:18px;color:var(--color-salmon);"><use href="#icon-phone"></use></svg>
-            <a href="tel:6303617434" style="color: var(--color-salmon); text-decoration: none;">630-361-7434</a>
-          </p>
-          <p style="font-size: 0.88rem; margin-top: 6px; display: flex; align-items: center; gap: 8px;">
-            <svg class="svg-icon" style="width:16px;height:16px;color:var(--color-salmon);"><use href="#icon-mail"></use></svg>
-            <a href="mailto:contact@treydurden.com" style="color: var(--color-text-light); text-decoration: none;">contact@treydurden.com</a>
-          </p>
-          <p style="font-size: 0.88rem; display: flex; align-items: center; gap: 8px; margin-top: 6px;">
-            <svg class="svg-icon" style="width:16px;height:16px;color:var(--color-salmon);"><use href="#icon-globe"></use></svg>
-            <span style="color: var(--color-text-light);">TreyDurden.com</span>
-          </p>
         </div>
 
-        <div class="footer-col">
-          <h4>Navigation</h4>
-          <ul class="footer-links">
-            <li><a href="index.html">Home Overview</a></li>
-            <li><a href="products.html">Brokerage Portfolio</a></li>
-            <li><a href="about.html">About Trey Durden</a></li>
-            <li><a href="services.html">Consulting Services</a></li>
-            <li><a href="contact.html">Book Consultation</a></li>
+        <!-- Column 2: Services -->
+        <div>
+          <h4 class="bc-footer-heading">Services</h4>
+          <ul class="bc-footer-links">
+            <li><a href="services.html#heating">Heating Services</a></li>
+            <li><a href="services.html#cooling">Cooling Services</a></li>
+            <li><a href="services.html#indoor-air-quality">Indoor Air Quality</a></li>
+            <li><a href="tel:7732494733">24/7 Emergency</a></li>
+            <li><a href="services.html#maintenance">Maintenance</a></li>
           </ul>
         </div>
 
-        <div class="footer-col">
-          <h4>Core Pillars</h4>
-          <ul class="footer-links">
-            <li><a href="services.html#air-conditioning">Air Conditioning Service</a></li>
-            <li><a href="services.html#hvac-broker">HVAC Brokerage</a></li>
-            <li><a href="services.html#thermal-dynamic">Thermal Applications</a></li>
-            <li><a href="services.html#boiler-services">Boiler Services &amp; Repair</a></li>
+        <!-- Column 3: Company -->
+        <div>
+          <h4 class="bc-footer-heading">Company</h4>
+          <ul class="bc-footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Financing</a></li>
+            <li><a href="services.html#service-areas">Service Areas</a></li>
+            <li><a href="about.html#faq">FAQs</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
 
-        <div class="footer-col">
-          <h4>Engineering Practice</h4>
-          <p style="font-size: 0.85rem; color: #cbd5e1; margin-bottom: 8px;">
-            <strong>Consultation:</strong> Mon&ndash;Fri: 8:00 AM &ndash; 6:00 PM<br>
-            <strong>Coverage:</strong> National Consulting
+        <!-- Column 4: Contact -->
+        <div>
+          <h4 class="bc-footer-heading">Contact</h4>
+          <p class="bc-footer-contact-item">
+            Phone: <a href="tel:7732494733"><strong>(773) 249-4733</strong></a>
           </p>
-          <p style="color: var(--color-cyan); font-size: 0.85rem; margin-top: 10px;">
-            NATE-Certified &bull; EPA Universal &bull; Thermal Applications
+          <p class="bc-footer-contact-item">
+            Email: <a href="mailto:support@bestcomforthvac.com">support@bestcomforthvac.com</a>
+          </p>
+          <p class="bc-footer-contact-item">
+            8729 S Commercial Ave, Chicago, IL 60617
+          </p>
+          <p class="bc-footer-contact-item" style="color:var(--bc-coral); font-weight:750; margin-top:14px;">
+            Emergency service: 24 hours / 7 days
           </p>
         </div>
+
       </div>
 
-      <div class="footer-bottom">
-        <p>&copy; 2026 Trey Durden. All rights reserved. TreyDurden.com &bull; HVAC Consulting &amp; Brokerage.</p>
-        <p>100% Pure Handcrafted HTML5/CSS3/Vanilla JS</p>
+      <!-- Bottom Copyright Bar -->
+      <div class="bc-footer-bottom">
+        <div>&copy; 2026 Best Comfort HVAC. All rights reserved.</div>
+        <div>Residential &bull; Commercial &bull; Industrial HVAC service</div>
       </div>
     </div>
   </footer>
 
+  <!-- =========================================================================
+       FLOATING WIDGETS (Need Help? & Scroll to Top)
+       ========================================================================= -->
+  <div class="bc-floating-widgets">
+    <a href="tel:7732494733" class="bc-floating-help-btn" title="Need Help? Call (773) 249-4733">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z"/></svg>
+      <span>Need Help?</span>
+    </a>
+    <button class="bc-scroll-top-btn" id="bcScrollTop" title="Scroll to top">&uarr;</button>
+  </div>
+
   <script src="js/icons.js"></script>
-  <script src="js/main.js?v=8.20"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

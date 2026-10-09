@@ -1,19 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Best Comfort | Chicago Heating &amp; Air Conditioning Experts</title>
-  <meta name="description" content="Learn about Best Comfort Heating &amp; Cooling - Chicago's trusted HVAC company providing 24/7 heating, cooling and emergency repair services.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Alex+Brush&family=Great+Vibes&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=10.3">
-  <link rel="shortcut icon" href="images/best-comfort-logo.svg" type="image/svg+xml">
-</head>
-<body>
+const fs = require('fs');
+const path = require('path');
 
-  <!-- =========================================================================
+const pdpPath = path.join(__dirname, '..', 'product-detail.html');
+let content = fs.readFileSync(pdpPath, 'utf8');
+
+const headerReplacement = `  <!-- =========================================================================
        1. TOP ANNOUNCEMENT / EMERGENCY BAR (Coral Red Banner)
        ========================================================================= -->
   <div class="bc-top-bar">
@@ -39,8 +30,8 @@
       <nav class="bc-nav-menu">
         <a href="index.html" class="bc-nav-link">Home</a>
         <a href="services.html" class="bc-nav-link">Services</a>
-        <a href="products.html" class="bc-nav-link">Comfort Options</a>
-        <a href="about.html" class="bc-nav-link active">About</a>
+        <a href="products.html" class="bc-nav-link active">Comfort Options</a>
+        <a href="about.html" class="bc-nav-link">About</a>
         <a href="services.html#service-areas" class="bc-nav-link">Service Areas</a>
         <a href="about.html#faq" class="bc-nav-link">FAQ</a>
         <a href="contact.html" class="bc-nav-link">Contact</a>
@@ -71,8 +62,8 @@
       <div class="bc-drawer-links">
         <a href="index.html">Home</a>
         <a href="services.html">Services</a>
-        <a href="products.html">Comfort Options</a>
-        <a href="about.html" class="active">About</a>
+        <a href="products.html" class="active">Comfort Options</a>
+        <a href="about.html">About</a>
         <a href="services.html#service-areas">Service Areas</a>
         <a href="about.html#faq">FAQ</a>
         <a href="contact.html">Contact</a>
@@ -82,46 +73,9 @@
         <a href="contact.html" class="bc-btn-schedule" style="text-align:center;">Schedule Service</a>
       </div>
     </div>
-  </div>
+  </div>`;
 
-  <!-- Subpage Hero -->
-  <section class="subpage-hero">
-    <div class="container">
-      <span class="badge badge-gradient">Company Profile &amp; Heritage</span>
-      <h1>About Best Comfort Heating &amp; Cooling</h1>
-      <p>Chicagoland HVAC Specialists, Premium Equipment Installers, and Mechanical Applications Engineers dedicated to high-performance climate systems.</p>
-    </div>
-  </section>
-
-  <!-- Bio & Philosophy -->
-  <section class="section about-profile-section">
-    <div class="container">
-      <div class="grid-2" style="align-items: center; gap: 40px;">
-        <div>
-          <span class="badge badge-salmon">ENGINEERING HERITAGE</span>
-          <h2>Engineering Comfort Through <span>Strategic Advisory</span></h2>
-          <p style="color: var(--color-text-muted); font-size: 1.05rem; line-height: 1.8; margin: 15px 0;">
-            Best Comfort Heating &amp; Cooling is Chicagoland's premier heating, ventilation, and air conditioning contractor. Transitioning from hands-on mechanical diagnostics to high-efficiency turnkey installations, our team leverages deep thermodynamic engineering to deliver reliable home comfort, transparent pricing, and 24/7 emergency service.
-          </p>
-          <ul class="emoji-bullet-list">
-            <li><span class="bullet-emoji salmon"><svg class="svg-icon" style="width:14px;height:14px;"><use href="#icon-check"></use></svg></span> <strong>Master Technicians:</strong> Strategic advisory for complex HVAC builds and replacements.</li>
-            <li><span class="bullet-emoji pink"><svg class="svg-icon" style="width:14px;height:14px;"><use href="#icon-check"></use></svg></span> <strong>Exclusive Sourcing:</strong> Direct-from-manufacturer allocation of Carrier, Bosch, and Daikin systems.</li>
-            <li><span class="bullet-emoji blue"><svg class="svg-icon" style="width:14px;height:14px;"><use href="#icon-check"></use></svg></span> <strong>Thermal Dynamics:</strong> Precision heat transfer modeling and psychrometrics for Chicago weather.</li>
-            <li><span class="bullet-emoji salmon"><svg class="svg-icon" style="width:14px;height:14px;"><use href="#icon-check"></use></svg></span> <strong>Turnkey Installation:</strong> Clean, quiet, and code-certified municipal installations.</li>
-          </ul>
-          <div style="margin-top: 25px;">
-            <a href="contact.html" class="btn btn-primary">Schedule Consultation &rarr;</a>
-          </div>
-        </div>
-
-        <div style="border-radius: 12px; overflow: hidden; border: 1px solid var(--color-border);">
-          <img src="images/hvac-hero.jpg" alt="Best Comfort Heating &amp; Cooling Technicians" style="width: 100%; height: 360px; object-fit: cover;">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- =========================================================================
+const footerReplacement = `  <!-- =========================================================================
        FOOTER
        ========================================================================= -->
   <footer class="bc-footer">
@@ -216,6 +170,25 @@
   </div>
 
   <script src="js/icons.js"></script>
-  <script src="js/main.js"></script>
-</body>
-</html>
+  <script src="js/main.js"></script>`;
+
+// Match header: from <!-- Top Announcement Bar --> to </header>
+const headerRegex = /<!-- Top Announcement Bar -->[\s\S]*?<\/header>/;
+if (headerRegex.test(content)) {
+  content = content.replace(headerRegex, headerReplacement.trim());
+  console.log('Header successfully replaced in product-detail.html');
+} else {
+  console.error('Header regex did not match in product-detail.html');
+}
+
+// Match footer: from <!-- Footer --> to <script src="js/main.js.*?><\/script>
+const footerRegex = /<!-- Footer -->[\s\S]*?<script src="js\/main\.js[^"]*"><\/script>/;
+if (footerRegex.test(content)) {
+  content = content.replace(footerRegex, footerReplacement.trim());
+  console.log('Footer successfully replaced in product-detail.html');
+} else {
+  console.error('Footer regex did not match in product-detail.html');
+}
+
+fs.writeFileSync(pdpPath, content, 'utf8');
+console.log('product-detail.html saved successfully.');

@@ -411,13 +411,15 @@
 
   function initFulfillment() {
     const vendor = currentProduct.vendor || {
-      name: "Blue Flame Heating & Air Solutions",
+      name: "Best Comfort Heating & Cooling",
       subtitle: "Premier Factory Authorized Mechanical Dealer",
       rating: 4.9,
       reviews: 312,
       status: "Local Delivery Included",
       earliestInstall: "Thursday, Oct 19",
-      phone: "(815) 556-0660",
+      phone: "(773) 249-4733",
+      district: "Chicagoland Mechanical Service Area",
+      logo: "images/best-comfort-logo.svg",
       scope: "Includes municipal mechanical permits, certified install, old equipment haul-away & 1-year labor guarantee."
     };
 
@@ -529,8 +531,8 @@
       bookingForm.addEventListener('submit', (e) => {
         e.preventDefault();
         const dateVal = document.getElementById('pdpInputDate')?.value || 'Thursday, Oct 19';
-        const phoneVal = document.getElementById('pdpInputPhone')?.value || '(815) 556-0660';
-        const vendorName = currentProduct.vendor ? currentProduct.vendor.name : 'Blue Flame Heating & Air Solutions';
+        const phoneVal = document.getElementById('pdpInputPhone')?.value || '(773) 249-4733';
+        const vendorName = currentProduct.vendor ? currentProduct.vendor.name : 'Best Comfort Heating & Cooling';
 
         closeModal();
         showToast(
