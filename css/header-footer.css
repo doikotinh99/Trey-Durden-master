@@ -452,8 +452,8 @@
   .bc-btn-schedule { padding: 8px 14px; font-size: 0.82rem; }
   .bc-footer-grid { grid-template-columns: 1fr; gap: 32px; }
   .bc-footer-bottom { flex-direction: column; text-align: center; justify-content: center; }
-  .bc-floating-widgets { bottom: 16px; right: 16px; gap: 8px; }
-  .bc-floating-help-btn { padding: 8px 14px; font-size: 0.80rem; }
+  .bc-floating-widgets { bottom: 12px; right: 12px; gap: 8px; }
+  .bc-floating-help-btn { display: none !important; }
   .bc-scroll-top-btn { width: 34px; height: 34px; font-size: 0.95rem; }
 }
 

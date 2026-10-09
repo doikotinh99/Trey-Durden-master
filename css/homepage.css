@@ -448,6 +448,17 @@ body {
   color: #ffffff;
 }
 
+.bc-btn-call-dominant {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Mobile 8 Core Services Micro-Grid (Desktop: Hidden) */
+.bc-hero-mobile-services {
+  display: none;
+}
+
 /* Badges under buttons */
 .bc-hero-badges-row {
   display: flex;
@@ -547,55 +558,24 @@ body {
   letter-spacing: 0.02em;
 }
 
-/* Tabs */
-.bc-hub-tabs {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 8px;
-  background: rgba(2, 14, 28, 0.65);
-  padding: 5px;
-  border-radius: 12px;
-  margin-bottom: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.09);
+/* Hub Header Intro (Replaces tabs for prominent 8-service display) */
+.bc-hub-header-intro {
+  margin-bottom: 14px;
 }
 
-.bc-hub-tab {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 7px;
-  padding: 9px 12px;
-  border-radius: 9px;
-  border: none;
-  background: transparent;
-  color: #94a3b8;
-  font-size: 0.82rem;
-  font-weight: 700;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  font-family: inherit;
-}
-
-.bc-hub-tab:hover {
-  color: #ffffff;
-}
-
-.bc-hub-tab.active {
-  background: linear-gradient(135deg, #1847ff 0%, #0074cc 100%);
-  color: #ffffff;
-  box-shadow: 0 4px 14px rgba(24, 71, 255, 0.35);
-}
-
-.bc-tab-count {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 19px;
-  height: 19px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.2);
-  font-size: 0.68rem;
+.bc-hub-heading {
+  font-size: 0.98rem;
   font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 3px;
+  line-height: 1.3;
+}
+
+.bc-hub-subheading {
+  font-size: 0.77rem;
+  color: #94a3b8;
+  margin: 0;
+  line-height: 1.3;
 }
 
 .bc-hub-panel {
@@ -778,6 +758,33 @@ body {
 .bc-statement-badge.badge-purple {
   background: rgba(168, 85, 247, 0.2);
   color: #c084fc;
+}
+
+/* Hub Trust Value Props Strip inside Card */
+.bc-hub-trust-strip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 0.74rem;
+  font-weight: 650;
+  color: #cbd5e1;
+  padding: 12px 0 4px;
+  margin-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.bc-hub-trust-strip span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.bc-hub-bullet {
+  color: rgba(255, 255, 255, 0.35);
+  font-size: 0.65rem;
 }
 
 /* Footer of Hub Card */
@@ -2392,82 +2399,193 @@ body {
     margin-bottom: 10px;
   }
 
-  /* Hero Section Mobile */
+  /* Hero Section Mobile - "No Scroll" Above-the-Fold CRO Optimization */
   .bc-hero-section {
-    padding: 38px 0 52px;
+    padding: 16px 0 20px;
     background-position: center right;
+    min-height: auto;
+    align-items: flex-start;
+  }
+
+  .bc-hero-container {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .bc-hero-eyebrow {
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    margin-bottom: 8px;
+    gap: 8px;
+  }
+
+  .bc-hero-eyebrow::before {
+    width: 20px;
+    height: 2px;
   }
 
   .bc-hero-title {
-    font-size: 2.05rem;
-    line-height: 1.15;
-    margin-bottom: 14px;
+    font-size: clamp(1.58rem, 5.6vw, 1.95rem);
+    line-height: 1.12;
+    letter-spacing: -0.025em;
+    margin: 0 0 10px;
   }
 
+  /* Compact Horizontal Wrap for 3 Trust Badges (Zero vertical bloat) */
   .bc-hero-highlight-pills {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 8px;
-    margin-bottom: 16px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 10px;
   }
 
   .bc-hero-pill {
-    width: 100%;
+    width: auto !important;
     box-sizing: border-box;
     justify-content: flex-start;
+    padding: 4px 10px;
+    font-size: 0.70rem;
+    gap: 6px;
+    border-radius: 999px;
+  }
+
+  .bc-pill-icon {
+    width: 12px;
+    height: 12px;
   }
 
   .bc-hero-desc {
-    font-size: 0.94rem;
-    line-height: 1.55;
-    margin-bottom: 20px;
+    font-size: 0.82rem;
+    line-height: 1.4;
+    margin-bottom: 12px;
+    color: #cbd5e1;
   }
 
+  /* Mobile Primary Conversion Actions */
   .bc-hero-actions {
     flex-direction: column;
     align-items: stretch;
-    gap: 12px;
-    margin-bottom: 20px;
-  }
-
-  .bc-hero-actions .bc-btn-hero-primary,
-  .bc-hero-actions .bc-btn-hero-call {
-    width: 100%;
-    justify-content: center;
-    text-align: center;
-    padding: 13px 20px;
-  }
-
-  .bc-hero-badges-row {
-    gap: 12px;
-  }
-
-  /* Hub Card Mobile */
-  .bc-hero-hub-card {
-    padding: 18px 16px;
-    border-radius: 16px;
-  }
-
-  .bc-hub-services-grid {
-    grid-template-columns: 1fr;
     gap: 8px;
+    margin-bottom: 12px;
   }
 
-  .bc-hub-statements-list {
-    grid-template-columns: 1fr;
-    gap: 7px;
-  }
-
-  .bc-hub-footer {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 10px;
-    text-align: center;
-  }
-
-  .bc-hub-call-btn {
-    width: 100%;
+  /* Dominant Call CTA Button (Full-width, solid high contrast, phone icon, prominent touch target) */
+  .bc-btn-hero-primary.bc-btn-call-dominant {
+    width: 100% !important;
+    min-height: 52px;
+    font-size: 1.05rem !important;
+    font-weight: 850 !important;
+    padding: 13px 20px !important;
     justify-content: center;
+    text-align: center;
+    box-shadow: 0 10px 28px rgba(234, 76, 89, 0.6) !important;
+    border-radius: var(--bc-radius-pill);
+    gap: 10px;
+  }
+
+  .bc-btn-hero-call {
+    width: 100% !important;
+    justify-content: center;
+    text-align: center;
+    padding: 9px 16px !important;
+    font-size: 0.82rem !important;
+  }
+
+  /* Mobile 8 Core Services Micro-Grid / Chip List (Directly beneath conversion buttons) */
+  .bc-hero-mobile-services {
+    display: block;
+    margin-bottom: 12px;
+  }
+
+  .bc-mobile-services-label {
+    font-size: 0.68rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #38bdf8;
+    margin-bottom: 6px;
+  }
+
+  .bc-mobile-services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+  }
+
+  .bc-service-chip {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 8px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 7px;
+    color: #e2e8f0;
+    font-size: 0.68rem;
+    font-weight: 600;
+    line-height: 1.2;
+    text-decoration: none;
+    backdrop-filter: blur(4px);
+    transition: all 0.2s ease;
+  }
+
+  .bc-service-chip:active,
+  .bc-service-chip:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(56, 189, 248, 0.5);
+    color: #ffffff;
+  }
+
+  .bc-service-chip .bc-chip-check {
+    color: #38bdf8;
+    font-size: 0.72rem;
+    font-weight: 800;
+    flex-shrink: 0;
+  }
+
+  .bc-service-chip.highlight {
+    border-color: rgba(234, 76, 89, 0.35);
+    background: rgba(234, 76, 89, 0.09);
+    color: #ffffff;
+  }
+
+  .bc-service-chip.highlight .bc-chip-check {
+    color: #ff6b7a;
+  }
+
+  /* Verification Badges Row Mobile */
+  .bc-hero-badges-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 14px;
+    margin-top: 4px;
+  }
+
+  .bc-hero-badge-item {
+    font-size: 0.70rem;
+    gap: 6px;
+  }
+
+  .bc-hero-badge-item svg {
+    width: 13px;
+    height: 13px;
+  }
+
+  /* Hide Desktop Dispatch Card on Mobile (Avoids Duplicate Content & Vertical Scrolling) */
+  .bc-hero-hub-card {
+    display: none !important;
+  }
+
+  /* Floating Widgets: Eliminate overlap with mobile CTA buttons & phone numbers */
+  .bc-floating-help-btn {
+    display: none !important;
+  }
+
+  .bc-floating-widgets {
+    bottom: 12px !important;
+    right: 12px !important;
   }
 
   /* Grids Mobile */
@@ -2608,8 +2726,26 @@ body {
     line-height: 1.22;
   }
   .bc-hero-title {
-    font-size: 1.95rem;
-    line-height: 1.15;
+    font-size: 1.55rem;
+    line-height: 1.12;
+    margin-bottom: 8px;
+  }
+  .bc-hero-desc {
+    font-size: 0.79rem;
+    line-height: 1.36;
+    margin-bottom: 10px;
+  }
+  .bc-hero-pill {
+    font-size: 0.67rem;
+    padding: 3px 8px;
+  }
+  .bc-service-chip {
+    font-size: 0.65rem;
+    padding: 4px 6px;
+    gap: 4px;
+  }
+  .bc-mobile-services-grid {
+    gap: 5px;
   }
   .bc-header-phone span {
     display: none;

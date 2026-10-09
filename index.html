@@ -12,8 +12,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Alex+Brush&family=Great+Vibes&display=swap" rel="stylesheet">
   
   <!-- Stylesheets (Modular Best Comfort Architecture) -->
-  <link rel="stylesheet" href="css/style.css?v=10.3">
-  <link rel="stylesheet" href="css/homepage.css?v=10.3">
+  <link rel="stylesheet" href="css/style.css?v=10.4">
+  <link rel="stylesheet" href="css/homepage.css?v=10.4">
   <link rel="shortcut icon" href="images/best-comfort-logo.svg" type="image/svg+xml">
 </head>
 <body>
@@ -107,14 +107,14 @@
       <!-- Left Column: Primary Headlines & Value Propositions -->
       <div class="bc-hero-content">
         
-        <div class="bc-hero-eyebrow">No Service call Fee's</div>
+        <div class="bc-hero-eyebrow">NO SERVICE CALL FEES</div>
         
         <h1 class="bc-hero-title">
           24 Hours Emergency<br>
           <span class="bc-text-coral">Heating &amp; Cooling</span> Repair
         </h1>
 
-        <!-- High-Impact Callout Pills (Part 1 Core Statements) -->
+        <!-- High-Impact Callout Pills (3 Trust Badges) -->
         <div class="bc-hero-highlight-pills">
           <div class="bc-hero-pill">
             <svg class="bc-pill-icon text-coral" viewBox="0 0 24 24"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg>
@@ -134,15 +134,55 @@
           Chicago's trusted 2nd generation HVAC service provider. 100% honest evaluations of your equipment, no ridiculous rates on our pricing, and a strong commitment to excellent work.
         </p>
 
+        <!-- Primary Conversion Actions -->
         <div class="bc-hero-actions">
-          <a href="tel:7732494733" class="bc-btn-hero-primary bc-btn-pulse">
+          <a href="tel:7732494733" class="bc-btn-hero-primary bc-btn-pulse bc-btn-call-dominant">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.21 2.2z"/></svg>
             <span>Call (773) 249-4733</span>
           </a>
           <a href="contact.html" class="bc-btn-hero-call">Schedule Service</a>
         </div>
 
-        <!-- Trust Badges (Part 2 Trust Guarantees) -->
+        <!-- Mobile View Only: 8 Core Services Scannable 2-Column Micro-Grid / Chip List (Beneath Conversion Buttons) -->
+        <div class="bc-hero-mobile-services" aria-label="8 Core HVAC Services Dispatched 24/7">
+          <div class="bc-mobile-services-label">8 Core Services Dispatched 24/7:</div>
+          <div class="bc-mobile-services-grid">
+            <a href="services.html#cooling" class="bc-service-chip">
+              <span class="bc-chip-check">&check;</span>
+              <span>Central Air Conditioning Repair &amp; Installation</span>
+            </a>
+            <a href="services.html#heating" class="bc-service-chip">
+              <span class="bc-chip-check">&check;</span>
+              <span>Furnace Repair &amp; Installation</span>
+            </a>
+            <a href="services.html#boilers" class="bc-service-chip">
+              <span class="bc-chip-check">&check;</span>
+              <span>Hot Water Boiler Repair &amp; Installation</span>
+            </a>
+            <a href="services.html#boilers" class="bc-service-chip">
+              <span class="bc-chip-check">&check;</span>
+              <span>Steam Boiler Repair &amp; Installation</span>
+            </a>
+            <a href="services.html#heating" class="bc-service-chip">
+              <span class="bc-chip-check">&check;</span>
+              <span>Water Heaters Repair &amp; Installation</span>
+            </a>
+            <a href="services.html#boilers" class="bc-service-chip">
+              <span class="bc-chip-check">&check;</span>
+              <span>Tankless Boilers Repair &amp; Installation</span>
+            </a>
+            <a href="services.html#heating" class="bc-service-chip">
+              <span class="bc-chip-check">&check;</span>
+              <span>Tankless Water Heater Repair &amp; Installation</span>
+            </a>
+            <a href="services.html#maintenance" class="bc-service-chip highlight">
+              <span class="bc-chip-check">&check;</span>
+              <span>Full Annual HVAC Maintenance &amp; Service Provided</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Verification Badges Row -->
         <div class="bc-hero-badges-row">
           <div class="bc-hero-badge-item">
             <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
@@ -164,7 +204,7 @@
 
       </div>
 
-      <!-- Right Column: Call to Action Upper Section Hub (Dressed Up For NO SCROLL Area) -->
+      <!-- Right Column: 24/7 Emergency Dispatch Matrix (Desktop 2-Column Checklist) -->
       <div class="bc-hero-hub-card">
         
         <div class="bc-hub-top">
@@ -177,148 +217,79 @@
           </div>
         </div>
 
-        <!-- Interactive Tabs for Upper Section Showcase -->
-        <div class="bc-hub-tabs" role="tablist">
-          <button type="button" class="bc-hub-tab active" id="tabBtnServices" onclick="switchHeroTab('services')" role="tab" aria-selected="true">
-            <span class="bc-tab-icon">⚡</span>
-            <span>Services Provided</span>
-            <span class="bc-tab-count">8</span>
-          </button>
-          <button type="button" class="bc-hub-tab" id="tabBtnStatements" onclick="switchHeroTab('statements')" role="tab" aria-selected="false">
-            <span class="bc-tab-icon">🛡️</span>
-            <span>CTA Statements</span>
-            <span class="bc-tab-count">10</span>
-          </button>
+        <div class="bc-hub-header-intro">
+          <div class="bc-hub-heading">Core HVAC Services Dispatched Today</div>
+          <div class="bc-hub-subheading">Immediate response &bull; Up-front guaranteed pricing</div>
         </div>
 
-        <!-- Panel 1: Call to Action Services Provided (8 Items) -->
-        <div class="bc-hub-panel active" id="panelServices" role="tabpanel">
-          <div class="bc-hub-services-grid">
-            
-            <a href="services.html#cooling" class="bc-hub-service-item">
-              <div class="bc-service-item-icon icon-cyan">
-                <svg viewBox="0 0 24 24"><path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M4.93 19.07L19.07 4.93"/></svg>
-              </div>
-              <div class="bc-service-item-text">Central Air Conditioning Repair &amp; Installation</div>
-            </a>
+        <!-- 8 Core Services in 2-Column Checklist (Always Visible - No Tabs) -->
+        <div class="bc-hub-services-grid">
+          
+          <a href="services.html#cooling" class="bc-hub-service-item">
+            <div class="bc-service-item-icon icon-cyan">
+              <svg viewBox="0 0 24 24"><path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M4.93 19.07L19.07 4.93"/></svg>
+            </div>
+            <div class="bc-service-item-text">Central Air Conditioning Repair &amp; Installation</div>
+          </a>
 
-            <a href="services.html#heating" class="bc-hub-service-item">
-              <div class="bc-service-item-icon icon-orange">
-                <svg viewBox="0 0 24 24"><path d="M12 2c1.1 0 2 .9 2 2 0 1.5-1 2.5-1 4 0 2.2 1.8 4 4 4 1.5 0 2.5-1 4-1 .9 0 2 .9 2 2 0 6.1-4.9 11-11 11S1 18.1 1 12C1 6.5 5.5 2 12 2z"/></svg>
-              </div>
-              <div class="bc-service-item-text">Furnace Repair &amp; Installation</div>
-            </a>
+          <a href="services.html#heating" class="bc-hub-service-item">
+            <div class="bc-service-item-icon icon-orange">
+              <svg viewBox="0 0 24 24"><path d="M12 2c1.1 0 2 .9 2 2 0 1.5-1 2.5-1 4 0 2.2 1.8 4 4 4 1.5 0 2.5-1 4-1 .9 0 2 .9 2 2 0 6.1-4.9 11-11 11S1 18.1 1 12C1 6.5 5.5 2 12 2z"/></svg>
+            </div>
+            <div class="bc-service-item-text">Furnace Repair &amp; Installation</div>
+          </a>
 
-            <a href="services.html#boilers" class="bc-hub-service-item">
-              <div class="bc-service-item-icon icon-gold">
-                <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V8h14v12z"/></svg>
-              </div>
-              <div class="bc-service-item-text">Hot Water Boiler Repair &amp; Installation</div>
-            </a>
+          <a href="services.html#boilers" class="bc-hub-service-item">
+            <div class="bc-service-item-icon icon-gold">
+              <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V8h14v12z"/></svg>
+            </div>
+            <div class="bc-service-item-text">Hot Water Boiler Repair &amp; Installation</div>
+          </a>
 
-            <a href="services.html#boilers" class="bc-hub-service-item">
-              <div class="bc-service-item-icon icon-blue">
-                <svg viewBox="0 0 24 24"><path d="M17.66 8L12 2.35 6.34 8C4.78 9.56 4 11.64 4 13.72s.78 4.16 2.34 5.72 4.16 2.34 5.66 2.34 4.16-.78 5.72-2.34S20 15.8 20 13.72 19.22 9.56 17.66 8z"/></svg>
-              </div>
-              <div class="bc-service-item-text">Steam Boiler Repair &amp; Installation</div>
-            </a>
+          <a href="services.html#boilers" class="bc-hub-service-item">
+            <div class="bc-service-item-icon icon-blue">
+              <svg viewBox="0 0 24 24"><path d="M17.66 8L12 2.35 6.34 8C4.78 9.56 4 11.64 4 13.72s.78 4.16 2.34 5.72 4.16 2.34 5.66 2.34 4.16-.78 5.72-2.34S20 15.8 20 13.72 19.22 9.56 17.66 8z"/></svg>
+            </div>
+            <div class="bc-service-item-text">Steam Boiler Repair &amp; Installation</div>
+          </a>
 
-            <a href="services.html#heating" class="bc-hub-service-item">
-              <div class="bc-service-item-icon icon-teal">
-                <svg viewBox="0 0 24 24"><path d="M12 2a5 5 0 00-5 5v10a5 5 0 0010 0V7a5 5 0 00-5-5zm1 14.8V17a1 1 0 01-2 0v-.2a3 3 0 112 0z"/></svg>
-              </div>
-              <div class="bc-service-item-text">Water Heaters Repair &amp; Installation</div>
-            </a>
+          <a href="services.html#heating" class="bc-hub-service-item">
+            <div class="bc-service-item-icon icon-teal">
+              <svg viewBox="0 0 24 24"><path d="M12 2a5 5 0 00-5 5v10a5 5 0 0010 0V7a5 5 0 00-5-5zm1 14.8V17a1 1 0 01-2 0v-.2a3 3 0 112 0z"/></svg>
+            </div>
+            <div class="bc-service-item-text">Water Heaters Repair &amp; Installation</div>
+          </a>
 
-            <a href="services.html#boilers" class="bc-hub-service-item">
-              <div class="bc-service-item-icon icon-purple">
-                <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4zM8 2v4M16 2v4M8 18v4M16 18v4"/></svg>
-              </div>
-              <div class="bc-service-item-text">Tankless Boilers Repair &amp; Installation</div>
-            </a>
+          <a href="services.html#boilers" class="bc-hub-service-item">
+            <div class="bc-service-item-icon icon-purple">
+              <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4zM8 2v4M16 2v4M8 18v4M16 18v4"/></svg>
+            </div>
+            <div class="bc-service-item-text">Tankless Boilers Repair &amp; Installation</div>
+          </a>
 
-            <a href="services.html#heating" class="bc-hub-service-item">
-              <div class="bc-service-item-icon icon-emerald">
-                <svg viewBox="0 0 24 24"><path d="M13 2.05v3.03c3.39.49 6 3.39 6 6.92 0 .9-.18 1.75-.48 2.54l2.6 1.53c.56-1.24.88-2.62.88-4.07 0-5.18-3.95-9.45-9-9.95zM12 19c-3.87 0-7-3.13-7-7 0-3.53 2.61-6.43 6-6.92V2.05c-5.05.5-9 4.76-9 9.95 0 5.52 4.47 10 9.99 10 3.31 0 6.24-1.61 8.01-4.09l-2.45-1.42A6.994 6.994 0 0112 19z"/></svg>
-              </div>
-              <div class="bc-service-item-text">Tankless Water Heater Repair &amp; Installation</div>
-            </a>
+          <a href="services.html#heating" class="bc-hub-service-item">
+            <div class="bc-service-item-icon icon-emerald">
+              <svg viewBox="0 0 24 24"><path d="M13 2.05v3.03c3.39.49 6 3.39 6 6.92 0 .9-.18 1.75-.48 2.54l2.6 1.53c.56-1.24.88-2.62.88-4.07 0-5.18-3.95-9.45-9-9.95zM12 19c-3.87 0-7-3.13-7-7 0-3.53 2.61-6.43 6-6.92V2.05c-5.05.5-9 4.76-9 9.95 0 5.52 4.47 10 9.99 10 3.31 0 6.24-1.61 8.01-4.09l-2.45-1.42A6.994 6.994 0 0112 19z"/></svg>
+            </div>
+            <div class="bc-service-item-text">Tankless Water Heater Repair &amp; Installation</div>
+          </a>
 
-            <a href="services.html#maintenance" class="bc-hub-service-item highlight">
-              <div class="bc-service-item-icon icon-coral">
-                <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
-              </div>
-              <div class="bc-service-item-text">Full Annual HVAC Maintenance &amp; Service Provided</div>
-            </a>
+          <a href="services.html#maintenance" class="bc-hub-service-item highlight">
+            <div class="bc-service-item-icon icon-coral">
+              <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+            </div>
+            <div class="bc-service-item-text">Full Annual HVAC Maintenance &amp; Service Provided</div>
+          </a>
 
-          </div>
         </div>
 
-        <!-- Panel 2: Call to Action Statements (10 Items) -->
-        <div class="bc-hub-panel" id="panelStatements" role="tabpanel" style="display: none;">
-          <div class="bc-hub-statements-list">
-            
-            <div class="bc-statement-item">
-              <span class="bc-statement-check">&check;</span>
-              <span class="bc-statement-text">24 Hours Emergency Heating and Cooling Repair</span>
-              <span class="bc-statement-badge badge-coral">24/7 Live</span>
-            </div>
-
-            <div class="bc-statement-item">
-              <span class="bc-statement-check">&check;</span>
-              <span class="bc-statement-text">No Overtime Rates</span>
-              <span class="bc-statement-badge badge-blue">$0 Extra</span>
-            </div>
-
-            <div class="bc-statement-item">
-              <span class="bc-statement-check">&check;</span>
-              <span class="bc-statement-text">Up Front Pricing before we do the work</span>
-              <span class="bc-statement-badge badge-emerald">Guaranteed</span>
-            </div>
-
-            <div class="bc-statement-item">
-              <span class="bc-statement-check">&check;</span>
-              <span class="bc-statement-text">Top Rated on Google</span>
-              <span class="bc-statement-badge badge-gold">5.0 &starf;</span>
-            </div>
-
-            <div class="bc-statement-item">
-              <span class="bc-statement-check">&check;</span>
-              <span class="bc-statement-text">A+ On BBB</span>
-              <span class="bc-statement-badge badge-blue">A+ Accredited</span>
-            </div>
-
-            <div class="bc-statement-item">
-              <span class="bc-statement-check">&check;</span>
-              <span class="bc-statement-text">2nd Generation HVAC Service Provider</span>
-              <span class="bc-statement-badge badge-purple">Family Owned</span>
-            </div>
-
-            <div class="bc-statement-item">
-              <span class="bc-statement-check">&check;</span>
-              <span class="bc-statement-text">Most Word of Mouth Recommend service Provider</span>
-              <span class="bc-statement-badge badge-gold">Top Pick</span>
-            </div>
-
-            <div class="bc-statement-item">
-              <span class="bc-statement-check">&check;</span>
-              <span class="bc-statement-text">No Ridiculous rates on our pricing</span>
-              <span class="bc-statement-badge badge-emerald">Fair Rates</span>
-            </div>
-
-            <div class="bc-statement-item">
-              <span class="bc-statement-check">&check;</span>
-              <span class="bc-statement-text">100% Honest Evaluations of your HVAC Equipment</span>
-              <span class="bc-statement-badge badge-blue">100% Honest</span>
-            </div>
-
-            <div class="bc-statement-item">
-              <span class="bc-statement-check">&check;</span>
-              <span class="bc-statement-text">Strong Integrity and Commitment to Excellent work</span>
-              <span class="bc-statement-badge badge-coral">Integrity</span>
-            </div>
-
-          </div>
+        <!-- Trust Statements Strip inside Card -->
+        <div class="bc-hub-trust-strip">
+          <span>&check; 2nd Gen Family Owned</span>
+          <span class="bc-hub-bullet">&bull;</span>
+          <span>&check; 100% Honest Evaluations</span>
+          <span class="bc-hub-bullet">&bull;</span>
+          <span>&check; Up Front Pricing</span>
         </div>
 
         <!-- Hub Card Footer -->
@@ -1223,6 +1194,6 @@
   </div>
 
   <!-- Scripts -->
-  <script src="js/homepage-exact.js?v=10.3"></script>
+  <script src="js/homepage-exact.js?v=10.4"></script>
 </body>
 </html>
