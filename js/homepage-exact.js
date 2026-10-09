@@ -139,7 +139,32 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // 4. Hero Upper Section Action Hub Tab Switcher
+  // 6. RockAuto-Style Service Directory Tree Accordion Handler (Single-Open Mode)
+  const treeNodeButtons = document.querySelectorAll('.tree-node-btn');
+  treeNodeButtons.forEach(btn => {
+    btn.addEventListener('click', function () {
+      const item = btn.closest('.tree-node-item');
+      if (!item) return;
+      const tree = item.closest('.directory-accordion-tree') || document;
+      const wasOpen = item.classList.contains('is-open');
+
+      // Close all accordion items in this tree
+      const allItems = tree.querySelectorAll('.tree-node-item');
+      allItems.forEach(otherItem => {
+        otherItem.classList.remove('is-open');
+        const otherBtn = otherItem.querySelector('.tree-node-btn');
+        if (otherBtn) otherBtn.setAttribute('aria-expanded', 'false');
+      });
+
+      // If it wasn't open, open it now (only 1 open at a time)
+      if (!wasOpen) {
+        item.classList.add('is-open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+  // 7. Hero Upper Section Action Hub Tab Switcher
   window.switchHeroTab = function (tab) {
     const btnServices = document.getElementById('tabBtnServices');
     const btnStatements = document.getElementById('tabBtnStatements');

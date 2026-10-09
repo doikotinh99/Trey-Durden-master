@@ -12,8 +12,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Alex+Brush&family=Great+Vibes&display=swap" rel="stylesheet">
   
   <!-- Stylesheets (Modular Best Comfort Architecture) -->
-  <link rel="stylesheet" href="css/style.css?v=10.4">
-  <link rel="stylesheet" href="css/homepage.css?v=10.4">
+  <link rel="stylesheet" href="css/style.css?v=10.5">
+  <link rel="stylesheet" href="css/homepage.css?v=10.5">
   <link rel="shortcut icon" href="images/best-comfort-logo.svg" type="image/svg+xml">
 </head>
 <body>
@@ -310,59 +310,322 @@
   </section>
 
   <!-- =========================================================================
-       4. TRUST RIBBON / ACCREDITATION BAR (Updated with Key Call to Action Values)
+       4. SERVICES & COVERAGE DIRECTORY (Parent-Child Accordion Menus - As Requested)
        ========================================================================= -->
-  <section class="bc-trust-ribbon">
+  <section class="bc-directory-section" id="services-directory">
     <div class="container">
-      <div class="bc-trust-grid">
-        
-        <div class="bc-trust-item">
-          <div class="bc-trust-icon bc-trust-icon-gray">
-            <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
-          </div>
-          <div>
-            <div class="bc-trust-title">A+ On BBB</div>
-            <div class="bc-trust-sub">Independent business profile</div>
+      <div class="bc-directory-header">
+        <span class="bc-directory-badge">Services Directory</span>
+        <h2 class="bc-directory-title">Our Services &amp; Coverage Directory</h2>
+        <p class="bc-directory-desc">Explore our full breakdown of HVAC and plumbing services, service areas, certified equipment brands, and specialized boiler installations.</p>
+      </div>
+
+      <div class="directory-accordion-tree" id="directoryAccordionTree">
+
+        <!-- Node 0: Our Services at Best Comfort HVAC Joliet Office -->
+        <div class="tree-node-item is-open">
+          <button type="button" class="tree-node-btn" aria-expanded="true">
+            <div class="tree-node-left">
+              <span class="tree-badge-icon">
+                <svg viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
+              </span>
+              <span class="tree-node-label">Our Services at Best Comfort HVAC Joliet Office</span>
+            </div>
+            <div class="tree-node-right">
+              <span class="tree-node-count-badge">460 services</span>
+              <svg class="tree-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+            </div>
+          </button>
+          <div class="tree-node-content">
+            <ul class="tree-sub-list">
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Emergency 24/7 Heating &amp; Cooling Repair</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Residential Central AC Installation &amp; Service</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Commercial RTU Replacement &amp; Diagnostics</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> High AFUE Modulating Gas Furnace Repair</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Hydronic Boiler Efficiency Diagnostics</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Commercial &amp; Industrial Steam Boilers</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> High-Recovery Commercial Water Heaters</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Continuous Flow Tankless Arrays</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Thermal Engineering Application Reworks</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Annual Full HVAC Seasonal Maintenance</li>
+            </ul>
           </div>
         </div>
 
-        <div class="bc-trust-item">
-          <div class="bc-trust-icon bc-trust-icon-red">
-            <svg viewBox="0 0 24 24"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg>
-          </div>
-          <div>
-            <div class="bc-trust-title">No Overtime Rates</div>
-            <div class="bc-trust-sub">24 Hours Emergency Repair</div>
-          </div>
-        </div>
-
-        <div class="bc-trust-item">
-          <div class="bc-trust-icon bc-trust-icon-blue">
-            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-          </div>
-          <div>
-            <div class="bc-trust-title">Up Front Pricing</div>
-            <div class="bc-trust-sub">Before we do the work</div>
-          </div>
-        </div>
-
-        <div class="bc-trust-item">
-          <div class="bc-trust-icon bc-trust-icon-red">
-            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-          </div>
-          <div>
-            <div class="bc-trust-title">Top Rated on Google</div>
-            <div class="bc-trust-sub">Most Word of Mouth Recommended</div>
+        <!-- Node 1: Area's We Service -->
+        <div class="tree-node-item">
+          <button type="button" class="tree-node-btn" aria-expanded="false">
+            <div class="tree-node-left">
+              <span class="tree-badge-icon">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              </span>
+              <span class="tree-node-label">Area's We Service</span>
+            </div>
+            <div class="tree-node-right">
+              <span class="tree-node-count-badge">259 locations across 1 state</span>
+              <svg class="tree-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+            </div>
+          </button>
+          <div class="tree-node-content">
+            <ul class="tree-sub-list">
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Cook County, IL</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> DuPage County, IL</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Kane County, IL</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Kendall County, IL</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Grundy County, IL</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Joliet &amp; Plainfield, IL</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Naperville &amp; Aurora, IL</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Bolingbrook &amp; Romeoville, IL</li>
+            </ul>
           </div>
         </div>
 
-        <div class="bc-trust-item">
-          <div class="bc-trust-icon bc-trust-icon-blue">
-            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        <!-- Node 2: Brands We Install -->
+        <div class="tree-node-item">
+          <button type="button" class="tree-node-btn" aria-expanded="false">
+            <div class="tree-node-left">
+              <span class="tree-badge-icon">
+                <svg viewBox="0 0 24 24"><path d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2z"/></svg>
+              </span>
+              <span class="tree-node-label">Brands We Install</span>
+            </div>
+            <div class="tree-node-right">
+              <span class="tree-node-count-badge">58 brands</span>
+              <svg class="tree-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+            </div>
+          </button>
+          <div class="tree-node-content">
+            <ul class="tree-sub-list">
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Rheem &amp; Ruud</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> York &amp; Johnson Controls</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Carrier &amp; Bryant</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Trane &amp; American Standard</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Lennox Industries</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Navien Condensing</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Weil-McLain Hydronics</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Daikin &amp; Goodman</li>
+            </ul>
           </div>
-          <div>
-            <div class="bc-trust-title">100% Honest Evaluations</div>
-            <div class="bc-trust-sub">2nd Generation HVAC Provider</div>
+        </div>
+
+        <!-- Node 3: Brands We Service -->
+        <div class="tree-node-item">
+          <button type="button" class="tree-node-btn" aria-expanded="false">
+            <div class="tree-node-left">
+              <span class="tree-badge-icon">
+                <svg viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
+              </span>
+              <span class="tree-node-label">Brands We Service</span>
+            </div>
+            <div class="tree-node-right">
+              <span class="tree-node-count-badge">138 brands</span>
+              <svg class="tree-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+            </div>
+          </button>
+          <div class="tree-node-content">
+            <ul class="tree-sub-list">
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> All Major Furnace Brands</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> All Commercial RTU Systems</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Inverter &amp; VRF Multi-Zone</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> High-Efficiency Heat Pumps</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Modulating Condensing Units</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Legacy Pneumatic &amp; DDC Systems</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Node 4: Brands We Repair -->
+        <div class="tree-node-item">
+          <button type="button" class="tree-node-btn" aria-expanded="false">
+            <div class="tree-node-left">
+              <span class="tree-badge-icon">
+                <svg viewBox="0 0 24 24"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg>
+              </span>
+              <span class="tree-node-label">Brands We Repair</span>
+            </div>
+            <div class="tree-node-right">
+              <span class="tree-node-count-badge">10 brands</span>
+              <svg class="tree-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+            </div>
+          </button>
+          <div class="tree-node-content">
+            <ul class="tree-sub-list">
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Rheem Pro Series</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> York Affinity Systems</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Carrier Infinity Series</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Trane XV / XR Platforms</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Weil-McLain Ultra Boilers</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Node 5: Plumbing Types We Install -->
+        <div class="tree-node-item">
+          <button type="button" class="tree-node-btn" aria-expanded="false">
+            <div class="tree-node-left">
+              <span class="tree-badge-icon">
+                <svg viewBox="0 0 24 24"><path d="M21 16.5l-9 5.2-9-5.2V7.5L12 2.3l9 5.2v9zM12 4.1L5.1 8 12 12l6.9-4L12 4.1zm-7 5.4v6.8l6 3.5V13L5 9.5zm8 10.3l6-3.5V9.5L13 13v6.8z"/></svg>
+              </span>
+              <span class="tree-node-label">Plumbing Types We Install</span>
+            </div>
+            <div class="tree-node-right">
+              <span class="tree-node-count-badge">7 types</span>
+              <svg class="tree-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+            </div>
+          </button>
+          <div class="tree-node-content">
+            <ul class="tree-sub-list">
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Hydronic Radiant In-Floor</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Tankless Continuous Flow</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Commercial Gas Header Lines</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> High-Pressure Steam Piping</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Backflow Prevention Valves</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Expansion Tank Systems</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Recirculation Loop Pumps</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Node 6: Plumbing Types We Service -->
+        <div class="tree-node-item">
+          <button type="button" class="tree-node-btn" aria-expanded="false">
+            <div class="tree-node-left">
+              <span class="tree-badge-icon">
+                <svg viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
+              </span>
+              <span class="tree-node-label">Plumbing Types We Service</span>
+            </div>
+            <div class="tree-node-right">
+              <span class="tree-node-count-badge">8 types</span>
+              <svg class="tree-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+            </div>
+          </button>
+          <div class="tree-node-content">
+            <ul class="tree-sub-list">
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Closed-Loop Hydronics</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Steam Trap Forensics</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> De-scaling &amp; Chemical Flush</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Circulator Pump Overhaul</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> PRV Pressure Regulators</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Gas Supply Pressure Triage</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Node 7: Plumbing Types We Repair -->
+        <div class="tree-node-item">
+          <button type="button" class="tree-node-btn" aria-expanded="false">
+            <div class="tree-node-left">
+              <span class="tree-badge-icon">
+                <svg viewBox="0 0 24 24"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg>
+              </span>
+              <span class="tree-node-label">Plumbing Types We Repair</span>
+            </div>
+            <div class="tree-node-right">
+              <span class="tree-node-count-badge">8 types</span>
+              <svg class="tree-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+            </div>
+          </button>
+          <div class="tree-node-content">
+            <ul class="tree-sub-list">
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Burst Hydronic Line Repair</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Leaking Steam Header Seals</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Defective Relief Valve Swap</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Corroded Flange Restorations</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Node 8: Boilers We Install -->
+        <div class="tree-node-item">
+          <button type="button" class="tree-node-btn" aria-expanded="false">
+            <div class="tree-node-left">
+              <span class="tree-badge-icon">
+                <svg viewBox="0 0 24 24"><path d="M21 16.5l-9 5.2-9-5.2V7.5L12 2.3l9 5.2v9zM12 4.1L5.1 8 12 12l6.9-4L12 4.1zm-7 5.4v6.8l6 3.5V13L5 9.5zm8 10.3l6-3.5V9.5L13 13v6.8z"/></svg>
+              </span>
+              <span class="tree-node-label">Boilers We Install</span>
+            </div>
+            <div class="tree-node-right">
+              <span class="tree-node-count-badge">3 items</span>
+              <svg class="tree-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+            </div>
+          </button>
+          <div class="tree-node-content">
+            <ul class="tree-sub-list">
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Modulating Condensing 95%+</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Commercial Cascading Arrays</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Cast-Iron Sectional Boilers</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Low-Pressure Steam Units</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Combi Space &amp; DHW Boilers</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Node 9: Boilers We Service -->
+        <div class="tree-node-item">
+          <button type="button" class="tree-node-btn" aria-expanded="false">
+            <div class="tree-node-left">
+              <span class="tree-badge-icon">
+                <svg viewBox="0 0 24 24"><path d="M21 16.5l-9 5.2-9-5.2V7.5L12 2.3l9 5.2v9zM12 4.1L5.1 8 12 12l6.9-4L12 4.1zm-7 5.4v6.8l6 3.5V13L5 9.5zm8 10.3l6-3.5V9.5L13 13v6.8z"/></svg>
+              </span>
+              <span class="tree-node-label">Boilers We Service</span>
+            </div>
+            <div class="tree-node-right">
+              <span class="tree-node-count-badge">1 items</span>
+              <svg class="tree-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+            </div>
+          </button>
+          <div class="tree-node-content">
+            <ul class="tree-sub-list">
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Combustion Efficiency Tuning</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Low Water Cutoff Safety Testing</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Annual Code Compliance Audits</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Node 10: Boilers We Repair -->
+        <div class="tree-node-item">
+          <button type="button" class="tree-node-btn" aria-expanded="false">
+            <div class="tree-node-left">
+              <span class="tree-badge-icon">
+                <svg viewBox="0 0 24 24"><path d="M21 16.5l-9 5.2-9-5.2V7.5L12 2.3l9 5.2v9zM12 4.1L5.1 8 12 12l6.9-4L12 4.1zm-7 5.4v6.8l6 3.5V13L5 9.5zm8 10.3l6-3.5V9.5L13 13v6.8z"/></svg>
+              </span>
+              <span class="tree-node-label">Boilers We Repair</span>
+            </div>
+            <div class="tree-node-right">
+              <span class="tree-node-count-badge">1 items</span>
+              <svg class="tree-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+            </div>
+          </button>
+          <div class="tree-node-content">
+            <ul class="tree-sub-list">
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> 24/7 Immediate Burner &amp; Control Triage</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Heat Exchanger &amp; Sectional Leak Repairs</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Steam Pressure Relief &amp; Piping Diagnostics</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Node 11: Water Heaters We Install -->
+        <div class="tree-node-item">
+          <button type="button" class="tree-node-btn" aria-expanded="false">
+            <div class="tree-node-left">
+              <span class="tree-badge-icon">
+                <svg viewBox="0 0 24 24"><path d="M21 16.5l-9 5.2-9-5.2V7.5L12 2.3l9 5.2v9zM12 4.1L5.1 8 12 12l6.9-4L12 4.1zm-7 5.4v6.8l6 3.5V13L5 9.5zm8 10.3l6-3.5V9.5L13 13v6.8z"/></svg>
+              </span>
+              <span class="tree-node-label">Water Heaters We Install</span>
+            </div>
+            <div class="tree-node-right">
+              <span class="tree-node-count-badge">2 items</span>
+              <svg class="tree-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+            </div>
+          </button>
+          <div class="tree-node-content">
+            <ul class="tree-sub-list">
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Commercial High-Recovery Tank Units</li>
+              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Multi-Zone Tankless Arrays</li>
+            </ul>
           </div>
         </div>
 
@@ -1194,6 +1457,6 @@
   </div>
 
   <!-- Scripts -->
-  <script src="js/homepage-exact.js?v=10.4"></script>
+  <script src="js/homepage-exact.js?v=10.5"></script>
 </body>
 </html>
