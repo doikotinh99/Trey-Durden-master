@@ -1,0 +1,2138 @@
+/* ==========================================================================
+   BEST COMFORT HEATING & COOLING - EXACT HOMEPAGE DESIGN SYSTEM
+   Pixel-perfect match to website example.webp
+   ========================================================================== */
+
+:root {
+  /* Brand Core Colors (Exact match to website example.webp) */
+  --bc-coral: #ea4c59;
+  --bc-coral-hover: #d83b49;
+  --bc-coral-soft: #fff1f2;
+  --bc-coral-border: #fecdd3;
+  --bc-coral-glow: rgba(234, 76, 89, 0.35);
+
+  --bc-blue: #0072ce;
+  --bc-blue-hover: #005fa3;
+  --bc-blue-soft: #f0f7ff;
+  --bc-blue-border: #bae6fd;
+
+  --bc-navy-dark: #070e18;
+  --bc-navy-hero: #02182c;
+  --bc-navy-section: #0c1b33;
+  --bc-navy-card: #0e1e38;
+
+  --bc-text-dark: #0f172a;
+  --bc-text-body: #334155;
+  --bc-text-muted: #64748b;
+  --bc-text-light: #94a3b8;
+  --bc-white: #ffffff;
+
+  --bc-bg-page: #ffffff;
+  --bc-bg-light: #f8fafc;
+  --bc-bg-ice: #f0f7ff;
+  --bc-bg-blush: #fbf8fa;
+  --bc-border: #e2e8f0;
+  --bc-border-subtle: #f1f5f9;
+
+  /* Typography */
+  --bc-font: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --bc-font-script: 'Alex Brush', 'Great Vibes', cursive;
+
+  /* Shadows & Radius */
+  --bc-radius-sm: 8px;
+  --bc-radius-md: 14px;
+  --bc-radius-lg: 18px;
+  --bc-radius-xl: 24px;
+  --bc-radius-pill: 9999px;
+
+  --bc-shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.05);
+  --bc-shadow-md: 0 8px 24px rgba(15, 23, 42, 0.08);
+  --bc-shadow-lg: 0 16px 36px rgba(15, 23, 42, 0.12);
+  --bc-shadow-coral: 0 8px 24px rgba(234, 76, 89, 0.35);
+  --bc-transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Base Resets for exact look */
+body {
+  font-family: var(--bc-font);
+  color: var(--bc-text-body);
+  background-color: var(--bc-bg-page);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  width: 100%;
+  max-width: 1560px;
+  margin-inline: auto;
+  padding-inline: 32px;
+}
+
+/* ──────────────────────────────────────────────────────────────────────────
+   1. TOP ANNOUNCEMENT BAR (Coral Red Banner)
+   ────────────────────────────────────────────────────────────────────────── */
+.bc-top-bar {
+  background: linear-gradient(
+    90deg,
+    #d83081 0%,
+    #ec4e6f 25%,
+    #f95e63 40%,
+    #ef656d 50%,
+    #b65e90 65%,
+    #7f55b3 80%,
+    #494ddd 90%,
+    #1847ff 100%
+  );
+  color: #ffffff;
+  padding: 10px 0;
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-align: center;
+  position: relative;
+  z-index: 100;
+}
+
+.bc-top-bar .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bc-top-bar-content {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffffff;
+}
+
+.bc-top-phone-link {
+  color: #ffffff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 700;
+  transition: opacity 0.2s ease;
+}
+
+.bc-top-phone-link:hover {
+  opacity: 0.9;
+}
+
+/* ──────────────────────────────────────────────────────────────────────────
+   2. HEADER / NAVBAR (Crisp Pure White)
+   ────────────────────────────────────────────────────────────────────────── */
+.bc-header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 12px rgba(15, 23, 42, 0.06);
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  border-bottom: 1px solid var(--bc-border-subtle);
+}
+
+.bc-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 74px;
+}
+
+/* Brand Logo */
+.bc-brand-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.bc-brand-logo img {
+  height: 52px;
+  width: auto;
+  display: block;
+}
+
+/* Navigation Links */
+.bc-nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.bc-nav-link {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--bc-text-dark);
+  text-decoration: none;
+  transition: var(--bc-transition);
+  position: relative;
+  padding: 8px 0;
+}
+
+.bc-nav-link:hover,
+.bc-nav-link.active {
+  color: var(--bc-blue);
+}
+
+/* Header Actions */
+.bc-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.bc-header-phone {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--bc-text-dark);
+  text-decoration: none;
+  transition: var(--bc-transition);
+}
+
+.bc-header-phone:hover {
+  color: var(--bc-blue);
+}
+
+.bc-header-phone-icon {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.bc-btn-schedule {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 22px;
+  background-color: var(--bc-coral);
+  color: #ffffff;
+  border-radius: var(--bc-radius-pill);
+  font-size: 0.92rem;
+  font-weight: 700;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(234, 76, 89, 0.35);
+  transition: var(--bc-transition);
+}
+
+.bc-btn-schedule:hover {
+  background-color: var(--bc-coral-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(234, 76, 89, 0.45);
+  color: #ffffff;
+}
+
+/* Mobile Toggle */
+.bc-mobile-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--bc-text-dark);
+  cursor: pointer;
+  padding: 8px;
+}
+
+/* ──────────────────────────────────────────────────────────────────────────
+   3. HERO SECTION (Chicago Atmosphere + Cursive Slogan + Floating 24/7 Card)
+   ────────────────────────────────────────────────────────────────────────── */
+.bc-hero-section {
+  position: relative;
+  min-height: 620px;
+  background-color: var(--bc-navy-hero);
+  background-image: url('../images/hero-bg-chicago.jpg');
+  background-position: right center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 70px 0 95px;
+  overflow: hidden;
+}
+
+.bc-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 24, 44, 0.96) 0%,
+    rgba(5, 27, 49, 0.93) 32%,
+    rgba(8, 32, 58, 0.85) 46%,
+    rgba(12, 38, 70, 0.58) 60%,
+    rgba(18, 48, 86, 0.22) 75%,
+    rgba(8, 24, 48, 0.08) 100%
+  );
+  z-index: 1;
+}
+
+.bc-hero-container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.bc-hero-content {
+  max-width: 600px;
+}
+
+/* Eyebrow */
+.bc-hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--bc-coral);
+  margin-bottom: 18px;
+}
+
+.bc-hero-eyebrow::before {
+  content: '';
+  display: inline-block;
+  width: 28px;
+  height: 2.5px;
+  background-color: var(--bc-coral);
+  border-radius: 2px;
+}
+
+/* Title: ONLY "Chicago" is coral! "weather." is white! */
+.bc-hero-title {
+  font-size: clamp(2.6rem, 5.2vw, 4.3rem);
+  font-weight: 850;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+  margin: 0 0 20px;
+}
+
+.bc-text-coral {
+  color: var(--bc-coral);
+}
+
+.bc-hero-desc {
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: #cbd5e1;
+  margin: 0 0 32px;
+  max-width: 530px;
+}
+
+/* Hero Action Buttons */
+.bc-hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+.bc-btn-hero-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 32px;
+  background-color: var(--bc-coral);
+  color: #ffffff;
+  border-radius: var(--bc-radius-pill);
+  font-size: 0.98rem;
+  font-weight: 750;
+  text-decoration: none;
+  box-shadow: 0 8px 24px rgba(234, 76, 89, 0.40);
+  transition: var(--bc-transition);
+}
+
+.bc-btn-hero-primary:hover {
+  background-color: var(--bc-coral-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(234, 76, 89, 0.55);
+  color: #ffffff;
+}
+
+.bc-btn-hero-call {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 28px;
+  background-color: rgba(10, 18, 30, 0.75);
+  border: 1.5px solid rgba(255, 255, 255, 0.45);
+  color: #ffffff;
+  border-radius: var(--bc-radius-pill);
+  font-size: 0.98rem;
+  font-weight: 750;
+  text-decoration: none;
+  transition: var(--bc-transition);
+  backdrop-filter: blur(6px);
+}
+
+.bc-btn-hero-call:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: #ffffff;
+  transform: translateY(-2px);
+  color: #ffffff;
+}
+
+/* 3 Badges under buttons */
+.bc-hero-badges-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.bc-hero-badge-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #cbd5e1;
+}
+
+.bc-hero-badge-item svg {
+  width: 16px;
+  height: 16px;
+  fill: #38bdf8;
+}
+
+/* Top Right Handwritten Cursive Slogan */
+.bc-hero-slogan-cursive {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  text-align: right;
+  color: #ffffff;
+  font-family: var(--bc-font-script);
+  font-size: 2.8rem;
+  line-height: 1.12;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  pointer-events: none;
+  letter-spacing: 0.02em;
+}
+
+/* Floating 24/7 Status Card on bottom right of Hero */
+.bc-hero-floating-card {
+  position: absolute;
+  bottom: -20px;
+  right: 32px;
+  background: #ffffff;
+  border-radius: var(--bc-radius-lg);
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  z-index: 3;
+}
+
+.bc-card-clock-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.bc-card-clock-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--bc-coral-soft);
+  color: var(--bc-coral);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+.bc-card-clock-num {
+  font-size: 1.45rem;
+  font-weight: 900;
+  color: var(--bc-text-dark);
+  line-height: 1;
+}
+
+.bc-card-clock-label {
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--bc-text-muted);
+  margin-top: 3px;
+}
+
+.bc-card-divider {
+  width: 1px;
+  height: 38px;
+  background: var(--bc-border);
+}
+
+.bc-card-dots {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.bc-dot-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--bc-text-dark);
+}
+
+.bc-status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+.bc-dot-red { background-color: var(--bc-coral); }
+.bc-dot-blue { background-color: var(--bc-blue); }
+.bc-dot-green { background-color: #10b981; }
+
+/* ──────────────────────────────────────────────────────────────────────────
+   4. TRUST RIBBON / ACCREDITATION BAR (5 Items)
+   ────────────────────────────────────────────────────────────────────────── */
+.bc-trust-ribbon {
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--bc-border);
+  padding: 24px 0;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.03);
+}
+
+.bc-trust-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.bc-trust-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.bc-trust-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.bc-trust-icon-gray {
+  background-color: #f1f5f9;
+  color: #475569;
+}
+
+.bc-trust-icon-red {
+  background-color: #fee2e2;
+  color: var(--bc-coral);
+}
+
+.bc-trust-icon-blue {
+  background-color: #e0f2fe;
+  color: var(--bc-blue);
+}
+
+.bc-trust-icon svg {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+}
+
+.bc-trust-title {
+  font-size: 0.92rem;
+  font-weight: 800;
+  color: var(--bc-text-dark);
+  line-height: 1.25;
+}
+
+.bc-trust-sub {
+  font-size: 0.76rem;
+  color: var(--bc-text-muted);
+  line-height: 1.35;
+  margin-top: 3px;
+}
+
+/* ──────────────────────────────────────────────────────────────────────────
+   5. SERVICES SECTION ("One team for every season")
+   ────────────────────────────────────────────────────────────────────────── */
+.bc-services-section {
+  padding: 85px 0;
+  background-color: #ffffff;
+}
+
+.bc-section-header-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 48px;
+  gap: 24px;
+}
+
+.bc-section-tag {
+  font-size: 0.80rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--bc-coral);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.bc-section-tag::before {
+  content: '';
+  display: inline-block;
+  width: 22px;
+  height: 2px;
+  background-color: var(--bc-coral);
+}
+
+.bc-section-title {
+  font-size: clamp(2rem, 3.8vw, 2.7rem);
+  font-weight: 850;
+  color: var(--bc-text-dark);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin: 0 0 14px;
+}
+
+.bc-section-subtitle {
+  font-size: 1.02rem;
+  line-height: 1.6;
+  color: var(--bc-text-muted);
+  max-width: 620px;
+  margin: 0;
+}
+
+.bc-btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 24px;
+  border-radius: var(--bc-radius-pill);
+  border: 1.5px solid var(--bc-border);
+  background: #ffffff;
+  color: var(--bc-text-dark);
+  font-size: 0.92rem;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: var(--bc-transition);
+}
+
+.bc-btn-outline:hover {
+  border-color: var(--bc-text-dark);
+  background-color: var(--bc-bg-light);
+}
+
+/* 6-Card Services Grid */
+.bc-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.bc-service-card {
+  background: #ffffff;
+  border: 1px solid var(--bc-border);
+  border-radius: var(--bc-radius-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: var(--bc-transition);
+  box-shadow: var(--bc-shadow-sm);
+}
+
+.bc-service-card:hover {
+  transform: translateY(-5px);
+  border-color: #cbd5e1;
+  box-shadow: var(--bc-shadow-md);
+}
+
+.bc-service-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 195px;
+  overflow: hidden;
+  background-color: #0f172a;
+}
+
+.bc-service-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.bc-service-card:hover .bc-service-img {
+  transform: scale(1.05);
+}
+
+.bc-service-pill-tag {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: rgba(15, 23, 42, 0.88);
+  color: #ffffff;
+  padding: 4px 12px;
+  border-radius: var(--bc-radius-pill);
+  font-size: 0.74rem;
+  font-weight: 750;
+  letter-spacing: 0.03em;
+  backdrop-filter: blur(4px);
+}
+
+.bc-service-body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.bc-service-icon-row {
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.bc-service-icon-row svg {
+  width: 24px;
+  height: 24px;
+}
+
+.bc-service-title {
+  font-size: 1.28rem;
+  font-weight: 800;
+  color: var(--bc-text-dark);
+  margin: 0 0 10px;
+  line-height: 1.3;
+}
+
+.bc-service-desc {
+  font-size: 0.90rem;
+  line-height: 1.55;
+  color: var(--bc-text-muted);
+  margin: 0 0 20px;
+  flex: 1;
+}
+
+.bc-service-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.92rem;
+  font-weight: 750;
+  color: var(--bc-blue);
+  text-decoration: none;
+  margin-top: auto;
+  transition: var(--bc-transition);
+}
+
+.bc-service-link:hover {
+  color: var(--bc-blue-hover);
+  transform: translateX(4px);
+}
+
+/* ──────────────────────────────────────────────────────────────────────────
+   6. INTERACTIVE DIAGNOSTIC SECTION ("Tell us what the system is doing")
+   ────────────────────────────────────────────────────────────────────────── */
+.bc-diagnostic-section {
+  position: relative;
+  padding: 85px 0;
+  background-color: #06111f;
+  background-image: url('../images/boiler-img-8.jpg');
+  background-position: center 35%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.bc-diag-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(4, 16, 32, 0.95) 0%,
+    rgba(6, 20, 38, 0.92) 36%,
+    rgba(8, 25, 48, 0.84) 55%,
+    rgba(10, 30, 58, 0.68) 75%,
+    rgba(5, 17, 34, 0.88) 100%
+  );
+  z-index: 1;
+}
+
+.bc-diag-container {
+  position: relative;
+  z-index: 2;
+}
+
+.bc-diagnostic-grid {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 56px;
+  align-items: flex-start;
+}
+
+.bc-diag-left {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.bc-diag-title {
+  font-size: clamp(2rem, 3.8vw, 2.7rem);
+  font-weight: 850;
+  color: #ffffff;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin: 0 0 14px;
+}
+
+.bc-diag-subtitle {
+  font-size: 1.02rem;
+  line-height: 1.6;
+  color: #94a3b8;
+  margin: 0;
+}
+
+/* Emergency Box on Left */
+.bc-diag-emergency-box {
+  background: rgba(15, 23, 42, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--bc-radius-md);
+  padding: 22px 24px;
+  backdrop-filter: blur(8px);
+}
+
+.bc-diag-em-header {
+  font-size: 0.78rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #f87171;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.bc-diag-em-desc {
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: #cbd5e1;
+  margin: 0 0 14px;
+}
+
+.bc-diag-em-phone {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffffff;
+  font-size: 0.92rem;
+  font-weight: 750;
+  text-decoration: underline;
+}
+
+/* Right Side: Active Card + 3 Selectors */
+.bc-diag-right {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.bc-diag-active-card {
+  background: #ffffff;
+  border-radius: var(--bc-radius-md);
+  padding: 24px 28px;
+  color: var(--bc-text-dark);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  margin-bottom: 6px;
+}
+
+.bc-diag-active-text {
+  font-size: 0.98rem;
+  line-height: 1.55;
+  color: var(--bc-text-dark);
+  font-weight: 600;
+  margin: 0 0 14px;
+}
+
+.bc-diag-active-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.92rem;
+  font-weight: 750;
+  color: var(--bc-blue);
+  text-decoration: none;
+}
+
+.bc-diag-btn-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 22px;
+  background: #ffffff;
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  border-radius: var(--bc-radius-md);
+  cursor: pointer;
+  transition: var(--bc-transition);
+  text-align: left;
+}
+
+.bc-diag-btn-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.bc-diag-btn-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.98rem;
+  font-weight: 750;
+  color: var(--bc-text-dark);
+}
+
+.bc-diag-btn-left svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--bc-blue);
+}
+
+.bc-diag-btn-plus {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: var(--bc-blue);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+/* ──────────────────────────────────────────────────────────────────────────
+   7. EMERGENCY BANNER ("No heat? No cooling? Call now.")
+   ────────────────────────────────────────────────────────────────────────── */
+.bc-emergency-banner-section {
+  padding: 40px 0;
+  background-color: #ffffff;
+}
+
+.bc-emergency-banner-card {
+  position: relative;
+  border-radius: 28px;
+  overflow: hidden;
+  background-color: #0b1a2b;
+  background-image: url('../images/emergency-banner-bg.jpg');
+  background-size: cover;
+  background-position: center 68%;
+  background-repeat: no-repeat;
+  box-shadow: 0 20px 48px -10px rgba(234, 88, 12, 0.30), 0 10px 24px -6px rgba(0, 116, 204, 0.25);
+  padding: 34px 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  color: #ffffff;
+  z-index: 1;
+}
+
+/* Gradient overlay across the photo exactly sampled from the reference banner */
+.bc-emergency-banner-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    95deg,
+    rgba(0, 116, 204, 0.88) 0%,
+    rgba(14, 82, 168, 0.86) 20%,
+    rgba(65, 38, 112, 0.84) 38%,
+    rgba(152, 28, 88, 0.84) 55%,
+    rgba(215, 41, 62, 0.86) 72%,
+    rgba(245, 96, 36, 0.88) 88%,
+    rgba(250, 118, 38, 0.90) 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Radial warm glow behind the button area on the right */
+.bc-emergency-banner-card::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 6%;
+  transform: translateY(-50%);
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 140, 50, 0.28) 0%, rgba(255, 100, 30, 0) 70%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.bc-em-left {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex: 1;
+  position: relative;
+  z-index: 2;
+}
+
+.bc-em-badge {
+  background: rgba(8, 20, 36, 0.88);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 16px;
+  padding: 14px 20px;
+  text-align: center;
+  flex-shrink: 0;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(4px);
+}
+
+.bc-em-badge-title {
+  font-size: 1.85rem;
+  font-weight: 900;
+  line-height: 1;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+}
+
+.bc-em-badge-sub {
+  font-size: 0.65rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #7dd3fc;
+  margin-top: 5px;
+}
+
+.bc-em-content {
+  flex: 1;
+}
+
+.bc-em-tagline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.76rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #bae6fd;
+  margin-bottom: 6px;
+}
+
+.bc-em-tagline-bar {
+  display: inline-block;
+  width: 18px;
+  height: 3px;
+  background-color: #fb7185;
+  border-radius: 2px;
+}
+
+.bc-em-heading {
+  font-size: clamp(1.4rem, 2.4vw, 1.95rem);
+  font-weight: 850;
+  color: #ffffff;
+  margin: 0 0 6px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.bc-em-desc {
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: #ffffff;
+  opacity: 0.95;
+  margin: 0 0 10px;
+  max-width: 680px;
+}
+
+.bc-em-tags {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #ffffff;
+  flex-wrap: wrap;
+}
+
+.bc-em-dot {
+  color: #f59e0b;
+  font-size: 0.65rem;
+  margin-right: 4px;
+}
+
+.bc-em-right {
+  position: relative;
+  z-index: 2;
+  flex-shrink: 0;
+}
+
+.bc-btn-em-call {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 32px;
+  border-radius: var(--bc-radius-pill);
+  background-color: #070e18;
+  color: #ffffff;
+  font-size: 1.05rem;
+  font-weight: 800;
+  text-decoration: none;
+  white-space: nowrap;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: var(--bc-transition);
+}
+
+.bc-btn-em-call:hover {
+  background-color: #ffffff;
+  color: #070e18;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.5);
+}
+
+/* ──────────────────────────────────────────────────────────────────────────
+   8. FEATURED EQUIPMENT ("Comfort systems built for Chicago seasons")
+   ────────────────────────────────────────────────────────────────────────── */
+.bc-catalog-section {
+  padding: 85px 0;
+  background-color: var(--bc-navy-section);
+  color: #ffffff;
+}
+
+.bc-catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  margin-bottom: 45px;
+}
+
+/* Equipment Card is CRISP WHITE with rounded corners */
+.bc-catalog-card {
+  background: #ffffff;
+  border-radius: var(--bc-radius-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: var(--bc-transition);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.bc-catalog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.40);
+}
+
+.bc-cat-img-wrap {
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+  background: #0f172a;
+}
+
+.bc-cat-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.bc-catalog-card:hover .bc-cat-img {
+  transform: scale(1.06);
+}
+
+.bc-cat-body {
+  padding: 20px 18px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.bc-cat-tag-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.bc-cat-pill {
+  font-size: 0.70rem;
+  font-weight: 850;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--bc-text-muted);
+}
+
+.bc-cat-icon {
+  width: 18px;
+  height: 18px;
+  fill: var(--bc-blue);
+}
+
+.bc-cat-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--bc-text-dark);
+  margin: 0 0 8px;
+  line-height: 1.3;
+}
+
+.bc-cat-desc {
+  font-size: 0.84rem;
+  line-height: 1.5;
+  color: var(--bc-text-muted);
+  margin: 0 0 18px;
+  flex: 1;
+}
+
+.bc-cat-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  font-weight: 750;
+  color: var(--bc-blue);
+  text-decoration: none;
+  margin-top: auto;
+  transition: var(--bc-transition);
+}
+
+.bc-cat-link:hover {
+  color: var(--bc-blue-hover);
+  transform: translateX(4px);
+}
+
+/* ──────────────────────────────────────────────────────────────────────────
+   9. EQUIPMENT OPTIONS BRAND STRIP
+   ────────────────────────────────────────────────────────────────────────── */
+.bc-brands-bar {
+  background-color: #ffffff;
+  border-top: 1px solid var(--bc-border);
+  border-bottom: 1px solid var(--bc-border);
+  padding: 24px 0;
+}
+
+.bc-brands-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.bc-brands-label-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.bc-brands-eyebrow {
+  font-size: 0.74rem;
+  font-weight: 850;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--bc-text-dark);
+}
+
+.bc-brands-desc {
+  font-size: 0.84rem;
+  color: var(--bc-text-muted);
+  margin-top: 2px;
+}
+
+.bc-brands-pills-wrap {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.bc-brand-chip {
+  padding: 8px 22px;
+  border-radius: var(--bc-radius-pill);
+  border: 1.5px solid var(--bc-border);
+  background-color: #ffffff;
+  font-size: 0.88rem;
+  font-weight: 800;
+  transition: var(--bc-transition);
+}
+
+.bc-brand-chip.rheem { color: #dc2626; border-color: #fca5a5; }
+.bc-brand-chip.goodman { color: #1e3a8a; border-color: #bfdbfe; }
+.bc-brand-chip.american-standard { color: #0284c7; border-color: #bae6fd; }
+.bc-brand-chip.navien { color: #1e3a8a; border-color: #bfdbfe; }
+.bc-brand-chip.ameristar { color: #0284c7; border-color: #bae6fd; }
+
+.bc-brand-chip:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+}
+
+/* ──────────────────────────────────────────────────────────────────────────
+   10. WHY BEST COMFORT HVAC ("Trusted service, clear answers...")
+   ────────────────────────────────────────────────────────────────────────── */
+.bc-why-section {
+  padding: 90px 0;
+  background-color: #ffffff;
+  background-image: radial-gradient(circle at 95% 15%, rgba(254, 226, 226, 0.45), transparent 50%);
+}
+
+.bc-why-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.bc-why-media-wrap {
+  position: relative;
+  border-radius: var(--bc-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--bc-shadow-md);
+}
+
+.bc-why-img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  display: block;
+}
+
+.bc-why-float-badge {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(10, 18, 30, 0.88);
+  color: #ffffff;
+  padding: 8px 18px;
+  border-radius: var(--bc-radius-pill);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  backdrop-filter: blur(6px);
+}
+
+.bc-why-accordions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.bc-acc-card {
+  background: #ffffff;
+  border: 1px solid var(--bc-border);
+  border-radius: var(--bc-radius-md);
+  overflow: hidden;
+  transition: var(--bc-transition);
+}
+
+.bc-acc-card.is-open {
+  border-color: var(--bc-coral-border);
+  background-color: #fffafb;
+  box-shadow: 0 4px 16px rgba(234, 76, 89, 0.08);
+}
+
+.bc-acc-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 0.96rem;
+  font-weight: 750;
+  color: var(--bc-text-dark);
+  cursor: pointer;
+  text-align: left;
+}
+
+.bc-acc-header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.bc-acc-icon-circle {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #e0f2fe;
+  color: var(--bc-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+}
+
+.bc-acc-toggle-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #e0f2fe;
+  color: var(--bc-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.bc-acc-card.is-open .bc-acc-toggle-icon {
+  background: #fee2e2;
+  color: var(--bc-coral);
+}
+
+.bc-acc-body {
+  display: none;
+  padding: 0 20px 18px 58px;
+  font-size: 0.90rem;
+  line-height: 1.6;
+  color: var(--bc-text-muted);
+}
+
+.bc-acc-card.is-open .bc-acc-body {
+  display: block;
+}
+
+/* ──────────────────────────────────────────────────────────────────────────
+   11. PREVENTIVE MAINTENANCE SPOTLIGHT ("Make seasonal care easier to plan")
+   ────────────────────────────────────────────────────────────────────────── */
+.bc-maintenance-section {
+  padding: 85px 0;
+  background-color: #ffffff;
+  border-top: 1px solid var(--bc-border);
+}
+
+.bc-maint-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.bc-maint-img-wrap {
+  border-radius: var(--bc-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--bc-shadow-md);
+}
+
+.bc-maint-img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+}
+
+.bc-maint-checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 24px 0 32px;
+}
+
+.bc-check-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+  font-weight: 650;
+  color: var(--bc-text-dark);
+}
+
+.bc-check-mark {
+  color: #10b981;
+  font-weight: 900;
+}
+
+.bc-maint-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.bc-btn-primary-blue {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 28px;
+  background-color: var(--bc-blue);
+  color: #ffffff;
+  border-radius: var(--bc-radius-pill);
+  font-size: 0.95rem;
+  font-weight: 750;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(0, 114, 206, 0.35);
+  transition: var(--bc-transition);
+}
+
+.bc-btn-primary-blue:hover {
+  background-color: var(--bc-blue-hover);
+  transform: translateY(-2px);
+  color: #ffffff;
+}
+
+/* ──────────────────────────────────────────────────────────────────────────
+   12. CHICAGOLAND COVERAGE SECTION
+   ────────────────────────────────────────────────────────────────────────── */
+.bc-coverage-section {
+  padding: 85px 0;
+  background-color: var(--bc-bg-ice);
+}
+
+.bc-coverage-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.bc-areas-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin: 26px 0 28px;
+}
+
+.bc-area-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  background: #ffffff;
+  border: 1px solid var(--bc-border);
+  border-radius: var(--bc-radius-md);
+  font-size: 0.95rem;
+  font-weight: 750;
+  color: var(--bc-text-dark);
+  text-decoration: none;
+  transition: var(--bc-transition);
+}
+
+.bc-area-btn:hover {
+  border-color: var(--bc-blue);
+  color: var(--bc-blue);
+  transform: translateX(4px);
+  box-shadow: var(--bc-shadow-sm);
+}
+
+.bc-coverage-media {
+  position: relative;
+  border-radius: var(--bc-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--bc-shadow-md);
+}
+
+.bc-coverage-img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+.bc-coverage-badge-bar {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background: rgba(10, 18, 30, 0.88);
+  border-radius: var(--bc-radius-pill);
+  padding: 10px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  backdrop-filter: blur(6px);
+  color: #ffffff;
+  font-size: 0.82rem;
+}
+
+.bc-coverage-badge-bar strong {
+  font-weight: 800;
+}
+
+.bc-coverage-badge-bar span {
+  color: #cbd5e1;
+}
+
+/* ──────────────────────────────────────────────────────────────────────────
+   13. CUSTOMER EXPERIENCE / REVIEWS ("What customers value most")
+   ────────────────────────────────────────────────────────────────────────── */
+.bc-reviews-section {
+  padding: 85px 0;
+  background-color: #ffffff;
+}
+
+.bc-reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.bc-review-card {
+  background: var(--bc-bg-light);
+  border: 1px solid var(--bc-border);
+  border-radius: var(--bc-radius-md);
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  transition: var(--bc-transition);
+}
+
+.bc-review-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--bc-shadow-md);
+}
+
+.bc-review-stars {
+  color: #f59e0b;
+  font-size: 1.15rem;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.bc-review-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--bc-text-dark);
+  margin: 0 0 10px;
+}
+
+.bc-review-text {
+  font-size: 0.90rem;
+  line-height: 1.6;
+  color: var(--bc-text-muted);
+  margin: 0;
+}
+
+/* ──────────────────────────────────────────────────────────────────────────
+   14. FAQ SECTION ("Quick answers before you schedule")
+   ────────────────────────────────────────────────────────────────────────── */
+.bc-faq-section {
+  padding: 85px 0;
+  background-color: var(--bc-bg-blush);
+  border-top: 1px solid var(--bc-border);
+}
+
+.bc-faq-grid {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.bc-faq-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--bc-blue);
+  font-size: 0.95rem;
+  font-weight: 750;
+  text-decoration: none;
+  margin-top: 16px;
+  transition: var(--bc-transition);
+}
+
+.bc-faq-link:hover {
+  color: var(--bc-blue-hover);
+  transform: translateX(4px);
+}
+
+.bc-faq-accordions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* ──────────────────────────────────────────────────────────────────────────
+   15. PRE-FOOTER CALLOUT BANNER ("Ready for Chicago's next season?")
+   ────────────────────────────────────────────────────────────────────────── */
+.bc-cta-section {
+  padding: 60px 0 80px;
+  background-color: #ffffff;
+}
+
+.bc-cta-card {
+  position: relative;
+  border-radius: 28px;
+  overflow: hidden;
+  background-color: #0c1e38;
+  background-image: url('../images/cta-banner-bg.jpg');
+  background-size: cover;
+  background-position: center 40%;
+  background-repeat: no-repeat;
+  box-shadow: 0 20px 48px -10px rgba(234, 88, 12, 0.28), 0 10px 24px -6px rgba(8, 22, 42, 0.35);
+  padding: 42px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  color: #ffffff;
+  z-index: 1;
+}
+
+/* Gradient overlay across the photo matching website example */
+.bc-cta-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    95deg,
+    rgba(8, 22, 42, 0.94) 0%,
+    rgba(14, 34, 66, 0.90) 30%,
+    rgba(88, 22, 48, 0.86) 55%,
+    rgba(185, 28, 48, 0.86) 72%,
+    rgba(234, 88, 12, 0.88) 90%,
+    rgba(249, 115, 22, 0.90) 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+.bc-cta-left {
+  max-width: 640px;
+  position: relative;
+  z-index: 2;
+}
+
+.bc-cta-tag {
+  font-size: 0.78rem;
+  font-weight: 850;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #fed7aa;
+  margin-bottom: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.bc-cta-tag::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 2px;
+  background-color: #fed7aa;
+}
+
+.bc-cta-title {
+  font-size: clamp(1.8rem, 3vw, 2.3rem);
+  font-weight: 850;
+  color: #ffffff;
+  margin: 0 0 8px;
+  line-height: 1.2;
+}
+
+.bc-cta-desc {
+  font-size: 0.98rem;
+  line-height: 1.55;
+  color: #f1f5f9;
+  margin: 0;
+}
+
+.bc-cta-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+}
+
+.bc-btn-white-phone {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 26px;
+  border-radius: var(--bc-radius-pill);
+  background: #ffffff;
+  color: var(--bc-text-dark);
+  font-size: 0.95rem;
+  font-weight: 800;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.20);
+  transition: var(--bc-transition);
+}
+
+.bc-btn-white-phone:hover {
+  background-color: #f8fafc;
+  transform: translateY(-2px);
+}
+
+/* ──────────────────────────────────────────────────────────────────────────
+   16. FOOTER
+   ────────────────────────────────────────────────────────────────────────── */
+.bc-footer {
+  background-color: var(--bc-navy-dark);
+  color: #ffffff;
+  padding: 70px 0 28px;
+}
+
+.bc-footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+  gap: 48px;
+  margin-bottom: 50px;
+}
+
+.bc-footer-logo-wrap img {
+  height: 64px;
+  width: auto;
+  margin-bottom: 16px;
+}
+
+.bc-footer-desc {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: #94a3b8;
+  margin: 0 0 20px;
+}
+
+.bc-footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.bc-social-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #cbd5e1;
+  text-decoration: none;
+  transition: var(--bc-transition);
+}
+
+.bc-social-btn:hover {
+  background: var(--bc-coral);
+  color: #ffffff;
+  border-color: var(--bc-coral);
+}
+
+.bc-social-btn svg {
+  width: 15px;
+  height: 15px;
+  fill: currentColor;
+}
+
+.bc-footer-heading {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 20px;
+}
+
+.bc-footer-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bc-footer-links a {
+  font-size: 0.88rem;
+  color: #94a3b8;
+  text-decoration: none;
+  transition: var(--bc-transition);
+}
+
+.bc-footer-links a:hover {
+  color: #ffffff;
+  transform: translateX(3px);
+}
+
+.bc-footer-contact-item {
+  font-size: 0.88rem;
+  color: #94a3b8;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.bc-footer-contact-item strong {
+  color: #ffffff;
+}
+
+.bc-footer-contact-item a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.bc-footer-contact-item a:hover {
+  color: var(--bc-coral);
+}
+
+.bc-footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.82rem;
+  color: #64748b;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+/* ──────────────────────────────────────────────────────────────────────────
+   17. FLOATING WIDGETS (Need Help? & Scroll to Top)
+   ────────────────────────────────────────────────────────────────────────── */
+.bc-floating-widgets {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 990;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bc-floating-help-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  background-color: #7c3aed;
+  color: #ffffff;
+  border-radius: var(--bc-radius-pill);
+  font-size: 0.88rem;
+  font-weight: 750;
+  text-decoration: none;
+  box-shadow: 0 8px 24px rgba(124, 58, 237, 0.40);
+  cursor: pointer;
+  transition: var(--bc-transition);
+}
+
+.bc-floating-help-btn:hover {
+  background-color: #6d28d9;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(124, 58, 237, 0.55);
+  color: #ffffff;
+}
+
+.bc-scroll-top-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #1e293b;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 700;
+  transition: var(--bc-transition);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.bc-scroll-top-btn:hover {
+  background: var(--bc-coral);
+  transform: translateY(-2px);
+}
+
+/* ──────────────────────────────────────────────────────────────────────────
+   RESPONSIVE DESIGN (Matching mobile layouts)
+   ────────────────────────────────────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .bc-nav-menu { display: none; }
+  .bc-mobile-toggle { display: block; }
+  .bc-trust-grid { grid-template-columns: repeat(3, 1fr); }
+  .bc-services-grid { grid-template-columns: repeat(2, 1fr); }
+  .bc-catalog-grid { grid-template-columns: repeat(2, 1fr); }
+  .bc-diagnostic-grid,
+  .bc-why-grid,
+  .bc-maint-grid,
+  .bc-coverage-grid,
+  .bc-faq-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .bc-footer-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
+  .bc-hero-slogan-cursive { display: none; }
+  .bc-emergency-banner-card,
+  .bc-cta-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bc-top-bar { font-size: 0.80rem; }
+  .bc-trust-grid { grid-template-columns: 1fr; gap: 14px; }
+  .bc-services-grid { grid-template-columns: 1fr; }
+  .bc-catalog-grid { grid-template-columns: 1fr; }
+  .bc-areas-buttons { grid-template-columns: 1fr; }
+  .bc-reviews-grid { grid-template-columns: 1fr; }
+  .bc-footer-grid { grid-template-columns: 1fr; gap: 32px; }
+  .bc-hero-floating-card {
+    position: static;
+    margin-top: 24px;
+    width: 100%;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+  .bc-em-left {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .bc-hero-overlay {
+    background: linear-gradient(
+      180deg,
+      rgba(2, 24, 44, 0.96) 0%,
+      rgba(8, 32, 58, 0.90) 50%,
+      rgba(2, 24, 44, 0.98) 100%
+    );
+  }
+  .bc-diag-overlay {
+    background: linear-gradient(
+      180deg,
+      rgba(4, 16, 32, 0.96) 0%,
+      rgba(8, 25, 48, 0.90) 50%,
+      rgba(4, 16, 32, 0.98) 100%
+    );
+  }
+  .bc-emergency-banner-card::before {
+    background: linear-gradient(
+      180deg,
+      rgba(0, 116, 204, 0.92) 0%,
+      rgba(65, 38, 112, 0.88) 40%,
+      rgba(215, 41, 62, 0.88) 75%,
+      rgba(250, 118, 38, 0.92) 100%
+    );
+  }
+  .bc-cta-card::before {
+    background: linear-gradient(
+      180deg,
+      rgba(8, 22, 42, 0.94) 0%,
+      rgba(88, 22, 48, 0.90) 50%,
+      rgba(249, 115, 22, 0.92) 100%
+    );
+  }
+}
+
+/* Mobile Drawer Overlay & Content */
+.bc-mobile-drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(7, 14, 24, 0.7);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.bc-mobile-drawer.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.bc-drawer-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 85%;
+  max-width: 340px;
+  background: #ffffff;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transform: translateX(100%);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow-y: auto;
+  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.25);
+}
+
+.bc-mobile-drawer.is-open .bc-drawer-content {
+  transform: translateX(0);
+}
+
+.bc-drawer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--bc-border);
+  padding-bottom: 16px;
+}
+
+.bc-drawer-close {
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: var(--bc-text-dark);
+  cursor: pointer;
+  line-height: 1;
+  padding: 4px;
+}
+
+.bc-drawer-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.bc-drawer-links a {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--bc-text-dark);
+  text-decoration: none;
+  transition: var(--bc-transition);
+}
+
+.bc-drawer-links a:hover,
+.bc-drawer-links a.active {
+  color: var(--bc-blue);
+}

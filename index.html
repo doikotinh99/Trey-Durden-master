@@ -3,317 +3,166 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trey Durden | HVAC Consultant, Broker &amp; Thermal Applications Engineer</title>
-  <meta name="description" content="Trey Durden - HVAC Consultant, HVAC Broker, and Thermal Applications Engineer providing thermodynamic systems design and premium HVAC brokerage services.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <title>Best Comfort HVAC | Chicago Heating, Air Conditioning &amp; 24/7 Emergency Service</title>
+  <meta name="description" content="Best Comfort Heating &amp; Cooling provides residential, commercial and industrial HVAC repair, installation, seasonal maintenance and 24/7 emergency service across Chicagoland.">
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Script Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Allura&family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Dancing+Script:wght@600;700&family=Great+Vibes&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Alex+Brush&family=Great+Vibes&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="css/style.css?v=8.43">
-  <link rel="shortcut icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/homepage-exact.css?v=1.0">
+  <link rel="shortcut icon" href="images/best-comfort-logo.svg" type="image/svg+xml">
 </head>
 <body>
 
-  <!-- Top Announcement Bar -->
-  <div class="top-announcement">
+  <!-- =========================================================================
+       1. TOP ANNOUNCEMENT / EMERGENCY BAR (Coral Red Banner)
+       ========================================================================= -->
+  <div class="bc-top-bar">
     <div class="container">
-      <div class="top-left-badges">
-        <span class="badge-live"><span class="live-dot"></span> HVAC Consultant &amp; Broker</span>
-        <span>Thermal Dynamic Engineering &amp; Design</span>
-        <span style="color: var(--color-cyan);">contact@treydurden.com</span>
-      </div>
-      <div class="top-right-contact">
-        <span>Direct 24/7 Hotline:</span>
-        <a href="tel:6303617434" class="top-phone-link">
-          <svg class="svg-icon" style="width:14px;height:14px;margin-right:4px;"><use href="#icon-phone"></use></svg>
-          630-361-7434
+      <span class="bc-top-bar-content">
+        24/7 Emergency HVAC Service &bull; Chicago <a href="tel:7732494733" class="bc-top-phone-link">(773) 249-4733</a>
+      </span>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       2. HEADER / NAVIGATION (Crisp Pure White)
+       ========================================================================= -->
+  <header class="bc-header">
+    <div class="container bc-header-container">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="bc-brand-logo" aria-label="Best Comfort Heating &amp; Cooling Home">
+        <img src="images/best-comfort-logo.svg" alt="Best Comfort Heating &amp; Cooling Logo" width="52" height="52">
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav class="bc-nav-menu">
+        <a href="index.html" class="bc-nav-link active">Home</a>
+        <a href="services.html" class="bc-nav-link">Services</a>
+        <a href="products.html" class="bc-nav-link">Comfort Options</a>
+        <a href="about.html" class="bc-nav-link">About</a>
+        <a href="services.html#service-areas" class="bc-nav-link">Service Areas</a>
+        <a href="about.html#faq" class="bc-nav-link">FAQ</a>
+        <a href="contact.html" class="bc-nav-link">Contact</a>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="bc-header-actions">
+        <a href="tel:7732494733" class="bc-header-phone">
+          <svg class="bc-header-phone-icon" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.21 2.2z"/></svg>
+          <span>Call (773) 249-4733</span>
         </a>
+        <a href="contact.html" class="bc-btn-schedule">Schedule Service</a>
+        <button class="bc-mobile-toggle" id="bcMobileToggle" aria-label="Toggle Navigation">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="bc-mobile-drawer" id="bcMobileDrawer">
+    <div class="bc-drawer-content">
+      <div class="bc-drawer-header">
+        <img src="images/best-comfort-logo.svg" alt="Best Comfort Heating &amp; Cooling" height="42">
+        <button class="bc-drawer-close" id="bcMobileClose">&times;</button>
+      </div>
+      <div class="bc-drawer-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="services.html">Services</a>
+        <a href="products.html">Comfort Options</a>
+        <a href="about.html">About</a>
+        <a href="services.html#service-areas">Service Areas</a>
+        <a href="about.html#faq">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div style="margin-top:auto; display:flex; flex-direction:column; gap:12px;">
+        <a href="tel:7732494733" class="bc-btn-outline" style="text-align:center;">Call (773) 249-4733</a>
+        <a href="contact.html" class="bc-btn-schedule" style="text-align:center;">Schedule Service</a>
       </div>
     </div>
   </div>
 
-  <!-- Header Navigation -->
-  <header class="site-header">
-    <div class="container">
-      <div class="brand-logo-group">
-        <a href="index.html" class="brand-logo" aria-label="Trey Durden Home">
-          <span class="brand-script-name">Trey Durden</span>
-        </a>
-        <a href="tel:6303617434" class="header-phone-clean" aria-label="Call Trey Durden at 630-361-7434">
-          <svg class="header-phone-icon" viewBox="0 0 24 24"><use href="#icon-phone"></use></svg>
-          <span>630-361-7434</span>
-        </a>
-      </div>
-
-      <nav class="nav-menu" id="navMenu">
-        <div class="mobile-nav-top-bar">
-          <span class="mobile-nav-heading">TREY DURDEN MENU</span>
-          <button type="button" class="mobile-nav-close" id="mobileNavClose" aria-label="Close Menu">&times;</button>
-        </div>
-
-        <!-- 24/7 Emergency Service Callout for Mobile Drawer -->
-        <div class="mobile-nav-hotline">
-          <div class="mobile-hotline-badge">24 Hours Emergency Service &bull; No Service Call Fees</div>
-          <a href="tel:6303617434" class="mobile-hotline-btn">Call 630-361-7434</a>
-        </div>
-
-        <a href="index.html" class="active">Home</a>
-        <a href="products.html">Brokerage Portfolio</a>
-        <a href="about.html">About Trey</a>
-
-        <!-- Desktop Services 3-Level Menu (Cáº¥p 1: Services -> Cáº¥p 2: 4 Trá»¥ Cá»™t -> Cáº¥p 3: Chi tiáº¿t) -->
-        <div class="nav-item-dropdown desktop-only-nav" id="servicesDropdown">
-          <div class="nav-dropdown-trigger-row">
-            <a href="services.html" class="nav-main-link">Services <span class="dropdown-caret">&#9662;</span></a>
-          </div>
-
-          <!-- Cáº¥p 2: Danh sÃ¡ch 4 Trá»¥ Cá»™t Gá»n GÃ ng -->
-          <ul class="dropdown-menu nav-cascade-dropdown">
-            <!-- Level 2.1: Air Conditioning Service -->
-            <li class="cascade-item">
-              <a href="services.html#air-conditioning" class="cascade-link">
-                <span class="cascade-title"><svg class="svg-icon" style="width:14px;height:14px;margin-right:6px;"><use href="#icon-snowflake"></use></svg>Air Conditioning Service</span>
-                <span class="cascade-arrow">&#8250;</span>
-              </a>
-              <!-- Level 3: Detail Flyout -->
-              <div class="cascade-flyout">
-                <div class="cascade-flyout-header">
-                  <span>Air Conditioning Practice</span>
-                </div>
-                <div class="cascade-tier-label">Residential AC</div>
-                <ul class="cascade-sub-list">
-                  <li><a href="services.html#residential-ac-repair">~Residential Air Conditioning Repair</a></li>
-                  <li><a href="services.html#residential-ac-service">~Residential Air Conditioning Service</a></li>
-                  <li><a href="services.html#residential-ac-installation">~Residential Air Conditioning Installation</a></li>
-                  <li><a href="services.html#residential-ac-inspections">~Residential HVAC Reports and Inspections</a></li>
-                </ul>
-                <div class="cascade-tier-label">Commercial AC</div>
-                <ul class="cascade-sub-list">
-                  <li><a href="services.html#commercial-ac-repair">~Commercial Air Conditioning Repair</a></li>
-                  <li><a href="services.html#commercial-ac-service">~Commercial Air Conditioning Service</a></li>
-                  <li><a href="services.html#commercial-ac-installation">~Commercial Air Conditioning Installation</a></li>
-                  <li><a href="services.html#commercial-ac-inspections">~Commercial HVAC Reports and Inspections</a></li>
-                </ul>
-              </div>
-            </li>
-
-            <!-- Level 2.2: HVAC Broker -->
-            <li class="cascade-item">
-              <a href="services.html#hvac-broker" class="cascade-link">
-                <span class="cascade-title"><svg class="svg-icon" style="width:14px;height:14px;margin-right:6px;"><use href="#icon-tools"></use></svg>HVAC Broker</span>
-                <span class="cascade-arrow">&#8250;</span>
-              </a>
-              <!-- Level 3: Detail Flyout -->
-              <div class="cascade-flyout">
-                <div class="cascade-flyout-header">
-                  <span>Direct HVAC Brokerage</span>
-                </div>
-                <div class="cascade-tier-label">Estimates &amp; Procurement</div>
-                <ul class="cascade-sub-list">
-                  <li><a href="services.html#residential-broker">~Residential Estimates Broker</a></li>
-                  <li><a href="services.html#commercial-broker">~Commercial Estimates Broker</a></li>
-                </ul>
-              </div>
-            </li>
-
-            <!-- Level 2.3: Thermal Application Engineering -->
-            <li class="cascade-item">
-              <a href="services.html#thermal-dynamic" class="cascade-link">
-                <span class="cascade-title"><svg class="svg-icon" style="width:14px;height:14px;margin-right:6px;"><use href="#icon-fire"></use></svg>Thermal Applications</span>
-                <span class="cascade-arrow">&#8250;</span>
-              </a>
-              <!-- Level 3: Detail Flyout -->
-              <div class="cascade-flyout">
-                <div class="cascade-flyout-header">
-                  <span>Thermal Applications</span>
-                </div>
-                <div class="cascade-tier-label">Practice Scope</div>
-                <ul class="cascade-sub-list">
-                  <li><a href="services.html#residential-concerns">~Residential Concerns</a></li>
-                  <li><a href="services.html#commercial-concerns">~Commercial Concerns</a></li>
-                  <li><a href="services.html#industrial-concerns">~Industrial Concerns</a></li>
-                </ul>
-              </div>
-            </li>
-
-            <!-- Level 2.4: Boiler Services -->
-            <li class="cascade-item">
-              <a href="services.html#boiler-services" class="cascade-link">
-                <span class="cascade-title"><svg class="svg-icon" style="width:14px;height:14px;margin-right:6px;"><use href="#icon-gear"></use></svg>Boiler Services</span>
-                <span class="cascade-arrow">&#8250;</span>
-              </a>
-              <!-- Level 3: Detail Flyout -->
-              <div class="cascade-flyout">
-                <div class="cascade-flyout-header">
-                  <span>Certified Boiler Practice</span>
-                </div>
-                <div class="cascade-tier-label">Master Engineering</div>
-                <ul class="cascade-sub-list">
-                  <li><a href="services.html#boiler-consulting">~Boiler Consulting</a></li>
-                  <li><a href="services.html#boiler-inspections">~Boiler Inspections and Reports</a></li>
-                  <li><a href="services.html#boiler-repair">~Boiler Service and Repair</a></li>
-                  <li><a href="services.html#boiler-installation">~Boiler Installation</a></li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Mobile Categories Accordion (Directly inside Hamburger Drawer on Mobile) -->
-        <div class="mobile-only-categories">
-          <!-- 1. Air Conditioning Service -->
-          <div class="menu-cat-block is-open">
-            <button type="button" class="menu-cat-btn" aria-expanded="true">
-              <span>Air Conditioning Service</span>
-              <span class="menu-cat-arrow">â–¾</span>
-            </button>
-            <div class="menu-cat-dropdown">
-              <div class="menu-tier-heading">Residential AC</div>
-              <a href="services.html#residential-ac-repair" class="menu-item-link">~Residential Air Conditioning Repair</a>
-              <a href="services.html#residential-ac-service" class="menu-item-link">~Residential Air Conditioning Service</a>
-              <a href="services.html#residential-ac-installation" class="menu-item-link">~Residential Air Conditioning Installation</a>
-              <a href="services.html#residential-ac-inspections" class="menu-item-link">~Residential HVAC Reports and Inspections</a>
-              <div class="menu-tier-heading">Commercial AC</div>
-              <a href="services.html#commercial-ac-repair" class="menu-item-link">~Commercial Air Conditioning Repair</a>
-              <a href="services.html#commercial-ac-service" class="menu-item-link">~Commercial Air Conditioning Service</a>
-              <a href="services.html#commercial-ac-installation" class="menu-item-link">~Commercial Air Conditioning Installation</a>
-              <a href="services.html#commercial-ac-inspections" class="menu-item-link">~Commercial HVAC Reports and Inspections</a>
-            </div>
-          </div>
-
-          <!-- 2. HVAC Broker -->
-          <div class="menu-cat-block">
-            <button type="button" class="menu-cat-btn" aria-expanded="false">
-              <span>HVAC Broker</span>
-              <span class="menu-cat-arrow">â–¾</span>
-            </button>
-            <div class="menu-cat-dropdown">
-              <a href="services.html#residential-broker" class="menu-item-link">~Residential Estimates Broker</a>
-              <a href="services.html#commercial-broker" class="menu-item-link">~Commercial Estimates Broker</a>
-            </div>
-          </div>
-
-          <!-- 3. Thermal Application Engineering -->
-          <div class="menu-cat-block">
-            <button type="button" class="menu-cat-btn" aria-expanded="false">
-              <span>Thermal Application Engineering</span>
-              <span class="menu-cat-arrow">â–¾</span>
-            </button>
-            <div class="menu-cat-dropdown">
-              <a href="services.html#residential-concerns" class="menu-item-link">~Residential Concerns</a>
-              <a href="services.html#commercial-concerns" class="menu-item-link">~Commercial Concerns</a>
-              <a href="services.html#industrial-concerns" class="menu-item-link">~Industrial Concerns</a>
-            </div>
-          </div>
-
-          <!-- 4. Boiler Services -->
-          <div class="menu-cat-block">
-            <button type="button" class="menu-cat-btn" aria-expanded="false">
-              <span>Boiler Services</span>
-              <span class="menu-cat-arrow">â–¾</span>
-            </button>
-            <div class="menu-cat-dropdown">
-              <a href="services.html#boiler-consulting" class="menu-item-link">~Boiler Consulting</a>
-              <a href="services.html#boiler-inspections" class="menu-item-link">~Boiler Inspections and Reports</a>
-              <a href="services.html#boiler-repair" class="menu-item-link">~Boiler Service and Repair</a>
-              <a href="services.html#boiler-installation" class="menu-item-link">~Boiler Installation</a>
-            </div>
-          </div>
-        </div>
-
-        <a href="services.html#consulting" class="nav-main-link">Consulting</a>
-        <a href="contact.html" class="nav-main-link">Contact</a>
-
-        <div class="mobile-nav-footer-cta">
-          <a href="tel:6303617434" class="btn btn-hero-call" style="width: 100%; justify-content: center;">
-            <svg class="svg-icon" style="width:14px;height:14px;margin-right:6px;"><use href="#icon-phone"></use></svg>
-            Call 630-361-7434
-          </a>
-          <a href="contact.html" class="btn btn-primary" style="width: 100%; justify-content: center;">Book Consultation &rarr;</a>
-        </div>
-      </nav>
-
-      <div class="header-right">
-        <a href="contact.html" class="btn btn-primary" style="padding: 10px 22px; font-size: 0.9rem;">Book Consultation &rarr;</a>
-        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle Navigation">
-          <svg class="svg-icon" style="width:20px;height:20px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-        </button>
-      </div>
-    </div>
-  </header>
-
   <!-- =========================================================================
-       1. HERO SECTION (Aligned with website example.webp wireframe)
+       3. HERO SECTION (Chicago Atmosphere + Cursive Slogan + Floating 24/7 Card)
        ========================================================================= -->
-  <section class="ex-hero-section">
-    <!-- Gradient Scrim Overlay for Perfect Contrast -->
-    <div class="ex-hero-bg-scrim"></div>
+  <section class="bc-hero-section">
+    <div class="bc-hero-overlay"></div>
 
-    <div class="container ex-hero-container">
-      
-      <!-- Left Content Column -->
-      <div class="ex-hero-content">
-        <div class="ex-hero-eyebrow">
-          <span class="eyebrow-line"></span>
-          <span>CHICAGO HEATING &amp; COOLING</span>
-        </div>
+    <!-- Top Right Cursive Slogan -->
+    <div class="bc-hero-slogan-cursive">
+      Keeping<br>
+      Chicago<br>
+      Comfortable<br>
+      All Year Round
+    </div>
+
+    <div class="container bc-hero-container">
+      <div class="bc-hero-content">
         
-        <h1 class="ex-hero-title">
+        <div class="bc-hero-eyebrow">No Service Call Fee's</div>
+        
+        <h1 class="bc-hero-title">
           Comfort that<br>
           keeps up with<br>
-          <span class="ex-hero-accent">Chicago weather.</span>
+          <span class="bc-text-coral">Chicago</span> weather.
         </h1>
 
-        <p class="ex-hero-desc">
-          Heating, air conditioning, boiler and indoor air comfort service for residential, commercial and industrial properties&mdash;available around the clock when the system cannot wait.
+        <p class="bc-hero-desc">
+          Heating, air conditioning, boiler and indoor air comfort service for residential, commercial and industrial properties - available around the clock when the system cannot wait.
         </p>
 
-        <div class="ex-hero-actions">
-          <a href="contact.html" class="ex-btn-hero-primary">Schedule Service</a>
-          <a href="tel:6303617434" class="ex-btn-hero-call">
-            <svg class="svg-icon" style="width:16px;height:16px;color:var(--color-salmon);"><use href="#icon-phone"></use></svg>
-            <span>Call (630) 361-7434</span>
-          </a>
+        <div class="bc-hero-actions">
+          <a href="contact.html" class="bc-btn-hero-primary">Schedule Service</a>
+          <a href="tel:7732494733" class="bc-btn-hero-call">Call (773) 249-4733</a>
         </div>
 
-        <div class="ex-hero-trust-row">
-          <div class="ex-trust-item-inline">
-            <svg class="svg-icon" style="width:16px;height:16px;"><use href="#icon-award"></use></svg>
+        <div class="bc-hero-badges-row">
+          <div class="bc-hero-badge-item">
+            <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
             <span>A+ BBB Accredited</span>
           </div>
-          <div class="ex-trust-item-inline">
-            <svg class="svg-icon" style="width:16px;height:16px;"><use href="#icon-clock"></use></svg>
+          <div class="bc-hero-badge-item">
+            <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
             <span>24/7 Emergency Service</span>
           </div>
-          <div class="ex-trust-item-inline">
-            <svg class="svg-icon" style="width:16px;height:16px;"><use href="#icon-tools"></use></svg>
+          <div class="bc-hero-badge-item">
+            <svg viewBox="0 0 24 24"><path d="M21.41 11.58l-9-9C12.05 2.22 11.55 2 11 2H4c-1.1 0-2 .9-2 2v7c0 .55.22 1.05.59 1.42l9 9c.36.36.86.58 1.41.58.55 0 1.05-.22 1.41-.59l7-7c.37-.36.59-.86.59-1.41 0-.55-.23-1.06-.59-1.42zM5.5 7C4.67 7 4 6.33 4 5.5S4.67 4 5.5 4 7 4.67 7 5.5 6.33 7 5.5 7z"/></svg>
             <span>All Major HVAC Brands</span>
           </div>
         </div>
+
       </div>
 
-      <!-- Bottom Right Floating 24/7 Live Status Card (Crisp White Card as in example.webp) -->
-      <div class="ex-hero-floating-status">
-        <div class="ex-status-badge-left">
-          <div class="ex-status-clock-circle">
-            <svg class="svg-icon" style="width:18px;height:18px;"><use href="#icon-clock"></use></svg>
+      <!-- Floating 24/7 Live Status Card on Bottom-Right -->
+      <div class="bc-hero-floating-card">
+        <div class="bc-card-clock-group">
+          <div class="bc-card-clock-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
           </div>
-          <div class="ex-status-text-group">
-            <div class="ex-status-big-num">24/7</div>
-            <div class="ex-status-label">EMERGENCY SERVICE</div>
+          <div>
+            <div class="bc-card-clock-num">24/7</div>
+            <div class="bc-card-clock-label">EMERGENCY SERVICE</div>
           </div>
         </div>
-        <div class="ex-status-v-divider"></div>
-        <div class="ex-status-indicators">
-          <div class="ex-status-dot-row">
-            <span class="ex-status-dot dot-heating"></span>
+        <div class="bc-card-divider"></div>
+        <div class="bc-card-dots">
+          <div class="bc-dot-item">
+            <span class="bc-status-dot bc-dot-red"></span>
             <span>HEATING</span>
           </div>
-          <div class="ex-status-dot-row">
-            <span class="ex-status-dot dot-cooling"></span>
+          <div class="bc-dot-item">
+            <span class="bc-status-dot bc-dot-blue"></span>
             <span>COOLING</span>
           </div>
-          <div class="ex-status-dot-row">
-            <span class="ex-status-dot dot-iaq"></span>
+          <div class="bc-dot-item">
+            <span class="bc-status-dot bc-dot-green"></span>
             <span>AIR QUALITY</span>
           </div>
         </div>
@@ -323,59 +172,59 @@
   </section>
 
   <!-- =========================================================================
-       2. TRUST RIBBON (5-Column Accreditation & Feature Strip)
+       4. TRUST RIBBON / ACCREDITATION BAR (5 Items)
        ========================================================================= -->
-  <section class="ex-trust-strip">
+  <section class="bc-trust-ribbon">
     <div class="container">
-      <div class="ex-trust-grid">
+      <div class="bc-trust-grid">
         
-        <div class="ex-trust-item">
-          <div class="ex-trust-icon-box">
-            <svg class="svg-icon" style="width:20px;height:20px;"><use href="#icon-award"></use></svg>
+        <div class="bc-trust-item">
+          <div class="bc-trust-icon bc-trust-icon-gray">
+            <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
           </div>
           <div>
-            <div class="ex-trust-title">A+ BBB Accredited</div>
-            <div class="ex-trust-desc">Independent business profile</div>
+            <div class="bc-trust-title">A+ BBB Accredited</div>
+            <div class="bc-trust-sub">Independent business profile</div>
           </div>
         </div>
 
-        <div class="ex-trust-item">
-          <div class="ex-trust-icon-box">
-            <svg class="svg-icon" style="width:20px;height:20px;"><use href="#icon-bolt"></use></svg>
+        <div class="bc-trust-item">
+          <div class="bc-trust-icon bc-trust-icon-red">
+            <svg viewBox="0 0 24 24"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg>
           </div>
           <div>
-            <div class="ex-trust-title">24/7 Emergency</div>
-            <div class="ex-trust-desc">Heating and cooling help</div>
+            <div class="bc-trust-title">24/7 Emergency</div>
+            <div class="bc-trust-sub">Heating and cooling help</div>
           </div>
         </div>
 
-        <div class="ex-trust-item">
-          <div class="ex-trust-icon-box">
-            <svg class="svg-icon" style="width:20px;height:20px;"><use href="#icon-shield"></use></svg>
+        <div class="bc-trust-item">
+          <div class="bc-trust-icon bc-trust-icon-blue">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
           </div>
           <div>
-            <div class="ex-trust-title">Free New-System Estimates</div>
-            <div class="ex-trust-desc">Plan replacement with clarity</div>
+            <div class="bc-trust-title">Free New-System Estimates</div>
+            <div class="bc-trust-sub">Plan replacement with clarity</div>
           </div>
         </div>
 
-        <div class="ex-trust-item">
-          <div class="ex-trust-icon-box">
-            <svg class="svg-icon" style="width:20px;height:20px;"><use href="#icon-tools"></use></svg>
+        <div class="bc-trust-item">
+          <div class="bc-trust-icon bc-trust-icon-red">
+            <svg viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
           </div>
           <div>
-            <div class="ex-trust-title">Major Brands Serviced</div>
-            <div class="ex-trust-desc">Residential and commercial</div>
+            <div class="bc-trust-title">Major Brands Serviced</div>
+            <div class="bc-trust-sub">Residential and commercial</div>
           </div>
         </div>
 
-        <div class="ex-trust-item">
-          <div class="ex-trust-icon-box">
-            <svg class="svg-icon" style="width:20px;height:20px;"><use href="#icon-map-pin"></use></svg>
+        <div class="bc-trust-item">
+          <div class="bc-trust-icon bc-trust-icon-blue">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
           </div>
           <div>
-            <div class="ex-trust-title">Chicagoland Coverage</div>
-            <div class="ex-trust-desc">Multiple local service areas</div>
+            <div class="bc-trust-title">Chicagoland Coverage</div>
+            <div class="bc-trust-sub">Multiple local service areas</div>
           </div>
         </div>
 
@@ -384,41 +233,41 @@
   </section>
 
   <!-- =========================================================================
-       3. CORE SERVICES 6-CARD GRID ("One team for every season")
+       5. SERVICES SECTION ("One team for every season")
        ========================================================================= -->
-  <section class="ex-services-section">
+  <section class="bc-services-section">
     <div class="container">
       
-      <div class="ex-header-row">
-        <div class="ex-header-left">
-          <div class="ex-eyebrow">HEATING &bull; COOLING &bull; COMFORT</div>
-          <h2 class="ex-section-title">One team for every season.</h2>
-          <p class="ex-section-subtitle">
-            Whether the furnace quits overnight or the AC struggles during a humid afternoon, start with the service that matches the problem.
+      <div class="bc-section-header-row">
+        <div>
+          <div class="bc-section-tag">HEATING &bull; COOLING &bull; COMFORT</div>
+          <h2 class="bc-section-title">One team for every season.</h2>
+          <p class="bc-section-subtitle">
+            Whether the furnace quits overnight or the AC struggles through a humid afternoon, start with the service that matches the problem.
           </p>
         </div>
         <div>
-          <a href="services.html" class="ex-btn-outline">View All Services</a>
+          <a href="services.html" class="bc-btn-outline">View All Services</a>
         </div>
       </div>
 
-      <div class="ex-services-grid">
+      <div class="bc-services-grid">
         
         <!-- Card 1: Furnace, Boiler & Heat Pump -->
-        <div class="ex-service-card">
-          <div class="ex-service-img-wrap">
-            <img src="images/furnace-ac.jpg" alt="Furnace, Boiler & Heat Pump" class="ex-service-img">
-            <span class="ex-service-tag">Heating</span>
+        <div class="bc-service-card">
+          <div class="bc-service-img-wrap">
+            <img src="images/boiler-img-1.jpg" alt="Furnace, Boiler &amp; Heat Pump Services" class="bc-service-img">
+            <span class="bc-service-pill-tag">Heating</span>
           </div>
-          <div class="ex-service-body">
-            <div class="ex-service-icon-row">
-              <svg class="svg-icon" style="width:22px;height:22px;"><use href="#icon-fire"></use></svg>
+          <div class="bc-service-body">
+            <div class="bc-service-icon-row">
+              <svg viewBox="0 0 24 24" fill="#ea4c59"><path d="M12 2c1.1 0 2 .9 2 2 0 .74-.4 1.38-1 1.72v2.34C16.89 8.54 20 11.91 20 16c0 4.41-3.59 8-8 8s-8-3.59-8-8c0-4.09 3.11-7.46 7-7.94V5.72C10.4 5.38 10 4.74 10 4c0-1.1.9-2 2-2zm0 10c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z"/></svg>
             </div>
-            <h3 class="ex-service-title">Furnace, Boiler &amp; Heat Pump</h3>
-            <p class="ex-service-desc">
+            <h3 class="bc-service-title">Furnace, Boiler &amp; Heat Pump</h3>
+            <p class="bc-service-desc">
               Diagnostics, repair, maintenance and replacement options for gas and electric heating systems.
             </p>
-            <a href="services.html#residential-ac-repair" class="ex-service-link">
+            <a href="services.html#heating" class="bc-service-link">
               <span>Heating services</span>
               <span>&rarr;</span>
             </a>
@@ -426,20 +275,20 @@
         </div>
 
         <!-- Card 2: Air Conditioning -->
-        <div class="ex-service-card">
-          <div class="ex-service-img-wrap">
-            <img src="images/hvac-hero.jpg" alt="Air Conditioning Services" class="ex-service-img">
-            <span class="ex-service-tag">Cooling</span>
+        <div class="bc-service-card">
+          <div class="bc-service-img-wrap">
+            <img src="images/hvac-service-technician.jpg" alt="Air Conditioning Repair and Installation" class="bc-service-img">
+            <span class="bc-service-pill-tag">Cooling</span>
           </div>
-          <div class="ex-service-body">
-            <div class="ex-service-icon-row">
-              <svg class="svg-icon" style="width:22px;height:22px;color:var(--color-cyan);"><use href="#icon-snowflake"></use></svg>
+          <div class="bc-service-body">
+            <div class="bc-service-icon-row">
+              <svg viewBox="0 0 24 24" fill="#0072ce"><path d="M22 11h-4.17l3.24-3.24-1.41-1.42L15 11h-2V9l4.66-4.66-1.42-1.41L13 6.17V2h-2v4.17L7.76 2.93 6.34 4.34 11 9v2H9L4.34 6.34 2.93 7.76 6.17 11H2v2h4.17l-3.24 3.24 1.41 1.42L9 13h2v2l-4.66 4.66 1.42 1.41L11 17.83V22h2v-4.17l3.24 3.24 1.42-1.41L13 15v-2h2l4.66 4.66 1.41-1.42L17.83 13H22v-2z"/></svg>
             </div>
-            <h3 class="ex-service-title">Air Conditioning</h3>
-            <p class="ex-service-desc">
+            <h3 class="bc-service-title">Air Conditioning</h3>
+            <p class="bc-service-desc">
               Residential AC repair, system upgrades, seasonal maintenance and installation support.
             </p>
-            <a href="services.html#air-conditioning" class="ex-service-link">
+            <a href="services.html#cooling" class="bc-service-link">
               <span>Cooling services</span>
               <span>&rarr;</span>
             </a>
@@ -447,20 +296,20 @@
         </div>
 
         <!-- Card 3: Indoor Air Quality -->
-        <div class="ex-service-card">
-          <div class="ex-service-img-wrap">
-            <img src="images/boiler-img-3.jpg" alt="Indoor Air Quality" class="ex-service-img">
-            <span class="ex-service-tag">Indoor Comfort</span>
+        <div class="bc-service-card">
+          <div class="bc-service-img-wrap">
+            <img src="images/boiler-img-3.jpg" alt="Indoor Air Quality &amp; Comfort" class="bc-service-img">
+            <span class="bc-service-pill-tag">Indoor Comfort</span>
           </div>
-          <div class="ex-service-body">
-            <div class="ex-service-icon-row">
-              <svg class="svg-icon" style="width:22px;height:22px;"><use href="#icon-sparkles"></use></svg>
+          <div class="bc-service-body">
+            <div class="bc-service-icon-row">
+              <svg viewBox="0 0 24 24" fill="#6366f1"><path d="M3 17v2h6v-2H3zM3 5v2h10V5H3zm10 16v-2h8v-2h-8v-2h-2v6h2zM7 9v2H3v2h4v2h2V9H7zm14 4v-2H11v2h10zm-6-4h2V7h4V5h-4V3h-2v6z"/></svg>
             </div>
-            <h3 class="ex-service-title">Indoor Air Quality</h3>
-            <p class="ex-service-desc">
-              Humidifiers, air cleaners, UV options, thermostats and equipment that supports healthy indoor comfort.
+            <h3 class="bc-service-title">Indoor Air Quality</h3>
+            <p class="bc-service-desc">
+              Humidifiers, air cleaners, UV options, thermostats and equipment that supports indoor comfort.
             </p>
-            <a href="services.html#thermal-dynamic" class="ex-service-link">
+            <a href="services.html#indoor-air-quality" class="bc-service-link">
               <span>Air quality options</span>
               <span>&rarr;</span>
             </a>
@@ -468,20 +317,20 @@
         </div>
 
         <!-- Card 4: 24/7 Emergency Service -->
-        <div class="ex-service-card">
-          <div class="ex-service-img-wrap">
-            <img src="images/heating-flame.webp" alt="24/7 Emergency Service" class="ex-service-img">
-            <span class="ex-service-tag" style="background:#e56b55; color:#ffffff;">Urgent</span>
+        <div class="bc-service-card">
+          <div class="bc-service-img-wrap">
+            <img src="images/boiler-img-7.jpg" alt="24/7 Emergency HVAC Service" class="bc-service-img">
+            <span class="bc-service-pill-tag" style="background:#ea4c59;">Urgent</span>
           </div>
-          <div class="ex-service-body">
-            <div class="ex-service-icon-row">
-              <svg class="svg-icon" style="width:22px;height:22px;color:#e56b55;"><use href="#icon-alert"></use></svg>
+          <div class="bc-service-body">
+            <div class="bc-service-icon-row">
+              <svg viewBox="0 0 24 24" fill="#ea4c59"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></svg>
             </div>
-            <h3 class="ex-service-title">24/7 Emergency Service</h3>
-            <p class="ex-service-desc">
+            <h3 class="bc-service-title">24/7 Emergency Service</h3>
+            <p class="bc-service-desc">
               A direct route for no-heat, no-cooling and urgent HVAC problems outside normal business hours.
             </p>
-            <a href="tel:6303617434" class="ex-service-link">
+            <a href="tel:7732494733" class="bc-service-link">
               <span>Emergency help</span>
               <span>&rarr;</span>
             </a>
@@ -489,20 +338,20 @@
         </div>
 
         <!-- Card 5: Seasonal Maintenance -->
-        <div class="ex-service-card">
-          <div class="ex-service-img-wrap">
-            <img src="images/hvac-install.jpg" alt="Seasonal Maintenance" class="ex-service-img">
-            <span class="ex-service-tag">Preventive</span>
+        <div class="bc-service-card">
+          <div class="bc-service-img-wrap">
+            <img src="images/hvac-install.jpg" alt="Preventive Seasonal HVAC Maintenance" class="bc-service-img">
+            <span class="bc-service-pill-tag">Preventive</span>
           </div>
-          <div class="ex-service-body">
-            <div class="ex-service-icon-row">
-              <svg class="svg-icon" style="width:22px;height:22px;color:#4ade80;"><use href="#icon-check-circle"></use></svg>
+          <div class="bc-service-body">
+            <div class="bc-service-icon-row">
+              <svg viewBox="0 0 24 24" fill="#10b981"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
             </div>
-            <h3 class="ex-service-title">Seasonal Maintenance</h3>
-            <p class="ex-service-desc">
+            <h3 class="bc-service-title">Seasonal Maintenance</h3>
+            <p class="bc-service-desc">
               Annual clean-and-check service and preventive care to keep equipment ready for peak seasons.
             </p>
-            <a href="services.html#boiler-services" class="ex-service-link">
+            <a href="services.html#maintenance" class="bc-service-link">
               <span>Maintenance options</span>
               <span>&rarr;</span>
             </a>
@@ -510,20 +359,20 @@
         </div>
 
         <!-- Card 6: Commercial & Industrial -->
-        <div class="ex-service-card">
-          <div class="ex-service-img-wrap">
-            <img src="images/boiler-cascade.jpg" alt="Commercial & Industrial HVAC" class="ex-service-img">
-            <span class="ex-service-tag">Business</span>
+        <div class="bc-service-card">
+          <div class="bc-service-img-wrap">
+            <img src="images/boiler-cascade.jpg" alt="Commercial and Industrial HVAC Systems" class="bc-service-img">
+            <span class="bc-service-pill-tag">Business</span>
           </div>
-          <div class="ex-service-body">
-            <div class="ex-service-icon-row">
-              <svg class="svg-icon" style="width:22px;height:22px;"><use href="#icon-building"></use></svg>
+          <div class="bc-service-body">
+            <div class="bc-service-icon-row">
+              <svg viewBox="0 0 24 24" fill="#0072ce"><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/></svg>
             </div>
-            <h3 class="ex-service-title">Commercial &amp; Industrial</h3>
-            <p class="ex-service-desc">
+            <h3 class="bc-service-title">Commercial &amp; Industrial</h3>
+            <p class="bc-service-desc">
               Heating and cooling service for commercial properties, multi-unit buildings and industrial facilities.
             </p>
-            <a href="services.html#commercial-concerns" class="ex-service-link">
+            <a href="services.html#commercial" class="bc-service-link">
               <span>Commercial services</span>
               <span>&rarr;</span>
             </a>
@@ -536,101 +385,76 @@
   </section>
 
   <!-- =========================================================================
-       4. INTERACTIVE SYSTEM DIAGNOSTIC TRIAGE ("Tell us what the system is doing")
+       6. INTERACTIVE DIAGNOSTIC SECTION ("Tell us what the system is doing")
        ========================================================================= -->
-  <section class="ex-diagnostic-section">
-    <div class="container">
-      <div class="ex-diagnostic-grid">
+  <section class="bc-diagnostic-section">
+    <div class="bc-diag-overlay"></div>
+    <div class="container bc-diag-container">
+      <div class="bc-diagnostic-grid">
         
-        <!-- Left Side: Title, Desc, and Urgent Emergency Callout Box -->
-        <div class="ex-diag-left">
+        <!-- Left Side: Title, Desc, and Emergency Callout Box -->
+        <div class="bc-diag-left">
           <div>
-            <div class="ex-eyebrow text-light">SYSTEM DIAGNOSTIC TRIAGE</div>
-            <h2 class="ex-section-title text-white">Tell us what the system is doing.</h2>
-            <p class="ex-section-subtitle text-light">
+            <h2 class="bc-diag-title">Tell us what the system is doing.</h2>
+            <p class="bc-diag-subtitle">
               Choose the symptom that sounds closest to your situation, then jump directly to the right service page.
             </p>
           </div>
 
-          <div class="ex-diag-callout">
-            <div class="ex-diag-callout-header">
-              <svg class="svg-icon" style="width:16px;height:16px;"><use href="#icon-alert"></use></svg>
-              <span>Emergency?</span>
+          <div class="bc-diag-emergency-box">
+            <div class="bc-diag-em-header">
+              <span>Emergency?</span> &bull; <span>24/7 EMERGENCY HVAC</span>
             </div>
-            <p class="ex-diag-callout-p">
+            <p class="bc-diag-em-desc">
               If there is no heat during dangerous cold, no cooling during extreme heat, smoke, burning odor or another urgent equipment concern, call the 24/7 line.
             </p>
-            <a href="tel:6303617434" class="ex-diag-hotline-btn">
-              <svg class="svg-icon" style="width:14px;height:14px;"><use href="#icon-phone"></use></svg>
-              <span>Call 630-361-7434</span>
+            <a href="tel:7732494733" class="bc-diag-em-phone">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.21 2.2z"/></svg>
+              <span>Call (773) 249-4733</span>
             </a>
           </div>
         </div>
 
-        <!-- Right Side: Active Recommendation Card & 3 Symptom Selector Accordions -->
-        <div class="ex-diag-right">
+        <!-- Right Side: Active Recommendation Card & 3 Symptom Selector Buttons -->
+        <div class="bc-diag-right">
           
-          <!-- Default Active Triage Card (Heating Focus) -->
-          <div class="ex-diag-active-card" id="diagActiveCard">
-            <h3 class="ex-diag-active-title" id="diagActiveTitle">
-              Start with furnace, boiler or heat-pump diagnostics: We service gas and electric heating systems.
-            </h3>
-            <a href="services.html#residential-ac-repair" class="ex-diag-active-link" id="diagActiveLink">
+          <!-- Active Card -->
+          <div class="bc-diag-active-card">
+            <p class="bc-diag-active-text" id="diagActiveText">
+              Start with furnace, boiler or heat-pump diagnostics. We service gas and electric heating systems.
+            </p>
+            <a href="services.html#heating" class="bc-diag-active-link" id="diagActiveLink">
               <span>Go to heating services</span>
               <span>&rarr;</span>
             </a>
           </div>
 
-          <!-- Symptom 1: Cooling -->
-          <div class="ex-diag-accordion-item">
-            <button type="button" class="ex-diag-acc-btn" data-diag="cooling">
-              <div class="ex-diag-acc-left">
-                <svg class="svg-icon ex-diag-acc-icon" style="width:18px;height:18px;"><use href="#icon-snowflake"></use></svg>
-                <span>My home is not cooling</span>
-              </div>
-              <span class="ex-diag-acc-indicator">+</span>
-            </button>
-            <div class="ex-diag-acc-body">
-              Compressor not turning on, lukewarm airflow, frozen refrigerant lines, or thermostat failure. We offer rapid diagnostic checks on central AC, ductless mini-splits, and heat pump loops.
-              <div style="margin-top: 10px;">
-                <a href="services.html#air-conditioning" style="color:var(--color-cyan); font-weight:750; text-decoration:underline;">Explore AC repair &rarr;</a>
-              </div>
+          <!-- Selector 1: Cooling -->
+          <button type="button" class="bc-diag-btn-item" data-diag="cooling">
+            <div class="bc-diag-btn-left">
+              <svg viewBox="0 0 24 24"><path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M4.93 19.07l14.14-14.14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              <span>My home is not cooling</span>
             </div>
-          </div>
+            <span class="bc-diag-btn-plus">+</span>
+          </button>
 
-          <!-- Symptom 2: Maintenance -->
-          <div class="ex-diag-accordion-item">
-            <button type="button" class="ex-diag-acc-btn" data-diag="maintenance">
-              <div class="ex-diag-acc-left">
-                <svg class="svg-icon ex-diag-acc-icon" style="width:18px;height:18px;"><use href="#icon-check-circle"></use></svg>
-                <span>I want preventive maintenance</span>
-              </div>
-              <span class="ex-diag-acc-indicator">+</span>
-            </button>
-            <div class="ex-diag-acc-body">
-              Pre-season tune-up, filter replacement, combustion efficiency calibration, burner clean, and electrical contact testing to ensure maximum seasonal reliability before Chicago deep freezes.
-              <div style="margin-top: 10px;">
-                <a href="services.html#boiler-services" style="color:var(--color-cyan); font-weight:750; text-decoration:underline;">Schedule seasonal care &rarr;</a>
-              </div>
+          <!-- Selector 2: Maintenance -->
+          <button type="button" class="bc-diag-btn-item" data-diag="maintenance">
+            <div class="bc-diag-btn-left">
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>I want preventive maintenance</span>
             </div>
-          </div>
+            <span class="bc-diag-btn-plus">+</span>
+          </button>
 
-          <!-- Symptom 3: Indoor Comfort -->
-          <div class="ex-diag-accordion-item">
-            <button type="button" class="ex-diag-acc-btn" data-diag="comfort">
-              <div class="ex-diag-acc-left">
-                <svg class="svg-icon ex-diag-acc-icon" style="width:18px;height:18px;"><use href="#icon-sparkles"></use></svg>
-                <span>I want better indoor comfort</span>
-              </div>
-              <span class="ex-diag-acc-indicator">+</span>
-            </button>
-            <div class="ex-diag-acc-body">
-              Dry air in winter, excessive summer humidity, uneven room temperatures, dust, or odor concerns. Whole-home steam humidifiers, HEPA filtration, and smart zoning systems.
-              <div style="margin-top: 10px;">
-                <a href="services.html#thermal-dynamic" style="color:var(--color-cyan); font-weight:750; text-decoration:underline;">Explore indoor comfort options &rarr;</a>
-              </div>
+          <!-- Selector 3: Indoor Comfort -->
+          <button type="button" class="bc-diag-btn-item" data-diag="comfort">
+            <div class="bc-diag-btn-left">
+              <svg viewBox="0 0 24 24"><path d="M3 17v2h6v-2H3zM3 5v2h10V5H3zm10 16v-2h8v-2h-8v-2h-2v6h2zM7 9v2H3v2h4v2h2V9H7zm14 4v-2H11v2h10zm-6-4h2V7h4V5h-4V3h-2v6z"/></svg>
+              <span>I want better indoor comfort</span>
             </div>
-          </div>
+            <span class="bc-diag-btn-plus">+</span>
+          </button>
 
         </div>
 
@@ -639,35 +463,37 @@
   </section>
 
   <!-- =========================================================================
-       5. FULL-WIDTH EMERGENCY CALLOUT BANNER (Warm Glowing Gradient)
+       7. EMERGENCY CALLOUT BANNER ("No heat? No cooling? Call now.")
        ========================================================================= -->
-  <section class="ex-emergency-banner-section">
+  <section class="bc-emergency-banner-section">
     <div class="container">
-      <div class="ex-emergency-banner-card">
+      <div class="bc-emergency-banner-card">
         
-        <div class="ex-em-banner-left">
-          <div class="ex-em-badge-box">
-            <div class="ex-em-badge-num">24/7</div>
-            <div class="ex-em-badge-sub">Emergency HVAC</div>
+        <div class="bc-em-left">
+          <div class="bc-em-badge">
+            <div class="bc-em-badge-title">24/7</div>
+            <div class="bc-em-badge-sub">EMERGENCY HVAC</div>
           </div>
 
-          <div class="ex-em-content">
-            <h3 class="ex-em-title">No heat? No cooling? Call now.</h3>
-            <p class="ex-em-desc">
+          <div class="bc-em-content">
+            <div class="bc-em-tagline">
+              <span class="bc-em-tagline-bar"></span> 24/7 EMERGENCY HVAC
+            </div>
+            <h3 class="bc-em-heading">No heat? No cooling? Call now.</h3>
+            <p class="bc-em-desc">
               For urgent heating or cooling problems, call the Chicago service line any time. A direct phone route is faster than waiting on a web form.
             </p>
-            <div class="ex-em-tags">
-              <span>&bull; Fast response</span>
-              <span>&bull; Heating &amp; cooling</span>
-              <span>&bull; Local Chicagoland support</span>
+            <div class="bc-em-tags">
+              <span><span class="bc-em-dot">●</span> Fast response</span>
+              <span><span class="bc-em-dot">●</span> Heating &amp; cooling</span>
+              <span><span class="bc-em-dot">●</span> Local Chicagoland support</span>
             </div>
           </div>
         </div>
 
-        <div class="ex-em-banner-right">
-          <a href="tel:6303617434" class="ex-em-call-btn">
-            <svg class="svg-icon" style="width:18px;height:18px;color:var(--color-salmon);"><use href="#icon-phone"></use></svg>
-            <span>Call (630) 361-7434</span>
+        <div class="bc-em-right">
+          <a href="tel:7732494733" class="bc-btn-em-call">
+            <span>Call (773) 249–4733</span>
           </a>
         </div>
 
@@ -676,41 +502,41 @@
   </section>
 
   <!-- =========================================================================
-       6. FEATURED EQUIPMENT CATALOG ("Comfort systems built for Chicago seasons")
+       8. FEATURED EQUIPMENT ("Comfort systems built for Chicago seasons")
        ========================================================================= -->
-  <section class="ex-catalog-section">
+  <section class="bc-catalog-section">
     <div class="container">
       
-      <div class="ex-header-row">
-        <div class="ex-header-left">
-          <div class="ex-eyebrow text-light">FEATURED EQUIPMENT</div>
-          <h2 class="ex-section-title text-white">Comfort systems built for Chicago seasons.</h2>
-          <p class="ex-section-subtitle text-light">
+      <div class="bc-section-header-row">
+        <div>
+          <div class="bc-section-tag" style="color:var(--bc-coral);"> FEATURED EQUIPMENT</div>
+          <h2 class="bc-section-title" style="color:#ffffff;">Comfort systems built for Chicago seasons.</h2>
+          <p class="bc-section-subtitle" style="color:#94a3b8;">
             Compare representative cooling, heating, heat-pump and indoor-comfort equipment, then request a system recommendation for your property.
           </p>
         </div>
         <div>
-          <a href="products.html" class="ex-btn-primary">Browse All Products</a>
+          <a href="products.html" class="bc-btn-schedule">Browse All Products</a>
         </div>
       </div>
 
-      <div class="ex-catalog-grid">
+      <div class="bc-catalog-grid">
         
         <!-- Product 1: Air Conditioners -->
-        <div class="ex-catalog-card">
-          <div class="ex-catalog-img-wrap">
-            <img src="images/hvac-hero.jpg" alt="Air Conditioners" class="ex-catalog-img">
+        <div class="bc-catalog-card">
+          <div class="bc-cat-img-wrap">
+            <img src="images/hvac-hero.jpg" alt="Air Conditioners" class="bc-cat-img">
           </div>
-          <div class="ex-catalog-body">
-            <div class="ex-catalog-tag-row">
-              <span class="ex-cat-pill">Cooling</span>
-              <svg class="svg-icon ex-cat-icon" style="width:16px;height:16px;"><use href="#icon-snowflake"></use></svg>
+          <div class="bc-cat-body">
+            <div class="bc-cat-tag-row">
+              <span class="bc-cat-pill">COOLING</span>
+              <svg class="bc-cat-icon" viewBox="0 0 24 24"><path d="M22 11h-4.17l3.24-3.24-1.41-1.42L15 11h-2V9l4.66-4.66-1.42-1.41L13 6.17V2h-2v4.17L7.76 2.93 6.34 4.34 11 9v2H9L4.34 6.34 2.93 7.76 6.17 11H2v2h4.17l-3.24 3.24 1.41 1.42L9 13h2v2l-4.66 4.66 1.42 1.41L11 17.83V22h2v-4.17l3.24 3.24 1.42-1.41L13 15v-2h2l4.66 4.66 1.41-1.42L17.83 13H22v-2z"/></svg>
             </div>
-            <h3 class="ex-catalog-title">Air Conditioners</h3>
-            <p class="ex-catalog-desc">
+            <h3 class="bc-cat-title">Air Conditioners</h3>
+            <p class="bc-cat-desc">
               Central cooling options for replacement, repair planning and efficient summer comfort.
             </p>
-            <a href="products.html#cooling" class="ex-catalog-link">
+            <a href="products.html#cooling" class="bc-cat-link">
               <span>View cooling equipment</span>
               <span>&rarr;</span>
             </a>
@@ -718,20 +544,20 @@
         </div>
 
         <!-- Product 2: Furnaces & Heating -->
-        <div class="ex-catalog-card">
-          <div class="ex-catalog-img-wrap">
-            <img src="images/furnace-ac.jpg" alt="Furnaces & Heating" class="ex-catalog-img">
+        <div class="bc-catalog-card">
+          <div class="bc-cat-img-wrap">
+            <img src="images/furnace-ac.jpg" alt="Furnaces &amp; Heating" class="bc-cat-img">
           </div>
-          <div class="ex-catalog-body">
-            <div class="ex-catalog-tag-row">
-              <span class="ex-cat-pill">Heating</span>
-              <svg class="svg-icon ex-cat-icon" style="width:16px;height:16px;color:#f59e0b;"><use href="#icon-fire"></use></svg>
+          <div class="bc-cat-body">
+            <div class="bc-cat-tag-row">
+              <span class="bc-cat-pill">HEATING</span>
+              <svg class="bc-cat-icon" viewBox="0 0 24 24" fill="#ea4c59"><path d="M12 2c1.1 0 2 .9 2 2 0 .74-.4 1.38-1 1.72v2.34C16.89 8.54 20 11.91 20 16c0 4.41-3.59 8-8 8s-8-3.59-8-8c0-4.09 3.11-7.46 7-7.94V5.72C10.4 5.38 10 4.74 10 4c0-1.1.9-2 2-2z"/></svg>
             </div>
-            <h3 class="ex-catalog-title">Furnaces &amp; Heating</h3>
-            <p class="ex-catalog-desc">
+            <h3 class="bc-cat-title">Furnaces &amp; Heating</h3>
+            <p class="bc-cat-desc">
               Gas and electric heating options selected around property size, airflow and winter demand.
             </p>
-            <a href="products.html#heating" class="ex-catalog-link">
+            <a href="products.html#heating" class="bc-cat-link">
               <span>View heating equipment</span>
               <span>&rarr;</span>
             </a>
@@ -739,20 +565,20 @@
         </div>
 
         <!-- Product 3: Heat Pumps -->
-        <div class="ex-catalog-card">
-          <div class="ex-catalog-img-wrap">
-            <img src="images/hvac-install.jpg" alt="Heat Pumps" class="ex-catalog-img">
+        <div class="bc-catalog-card">
+          <div class="bc-cat-img-wrap">
+            <img src="images/boiler-pumps.jpg" alt="Heat Pumps" class="bc-cat-img">
           </div>
-          <div class="ex-catalog-body">
-            <div class="ex-catalog-tag-row">
-              <span class="ex-cat-pill">All Season</span>
-              <svg class="svg-icon ex-cat-icon" style="width:16px;height:16px;color:#22c55e;"><use href="#icon-bolt"></use></svg>
+          <div class="bc-cat-body">
+            <div class="bc-cat-tag-row">
+              <span class="bc-cat-pill">ALL SEASON</span>
+              <svg class="bc-cat-icon" viewBox="0 0 24 24" fill="#10b981"><path d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6 0 1.01-.25 1.97-.7 2.8l1.46 1.46C19.54 15.03 20 13.57 20 12c0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6 0-1.01.25-1.97.7-2.8L5.24 7.74C4.46 8.97 4 10.43 4 12c0 4.42 3.58 8 8 8v3l4-4-4-4v3z"/></svg>
             </div>
-            <h3 class="ex-catalog-title">Heat Pumps</h3>
-            <p class="ex-catalog-desc">
+            <h3 class="bc-cat-title">Heat Pumps</h3>
+            <p class="bc-cat-desc">
               One-system heating and cooling options for year-round comfort and matched-system planning.
             </p>
-            <a href="products.html#heat-pumps" class="ex-catalog-link">
+            <a href="products.html#heat-pumps" class="bc-cat-link">
               <span>View heat pump options</span>
               <span>&rarr;</span>
             </a>
@@ -760,20 +586,20 @@
         </div>
 
         <!-- Product 4: Air Quality & Controls -->
-        <div class="ex-catalog-card">
-          <div class="ex-catalog-img-wrap">
-            <img src="images/boiler-pumps.jpg" alt="Air Quality & Controls" class="ex-catalog-img">
+        <div class="bc-catalog-card">
+          <div class="bc-cat-img-wrap">
+            <img src="images/boiler-img-10.jpg" alt="Air Quality &amp; Controls" class="bc-cat-img">
           </div>
-          <div class="ex-catalog-body">
-            <div class="ex-catalog-tag-row">
-              <span class="ex-cat-pill">Indoor Comfort</span>
-              <svg class="svg-icon ex-cat-icon" style="width:16px;height:16px;color:#a855f7;"><use href="#icon-sparkles"></use></svg>
+          <div class="bc-cat-body">
+            <div class="bc-cat-tag-row">
+              <span class="bc-cat-pill">INDOOR COMFORT</span>
+              <svg class="bc-cat-icon" viewBox="0 0 24 24" fill="#a855f7"><path d="M3 17v2h6v-2H3zM3 5v2h10V5H3zm10 16v-2h8v-2h-8v-2h-2v6h2zM7 9v2H3v2h4v2h2V9H7zm14 4v-2H11v2h10zm-6-4h2V7h4V5h-4V3h-2v6z"/></svg>
             </div>
-            <h3 class="ex-catalog-title">Air Quality &amp; Controls</h3>
-            <p class="ex-catalog-desc">
+            <h3 class="bc-cat-title">Air Quality &amp; Controls</h3>
+            <p class="bc-cat-desc">
               Filtration, humidity and comfort-control options for a cleaner, more balanced indoor environment.
             </p>
-            <a href="products.html#controls" class="ex-catalog-link">
+            <a href="products.html#controls" class="bc-cat-link">
               <span>Explore indoor comfort</span>
               <span>&rarr;</span>
             </a>
@@ -782,106 +608,104 @@
 
       </div>
 
-      <!-- Equipment Options Brand Strip -->
-      <div class="ex-brands-strip">
-        <div class="ex-brands-label">
-          Equipment Options &bull; Brands represented in the current equipment catalog:
-        </div>
-        <div class="ex-brands-badges-wrap">
-          <span class="ex-brand-badge">Rheem</span>
-          <span class="ex-brand-badge">Goodman</span>
-          <span class="ex-brand-badge">American Standard</span>
-          <span class="ex-brand-badge">Navien</span>
-          <span class="ex-brand-badge">Ameristar</span>
-          <span class="ex-brand-badge">Trane</span>
-          <span class="ex-brand-badge">Carrier</span>
-          <span class="ex-brand-badge">York</span>
-          <span class="ex-brand-badge">Lennox</span>
-          <span class="ex-brand-badge">Weil-McLain</span>
-        </div>
-      </div>
-
     </div>
   </section>
 
   <!-- =========================================================================
-       7. VALUE PROPOSITION ("Why Trey Durden")
+       9. EQUIPMENT OPTIONS BRAND STRIP
        ========================================================================= -->
-  <section class="ex-why-section">
+  <div class="bc-brands-bar">
+    <div class="container bc-brands-container">
+      <div class="bc-brands-label-group">
+        <span class="bc-brands-eyebrow">EQUIPMENT OPTIONS</span>
+        <span class="bc-brands-desc">Brands represented in the current equipment catalog</span>
+      </div>
+      <div class="bc-brands-pills-wrap">
+        <span class="bc-brand-chip rheem">Rheem</span>
+        <span class="bc-brand-chip goodman">Goodman</span>
+        <span class="bc-brand-chip american-standard">American Standard</span>
+        <span class="bc-brand-chip navien">Navien</span>
+        <span class="bc-brand-chip ameristar">Ameristar</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       10. WHY BEST COMFORT HVAC ("Trusted service, clear answers...")
+       ========================================================================= -->
+  <section class="bc-why-section">
     <div class="container">
-      <div class="ex-why-grid">
+      <div class="bc-why-grid">
         
-        <!-- Left: Technician Inspection Photo with 24/7 Floating Badge -->
-        <div class="ex-why-left">
-          <div class="ex-why-media-card">
-            <img src="images/hvac-service-technician.jpg" alt="Experienced HVAC Technician" class="ex-why-img">
-            <div class="ex-why-float-tag">24/7 Emergency HVAC support</div>
-          </div>
+        <!-- Left: Image with 24/7 Floating Tag -->
+        <div class="bc-why-media-wrap">
+          <img src="images/hvac-service-technician.jpg" alt="Best Comfort HVAC Professional Service" class="bc-why-img">
+          <div class="bc-why-float-badge">24/7 Emergency HVAC support</div>
         </div>
 
-        <!-- Right: Why Trey Durden Header & 4 Interactive Accordions -->
-        <div class="ex-why-right">
-          <div class="ex-eyebrow">WHY TREY DURDEN</div>
-          <h2 class="ex-section-title">Trusted service, clear answers and practical next steps.</h2>
-          <p class="ex-section-subtitle">
+        <!-- Right: Accordion Group -->
+        <div>
+          <div class="bc-section-tag"> WHY BEST COMFORT HVAC</div>
+          <h2 class="bc-section-title">Trusted service, clear answers and practical next steps.</h2>
+          <p class="bc-section-subtitle">
             From the first diagnosis to a repair or replacement plan, the experience should feel straightforward, informed and focused on your comfort.
           </p>
 
-          <div class="ex-why-accordions">
+          <div class="bc-why-accordions">
             
-            <!-- Item 1: Experienced (Open by Default) -->
-            <div class="ex-accordion-card is-open">
-              <button type="button" class="ex-acc-header-btn">
-                <div class="ex-acc-head-left">
-                  <span class="ex-acc-head-icon">&check;</span>
+            <!-- Accordion 1 (Open by Default) -->
+            <div class="bc-acc-card is-open">
+              <button type="button" class="bc-acc-header">
+                <div class="bc-acc-header-left">
+                  <span class="bc-acc-icon-circle">&check;</span>
                   <span>Experienced HVAC service</span>
                 </div>
-                <span class="ex-acc-toggle-indicator">&times;</span>
+                <span class="bc-acc-toggle-icon">&minus;</span>
               </button>
-              <div class="ex-acc-content-body">
-                Heating, cooling, boilers, heat pumps and indoor-comfort systems for residential, commercial and industrial properties across all Chicagoland counties.
+              <div class="bc-acc-body">
+                Heating, cooling, boilers, heat pumps and indoor-comfort systems for residential, commercial and industrial properties across Chicagoland.
               </div>
             </div>
 
-            <!-- Item 2: 24-Hour Emergency -->
-            <div class="ex-accordion-card">
-              <button type="button" class="ex-acc-header-btn">
-                <div class="ex-acc-head-left">
-                  <span class="ex-acc-head-icon"><svg class="svg-icon" style="width:13px;height:13px;"><use href="#icon-clock"></use></svg></span>
+            <!-- Accordion 2 -->
+            <div class="bc-acc-card">
+              <button type="button" class="bc-acc-header">
+                <div class="bc-acc-header-left">
+                  <span class="bc-acc-icon-circle"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg></span>
                   <span>24-hour emergency availability</span>
                 </div>
-                <span class="ex-acc-toggle-indicator">+</span>
+                <span class="bc-acc-toggle-icon">+</span>
               </button>
-              <div class="ex-acc-content-body">
-                Critical heating failures in winter freezes and AC outages in extreme summer heat receive immediate priority phone dispatch and emergency on-site triage.
+              <div class="bc-acc-body">
+                Direct phone dispatch around the clock for sudden no-heat, AC freeze-up, and dangerous weather situations.
               </div>
             </div>
 
-            <!-- Item 3: Financing Choices -->
-            <div class="ex-accordion-card">
-              <button type="button" class="ex-acc-header-btn">
-                <div class="ex-acc-head-left">
-                  <span class="ex-acc-head-icon">$</span>
+            <!-- Accordion 3 -->
+            <div class="bc-acc-card">
+              <button type="button" class="bc-acc-header">
+                <div class="bc-acc-header-left">
+                  <span class="bc-acc-icon-circle">$</span>
                   <span>Repair, replacement and financing choices</span>
                 </div>
-                <span class="ex-acc-toggle-indicator">+</span>
+                <span class="bc-acc-toggle-icon">+</span>
               </button>
-              <div class="ex-acc-content-body">
-                Transparent wholesale equipment allocations, clear line-item estimates, and flexible payment and financing programs tailored to your budget.
+              <div class="bc-acc-body">
+                Clear pricing, transparent scope comparisons, and flexible payment options tailored to your home or business budget.
               </div>
             </div>
 
-            <!-- Item 4: Chicagoland Coverage -->
-            <div class="ex-accordion-card">
-              <button type="button" class="ex-acc-header-btn">
-                <div class="ex-acc-head-left">
-                  <span class="ex-acc-head-icon"><svg class="svg-icon" style="width:13px;height:13px;"><use href="#icon-map-pin"></use></svg></span>
+            <!-- Accordion 4 -->
+            <div class="bc-acc-card">
+              <button type="button" class="bc-acc-header">
+                <div class="bc-acc-header-left">
+                  <span class="bc-acc-icon-circle"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
                   <span>Local Chicagoland coverage</span>
                 </div>
-                <span class="ex-acc-toggle-indicator">+</span>
+                <span class="bc-acc-toggle-icon">+</span>
               </button>
-              <div class="ex-acc-content-body">
-                Dedicated regional service hubs covering Cook, DuPage, Kane, Kendall, Grundy, and Will Counties including Joliet, Naperville, Bolingbrook, and Chicago proper.
+              <div class="bc-acc-body">
+                Prompt dispatch covering Chicago proper and leading suburban communities including Naperville, Bolingbrook, New Lenox and beyond.
               </div>
             </div>
 
@@ -893,45 +717,43 @@
   </section>
 
   <!-- =========================================================================
-       8. PREVENTIVE MAINTENANCE SPOTLIGHT ("Make seasonal care easier to plan")
+       11. PREVENTIVE MAINTENANCE SPOTLIGHT ("Make seasonal care easier to plan")
        ========================================================================= -->
-  <section class="ex-maintenance-section">
+  <section class="bc-maintenance-section">
     <div class="container">
-      <div class="ex-maintenance-grid">
+      <div class="bc-maint-grid">
         
-        <!-- Left: Technician Gauges Photo -->
-        <div class="ex-maintenance-left">
-          <div class="ex-maintenance-img-card">
-            <img src="images/hvac-gauges-maintenance.jpg" alt="HVAC Manifold Gauges Seasonal Maintenance" class="ex-maintenance-img">
-          </div>
+        <!-- Left: Image -->
+        <div class="bc-maint-img-wrap">
+          <img src="images/hvac-gauges-maintenance.jpg" alt="HVAC Seasonal Preventive Maintenance" class="bc-maint-img">
         </div>
 
-        <!-- Right: Maintenance Details & Action Buttons -->
-        <div class="ex-maintenance-right">
-          <div class="ex-eyebrow">PREVENTIVE MAINTENANCE</div>
-          <h2 class="ex-section-title">Make seasonal care easier to plan.</h2>
-          <p class="ex-section-subtitle">
+        <!-- Right: Content -->
+        <div>
+          <div class="bc-section-tag"> PREVENTIVE MAINTENANCE</div>
+          <h2 class="bc-section-title">Make seasonal care easier to plan.</h2>
+          <p class="bc-section-subtitle">
             Annual heating and cooling maintenance helps prepare equipment before Chicago weather puts the system under its heaviest load.
           </p>
 
-          <div class="ex-maint-checklist">
-            <div class="ex-maint-check-item">
-              <span class="ex-check-circle">&check;</span>
+          <div class="bc-maint-checklist">
+            <div class="bc-check-row">
+              <span class="bc-check-mark">&check;</span>
               <span>Furnace annual clean and check</span>
             </div>
-            <div class="ex-maint-check-item">
-              <span class="ex-check-circle">&check;</span>
+            <div class="bc-check-row">
+              <span class="bc-check-mark">&check;</span>
               <span>Air-conditioning seasonal maintenance</span>
             </div>
-            <div class="ex-maint-check-item">
-              <span class="ex-check-circle">&check;</span>
+            <div class="bc-check-row">
+              <span class="bc-check-mark">&check;</span>
               <span>Filter, airflow and thermostat checks</span>
             </div>
           </div>
 
-          <div class="ex-maint-actions">
-            <a href="services.html" class="ex-btn-primary">Maintenance Options</a>
-            <a href="contact.html" class="ex-btn-outline">Financing</a>
+          <div class="bc-maint-actions">
+            <a href="services.html#maintenance" class="bc-btn-primary-blue">Maintenance Options</a>
+            <a href="contact.html" class="bc-btn-outline">Financing</a>
           </div>
         </div>
 
@@ -940,51 +762,50 @@
   </section>
 
   <!-- =========================================================================
-       9. SERVICE AREAS SECTION ("Local HVAC support across Chicago & surrounding communities")
+       12. CHICAGOLAND COVERAGE SECTION
        ========================================================================= -->
-  <section class="ex-coverage-section">
+  <section class="bc-coverage-section">
     <div class="container">
-      <div class="ex-coverage-grid">
+      <div class="bc-coverage-grid">
         
-        <!-- Left: Coverage Intro & 2x2 Area Buttons Grid -->
-        <div class="ex-coverage-left">
-          <div class="ex-eyebrow">CHICAGOLAND COVERAGE</div>
-          <h2 class="ex-section-title">Local HVAC support across Chicago and surrounding communities.</h2>
-          <p class="ex-section-subtitle">
+        <!-- Left: Intro & 2x2 Area Buttons Grid -->
+        <div>
+          <div class="bc-section-tag"> CHICAGOLAND COVERAGE</div>
+          <h2 class="bc-section-title">Local HVAC support across Chicago and surrounding communities.</h2>
+          <p class="bc-section-subtitle">
             Find the nearest listed service area, then call or schedule heating, cooling, maintenance or equipment support.
           </p>
 
-          <div class="ex-areas-buttons-grid">
-            <a href="services.html#residential-ac-repair" class="ex-area-btn">
+          <div class="bc-areas-buttons">
+            <a href="services.html#service-areas" class="bc-area-btn">
               <span>Chicago</span>
               <span>&rarr;</span>
             </a>
-            <a href="services.html#residential-ac-repair" class="ex-area-btn">
+            <a href="services.html#service-areas" class="bc-area-btn">
               <span>Naperville</span>
               <span>&rarr;</span>
             </a>
-            <a href="services.html#residential-ac-repair" class="ex-area-btn">
+            <a href="services.html#service-areas" class="bc-area-btn">
               <span>Bolingbrook</span>
               <span>&rarr;</span>
             </a>
-            <a href="services.html#residential-ac-repair" class="ex-area-btn">
+            <a href="services.html#service-areas" class="bc-area-btn">
               <span>New Lenox</span>
               <span>&rarr;</span>
             </a>
           </div>
 
           <div>
-            <a href="services.html" class="ex-btn-primary">View All Service Areas</a>
+            <a href="services.html#service-areas" class="bc-btn-schedule">View All Service Areas</a>
           </div>
         </div>
 
-        <!-- Right: Chicago Skyline Photo with Floating Location Badge -->
-        <div class="ex-coverage-right">
-          <div class="ex-coverage-img-wrap">
-            <img src="images/chicago-skyline.jpg" alt="Chicago and Suburbs Service Area" class="ex-coverage-img">
-            <div class="ex-coverage-pill-badge">
-              <strong>Chicago + Suburbs</strong> &bull; Residential &bull; Commercial &bull; Industrial
-            </div>
+        <!-- Right: Chicago Skyline Media Card -->
+        <div class="bc-coverage-media">
+          <img src="images/chicago-skyline.jpg" alt="Chicago Skyline and Service Areas" class="bc-coverage-img">
+          <div class="bc-coverage-badge-bar">
+            <strong>Chicago + Suburbs</strong>
+            <span>Residential &bull; Commercial &bull; Industrial</span>
           </div>
         </div>
 
@@ -993,47 +814,47 @@
   </section>
 
   <!-- =========================================================================
-       10. CUSTOMER TESTIMONIALS ("What customers value most")
+       13. CUSTOMER EXPERIENCE / REVIEWS ("What customers value most")
        ========================================================================= -->
-  <section class="ex-testimonials-section">
+  <section class="bc-reviews-section">
     <div class="container">
       
-      <div class="ex-header-row" style="margin-bottom: 35px;">
-        <div class="ex-header-left">
-          <div class="ex-eyebrow">CUSTOMER EXPERIENCE</div>
-          <h2 class="ex-section-title">What customers value most.</h2>
-          <p class="ex-section-subtitle">
+      <div class="bc-section-header-row" style="margin-bottom: 36px;">
+        <div>
+          <div class="bc-section-tag"> CUSTOMER EXPERIENCE</div>
+          <h2 class="bc-section-title">What customers value most.</h2>
+          <p class="bc-section-subtitle">
             Public reviews frequently highlight the same service qualities: clear explanations, professional work and help when a system fails unexpectedly.
           </p>
         </div>
       </div>
 
-      <div class="ex-testimonials-grid">
+      <div class="bc-reviews-grid">
         
         <!-- Review 1 -->
-        <div class="ex-testimonial-card">
-          <div class="ex-stars-row">&starf;&starf;&starf;&starf;&starf;</div>
-          <h3 class="ex-test-title">Clear explanations</h3>
-          <p class="ex-test-quote">
-            &ldquo;Customers describe technicians who explain HVAC problems and repair options in understandable language, providing honest assessments without unnecessary upsells.&rdquo;
+        <div class="bc-review-card">
+          <div class="bc-review-stars">&starf;&starf;&starf;&starf;&starf;</div>
+          <h3 class="bc-review-title">Clear explanations</h3>
+          <p class="bc-review-text">
+            Customers describe technicians who explain HVAC problems and repair options in understandable language.
           </p>
         </div>
 
         <!-- Review 2 -->
-        <div class="ex-testimonial-card">
-          <div class="ex-stars-row">&starf;&starf;&starf;&starf;&starf;</div>
-          <h3 class="ex-test-title">Professional service</h3>
-          <p class="ex-test-quote">
-            &ldquo;Reviewers often mention knowledgeable technicians, efficient repairs and a respectful, clean experience in the home with thorough post-repair testing.&rdquo;
+        <div class="bc-review-card">
+          <div class="bc-review-stars">&starf;&starf;&starf;&starf;&starf;</div>
+          <h3 class="bc-review-title">Professional service</h3>
+          <p class="bc-review-text">
+            Reviewers often mention knowledgeable technicians, efficient repairs and a professional experience in the home.
           </p>
         </div>
 
         <!-- Review 3 -->
-        <div class="ex-testimonial-card">
-          <div class="ex-stars-row">&starf;&starf;&starf;&starf;&starf;</div>
-          <h3 class="ex-test-title">Help when it matters</h3>
-          <p class="ex-test-quote">
-            &ldquo;Emergency and after-hours experiences are a recurring theme in customer feedback about Trey Durden HVAC. Reliable triage when heating quits on a sub-zero night.&rdquo;
+        <div class="bc-review-card">
+          <div class="bc-review-stars">&starf;&starf;&starf;&starf;&starf;</div>
+          <h3 class="bc-review-title">Help when it matters</h3>
+          <p class="bc-review-text">
+            Emergency and after-hours experiences are a recurring theme in customer feedback about Best Comfort HVAC.
           </p>
         </div>
 
@@ -1043,67 +864,67 @@
   </section>
 
   <!-- =========================================================================
-       11. FAQ SECTION ("Quick answers before you schedule")
+       14. FAQ SECTION ("Quick answers before you schedule")
        ========================================================================= -->
-  <section class="ex-faq-section">
+  <section class="bc-faq-section">
     <div class="container">
-      <div class="ex-faq-grid">
+      <div class="bc-faq-grid">
         
         <!-- Left: FAQ Header & All FAQs Link -->
-        <div class="ex-faq-left">
-          <div class="ex-eyebrow">COMMON QUESTIONS</div>
-          <h2 class="ex-section-title">Quick answers before you schedule.</h2>
-          <p class="ex-section-subtitle">
+        <div>
+          <div class="bc-section-tag"> COMMON QUESTIONS</div>
+          <h2 class="bc-section-title">Quick answers before you schedule.</h2>
+          <p class="bc-section-subtitle">
             Start here for the questions homeowners commonly have about emergency service, equipment brands and financing.
           </p>
-          <a href="about.html#faq" class="ex-faq-link">
+          <a href="about.html#faq" class="bc-faq-link">
             <span>See All FAQs</span>
             <span>&rarr;</span>
           </a>
         </div>
 
-        <!-- Right: 3 FAQ Accordion Cards -->
-        <div class="ex-faq-right">
+        <!-- Right: FAQ Accordions -->
+        <div class="bc-faq-accordions">
           
-          <!-- FAQ 1 (Open by Default) -->
-          <div class="ex-accordion-card is-open">
-            <button type="button" class="ex-acc-header-btn">
-              <div class="ex-acc-head-left">
-                <span class="ex-acc-head-icon"><svg class="svg-icon" style="width:13px;height:13px;"><use href="#icon-clock"></use></svg></span>
+          <!-- FAQ 1 (Open by default) -->
+          <div class="bc-acc-card is-open">
+            <button type="button" class="bc-acc-header">
+              <div class="bc-acc-header-left">
+                <span class="bc-acc-icon-circle"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg></span>
                 <span>Do you offer emergency service?</span>
               </div>
-              <span class="ex-acc-toggle-indicator">&times;</span>
+              <span class="bc-acc-toggle-icon">&minus;</span>
             </button>
-            <div class="ex-acc-content-body">
-              Yes. Trey Durden advertises 24-hour emergency heating and cooling service across Chicagoland. Direct telephone lines are monitored 24/7 for urgent no-heat and boiler failures.
+            <div class="bc-acc-body">
+              Yes. Best Comfort HVAC advertises 24-hour emergency heating and cooling service across Chicagoland.
             </div>
           </div>
 
           <!-- FAQ 2 -->
-          <div class="ex-accordion-card">
-            <button type="button" class="ex-acc-header-btn">
-              <div class="ex-acc-head-left">
-                <span class="ex-acc-head-icon">$</span>
+          <div class="bc-acc-card">
+            <button type="button" class="bc-acc-header">
+              <div class="bc-acc-header-left">
+                <span class="bc-acc-icon-circle">$</span>
                 <span>Are financing options available?</span>
               </div>
-              <span class="ex-acc-toggle-indicator">+</span>
+              <span class="bc-acc-toggle-icon">+</span>
             </button>
-            <div class="ex-acc-content-body">
-              Yes, flexible financing options with low monthly payments and deferred interest plans are available for qualified residential and commercial equipment installations.
+            <div class="bc-acc-body">
+              Yes, flexible financing options with manageable monthly payment programs are available for qualified residential and commercial equipment replacements.
             </div>
           </div>
 
           <!-- FAQ 3 -->
-          <div class="ex-accordion-card">
-            <button type="button" class="ex-acc-header-btn">
-              <div class="ex-acc-head-left">
-                <span class="ex-acc-head-icon"><svg class="svg-icon" style="width:13px;height:13px;"><use href="#icon-tools"></use></svg></span>
+          <div class="bc-acc-card">
+            <button type="button" class="bc-acc-header">
+              <div class="bc-acc-header-left">
+                <span class="bc-acc-icon-circle"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg></span>
                 <span>Do you service different HVAC brands?</span>
               </div>
-              <span class="ex-acc-toggle-indicator">+</span>
+              <span class="bc-acc-toggle-icon">+</span>
             </button>
-            <div class="ex-acc-content-body">
-              Yes. We service, diagnose, and repair all major manufacturers including Carrier, Trane, Rheem, Lennox, York, Goodman, Navien, Weil-McLain, and American Standard.
+            <div class="bc-acc-body">
+              Yes, our certified technicians service, repair, and install all major brands including Rheem, Goodman, American Standard, Carrier, Trane, Lennox, and Navien.
             </div>
           </div>
 
@@ -1114,25 +935,25 @@
   </section>
 
   <!-- =========================================================================
-       12. PRE-FOOTER CTA BANNER ("Ready for Chicago's next season?")
+       15. PRE-FOOTER CALLOUT BANNER ("Ready for Chicago's next season?")
        ========================================================================= -->
-  <section class="ex-cta-banner-section">
+  <section class="bc-cta-section">
     <div class="container">
-      <div class="ex-cta-banner-card">
+      <div class="bc-cta-card">
         
-        <div class="ex-cta-banner-left">
-          <div class="ex-eyebrow text-light">COMFORT WHEN YOU NEED IT</div>
-          <h2 class="ex-cta-banner-title">Ready for Chicago's next season?</h2>
-          <p class="ex-cta-banner-desc">
+        <div class="bc-cta-left">
+          <div class="bc-cta-tag"> COMFORT WHEN YOU NEED IT</div>
+          <h2 class="bc-cta-title">Ready for Chicago's next season?</h2>
+          <p class="bc-cta-desc">
             Schedule service, plan maintenance or call the emergency line when your comfort system cannot wait.
           </p>
         </div>
 
-        <div class="ex-cta-banner-actions">
-          <a href="contact.html" class="ex-btn-primary">Schedule Service</a>
-          <a href="tel:6303617434" class="ex-btn-white-phone">
-            <svg class="svg-icon" style="width:16px;height:16px;color:var(--color-salmon);"><use href="#icon-phone"></use></svg>
-            <span>Call (630) 361-7434</span>
+        <div class="bc-cta-actions">
+          <a href="contact.html" class="bc-btn-schedule">Schedule Service</a>
+          <a href="tel:7732494733" class="bc-btn-white-phone">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.21 2.2z"/></svg>
+            <span>Call (773) 249–4733</span>
           </a>
         </div>
 
@@ -1140,101 +961,101 @@
     </div>
   </section>
 
-  <!-- Floating Sticky Help Badge (As in wireframe) -->
-  <a href="tel:6303617434" class="ex-floating-help" title="Need Help? Contact 24/7 Dispatch">
-    <svg class="svg-icon" style="width:16px;height:16px;color:var(--color-cyan);"><use href="#icon-headphones"></use></svg>
-    <span>Need Help?</span>
-  </a>
-
   <!-- =========================================================================
-       13. FOOTER (Matching website example structure & Trey Durden luxury style)
+       16. FOOTER (Exact Match to website example.webp)
        ========================================================================= -->
-  <footer class="site-footer">
+  <footer class="bc-footer">
     <div class="container">
-      <div class="footer-grid">
+      <div class="bc-footer-grid">
         
-        <!-- Brand & Mission Column with Official Crest -->
-        <div class="footer-col">
-          <div class="footer-brand-wrap" style="display:flex; align-items:center; gap:16px; margin-bottom:16px;">
-            <img src="images/logos/td.jpg" alt="Trey Durden Shield Logo" style="width:52px; height:52px; border-radius:12px; object-fit:cover; border:1.5px solid var(--color-salmon); box-shadow:0 4px 15px rgba(177,138,87,0.25);">
-            <div>
-              <a href="index.html" class="brand-logo" aria-label="Trey Durden Home">
-                <span class="brand-script-name" style="font-size: 2.1rem; color: #ebd7b2;">Trey Durden</span>
-              </a>
-              <p style="font-size: 0.70rem; color: var(--color-cyan); text-transform: uppercase; letter-spacing: 0.12em; font-weight: 750; margin-top: 2px;">
-                Heating &bull; Cooling &bull; Boiler Services
-              </p>
-            </div>
-          </div>
-          
-          <p style="font-size: 0.90rem; margin-bottom: 18px; color: var(--color-text-light); line-height: 1.6;">
+        <!-- Brand & Mission Column -->
+        <div class="bc-footer-logo-wrap">
+          <img src="images/best-comfort-logo.svg" alt="Best Comfort Heating &amp; Cooling Logo" width="64" height="64">
+          <p class="bc-footer-desc">
             Heating, cooling, boiler, indoor air comfort, maintenance and equipment support for homes and businesses across Chicagoland.
           </p>
-
-          <div style="margin-bottom: 20px;">
-            <a href="contact.html" class="ex-btn-primary" style="padding: 10px 22px; font-size: 0.88rem;">Schedule Service</a>
-          </div>
-
-          <div style="display:flex; align-items:center; gap:12px;">
-            <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook" style="width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:center;color:#ded6cb;font-size:0.85rem;border:1px solid rgba(255,255,255,0.12);"><svg class="svg-icon" style="width:14px;height:14px;"><use href="#icon-facebook"></use></svg></a>
-            <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram" style="width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:center;color:#ded6cb;font-size:0.85rem;border:1px solid rgba(255,255,255,0.12);"><svg class="svg-icon" style="width:14px;height:14px;"><use href="#icon-instagram"></use></svg></a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn" style="width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:center;color:#ded6cb;font-size:0.85rem;border:1px solid rgba(255,255,255,0.12);"><svg class="svg-icon" style="width:14px;height:14px;"><use href="#icon-linkedin"></use></svg></a>
+          <a href="contact.html" class="bc-btn-schedule" style="font-size:0.88rem; padding:9px 20px;">Schedule Service</a>
+          
+          <div class="bc-footer-socials">
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="bc-social-btn" aria-label="Facebook">
+              <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="bc-social-btn" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="18" cy="6" r="1.5"/></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="bc-social-btn" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" class="bc-social-btn" aria-label="YouTube">
+              <svg viewBox="0 0 24 24"><path d="M21.58 7.19a2.5 2.5 0 00-1.76-1.77C18.26 5 12 5 12 5s-6.26 0-7.82.42A2.5 2.5 0 002.42 7.2 26.54 26.54 0 002 12a26.54 26.54 0 00.42 4.81 2.5 2.5 0 001.76 1.77C5.74 19 12 19 12 19s6.26 0 7.82-.42a2.5 2.5 0 001.76-1.77A26.54 26.54 0 0022 12a26.54 26.54 0 00-.42-4.81zM10 15V9l5.2 3L10 15z"/></svg>
+            </a>
           </div>
         </div>
 
-        <!-- Column 1: Services -->
-        <div class="footer-col">
-          <h4>Services</h4>
-          <ul class="footer-links">
-            <li><a href="services.html#residential-ac-repair">Heating Services</a></li>
-            <li><a href="services.html#air-conditioning">Cooling Services</a></li>
-            <li><a href="services.html#thermal-dynamic">Indoor Air Quality</a></li>
-            <li><a href="tel:6303617434">24/7 Emergency</a></li>
-            <li><a href="services.html#boiler-services">Maintenance</a></li>
-            <li><a href="services.html#boiler-services">Boiler Services</a></li>
+        <!-- Column 2: Services -->
+        <div>
+          <h4 class="bc-footer-heading">Services</h4>
+          <ul class="bc-footer-links">
+            <li><a href="services.html#heating">Heating Services</a></li>
+            <li><a href="services.html#cooling">Cooling Services</a></li>
+            <li><a href="services.html#indoor-air-quality">Indoor Air Quality</a></li>
+            <li><a href="tel:7732494733">24/7 Emergency</a></li>
+            <li><a href="services.html#maintenance">Maintenance</a></li>
           </ul>
         </div>
 
-        <!-- Column 2: Company -->
-        <div class="footer-col">
-          <h4>Company</h4>
-          <ul class="footer-links">
+        <!-- Column 3: Company -->
+        <div>
+          <h4 class="bc-footer-heading">Company</h4>
+          <ul class="bc-footer-links">
             <li><a href="about.html">About Us</a></li>
             <li><a href="products.html">Products</a></li>
             <li><a href="contact.html">Financing</a></li>
-            <li><a href="services.html#residential-ac-repair">Service Areas</a></li>
+            <li><a href="services.html#service-areas">Service Areas</a></li>
             <li><a href="about.html#faq">FAQs</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
 
-        <!-- Column 3: Contact -->
-        <div class="footer-col">
-          <h4>Contact</h4>
-          <p style="font-size: 0.90rem; color: var(--color-text-light); margin-bottom: 10px;">
-            Phone: <a href="tel:6303617434" style="color: var(--color-salmon); font-weight:800;">(630) 361-7434</a>
+        <!-- Column 4: Contact -->
+        <div>
+          <h4 class="bc-footer-heading">Contact</h4>
+          <p class="bc-footer-contact-item">
+            Phone: <a href="tel:7732494733"><strong>(773) 249-4733</strong></a>
           </p>
-          <p style="font-size: 0.88rem; color: var(--color-text-light); margin-bottom: 10px;">
-            Email: <a href="mailto:contact@treydurden.com" style="color: var(--color-cyan);">contact@treydurden.com</a>
+          <p class="bc-footer-contact-item">
+            Email: <a href="mailto:support@bestcomforthvac.com">support@bestcomforthvac.com</a>
           </p>
-          <p style="font-size: 0.85rem; color: var(--color-text-light); margin-bottom: 10px; line-height: 1.5;">
-            Regional Dispatch: Joliet, Naperville, Chicago &amp; Suburbs, IL
+          <p class="bc-footer-contact-item">
+            8729 S Commercial Ave, Chicago, IL 60617
           </p>
-          <p style="color: var(--color-salmon-light); font-size: 0.82rem; font-weight:750; margin-top: 12px; padding: 6px 12px; background: rgba(177,138,87,0.12); border-radius: 6px; border: 1px solid rgba(177,138,87,0.25);">
+          <p class="bc-footer-contact-item" style="color:var(--bc-coral); font-weight:750; margin-top:14px;">
             Emergency service: 24 hours / 7 days
           </p>
         </div>
 
       </div>
 
-      <div class="footer-bottom">
-        <p>&copy; 2026 Trey Durden. All rights reserved. TreyDurden.com &mdash; Best Comfort HVAC Joliet Office.</p>
-        <p style="color: var(--color-text-light); font-size: 0.82rem;">Residential &bull; Commercial &bull; Industrial HVAC Service</p>
+      <!-- Bottom Copyright Bar -->
+      <div class="bc-footer-bottom">
+        <div>&copy; 2026 Best Comfort HVAC. All rights reserved.</div>
+        <div>Residential &bull; Commercial &bull; Industrial HVAC service</div>
       </div>
     </div>
   </footer>
 
-  <script src="js/icons.js"></script>
-  <script src="js/main.js?v=8.50"></script>
+  <!-- =========================================================================
+       17. FLOATING WIDGETS (Need Help? & Scroll to Top)
+       ========================================================================= -->
+  <div class="bc-floating-widgets">
+    <a href="tel:7732494733" class="bc-floating-help-btn" title="Need Help? Call (773) 249-4733">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z"/></svg>
+      <span>Need Help?</span>
+    </a>
+    <button class="bc-scroll-top-btn" id="scrollTopBtn" title="Scroll to top">&uarr;</button>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/homepage-exact.js"></script>
 </body>
 </html>
