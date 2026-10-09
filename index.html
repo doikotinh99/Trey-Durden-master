@@ -12,8 +12,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Alex+Brush&family=Great+Vibes&display=swap" rel="stylesheet">
   
   <!-- Stylesheets (Modular Best Comfort Architecture) -->
-  <link rel="stylesheet" href="css/style.css?v=10.5">
-  <link rel="stylesheet" href="css/homepage.css?v=10.5">
+  <link rel="stylesheet" href="css/style.css?v=10.9">
+  <link rel="stylesheet" href="css/homepage.css?v=10.9">
   <link rel="shortcut icon" href="images/best-comfort-logo.svg" type="image/svg+xml">
 </head>
 <body>
@@ -309,21 +309,27 @@
     </div>
   </section>
 
-  <!-- =========================================================================
-       4. SERVICES & COVERAGE DIRECTORY (Parent-Child Accordion Menus - As Requested)
+      <!-- =========================================================================
+       4. SERVICES & COVERAGE DIRECTORY (Multi-Level Nested Tree Accordions)
        ========================================================================= -->
   <section class="bc-directory-section" id="services-directory">
     <div class="container">
       <div class="bc-directory-header">
-        <span class="bc-directory-badge">Services Directory</span>
+        <span class="bc-directory-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          Services Directory
+        </span>
         <h2 class="bc-directory-title">Our Services &amp; Coverage Directory</h2>
-        <p class="bc-directory-desc">Explore our full breakdown of HVAC and plumbing services, service areas, certified equipment brands, and specialized boiler installations.</p>
+        <p class="bc-directory-desc">Explore our full breakdown of HVAC and plumbing services, service areas, certified equipment brands, and specialized boiler installations across Chicagoland.</p>
+        <div class="bc-directory-hint-bar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+          <span>Multi-Level Directory: Tap any main category to open, then tap any sub-category to view all items</span>
+        </div>
       </div>
 
       <div class="directory-accordion-tree" id="directoryAccordionTree">
-
-        <!-- Node 0: Our Services at Best Comfort HVAC Joliet Office -->
-        <div class="tree-node-item is-open">
+        <!-- Our Services at Best Comfort HVAC Joliet Office -->
+        <div class="tree-node-item theme-services is-open">
           <button type="button" class="tree-node-btn" aria-expanded="true">
             <div class="tree-node-left">
               <span class="tree-badge-icon">
@@ -332,28 +338,289 @@
               <span class="tree-node-label">Our Services at Best Comfort HVAC Joliet Office</span>
             </div>
             <div class="tree-node-right">
-              <span class="tree-node-count-badge">460 services</span>
-              <svg class="tree-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+              <span class="tree-node-count-badge">460 services (6 Categories)</span>
+              <div class="tree-expand-indicator" aria-hidden="true">
+                <span class="tree-expand-text">Expand</span>
+                <svg class="tree-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+              </div>
             </div>
           </button>
           <div class="tree-node-content">
-            <ul class="tree-sub-list">
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Emergency 24/7 Heating &amp; Cooling Repair</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Residential Central AC Installation &amp; Service</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Commercial RTU Replacement &amp; Diagnostics</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> High AFUE Modulating Gas Furnace Repair</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Hydronic Boiler Efficiency Diagnostics</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Commercial &amp; Industrial Steam Boilers</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> High-Recovery Commercial Water Heaters</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Continuous Flow Tankless Arrays</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Thermal Engineering Application Reworks</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Annual Full HVAC Seasonal Maintenance</li>
-            </ul>
+<div class="tree-nested-accordion">
+    <div class="nested-group-item is-open">
+      <button type="button" class="nested-group-btn" aria-expanded="true">
+        <div class="nested-group-left">
+          <span class="nested-group-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg>
+          </span>
+          <span class="nested-group-title">Air Conditioning & Cooling Systems</span>
+        </div>
+        <div class="nested-group-right">
+          <span class="nested-group-badge">35 services</span>
+          <svg class="nested-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </div>
+      </button>
+      <div class="nested-group-content">
+        <ul class="tree-sub-list">
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-sky"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
+        <span class="tree-sub-text">Residential Central AC Installation</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span>
+        <span class="tree-sub-text">Emergency 24/7 Cooling Diagnostics & Repair</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-indigo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/></svg></span>
+        <span class="tree-sub-text">Commercial Rooftop RTU Replacement</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><polyline points="23 20 23 14 17 14"/><path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"/></svg></span>
+        <span class="tree-sub-text">Ductless Mini-Split Heat Pump Systems</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-sky"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"/><path d="m4.93 4.93 2.83 2.83"/><path d="M2 12h4"/><path d="m4.93 19.07 2.83-2.83"/><path d="M12 22v-4"/><path d="m19.07 19.07-2.83-2.83"/><path d="M22 12h-4"/><path d="m19.07 4.93-2.83 2.83"/><circle cx="12" cy="12" r="4"/></svg></span>
+        <span class="tree-sub-text">Seasonal AC Freon Re-Charge & Optimization</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-sky"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"/><path d="m4.93 4.93 2.83 2.83"/><path d="M2 12h4"/><path d="m4.93 19.07 2.83-2.83"/><path d="M12 22v-4"/><path d="m19.07 19.07-2.83-2.83"/><path d="M22 12h-4"/><path d="m19.07 4.93-2.83 2.83"/><circle cx="12" cy="12" r="4"/></svg></span>
+        <span class="tree-sub-text">Multi-Zone Variable Speed Inverter Tuning</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-indigo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/></svg></span>
+        <span class="tree-sub-text">Industrial Chillers & Condenser Coils</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></span>
+        <span class="tree-sub-text">Churches & Community Hall AC Service</span>
+      </li>
+    </ul>
+      </div>
+    </div>
+    <div class="nested-group-item">
+      <button type="button" class="nested-group-btn" aria-expanded="false">
+        <div class="nested-group-left">
+          <span class="nested-group-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 23c-4.97 0-9-3.95-9-8.83 0-3.83 2.5-6.68 4.74-8.89.84-.83 1.71-1.6 2.47-2.48.51-.59 1.25-.8 1.87-.5.61.29.92.95.77 1.62-.23 1.05-.28 2.08-.13 3.09.91-.97 1.88-1.99 2.8-3.08.45-.53 1.15-.75 1.79-.53.64.22 1.05.81 1.05 1.49 0 3.73-1.07 6.45-1.57 7.74 2.22-1.37 3.32-3.1 3.55-4.57.09-.59.51-1.07 1.08-1.22.58-.16 1.18.06 1.54.55C22.28 9.28 21 15.65 21 16.5c0 3.59-4.03 6.5-9 6.5z"/></svg>
+          </span>
+          <span class="nested-group-title">Heating & Modulating Gas Furnaces</span>
+        </div>
+        <div class="nested-group-right">
+          <span class="nested-group-badge">25 services</span>
+          <svg class="nested-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </div>
+      </button>
+      <div class="nested-group-content">
+        <ul class="tree-sub-list">
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-orange"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 23c-4.97 0-9-3.95-9-8.83 0-3.83 2.5-6.68 4.74-8.89.84-.83 1.71-1.6 2.47-2.48.51-.59 1.25-.8 1.87-.5.61.29.92.95.77 1.62-.23 1.05-.28 2.08-.13 3.09.91-.97 1.88-1.99 2.8-3.08.45-.53 1.15-.75 1.79-.53.64.22 1.05.81 1.05 1.49 0 3.73-1.07 6.45-1.57 7.74 2.22-1.37 3.32-3.1 3.55-4.57.09-.59.51-1.07 1.08-1.22.58-.16 1.18.06 1.54.55C22.28 9.28 21 15.65 21 16.5c0 3.59-4.03 6.5-9 6.5z"/></svg></span>
+        <span class="tree-sub-text">High-AFUE Modulating Gas Furnace Repair</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span>
+        <span class="tree-sub-text">Emergency 24/7 Heat Exchanger Inspection</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-indigo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/></svg></span>
+        <span class="tree-sub-text">Commercial RTU Gas Heating Replacement</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-orange"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg></span>
+        <span class="tree-sub-text">Dual-Stage Blower & Inducer Motor Swap</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-orange"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"/><path d="m4.93 4.93 2.83 2.83"/><path d="M2 12h4"/><path d="m4.93 19.07 2.83-2.83"/><path d="M12 22v-4"/><path d="m19.07 19.07-2.83-2.83"/><path d="M22 12h-4"/><path d="m19.07 4.93-2.83 2.83"/><circle cx="12" cy="12" r="4"/></svg></span>
+        <span class="tree-sub-text">Ignition Control Module Diagnostic & Tune-Up</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-orange"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 23c-4.97 0-9-3.95-9-8.83 0-3.83 2.5-6.68 4.74-8.89.84-.83 1.71-1.6 2.47-2.48.51-.59 1.25-.8 1.87-.5.61.29.92.95.77 1.62-.23 1.05-.28 2.08-.13 3.09.91-.97 1.88-1.99 2.8-3.08.45-.53 1.15-.75 1.79-.53.64.22 1.05.81 1.05 1.49 0 3.73-1.07 6.45-1.57 7.74 2.22-1.37 3.32-3.1 3.55-4.57.09-.59.51-1.07 1.08-1.22.58-.16 1.18.06 1.54.55C22.28 9.28 21 15.65 21 16.5c0 3.59-4.03 6.5-9 6.5z"/></svg></span>
+        <span class="tree-sub-text">Industrial Unit Heaters & Infrared Tubes</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></span>
+        <span class="tree-sub-text">Annual Heating Seasonal Safety Audit</span>
+      </li>
+    </ul>
+      </div>
+    </div>
+    <div class="nested-group-item">
+      <button type="button" class="nested-group-btn" aria-expanded="false">
+        <div class="nested-group-left">
+          <span class="nested-group-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"/><path d="m4.93 4.93 2.83 2.83"/><path d="M2 12h4"/><path d="m4.93 19.07 2.83-2.83"/><path d="M12 22v-4"/><path d="m19.07 19.07-2.83-2.83"/><path d="M22 12h-4"/><path d="m19.07 4.93-2.83 2.83"/><circle cx="12" cy="12" r="4"/></svg>
+          </span>
+          <span class="nested-group-title">Hydronic Boilers & Industrial Steam Systems</span>
+        </div>
+        <div class="nested-group-right">
+          <span class="nested-group-badge">50 services</span>
+          <svg class="nested-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </div>
+      </button>
+      <div class="nested-group-content">
+        <ul class="tree-sub-list">
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-cyan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14v-4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4"/><path d="M2 10h4"/><path d="M18 10h4"/><path d="M12 8v8"/><rect x="10" y="16" width="4" height="6" rx="1"/></svg></span>
+        <span class="tree-sub-text">Closed-Loop Hydronic Radiant Floor Tuning</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/></svg></span>
+        <span class="tree-sub-text">Commercial Cascading Boiler Array Setup</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/></svg></span>
+        <span class="tree-sub-text">Heavy Cast-Iron Sectional Boiler Overhaul</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-purple"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a4 4 0 0 1 8-1"/><path d="M10 12a4 4 0 0 1 8-1"/><path d="M14 16a4 4 0 0 1 8-1"/><path d="M2 19h20"/></svg></span>
+        <span class="tree-sub-text">Low-Pressure Steam Traps & Piping Diagnostic</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-teal"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg></span>
+        <span class="tree-sub-text">Combi Space Heating & Domestic Hot Water</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"/><path d="m4.93 4.93 2.83 2.83"/><path d="M2 12h4"/><path d="m4.93 19.07 2.83-2.83"/><path d="M12 22v-4"/><path d="m19.07 19.07-2.83-2.83"/><path d="M22 12h-4"/><path d="m19.07 4.93-2.83 2.83"/><circle cx="12" cy="12" r="4"/></svg></span>
+        <span class="tree-sub-text">Combustion Gas Efficiency & Flue Analysis</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span>
+        <span class="tree-sub-text">24/7 Emergency Burner Control Triage</span>
+      </li>
+    </ul>
+      </div>
+    </div>
+    <div class="nested-group-item">
+      <button type="button" class="nested-group-btn" aria-expanded="false">
+        <div class="nested-group-left">
+          <span class="nested-group-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/></svg>
+          </span>
+          <span class="nested-group-title">Water Heaters & Tankless Arrays</span>
+        </div>
+        <div class="nested-group-right">
+          <span class="nested-group-badge">70 services</span>
+          <svg class="nested-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </div>
+      </button>
+      <div class="nested-group-content">
+        <ul class="tree-sub-list">
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><polyline points="23 20 23 14 17 14"/><path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"/></svg></span>
+        <span class="tree-sub-text">Continuous Flow Commercial Tankless Systems</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-teal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/></svg></span>
+        <span class="tree-sub-text">High-Recovery Commercial Storage Tanks</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><polyline points="23 20 23 14 17 14"/><path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"/></svg></span>
+        <span class="tree-sub-text">Hybrid Electric Heat Pump Water Heaters</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-cyan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14v-4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4"/><path d="M2 10h4"/><path d="M18 10h4"/><path d="M12 8v8"/><rect x="10" y="16" width="4" height="6" rx="1"/></svg></span>
+        <span class="tree-sub-text">Domestic Hot Water Recirculation Loops</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-teal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg></span>
+        <span class="tree-sub-text">Anode Rod Replacement & Tank De-Scaling</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span>
+        <span class="tree-sub-text">Emergency Hot Water Pressure Relief Valve Swap</span>
+      </li>
+    </ul>
+      </div>
+    </div>
+    <div class="nested-group-item">
+      <button type="button" class="nested-group-btn" aria-expanded="false">
+        <div class="nested-group-left">
+          <span class="nested-group-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14v-4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4"/><path d="M2 10h4"/><path d="M18 10h4"/><path d="M12 8v8"/><rect x="10" y="16" width="4" height="6" rx="1"/></svg>
+          </span>
+          <span class="nested-group-title">Plumbing & Commercial Gas Piping</span>
+        </div>
+        <div class="nested-group-right">
+          <span class="nested-group-badge">70 services</span>
+          <svg class="nested-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </div>
+      </button>
+      <div class="nested-group-content">
+        <ul class="tree-sub-list">
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-cyan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14v-4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4"/><path d="M2 10h4"/><path d="M18 10h4"/><path d="M12 8v8"/><rect x="10" y="16" width="4" height="6" rx="1"/></svg></span>
+        <span class="tree-sub-text">Commercial Gas Header Pipeline Testing & Install</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-purple"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a4 4 0 0 1 8-1"/><path d="M10 12a4 4 0 0 1 8-1"/><path d="M14 16a4 4 0 0 1 8-1"/><path d="M2 19h20"/></svg></span>
+        <span class="tree-sub-text">High-Pressure Steam Flange Restorations</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></span>
+        <span class="tree-sub-text">Backflow Prevention Device Safety Inspection</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-cyan"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg></span>
+        <span class="tree-sub-text">Expansion Vessel & Circulator Pump Overhaul</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span>
+        <span class="tree-sub-text">Burst Hydronic Pipeline Rapid Triage</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg></span>
+        <span class="tree-sub-text">Thermal Engineering & Hydraulic Circuit Balancing</span>
+      </li>
+    </ul>
+      </div>
+    </div>
+    <div class="nested-group-item">
+      <button type="button" class="nested-group-btn" aria-expanded="false">
+        <div class="nested-group-left">
+          <span class="nested-group-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"/></svg>
+          </span>
+          <span class="nested-group-title">Indoor Air Quality & Seasonal Maintenance</span>
+        </div>
+        <div class="nested-group-right">
+          <span class="nested-group-badge">140 services</span>
+          <svg class="nested-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </div>
+      </button>
+      <div class="nested-group-content">
+        <ul class="tree-sub-list">
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg></span>
+        <span class="tree-sub-text">Whole-Home Air Purification & HEPA Media</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-teal"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg></span>
+        <span class="tree-sub-text">High-Capacity Central Humidifiers & Dehumidifiers</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-indigo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/></svg></span>
+        <span class="tree-sub-text">Commercial Fresh Air Intake Economizers</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"/></svg></span>
+        <span class="tree-sub-text">Custom Sheet Metal Duct Balancing & Sealing</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-sky"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"/><path d="m4.93 4.93 2.83 2.83"/><path d="M2 12h4"/><path d="m4.93 19.07 2.83-2.83"/><path d="M12 22v-4"/><path d="m19.07 19.07-2.83-2.83"/><path d="M22 12h-4"/><path d="m19.07 4.93-2.83 2.83"/><circle cx="12" cy="12" r="4"/></svg></span>
+        <span class="tree-sub-text">Smart Thermostat Remote Control Integration</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></span>
+        <span class="tree-sub-text">Comprehensive 24-Point Seasonal Tune-Up</span>
+      </li>
+    </ul>
+      </div>
+    </div>
+  </div>
           </div>
         </div>
 
-        <!-- Node 1: Area's We Service -->
-        <div class="tree-node-item">
+        <!-- Area's We Service -->
+        <div class="tree-node-item theme-areas">
           <button type="button" class="tree-node-btn" aria-expanded="false">
             <div class="tree-node-left">
               <span class="tree-badge-icon">
@@ -363,25 +630,496 @@
             </div>
             <div class="tree-node-right">
               <span class="tree-node-count-badge">259 locations across 1 state</span>
-              <svg class="tree-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+              <div class="tree-expand-indicator" aria-hidden="true">
+                <span class="tree-expand-text">Expand</span>
+                <svg class="tree-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+              </div>
             </div>
           </button>
           <div class="tree-node-content">
-            <ul class="tree-sub-list">
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Cook County, IL</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> DuPage County, IL</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Kane County, IL</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Kendall County, IL</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Grundy County, IL</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Joliet &amp; Plainfield, IL</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Naperville &amp; Aurora, IL</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Bolingbrook &amp; Romeoville, IL</li>
-            </ul>
+<div class="tree-nested-accordion">
+    <div class="nested-group-item is-open">
+      <button type="button" class="nested-group-btn" aria-expanded="true">
+        <div class="nested-group-left">
+          <span class="nested-group-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l8-4v18M13 21V3l6 4v14"/></svg>
+          </span>
+          <span class="nested-group-title">Cook County</span>
+        </div>
+        <div class="nested-group-right">
+          <span class="nested-group-badge">137 municipalities</span>
+          <svg class="nested-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </div>
+      </button>
+      <div class="nested-group-content">
+        <ul class="tree-sub-list">
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Alsip, Cook County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Arlington Heights, Cook County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Barrington (Township), Cook County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Bartlett, Cook County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Bedford Park, Cook County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Bellwood, Cook County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Berkeley, Cook County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Berwyn, Cook County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Berwyn (Township), Cook County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Blue Island, Cook County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Bridgeview, Cook County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Burbank, Cook County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Calumet City, Cook County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Chicago Heights, Cook County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Cicero, Cook County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Des Plaines, Cook County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Elk Grove Village, Cook County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Evanston, Cook County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Franklin Park, Cook County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Glenview, Cook County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Harvey, Cook County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Melrose Park, Cook County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Oak Lawn, Cook County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Oak Park, Cook County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Orland Park, Cook County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Palatine, Cook County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Schaumburg, Cook County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Skokie, Cook County</span>
+      </li>
+    </ul>
+      </div>
+    </div>
+    <div class="nested-group-item">
+      <button type="button" class="nested-group-btn" aria-expanded="false">
+        <div class="nested-group-left">
+          <span class="nested-group-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l8-4v18M13 21V3l6 4v14"/></svg>
+          </span>
+          <span class="nested-group-title">DuPage County</span>
+        </div>
+        <div class="nested-group-right">
+          <span class="nested-group-badge">31 municipalities</span>
+          <svg class="nested-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </div>
+      </button>
+      <div class="nested-group-content">
+        <ul class="tree-sub-list">
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Addison (Township), DuPage County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Addison, DuPage County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Aurora, DuPage County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Batavia, DuPage County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Bloomingdale, DuPage County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Carol Stream, DuPage County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Clarendon Hills, DuPage County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Darien, DuPage County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Downers Grove, DuPage County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Elmhurst, DuPage County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Glen Ellyn, DuPage County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Glendale Heights, DuPage County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Itasca, DuPage County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Lisle, DuPage County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Lombard, DuPage County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Naperville, DuPage County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Oak Brook, DuPage County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Villa Park, DuPage County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Warrenville, DuPage County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">West Chicago, DuPage County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Westmont, DuPage County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Wheaton, DuPage County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Willowbrook, DuPage County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Wood Dale, DuPage County</span>
+      </li>
+    </ul>
+      </div>
+    </div>
+    <div class="nested-group-item">
+      <button type="button" class="nested-group-btn" aria-expanded="false">
+        <div class="nested-group-left">
+          <span class="nested-group-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l8-4v18M13 21V3l6 4v14"/></svg>
+          </span>
+          <span class="nested-group-title">Will County</span>
+        </div>
+        <div class="nested-group-right">
+          <span class="nested-group-badge">60 municipalities</span>
+          <svg class="nested-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </div>
+      </button>
+      <div class="nested-group-content">
+        <ul class="tree-sub-list">
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Joliet (Headquarters Office), Will County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Plainfield, Will County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Bolingbrook, Will County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Romeoville, Will County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Lockport, Will County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Crest Hill, Will County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Mokena, Will County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">New Lenox, Will County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Frankfort, Will County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Shorewood, Will County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Channahon, Will County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Manhattan, Will County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Peotone, Will County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Beecher, Will County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Wilmington, Will County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Braidwood, Will County</span>
+      </li>
+    </ul>
+      </div>
+    </div>
+    <div class="nested-group-item">
+      <button type="button" class="nested-group-btn" aria-expanded="false">
+        <div class="nested-group-left">
+          <span class="nested-group-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l8-4v18M13 21V3l6 4v14"/></svg>
+          </span>
+          <span class="nested-group-title">Grundy County</span>
+        </div>
+        <div class="nested-group-right">
+          <span class="nested-group-badge">31 municipalities</span>
+          <svg class="nested-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </div>
+      </button>
+      <div class="nested-group-content">
+        <ul class="tree-sub-list">
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Morris (County Seat), Grundy County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Coal City, Grundy County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Minooka, Grundy County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Channahon, Grundy County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Diamond, Grundy County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Braceville, Grundy County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Gardner, Grundy County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Mazon, Grundy County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">South Wilmington, Grundy County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Verona, Grundy County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Kinsman, Grundy County</span>
+      </li>
+    </ul>
+      </div>
+    </div>
+    <div class="nested-group-item">
+      <button type="button" class="nested-group-btn" aria-expanded="false">
+        <div class="nested-group-left">
+          <span class="nested-group-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l8-4v18M13 21V3l6 4v14"/></svg>
+          </span>
+          <span class="nested-group-title">Kane County</span>
+        </div>
+        <div class="nested-group-right">
+          <span class="nested-group-badge">Expanded Coverage</span>
+          <svg class="nested-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </div>
+      </button>
+      <div class="nested-group-content">
+        <ul class="tree-sub-list">
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Aurora, Kane County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Elgin, Kane County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Batavia, Kane County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">St. Charles, Kane County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Geneva, Kane County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Carpentersville, Kane County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">South Elgin, Kane County</span>
+      </li>
+    </ul>
+      </div>
+    </div>
+    <div class="nested-group-item">
+      <button type="button" class="nested-group-btn" aria-expanded="false">
+        <div class="nested-group-left">
+          <span class="nested-group-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l8-4v18M13 21V3l6 4v14"/></svg>
+          </span>
+          <span class="nested-group-title">Kendall County</span>
+        </div>
+        <div class="nested-group-right">
+          <span class="nested-group-badge">Expanded Coverage</span>
+          <svg class="nested-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </div>
+      </button>
+      <div class="nested-group-content">
+        <ul class="tree-sub-list">
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Oswego, Kendall County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Yorkville, Kendall County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Plano, Kendall County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Montgomery, Kendall County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Newark, Kendall County</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="tree-sub-text">Bristol, Kendall County</span>
+      </li>
+    </ul>
+      </div>
+    </div>
+  </div>
           </div>
         </div>
 
-        <!-- Node 2: Brands We Install -->
-        <div class="tree-node-item">
+        <!-- Brands We Install -->
+        <div class="tree-node-item theme-brands-install">
           <button type="button" class="tree-node-btn" aria-expanded="false">
             <div class="tree-node-left">
               <span class="tree-badge-icon">
@@ -390,26 +1128,301 @@
               <span class="tree-node-label">Brands We Install</span>
             </div>
             <div class="tree-node-right">
-              <span class="tree-node-count-badge">58 brands</span>
-              <svg class="tree-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+              <span class="tree-node-count-badge">58 brands (4 Categories)</span>
+              <div class="tree-expand-indicator" aria-hidden="true">
+                <span class="tree-expand-text">Expand</span>
+                <svg class="tree-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+              </div>
             </div>
           </button>
           <div class="tree-node-content">
-            <ul class="tree-sub-list">
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Rheem &amp; Ruud</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> York &amp; Johnson Controls</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Carrier &amp; Bryant</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Trane &amp; American Standard</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Lennox Industries</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Navien Condensing</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Weil-McLain Hydronics</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Daikin &amp; Goodman</li>
-            </ul>
+<div class="tree-nested-accordion">
+    <div class="nested-group-item is-open">
+      <button type="button" class="nested-group-btn" aria-expanded="true">
+        <div class="nested-group-left">
+          <span class="nested-group-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l8-4v18M13 21V3l6 4v14"/></svg>
+          </span>
+          <span class="nested-group-title">Premier Residential & Commercial HVAC</span>
+        </div>
+        <div class="nested-group-right">
+          <span class="nested-group-badge">16 brands</span>
+          <svg class="nested-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </div>
+      </button>
+      <div class="nested-group-content">
+        <ul class="tree-sub-list">
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+        <span class="tree-sub-text">Carrier Authorized Systems</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+        <span class="tree-sub-text">Lennox Industries Elite</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+        <span class="tree-sub-text">Trane Comfort Specialists</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+        <span class="tree-sub-text">American Standard Platforms</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+        <span class="tree-sub-text">Rheem Pro Series Units</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+        <span class="tree-sub-text">Ruud Commercial Systems</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+        <span class="tree-sub-text">York Affinity Series</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+        <span class="tree-sub-text">Johnson Controls RTU</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+        <span class="tree-sub-text">Bryant Heating & Cooling</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+        <span class="tree-sub-text">Amana High-Efficiency</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+        <span class="tree-sub-text">Goodman Manufacturing</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+        <span class="tree-sub-text">Daikin Global Inverter</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+        <span class="tree-sub-text">Mitsubishi Electric Mini-Split</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+        <span class="tree-sub-text">Comfortmaker SoftSound</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+        <span class="tree-sub-text">Coleman HVAC Units</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+        <span class="tree-sub-text">Heil Heating & Cooling</span>
+      </li>
+    </ul>
+      </div>
+    </div>
+    <div class="nested-group-item">
+      <button type="button" class="nested-group-btn" aria-expanded="false">
+        <div class="nested-group-left">
+          <span class="nested-group-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l8-4v18M13 21V3l6 4v14"/></svg>
+          </span>
+          <span class="nested-group-title">Boilers & Hydronic Heating Specialists</span>
+        </div>
+        <div class="nested-group-right">
+          <span class="nested-group-badge">14 brands</span>
+          <svg class="nested-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </div>
+      </button>
+      <div class="nested-group-content">
+        <ul class="tree-sub-list">
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+        <span class="tree-sub-text">Weil-McLain Hydronics</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+        <span class="tree-sub-text">Navien Condensing Units</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+        <span class="tree-sub-text">Buderus High-Efficiency</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+        <span class="tree-sub-text">Burnham Hydronics Boilers</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+        <span class="tree-sub-text">Peerless Cast Iron Boilers</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+        <span class="tree-sub-text">Dunkirk Heating Systems</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+        <span class="tree-sub-text">Lochinvar Commercial Boilers</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+        <span class="tree-sub-text">Laars Heating Systems</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+        <span class="tree-sub-text">U.S. Boiler Company</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+        <span class="tree-sub-text">New Yorker Boilers</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+        <span class="tree-sub-text">Munchkin High-Efficiency</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+        <span class="tree-sub-text">Chromalox Industrial</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+        <span class="tree-sub-text">Modine Unit Heaters</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+        <span class="tree-sub-text">Hot Dawg Garage Heaters</span>
+      </li>
+    </ul>
+      </div>
+    </div>
+    <div class="nested-group-item">
+      <button type="button" class="nested-group-btn" aria-expanded="false">
+        <div class="nested-group-left">
+          <span class="nested-group-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l8-4v18M13 21V3l6 4v14"/></svg>
+          </span>
+          <span class="nested-group-title">Specialty Cooling, Multi-Zone & Heat Pumps</span>
+        </div>
+        <div class="nested-group-right">
+          <span class="nested-group-badge">14 brands</span>
+          <svg class="nested-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </div>
+      </button>
+      <div class="nested-group-content">
+        <ul class="tree-sub-list">
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+        <span class="tree-sub-text">LG Multi-Zone Inverters</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+        <span class="tree-sub-text">MIDEA Smart Ductless</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+        <span class="tree-sub-text">MRCOOL DIY & Pro Arrays</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+        <span class="tree-sub-text">Friedrich Heavy-Duty</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+        <span class="tree-sub-text">Frigidaire HVAC Systems</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+        <span class="tree-sub-text">Maytag High Efficiency</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+        <span class="tree-sub-text">Luxaire Commercial Units</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+        <span class="tree-sub-text">Gibson Heating & Cooling</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+        <span class="tree-sub-text">Thermo Pride Oil & Gas</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+        <span class="tree-sub-text">Armstrong Air Systems</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+        <span class="tree-sub-text">AirEase Pro Series</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+        <span class="tree-sub-text">BARD Wall-Mount Systems</span>
+      </li>
+    </ul>
+      </div>
+    </div>
+    <div class="nested-group-item">
+      <button type="button" class="nested-group-btn" aria-expanded="false">
+        <div class="nested-group-left">
+          <span class="nested-group-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l8-4v18M13 21V3l6 4v14"/></svg>
+          </span>
+          <span class="nested-group-title">Commercial Water Heaters & Industrial Systems</span>
+        </div>
+        <div class="nested-group-right">
+          <span class="nested-group-badge">14 brands</span>
+          <svg class="nested-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </div>
+      </button>
+      <div class="nested-group-content">
+        <ul class="tree-sub-list">
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+        <span class="tree-sub-text">Whirlpool Heavy Water Heaters</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+        <span class="tree-sub-text">Westinghouse High Recovery</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+        <span class="tree-sub-text">Weatherking Commercial RTU</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+        <span class="tree-sub-text">Weathermaster High-Output</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+        <span class="tree-sub-text">Nordyne Industrial Systems</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+        <span class="tree-sub-text">Nortek Global HVAC</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+        <span class="tree-sub-text">Miller Mobile & Modular</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+        <span class="tree-sub-text">Ducane Heating & Cooling</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+        <span class="tree-sub-text">AirTemp Climate Systems</span>
+      </li>
+      <li class="tree-sub-item">
+        <span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+        <span class="tree-sub-text">Fedders Commercial AC</span>
+      </li>
+    </ul>
+      </div>
+    </div>
+  </div>
           </div>
         </div>
 
-        <!-- Node 3: Brands We Service -->
-        <div class="tree-node-item">
+        <!-- Brands We Service -->
+        <div class="tree-node-item theme-brands-service">
           <button type="button" class="tree-node-btn" aria-expanded="false">
             <div class="tree-node-left">
               <span class="tree-badge-icon">
@@ -418,24 +1431,27 @@
               <span class="tree-node-label">Brands We Service</span>
             </div>
             <div class="tree-node-right">
-              <span class="tree-node-count-badge">138 brands</span>
-              <svg class="tree-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+              <span class="tree-node-count-badge">138 brands across all makers</span>
+              <div class="tree-expand-indicator" aria-hidden="true">
+                <span class="tree-expand-text">Expand</span>
+                <svg class="tree-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+              </div>
             </div>
           </button>
           <div class="tree-node-content">
-            <ul class="tree-sub-list">
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> All Major Furnace Brands</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> All Commercial RTU Systems</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Inverter &amp; VRF Multi-Zone</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> High-Efficiency Heat Pumps</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Modulating Condensing Units</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Legacy Pneumatic &amp; DDC Systems</li>
-            </ul>
+<ul class="tree-sub-list">
+    <li class="tree-sub-item"><span class="tree-sub-icon icon-indigo"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 23c-4.97 0-9-3.95-9-8.83 0-3.83 2.5-6.68 4.74-8.89.84-.83 1.71-1.6 2.47-2.48.51-.59 1.25-.8 1.87-.5.61.29.92.95.77 1.62-.23 1.05-.28 2.08-.13 3.09.91-.97 1.88-1.99 2.8-3.08.45-.53 1.15-.75 1.79-.53.64.22 1.05.81 1.05 1.49 0 3.73-1.07 6.45-1.57 7.74 2.22-1.37 3.32-3.1 3.55-4.57.09-.59.51-1.07 1.08-1.22.58-.16 1.18.06 1.54.55C22.28 9.28 21 15.65 21 16.5c0 3.59-4.03 6.5-9 6.5z"/></svg></span><span class="tree-sub-text">All Major Furnace &amp; Gas Heating Brands (50+ Makers)</span></li>
+    <li class="tree-sub-item"><span class="tree-sub-icon icon-indigo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/></svg></span><span class="tree-sub-text">All Commercial Rooftop RTU HVAC Platforms</span></li>
+    <li class="tree-sub-item"><span class="tree-sub-icon icon-indigo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span><span class="tree-sub-text">Inverter, VRF &amp; Ductless Multi-Zone Systems</span></li>
+    <li class="tree-sub-item"><span class="tree-sub-icon icon-indigo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><polyline points="23 20 23 14 17 14"/><path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"/></svg></span><span class="tree-sub-text">High-Efficiency Reversible Heat Pumps</span></li>
+    <li class="tree-sub-item"><span class="tree-sub-icon icon-indigo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"/><path d="m4.93 4.93 2.83 2.83"/><path d="M2 12h4"/><path d="m4.93 19.07 2.83-2.83"/><path d="M12 22v-4"/><path d="m19.07 19.07-2.83-2.83"/><path d="M22 12h-4"/><path d="m19.07 4.93-2.83 2.83"/><circle cx="12" cy="12" r="4"/></svg></span><span class="tree-sub-text">Modulating Condensing AC &amp; Furnace Units</span></li>
+    <li class="tree-sub-item"><span class="tree-sub-icon icon-indigo"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg></span><span class="tree-sub-text">Legacy Pneumatic &amp; Direct Digital Controls (DDC)</span></li>
+  </ul>
           </div>
         </div>
 
-        <!-- Node 4: Brands We Repair -->
-        <div class="tree-node-item">
+        <!-- Brands We Repair -->
+        <div class="tree-node-item theme-brands-repair">
           <button type="button" class="tree-node-btn" aria-expanded="false">
             <div class="tree-node-left">
               <span class="tree-badge-icon">
@@ -444,23 +1460,30 @@
               <span class="tree-node-label">Brands We Repair</span>
             </div>
             <div class="tree-node-right">
-              <span class="tree-node-count-badge">10 brands</span>
-              <svg class="tree-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+              <span class="tree-node-count-badge">10 certified brands</span>
+              <div class="tree-expand-indicator" aria-hidden="true">
+                <span class="tree-expand-text">Expand</span>
+                <svg class="tree-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+              </div>
             </div>
           </button>
           <div class="tree-node-content">
-            <ul class="tree-sub-list">
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Rheem Pro Series</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> York Affinity Systems</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Carrier Infinity Series</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Trane XV / XR Platforms</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Weil-McLain Ultra Boilers</li>
-            </ul>
+<ul class="tree-sub-list">
+    <li class="tree-sub-item"><span class="tree-sub-icon icon-purple"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg></span><span class="tree-sub-text">AirEase Heating &amp; Cooling Repair</span></li>
+    <li class="tree-sub-item"><span class="tree-sub-icon icon-purple"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/></svg></span><span class="tree-sub-text">Allied Air &amp; Allied-Commercial RTU Triage</span></li>
+    <li class="tree-sub-item"><span class="tree-sub-icon icon-purple"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg></span><span class="tree-sub-text">Aqua Products Hydronic Systems</span></li>
+    <li class="tree-sub-item"><span class="tree-sub-icon icon-purple"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/></svg></span><span class="tree-sub-text">Anthratube &amp; Anthes Coal/Hydronics</span></li>
+    <li class="tree-sub-item"><span class="tree-sub-icon icon-purple"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg></span><span class="tree-sub-text">Copeland Compressors &amp; Scroll Diagnostics</span></li>
+    <li class="tree-sub-item"><span class="tree-sub-icon icon-purple"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><polyline points="23 20 23 14 17 14"/><path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"/></svg></span><span class="tree-sub-text">Counterflow Forced Air Systems</span></li>
+    <li class="tree-sub-item"><span class="tree-sub-icon icon-purple"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg></span><span class="tree-sub-text">Dadanco Active Chilled Beams</span></li>
+    <li class="tree-sub-item"><span class="tree-sub-icon icon-purple"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"/><path d="m4.93 4.93 2.83 2.83"/><path d="M2 12h4"/><path d="m4.93 19.07 2.83-2.83"/><path d="M12 22v-4"/><path d="m19.07 19.07-2.83-2.83"/><path d="M22 12h-4"/><path d="m19.07 4.93-2.83 2.83"/><circle cx="12" cy="12" r="4"/></svg></span><span class="tree-sub-text">Dayton Commercial Blowers &amp; Motors</span></li>
+    <li class="tree-sub-item"><span class="tree-sub-icon icon-purple"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 23c-4.97 0-9-3.95-9-8.83 0-3.83 2.5-6.68 4.74-8.89.84-.83 1.71-1.6 2.47-2.48.51-.59 1.25-.8 1.87-.5.61.29.92.95.77 1.62-.23 1.05-.28 2.08-.13 3.09.91-.97 1.88-1.99 2.8-3.08.45-.53 1.15-.75 1.79-.53.64.22 1.05.81 1.05 1.49 0 3.73-1.07 6.45-1.57 7.74 2.22-1.37 3.32-3.1 3.55-4.57.09-.59.51-1.07 1.08-1.22.58-.16 1.18.06 1.54.55C22.28 9.28 21 15.65 21 16.5c0 3.59-4.03 6.5-9 6.5z"/></svg></span><span class="tree-sub-text">EVO Thermal Efficiency Platforms</span></li>
+  </ul>
           </div>
         </div>
 
-        <!-- Node 5: Plumbing Types We Install -->
-        <div class="tree-node-item">
+        <!-- Plumbing Types We Install -->
+        <div class="tree-node-item theme-plumbing-install">
           <button type="button" class="tree-node-btn" aria-expanded="false">
             <div class="tree-node-left">
               <span class="tree-badge-icon">
@@ -469,25 +1492,28 @@
               <span class="tree-node-label">Plumbing Types We Install</span>
             </div>
             <div class="tree-node-right">
-              <span class="tree-node-count-badge">7 types</span>
-              <svg class="tree-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+              <span class="tree-node-count-badge">7 equipment types</span>
+              <div class="tree-expand-indicator" aria-hidden="true">
+                <span class="tree-expand-text">Expand</span>
+                <svg class="tree-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+              </div>
             </div>
           </button>
           <div class="tree-node-content">
-            <ul class="tree-sub-list">
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Hydronic Radiant In-Floor</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Tankless Continuous Flow</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Commercial Gas Header Lines</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> High-Pressure Steam Piping</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Backflow Prevention Valves</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Expansion Tank Systems</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Recirculation Loop Pumps</li>
-            </ul>
+<ul class="tree-sub-list">
+    <li class="tree-sub-item"><span class="tree-sub-icon icon-cyan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/></svg></span><span class="tree-sub-text">Water Heater Storage Units</span></li>
+    <li class="tree-sub-item"><span class="tree-sub-icon icon-cyan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><polyline points="23 20 23 14 17 14"/><path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"/></svg></span><span class="tree-sub-text">Tankless Water Heater Arrays</span></li>
+    <li class="tree-sub-item"><span class="tree-sub-icon icon-cyan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg></span><span class="tree-sub-text">Water Softener Ion Systems</span></li>
+    <li class="tree-sub-item"><span class="tree-sub-icon icon-cyan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg></span><span class="tree-sub-text">Whole-Building Water Filtration</span></li>
+    <li class="tree-sub-item"><span class="tree-sub-icon icon-cyan"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg></span><span class="tree-sub-text">Heavy-Duty Sump Pump Assemblies</span></li>
+    <li class="tree-sub-item"><span class="tree-sub-icon icon-cyan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14v-4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4"/><path d="M2 10h4"/><path d="M18 10h4"/><path d="M12 8v8"/><rect x="10" y="16" width="4" height="6" rx="1"/></svg></span><span class="tree-sub-text">Sewage Ejector Lift Stations</span></li>
+    <li class="tree-sub-item"><span class="tree-sub-icon icon-cyan"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg></span><span class="tree-sub-text">Commercial Garbage Disposal Units</span></li>
+  </ul>
           </div>
         </div>
 
-        <!-- Node 6: Plumbing Types We Service -->
-        <div class="tree-node-item">
+        <!-- Plumbing Types We Service -->
+        <div class="tree-node-item theme-plumbing-service">
           <button type="button" class="tree-node-btn" aria-expanded="false">
             <div class="tree-node-left">
               <span class="tree-badge-icon">
@@ -496,24 +1522,29 @@
               <span class="tree-node-label">Plumbing Types We Service</span>
             </div>
             <div class="tree-node-right">
-              <span class="tree-node-count-badge">8 types</span>
-              <svg class="tree-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+              <span class="tree-node-count-badge">8 equipment types</span>
+              <div class="tree-expand-indicator" aria-hidden="true">
+                <span class="tree-expand-text">Expand</span>
+                <svg class="tree-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+              </div>
             </div>
           </button>
           <div class="tree-node-content">
-            <ul class="tree-sub-list">
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Closed-Loop Hydronics</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Steam Trap Forensics</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> De-scaling &amp; Chemical Flush</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Circulator Pump Overhaul</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> PRV Pressure Regulators</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Gas Supply Pressure Triage</li>
-            </ul>
+<ul class="tree-sub-list">
+    <li class="tree-sub-item"><span class="tree-sub-icon icon-sky"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></span><span class="tree-sub-text">Backflow Preventer Annual Certification</span></li>
+    <li class="tree-sub-item"><span class="tree-sub-icon icon-sky"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><polyline points="23 20 23 14 17 14"/><path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"/></svg></span><span class="tree-sub-text">Tankless Water Heater De-scaling Flush</span></li>
+    <li class="tree-sub-item"><span class="tree-sub-icon icon-sky"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg></span><span class="tree-sub-text">Water Softener Salt &amp; Valve Calibration</span></li>
+    <li class="tree-sub-item"><span class="tree-sub-icon icon-sky"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg></span><span class="tree-sub-text">Sump Pump Battery Backup Testing</span></li>
+    <li class="tree-sub-item"><span class="tree-sub-icon icon-sky"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg></span><span class="tree-sub-text">Water Filtration Cartridge &amp; Carbon Refresh</span></li>
+    <li class="tree-sub-item"><span class="tree-sub-icon icon-sky"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/></svg></span><span class="tree-sub-text">Water Heater Anode &amp; Burner Tune-up</span></li>
+    <li class="tree-sub-item"><span class="tree-sub-icon icon-sky"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14v-4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4"/><path d="M2 10h4"/><path d="M18 10h4"/><path d="M12 8v8"/><rect x="10" y="16" width="4" height="6" rx="1"/></svg></span><span class="tree-sub-text">Sewage Ejector Float Switch Servicing</span></li>
+    <li class="tree-sub-item"><span class="tree-sub-icon icon-sky"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg></span><span class="tree-sub-text">Commercial Garbage Disposal Overhaul</span></li>
+  </ul>
           </div>
         </div>
 
-        <!-- Node 7: Plumbing Types We Repair -->
-        <div class="tree-node-item">
+        <!-- Plumbing Types We Repair -->
+        <div class="tree-node-item theme-plumbing-repair">
           <button type="button" class="tree-node-btn" aria-expanded="false">
             <div class="tree-node-left">
               <span class="tree-badge-icon">
@@ -522,22 +1553,29 @@
               <span class="tree-node-label">Plumbing Types We Repair</span>
             </div>
             <div class="tree-node-right">
-              <span class="tree-node-count-badge">8 types</span>
-              <svg class="tree-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+              <span class="tree-node-count-badge">8 equipment types</span>
+              <div class="tree-expand-indicator" aria-hidden="true">
+                <span class="tree-expand-text">Expand</span>
+                <svg class="tree-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+              </div>
             </div>
           </button>
           <div class="tree-node-content">
-            <ul class="tree-sub-list">
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Burst Hydronic Line Repair</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Leaking Steam Header Seals</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Defective Relief Valve Swap</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Corroded Flange Restorations</li>
-            </ul>
+<ul class="tree-sub-list">
+    <li class="tree-sub-item"><span class="tree-sub-icon icon-teal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/></svg></span><span class="tree-sub-text">Leaking Water Heater Tank &amp; Thermostat Triage</span></li>
+    <li class="tree-sub-item"><span class="tree-sub-icon icon-teal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><polyline points="23 20 23 14 17 14"/><path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"/></svg></span><span class="tree-sub-text">Tankless Ignition Failure &amp; Error Code Clearing</span></li>
+    <li class="tree-sub-item"><span class="tree-sub-icon icon-teal"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg></span><span class="tree-sub-text">Failed Sump Pump Replacement &amp; Pit Restoration</span></li>
+    <li class="tree-sub-item"><span class="tree-sub-icon icon-teal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14v-4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4"/><path d="M2 10h4"/><path d="M18 10h4"/><path d="M12 8v8"/><rect x="10" y="16" width="4" height="6" rx="1"/></svg></span><span class="tree-sub-text">Sewage Ejector Impeller Jam &amp; Check Valve Swap</span></li>
+    <li class="tree-sub-item"><span class="tree-sub-icon icon-teal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg></span><span class="tree-sub-text">Water Softener Resin Bed &amp; Motor Rebuild</span></li>
+    <li class="tree-sub-item"><span class="tree-sub-icon icon-teal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></span><span class="tree-sub-text">Defective Backflow Valve Re-sealing</span></li>
+    <li class="tree-sub-item"><span class="tree-sub-icon icon-teal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg></span><span class="tree-sub-text">Cracked Filtration Housing Emergency Replacement</span></li>
+    <li class="tree-sub-item"><span class="tree-sub-icon icon-teal"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg></span><span class="tree-sub-text">Seized Garbage Disposal Unjam &amp; Wire Repair</span></li>
+  </ul>
           </div>
         </div>
 
-        <!-- Node 8: Boilers We Install -->
-        <div class="tree-node-item">
+        <!-- Boilers We Install -->
+        <div class="tree-node-item theme-boilers-install">
           <button type="button" class="tree-node-btn" aria-expanded="false">
             <div class="tree-node-left">
               <span class="tree-badge-icon">
@@ -546,23 +1584,24 @@
               <span class="tree-node-label">Boilers We Install</span>
             </div>
             <div class="tree-node-right">
-              <span class="tree-node-count-badge">3 items</span>
-              <svg class="tree-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+              <span class="tree-node-count-badge">3 certified manufacturers</span>
+              <div class="tree-expand-indicator" aria-hidden="true">
+                <span class="tree-expand-text">Expand</span>
+                <svg class="tree-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+              </div>
             </div>
           </button>
           <div class="tree-node-content">
-            <ul class="tree-sub-list">
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Modulating Condensing 95%+</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Commercial Cascading Arrays</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Cast-Iron Sectional Boilers</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Low-Pressure Steam Units</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Combi Space &amp; DHW Boilers</li>
-            </ul>
+<ul class="tree-sub-list">
+    <li class="tree-sub-item"><span class="tree-sub-icon icon-orange"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 23c-4.97 0-9-3.95-9-8.83 0-3.83 2.5-6.68 4.74-8.89.84-.83 1.71-1.6 2.47-2.48.51-.59 1.25-.8 1.87-.5.61.29.92.95.77 1.62-.23 1.05-.28 2.08-.13 3.09.91-.97 1.88-1.99 2.8-3.08.45-.53 1.15-.75 1.79-.53.64.22 1.05.81 1.05 1.49 0 3.73-1.07 6.45-1.57 7.74 2.22-1.37 3.32-3.1 3.55-4.57.09-.59.51-1.07 1.08-1.22.58-.16 1.18.06 1.54.55C22.28 9.28 21 15.65 21 16.5c0 3.59-4.03 6.5-9 6.5z"/></svg></span><span class="tree-sub-text">NAVIEN Condensing High-Efficiency Boilers (95%+ AFUE)</span></li>
+    <li class="tree-sub-item"><span class="tree-sub-icon icon-orange"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/></svg></span><span class="tree-sub-text">Dunkirk Hydronic Cast-Iron Boilers</span></li>
+    <li class="tree-sub-item"><span class="tree-sub-icon icon-orange"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/></svg></span><span class="tree-sub-text">Peerless Commercial Steam &amp; Water Boiler Series</span></li>
+  </ul>
           </div>
         </div>
 
-        <!-- Node 9: Boilers We Service -->
-        <div class="tree-node-item">
+        <!-- Boilers We Service -->
+        <div class="tree-node-item theme-boilers-service">
           <button type="button" class="tree-node-btn" aria-expanded="false">
             <div class="tree-node-left">
               <span class="tree-badge-icon">
@@ -571,21 +1610,24 @@
               <span class="tree-node-label">Boilers We Service</span>
             </div>
             <div class="tree-node-right">
-              <span class="tree-node-count-badge">1 items</span>
-              <svg class="tree-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+              <span class="tree-node-count-badge">1 specialized manufacturer</span>
+              <div class="tree-expand-indicator" aria-hidden="true">
+                <span class="tree-expand-text">Expand</span>
+                <svg class="tree-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+              </div>
             </div>
           </button>
           <div class="tree-node-content">
-            <ul class="tree-sub-list">
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Combustion Efficiency Tuning</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Low Water Cutoff Safety Testing</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Annual Code Compliance Audits</li>
-            </ul>
+<ul class="tree-sub-list">
+    <li class="tree-sub-item"><span class="tree-sub-icon icon-amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"/><path d="m4.93 4.93 2.83 2.83"/><path d="M2 12h4"/><path d="m4.93 19.07 2.83-2.83"/><path d="M12 22v-4"/><path d="m19.07 19.07-2.83-2.83"/><path d="M22 12h-4"/><path d="m19.07 4.93-2.83 2.83"/><circle cx="12" cy="12" r="4"/></svg></span><span class="tree-sub-text">Weil-McLain Commercial &amp; Residential Hydronic Servicing</span></li>
+    <li class="tree-sub-item"><span class="tree-sub-icon icon-amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></span><span class="tree-sub-text">Weil-McLain Annual Code Compliance &amp; Safety Audit</span></li>
+    <li class="tree-sub-item"><span class="tree-sub-icon icon-amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></span><span class="tree-sub-text">Low Water Cutoff &amp; Relief Valve Safety Testing</span></li>
+  </ul>
           </div>
         </div>
 
-        <!-- Node 10: Boilers We Repair -->
-        <div class="tree-node-item">
+        <!-- Boilers We Repair -->
+        <div class="tree-node-item theme-boilers-repair">
           <button type="button" class="tree-node-btn" aria-expanded="false">
             <div class="tree-node-left">
               <span class="tree-badge-icon">
@@ -594,21 +1636,24 @@
               <span class="tree-node-label">Boilers We Repair</span>
             </div>
             <div class="tree-node-right">
-              <span class="tree-node-count-badge">1 items</span>
-              <svg class="tree-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+              <span class="tree-node-count-badge">1 specialized manufacturer</span>
+              <div class="tree-expand-indicator" aria-hidden="true">
+                <span class="tree-expand-text">Expand</span>
+                <svg class="tree-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+              </div>
             </div>
           </button>
           <div class="tree-node-content">
-            <ul class="tree-sub-list">
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> 24/7 Immediate Burner &amp; Control Triage</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Heat Exchanger &amp; Sectional Leak Repairs</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Steam Pressure Relief &amp; Piping Diagnostics</li>
-            </ul>
+<ul class="tree-sub-list">
+    <li class="tree-sub-item"><span class="tree-sub-icon icon-rose"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span><span class="tree-sub-text">Crown Boiler Emergency Burner Triage &amp; Ignition Fix</span></li>
+    <li class="tree-sub-item"><span class="tree-sub-icon icon-rose"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg></span><span class="tree-sub-text">Crown Heat Exchanger Gasket &amp; Leak Remediation</span></li>
+    <li class="tree-sub-item"><span class="tree-sub-icon icon-rose"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a4 4 0 0 1 8-1"/><path d="M10 12a4 4 0 0 1 8-1"/><path d="M14 16a4 4 0 0 1 8-1"/><path d="M2 19h20"/></svg></span><span class="tree-sub-text">Crown Steam Pressure Relief &amp; Aquastat Diagnostics</span></li>
+  </ul>
           </div>
         </div>
 
-        <!-- Node 11: Water Heaters We Install -->
-        <div class="tree-node-item">
+        <!-- Water Heaters We Install -->
+        <div class="tree-node-item theme-heaters-install">
           <button type="button" class="tree-node-btn" aria-expanded="false">
             <div class="tree-node-left">
               <span class="tree-badge-icon">
@@ -617,18 +1662,21 @@
               <span class="tree-node-label">Water Heaters We Install</span>
             </div>
             <div class="tree-node-right">
-              <span class="tree-node-count-badge">2 items</span>
-              <svg class="tree-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+              <span class="tree-node-count-badge">2 certified commercial arrays</span>
+              <div class="tree-expand-indicator" aria-hidden="true">
+                <span class="tree-expand-text">Expand</span>
+                <svg class="tree-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+              </div>
             </div>
           </button>
           <div class="tree-node-content">
-            <ul class="tree-sub-list">
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Commercial High-Recovery Tank Units</li>
-              <li class="tree-sub-item"><span class="tree-sub-item-dot"></span> Multi-Zone Tankless Arrays</li>
-            </ul>
+<ul class="tree-sub-list">
+    <li class="tree-sub-item"><span class="tree-sub-icon icon-rose"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/></svg></span><span class="tree-sub-text">ABS Commercial Rapid-Recovery Water Heater Arrays</span></li>
+    <li class="tree-sub-item"><span class="tree-sub-icon icon-rose"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><polyline points="23 20 23 14 17 14"/><path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"/></svg></span><span class="tree-sub-text">ACEOR High-Efficiency Modulating Continuous Flow Systems</span></li>
+    <li class="tree-sub-item"><span class="tree-sub-icon icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></span><span class="tree-sub-text">Commercial Multi-Zone Tankless Manifold Balancing</span></li>
+  </ul>
           </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -1457,6 +2505,6 @@
   </div>
 
   <!-- Scripts -->
-  <script src="js/homepage-exact.js?v=10.5"></script>
+  <script src="js/homepage-exact.js?v=10.9"></script>
 </body>
 </html>

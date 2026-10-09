@@ -139,7 +139,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // 6. RockAuto-Style Service Directory Tree Accordion Handler (Single-Open Mode)
+  // 6. RockAuto-Style Service Directory Tree Accordion Handler (Level 1: Main Category Accordions)
   const treeNodeButtons = document.querySelectorAll('.tree-node-btn');
   treeNodeButtons.forEach(btn => {
     btn.addEventListener('click', function () {
@@ -160,6 +160,33 @@ document.addEventListener('DOMContentLoaded', function () {
       if (!wasOpen) {
         item.classList.add('is-open');
         btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+  // 6b. Multi-Level Nested Sub-Accordion Handler (Level 2: Counties, Equipment & Brand Groups)
+  const nestedGroupButtons = document.querySelectorAll('.nested-group-btn');
+  nestedGroupButtons.forEach(subBtn => {
+    subBtn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      const subItem = subBtn.closest('.nested-group-item');
+      if (!subItem) return;
+      const container = subItem.closest('.tree-nested-accordion') || subItem.parentElement;
+      const wasOpen = subItem.classList.contains('is-open');
+
+      if (wasOpen) {
+        subItem.classList.remove('is-open');
+        subBtn.setAttribute('aria-expanded', 'false');
+      } else {
+        // Close siblings within the same parent category for a neat, focused view
+        const siblings = container.querySelectorAll('.nested-group-item');
+        siblings.forEach(sib => {
+          sib.classList.remove('is-open');
+          const sibBtn = sib.querySelector('.nested-group-btn');
+          if (sibBtn) sibBtn.setAttribute('aria-expanded', 'false');
+        });
+        subItem.classList.add('is-open');
+        subBtn.setAttribute('aria-expanded', 'true');
       }
     });
   });

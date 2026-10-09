@@ -512,6 +512,32 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // 9b. Multi-Level Nested Sub-Accordion Handler (Level 2: Counties & Equipment Groups)
+  const nestedGroupButtons = document.querySelectorAll('.nested-group-btn');
+  nestedGroupButtons.forEach(subBtn => {
+    subBtn.addEventListener('click', e => {
+      e.stopPropagation();
+      const subItem = subBtn.closest('.nested-group-item');
+      if (!subItem) return;
+      const container = subItem.closest('.tree-nested-accordion') || subItem.parentElement;
+      const wasOpen = subItem.classList.contains('is-open');
+
+      if (wasOpen) {
+        subItem.classList.remove('is-open');
+        subBtn.setAttribute('aria-expanded', 'false');
+      } else {
+        const siblings = container.querySelectorAll('.nested-group-item');
+        siblings.forEach(sib => {
+          sib.classList.remove('is-open');
+          const sibBtn = sib.querySelector('.nested-group-btn');
+          if (sibBtn) sibBtn.setAttribute('aria-expanded', 'false');
+        });
+        subItem.classList.add('is-open');
+        subBtn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
   // 10. Wireframe Homepage Diagnostic Triage Selector
   const diagButtons = document.querySelectorAll('.ex-diag-acc-btn');
   const diagActiveTitle = document.getElementById('diagActiveTitle');
