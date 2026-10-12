@@ -139,56 +139,45 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // 6. RockAuto-Style Service Directory Tree Accordion Handler (Level 1: Main Category Accordions)
-  const treeNodeButtons = document.querySelectorAll('.tree-node-btn');
-  treeNodeButtons.forEach(btn => {
-    btn.addEventListener('click', function () {
-      const item = btn.closest('.tree-node-item');
-      if (!item) return;
-      const tree = item.closest('.directory-accordion-tree') || document;
-      const wasOpen = item.classList.contains('is-open');
+  // 6. Bootstrap 5.0 Accordion Collapse Handler (Native Event Delegation)
+  document.addEventListener('click', function (e) {
+    const btn = e.target.closest('[data-bs-toggle="collapse"]');
+    if (!btn) return;
 
-      // Close all accordion items in this tree
-      const allItems = tree.querySelectorAll('.tree-node-item');
-      allItems.forEach(otherItem => {
-        otherItem.classList.remove('is-open');
-        const otherBtn = otherItem.querySelector('.tree-node-btn');
-        if (otherBtn) otherBtn.setAttribute('aria-expanded', 'false');
+    const targetSelector = btn.getAttribute('data-bs-target') || btn.getAttribute('href');
+    if (!targetSelector) return;
+    const targetEl = document.querySelector(targetSelector);
+    if (!targetEl) return;
+
+    const isCollapsed = btn.classList.contains('collapsed');
+    const parentSelector = targetEl.getAttribute('data-bs-parent');
+    const parentEl = parentSelector ? document.querySelector(parentSelector) : null;
+
+    if (parentEl && isCollapsed) {
+      // Close other open accordions in the same parent container
+      const openItems = parentEl.querySelectorAll('.accordion-collapse.show');
+      openItems.forEach(openEl => {
+        if (openEl !== targetEl && openEl.getAttribute('data-bs-parent') === parentSelector) {
+          openEl.classList.remove('show');
+          const triggerBtn = parentEl.querySelector(`[data-bs-target="#${openEl.id}"]`);
+          if (triggerBtn) {
+            triggerBtn.classList.add('collapsed');
+            triggerBtn.setAttribute('aria-expanded', 'false');
+          }
+        }
       });
+    }
 
-      // If it wasn't open, open it now (only 1 open at a time)
-      if (!wasOpen) {
-        item.classList.add('is-open');
-        btn.setAttribute('aria-expanded', 'true');
-      }
-    });
-  });
-
-  // 6b. Multi-Level Nested Sub-Accordion Handler (Level 2: Counties, Equipment & Brand Groups)
-  const nestedGroupButtons = document.querySelectorAll('.nested-group-btn');
-  nestedGroupButtons.forEach(subBtn => {
-    subBtn.addEventListener('click', function (e) {
-      e.stopPropagation();
-      const subItem = subBtn.closest('.nested-group-item');
-      if (!subItem) return;
-      const container = subItem.closest('.tree-nested-accordion') || subItem.parentElement;
-      const wasOpen = subItem.classList.contains('is-open');
-
-      if (wasOpen) {
-        subItem.classList.remove('is-open');
-        subBtn.setAttribute('aria-expanded', 'false');
-      } else {
-        // Close siblings within the same parent category for a neat, focused view
-        const siblings = container.querySelectorAll('.nested-group-item');
-        siblings.forEach(sib => {
-          sib.classList.remove('is-open');
-          const sibBtn = sib.querySelector('.nested-group-btn');
-          if (sibBtn) sibBtn.setAttribute('aria-expanded', 'false');
-        });
-        subItem.classList.add('is-open');
-        subBtn.setAttribute('aria-expanded', 'true');
-      }
-    });
+    // Toggle current item
+    if (isCollapsed) {
+      btn.classList.remove('collapsed');
+      btn.setAttribute('aria-expanded', 'true');
+      targetEl.classList.add('show');
+    } else {
+      btn.classList.add('collapsed');
+      btn.setAttribute('aria-expanded', 'false');
+      targetEl.classList.remove('show');
+    }
   });
 
   // 7. Hero Upper Section Action Hub Tab Switcher
