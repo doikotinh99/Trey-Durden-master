@@ -78,6 +78,7 @@
 
     initGallery();
     initTrustBadges();
+    initProductOverview();
     initHardwareMatrix();
     initSpecTabs();
     initFulfillment();
@@ -119,6 +120,38 @@
           }, 120);
         });
       });
+    }
+  }
+
+  
+  function initProductOverview() {
+    const descEl = document.getElementById('pdpProductDesc');
+    if (descEl) {
+      descEl.textContent = currentProduct.description || 'Full factory-engineered comfort equipment with advanced efficiency controls and certified local installation.';
+    }
+
+    const modelBadge = document.getElementById('pdpModelBadge');
+    if (modelBadge) {
+      modelBadge.textContent = currentProduct.brand ? `${currentProduct.brand} Series` : 'Factory Specifications';
+    }
+
+    const featuresList = document.getElementById('pdpFeaturesList');
+    if (featuresList) {
+      const features = currentProduct.features && currentProduct.features.length > 0
+        ? currentProduct.features
+        : [
+            `${currentProduct.efficiency || 'High-Efficiency'} certified performance rating`,
+            `${currentProduct.warranty || '10-Year Factory Warranty'} on major components`,
+            'A2L low-GWP refrigerant and safety compliance ready',
+            'Turnkey certified mechanical installation including municipal permits'
+          ];
+
+      featuresList.innerHTML = features.map(feat => `
+        <li class="pdp-feature-item">
+          <svg class="svg-icon pdp-feature-icon" aria-hidden="true"><use href="#icon-check-circle"></use></svg>
+          <span class="pdp-feature-text">${feat}</span>
+        </li>
+      `).join('');
     }
   }
 

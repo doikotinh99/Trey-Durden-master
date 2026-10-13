@@ -6,6 +6,210 @@
 
 const BOILER_PRODUCTS = [
   {
+    "id": "durastar-two-stage-96",
+    "name": "Durastar Advanced Series Two-Stage 96% AFUE Gas Furnace",
+    "brand": "Durastar",
+    "category": "hvac-systems",
+    "categoryName": "High-Efficiency Gas Furnaces",
+    "description": "Durastar Advanced Series two-stage furnaces offer superior technology that evenly distributes heat for reliable, consistent comfort all winter long. Engineered with a constant torque ECM blower, direct spark ignition, and a corrosion-resistant aluminized steel primary heat exchanger in a low-profile 34\" multi-position cabinet.",
+    "image": "images/durastar-furnace.png",
+    "badge": "96% AFUE Two-Stage",
+    "tag": "96.0% AFUE High Efficiency",
+    "tagClass": "badge-cyan",
+    "efficiency": "96.0% AFUE",
+    "btu": "70,000 BTU",
+    "price_from": 3250,
+    "monthly_financing": 59,
+    "rebateAmount": 650,
+    "warranty": "10-Yr Heat Exchanger & Parts",
+    "a2lReady": true,
+    "energyStar": true,
+    "reviewsCount": 142,
+    "rating": 4.9,
+    "vendor": {
+      "name": "Best Comfort Heating & Cooling",
+      "subtitle": "Certified Durastar Premier Dealer & Installer",
+      "rating": 4.9,
+      "reviews": 312,
+      "status": "Local Delivery Included",
+      "earliestInstall": "Thursday, Oct 19",
+      "phone": "(773) 249-4733",
+      "district": "Chicago Metro & Suburbs",
+      "scope": "Includes complete certified installation, municipal permits, old equipment haul-away & 1-year labor guarantee.",
+      "logo": "images/best-comfort-logo.svg"
+    },
+    "bundleMatrix": {
+      "furnace": {
+        "code": "F",
+        "model": "DR96UAT0402317SA",
+        "name": "Gas Furnace",
+        "specs": "Two-Stage 96% AFUE | Constant Torque ECM | Multi-Pos",
+        "badge": "96.0% AFUE",
+        "badgeClass": "pdp-chip-teal"
+      },
+      "coil": {
+        "code": "C",
+        "model": "DC4821ALA",
+        "name": "Evaporator Coil (Optional)",
+        "specs": "Cased Multi-Position A-Coil | A2L Ready",
+        "badge": "Matched Coil",
+        "badgeClass": "pdp-chip-cyan"
+      },
+      "condenser": {
+        "code": "A",
+        "model": "DRA1648A",
+        "name": "Condenser (Optional)",
+        "specs": "16 SEER2 High Efficiency AC Condenser",
+        "badge": "16 SEER2",
+        "badgeClass": "pdp-chip-cyan"
+      },
+      "waterHeater": {
+        "code": "W",
+        "model": "ProLine® 50-Gal",
+        "name": "Water Heater Add-on",
+        "specs": "Atmospheric Gas Water Heater | 40,000 BTU",
+        "badge": "Add-on",
+        "badgeClass": "pdp-chip-teal",
+        "priceAdd": 1450,
+        "financeAdd": 24
+      }
+    },
+    "componentSpecs": {
+      "furnace": {
+        "title": "Furnace Specs",
+        "model": "DR96UAT0402317SA",
+        "bento": [
+          {
+            "label": "EFFICIENCY RATING",
+            "value": "96.0% AFUE",
+            "sub": "ENERGY STAR® Certified",
+            "color": "var(--green)",
+            "icon": "icon-fire"
+          },
+          {
+            "label": "HEATING CAPACITY",
+            "value": "70,000 BTU",
+            "sub": "67,200 BTU Output Nominal",
+            "color": "var(--cyan)",
+            "icon": "icon-bolt"
+          },
+          {
+            "label": "BLOWER MOTOR",
+            "value": "Constant Torque ECM",
+            "sub": "5-Speed Direct Drive Blower",
+            "color": "var(--text-white)",
+            "icon": "icon-fan"
+          },
+          {
+            "label": "GAS VALVE STAGES",
+            "value": "Two-Stage",
+            "sub": "Smooth Low/High Fire Modulation",
+            "color": "var(--cyan-bright)",
+            "icon": "icon-sliders"
+          }
+        ],
+        "techSpecs": [
+          {
+            "label": "Model Number",
+            "val": "DR96UAT0402317SA"
+          },
+          {
+            "label": "Brand Name",
+            "val": "Durastar Advanced Series"
+          },
+          {
+            "label": "Efficiency (AFUE)",
+            "val": "96.0% AFUE",
+            "highlight": "var(--green)"
+          },
+          {
+            "label": "Heating Input / Output",
+            "val": "70,000 / 67,200 BTU"
+          },
+          {
+            "label": "Gas Valve Stages",
+            "val": "Two-Stage Operation"
+          },
+          {
+            "label": "Blower Motor Type",
+            "val": "Constant Torque ECM (Direct Drive)"
+          },
+          {
+            "label": "Blower Speeds",
+            "val": "5 Selected Airflow Speeds"
+          },
+          {
+            "label": "Ignition System",
+            "val": "Direct Spark Electronic Ignition"
+          },
+          {
+            "label": "Primary Heat Exchanger",
+            "val": "Aluminized Steel Corrosion-Resistant"
+          },
+          {
+            "label": "Cabinet Dimensions (H × W × D)",
+            "val": "34.0\" × 17.5\" × 28.0\""
+          },
+          {
+            "label": "Shipping Weight",
+            "val": "125 lbs"
+          },
+          {
+            "label": "Electrical Voltage / Phase",
+            "val": "115V / 60 Hz / Single Phase"
+          },
+          {
+            "label": "A2L System Compatibility",
+            "val": "Compatible & Contingent Ready",
+            "highlight": "var(--cyan)"
+          },
+          {
+            "label": "ENERGY STAR® Compliant",
+            "val": "Yes (Certified Most Efficient)",
+            "highlight": "var(--green)"
+          },
+          {
+            "label": "Location / Configuration",
+            "val": "Multi-Position (Upflow / Downflow / Horizontal)"
+          },
+          {
+            "label": "Flue Venting Requirement",
+            "val": "2\" to 3\" Schedule 40 PVC/CPVC"
+          },
+          {
+            "label": "AHRI Certification ID",
+            "val": "#9354936",
+            "highlight": "var(--cyan)"
+          }
+        ]
+      }
+    },
+    "features": [
+      "96.0% AFUE extreme efficiency certified for maximum utility rebates and winter fuel savings",
+      "Two-stage constant torque ECM motor maintains efficiency across a wide range of operating speeds",
+      "Direct spark ignition system engineered for extreme cold-weather reliability and long service life",
+      "Aluminized steel heat exchanger provides maximum corrosion resistance and thermal fatigue durability",
+      "Low profile 34\" cabinet with hemmed edges and 1/4-turn door knobs for tool-less contractor access",
+      "Multi-positional configuration (Upflow, Downflow, or Horizontal) suitable for basements and attics",
+      "Blocked drain sensor integrated to prevent water spillage and protect home infrastructure"
+    ],
+    "specs": {
+      "Model": "DR96UAT0402317SA",
+      "Efficiency": "96.0% AFUE",
+      "Stages": "Two-Stage",
+      "Motor": "Constant Torque ECM",
+      "Cabinet": "34\" Multi-Position",
+      "Warranty": "10-Yr Heat Exchanger & Parts"
+    },
+    "gallery": [
+      "images/durastar-furnace.png",
+      "images/furnace-ac.jpg",
+      "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1585338107529-13afc5f02586?auto=format&fit=crop&w=800&q=80"
+    ]
+  },
+
+  {
     "id": "carrier-infinity-98",
     "name": "Carrier Infinity® 98 Modulating Gas Furnace, Cased Coil & 24 SEER2 Condenser System",
     "brand": "Carrier",

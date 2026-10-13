@@ -8,8 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Alex+Brush&family=Great+Vibes&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=10.17">
-  <link rel="stylesheet" href="css/product-detail.css?v=10.17">
+  <link rel="stylesheet" href="css/style.css?v=10.18">
+  <link rel="stylesheet" href="css/product-detail.css?v=10.18">
   <link rel="shortcut icon" href="images/best-comfort-logo.svg" type="image/svg+xml">
 </head>
 <body class="pdp-page">
@@ -175,6 +175,28 @@
               <span style="color: var(--line);">&bull;</span>
               <span id="pdpEfficiencyTag" class="pdp-efficiency-tag">Certified High Efficiency</span>
             </div>
+          </div>
+        </section>
+
+        <!-- Product Overview & Key Features Card (Modeled after Durastar Specs & Features) -->
+        <section class="pdp-card pdp-features-card" aria-label="Product Features and Overview">
+          <div class="pdp-card-header">
+            <div class="pdp-card-title">
+              <svg class="svg-icon" style="color:var(--green);width:18px;height:18px;" aria-hidden="true"><use href="#icon-check-circle"></use></svg>
+              <span>Equipment Highlights &amp; Description</span>
+            </div>
+            <span class="pdp-chip-badge pdp-chip-teal" id="pdpModelBadge">Factory Specifications</span>
+          </div>
+
+          <div class="pdp-overview-box">
+            <p id="pdpProductDesc" class="pdp-product-overview-text">Loading equipment description...</p>
+          </div>
+
+          <div class="pdp-features-section">
+            <h3 class="pdp-features-subheading">Key Performance &amp; Engineering Features</h3>
+            <ul id="pdpFeaturesList" class="pdp-features-grid-list">
+              <!-- Dynamically populated by JS -->
+            </ul>
           </div>
         </section>
 
@@ -633,7 +655,7 @@
 
   <script src="js/icons.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/products-data.js"></script>
-  <script src="js/product-detail.js"></script>
+  <script src="js/products-data.js?v=10.18"></script>
+  <script src="js/product-detail.js?v=10.18"></script>
 </body>
 </html>

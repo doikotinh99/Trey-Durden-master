@@ -1576,3 +1576,99 @@ body.menu-open .floating-hotline {
 }
 
 
+
+
+/* =========================================================================
+   EQUIPMENT HIGHLIGHTS & DESCRIPTION LINES (Durastar & Inventory Schema)
+   ========================================================================= */
+.pdp-features-card {
+  margin-top: 1.5rem;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.pdp-overview-box {
+  background: rgba(255, 255, 255, 0.03);
+  border-left: 3px solid var(--cyan);
+  padding: 1rem 1.25rem;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+.pdp-product-overview-text {
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.pdp-features-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+
+.pdp-features-subheading {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-white);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pdp-features-grid-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .pdp-features-grid-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.875rem 1.25rem;
+  }
+}
+
+.pdp-feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.625rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 0.75rem 0.875rem;
+  border-radius: var(--radius-sm);
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.pdp-feature-item:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(0, 210, 255, 0.25);
+}
+
+.pdp-feature-icon {
+  width: 16px;
+  height: 16px;
+  color: var(--green);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.pdp-feature-text {
+  font-size: 0.84rem;
+  line-height: 1.45;
+  color: var(--text-white);
+  font-weight: 500;
+}
