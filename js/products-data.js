@@ -7,6 +7,16 @@
 const BOILER_PRODUCTS = [
   {
     "id": "durastar-two-stage-96",
+    "isBundle": false,
+    "unitType": "Single Standalone Unit • Forced-Air Gas Furnace",
+    "capacities": [
+      { "btu": "40,000 BTU", "model": "DR96UAT0402317SA", "price": 2950, "finance": 52, "cabinet": "34\" × 17.5\" × 28\"" },
+      { "btu": "60,000 BTU", "model": "DR96UAT0602317SA", "price": 3100, "finance": 55, "cabinet": "34\" × 17.5\" × 28\"" },
+      { "btu": "70,000 BTU", "model": "DR96UAT0702317SA", "price": 3250, "finance": 59, "cabinet": "34\" × 17.5\" × 28\"", "isDefault": true },
+      { "btu": "85,000 BTU", "model": "DR96UAT0852321SA", "price": 3450, "finance": 63, "cabinet": "34\" × 21.0\" × 28\"" },
+      { "btu": "100,000 BTU", "model": "DR96UAT1002321SA", "price": 3650, "finance": 67, "cabinet": "34\" × 21.0\" × 28\"" },
+      { "btu": "115,000 BTU", "model": "DR96UAT1152324SA", "price": 3850, "finance": 71, "cabinet": "34\" × 24.5\" × 28\"" }
+    ],
     "name": "Durastar Advanced Series Two-Stage 96% AFUE Gas Furnace",
     "brand": "Durastar",
     "category": "hvac-systems",

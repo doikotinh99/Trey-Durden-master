@@ -8,8 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Alex+Brush&family=Great+Vibes&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=10.18">
-  <link rel="stylesheet" href="css/product-detail.css?v=10.18">
+  <link rel="stylesheet" href="css/style.css?v=10.31">
+  <link rel="stylesheet" href="css/product-detail.css?v=10.31">
   <link rel="shortcut icon" href="images/best-comfort-logo.svg" type="image/svg+xml">
 </head>
 <body class="pdp-page">
@@ -97,83 +97,193 @@
   </section>
 
   <!-- Main PDP Layout -->
-  <main class="pdp-main-container">
+  <main class="pdp-main-container container">
     <div class="pdp-layout-grid">
 
       <!-- Left Column: Gallery + Hardware Matrix + Specs -->
       <div class="pdp-left-col">
 
-        <!-- Hero Card: Gallery -->
-        <section class="pdp-hero-card" aria-label="Equipment Media Gallery">
+        <!-- Hero Section: 2 Columns on Desktop (Left: Media Gallery, Right: Product Details & CTA) -->
+        <section class="pdp-card pdp-hero-card pdp-hero-two-col" aria-label="Equipment Media Gallery and Purchasing">
 
-          <div class="pdp-gallery-frame">
-            <img id="pdpMainImg" src="images/boiler-img-1.jpg"
-              onerror="this.src='https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80'"
-              alt="HVAC Equipment" class="pdp-gallery-main-img">
-          </div>
+          <!-- Left Column: Media Gallery & Trust Badges -->
+          <div class="pdp-hero-media-col">
+            <div class="pdp-gallery-frame">
+              <img id="pdpMainImg" src="images/boiler-img-1.jpg"
+                onerror="this.src='https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80'"
+                alt="HVAC Equipment" class="pdp-gallery-main-img">
+            </div>
 
-          <!-- Thumbnail Strip -->
-          <div class="pdp-thumbnails-strip" role="tablist" aria-label="Media thumbnails">
-            <button type="button" class="pdp-thumb-btn active" data-img="images/boiler-img-1.jpg" aria-label="View main image">
-              <img src="images/boiler-img-1.jpg"
-                onerror="this.src='https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=200&q=80'"
-                alt="Main Thumbnail">
-            </button>
-            <button type="button" class="pdp-thumb-btn" data-img="images/boiler-img-2.jpg" aria-label="View image 2">
-              <img src="images/boiler-img-2.jpg"
-                onerror="this.src='https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=200&q=80'"
-                alt="Thumbnail 2">
-            </button>
-            <button type="button" class="pdp-thumb-btn" data-img="images/boiler-img-3.jpg" aria-label="View image 3">
-              <img src="images/boiler-img-3.jpg"
-                onerror="this.src='https://images.unsplash.com/photo-1585338107529-13afc5f02586?auto=format&fit=crop&w=200&q=80'"
-                alt="Thumbnail 3">
-            </button>
-            <button type="button" class="pdp-thumb-btn" data-img="images/boiler-img-4.jpg" aria-label="View image 4">
-              <img src="images/boiler-img-4.jpg"
-                onerror="this.src='https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=200&q=80'"
-                alt="Thumbnail 4">
-            </button>
-            <button type="button" class="pdp-thumb-btn" data-img="images/boiler-img-5.jpg" aria-label="View image 5">
-              <img src="images/boiler-img-5.jpg"
-                onerror="this.src='https://images.unsplash.com/photo-1545259741-2ea3ebf61fa3?auto=format&fit=crop&w=200&q=80'"
-                alt="Thumbnail 5">
-            </button>
-          </div>
+            <!-- Thumbnail Strip -->
+            <div class="pdp-thumbnails-strip" role="tablist" aria-label="Media thumbnails">
+              <button type="button" class="pdp-thumb-btn active" data-img="images/boiler-img-1.jpg" aria-label="View main image">
+                <img src="images/boiler-img-1.jpg"
+                  onerror="this.src='https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=200&q=80'"
+                  alt="Main Thumbnail">
+              </button>
+              <button type="button" class="pdp-thumb-btn" data-img="images/boiler-img-2.jpg" aria-label="View image 2">
+                <img src="images/boiler-img-2.jpg"
+                  onerror="this.src='https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=200&q=80'"
+                  alt="Thumbnail 2">
+              </button>
+              <button type="button" class="pdp-thumb-btn" data-img="images/boiler-img-3.jpg" aria-label="View image 3">
+                <img src="images/boiler-img-3.jpg"
+                  onerror="this.src='https://images.unsplash.com/photo-1585338107529-13afc5f02586?auto=format&fit=crop&w=200&q=80'"
+                  alt="Thumbnail 3">
+              </button>
+              <button type="button" class="pdp-thumb-btn" data-img="images/boiler-img-4.jpg" aria-label="View image 4">
+                <img src="images/boiler-img-4.jpg"
+                  onerror="this.src='https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=200&q=80'"
+                  alt="Thumbnail 4">
+              </button>
+              <button type="button" class="pdp-thumb-btn" data-img="images/boiler-img-5.jpg" aria-label="View image 5">
+                <img src="images/boiler-img-5.jpg"
+                  onerror="this.src='https://images.unsplash.com/photo-1545259741-2ea3ebf61fa3?auto=format&fit=crop&w=200&q=80'"
+                  alt="Thumbnail 5">
+              </button>
+            </div>
 
-          <!-- Trust Badges Grid -->
-          <div class="pdp-trust-badges-grid">
-            <div class="pdp-trust-badge-item">
-              <svg class="svg-icon" style="color:var(--cyan);width:20px;height:20px;" aria-hidden="true"><use href="#icon-shield"></use></svg>
-              <span class="pdp-trust-badge-label">10-Yr Parts Warranty</span>
-            </div>
-            <div class="pdp-trust-badge-item">
-              <svg class="svg-icon" style="color:var(--green);width:20px;height:20px;" aria-hidden="true"><use href="#icon-leaf"></use></svg>
-              <span class="pdp-trust-badge-label">A2L Low-GWP Ready</span>
-            </div>
-            <div class="pdp-trust-badge-item">
-              <svg class="svg-icon" style="color:var(--cyan);width:20px;height:20px;" aria-hidden="true"><use href="#icon-award"></use></svg>
-              <span class="pdp-trust-badge-label">Energy Star Certified</span>
-            </div>
-            <div class="pdp-trust-badge-item">
-              <svg class="svg-icon" style="color:var(--green);width:20px;height:20px;" aria-hidden="true"><use href="#icon-check-circle"></use></svg>
-              <span class="pdp-trust-badge-label">AHRI Certified</span>
-            </div>
-          </div>
-
-          <!-- Product Identity Block -->
-          <div class="pdp-identity-block">
-            <h1 id="pdpProductTitle" class="pdp-product-title">
-              Loading Equipment Specifications...
-            </h1>
-            <div class="pdp-rating-strip">
-              <div class="pdp-rating-stars">
-                <svg class="svg-icon" style="color:var(--yellow);width:15px;height:15px;" aria-hidden="true"><use href="#icon-star"></use></svg>
-                <span id="pdpRatingVal" style="margin-left: 3px; color: var(--text-white); font-weight: 700;">4.9</span>
-                <span id="pdpReviewsCount" class="pdp-mono" style="color: var(--text-muted); margin-left: 4px; font-size: 0.75rem;">(287 reviews)</span>
+            <!-- Model Sizing Selector (BTU / Capacity Options) -->
+            <div class="pdp-capacity-selector-block" id="pdpCapacityBlock">
+              <div class="pdp-capacity-label-row">
+                <span class="pdp-capacity-label">Select Heating Capacity (BTU):</span>
+                <span id="pdpSelectedModelBadge" class="pdp-mono pdp-selected-model">DR96UAT0702317SA</span>
               </div>
-              <span style="color: var(--line);">&bull;</span>
-              <span id="pdpEfficiencyTag" class="pdp-efficiency-tag">Certified High Efficiency</span>
+              <div class="pdp-capacity-buttons-row" id="pdpCapacityButtons">
+                <!-- Injected by JS -->
+              </div>
+            </div>
+
+            <!-- Trust Badges Grid -->
+            <div class="pdp-trust-badges-grid">
+              <div class="pdp-trust-badge-item">
+                <svg class="svg-icon" style="color:var(--bc-blue, #0074c6);width:20px;height:20px;" aria-hidden="true"><use href="#icon-shield"></use></svg>
+                <span class="pdp-trust-badge-label">10-Yr Parts Warranty</span>
+              </div>
+              <div class="pdp-trust-badge-item">
+                <svg class="svg-icon" style="color:var(--green);width:20px;height:20px;" aria-hidden="true"><use href="#icon-leaf"></use></svg>
+                <span class="pdp-trust-badge-label">A2L Low-GWP Ready</span>
+              </div>
+              <div class="pdp-trust-badge-item">
+                <svg class="svg-icon" style="color:var(--bc-blue, #0074c6);width:20px;height:20px;" aria-hidden="true"><use href="#icon-award"></use></svg>
+                <span class="pdp-trust-badge-label">Energy Star Certified</span>
+              </div>
+              <div class="pdp-trust-badge-item">
+                <svg class="svg-icon" style="color:var(--green);width:20px;height:20px;" aria-hidden="true"><use href="#icon-check-circle"></use></svg>
+                <span class="pdp-trust-badge-label">AHRI Certified</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Equipment Identity & Hero Action Box -->
+          <div class="pdp-hero-info-col">
+            <div class="pdp-identity-block">
+              <div class="pdp-unit-type-pill" id="pdpUnitTypePill">Single Standalone Unit &bull; Forced-Air Gas Furnace</div>
+              <h1 id="pdpProductTitle" class="pdp-product-title">
+                Loading Equipment Specifications...
+              </h1>
+              <div class="pdp-rating-strip">
+                <div class="pdp-rating-stars">
+                  <svg class="svg-icon" style="color:var(--yellow);width:15px;height:15px;" aria-hidden="true"><use href="#icon-star"></use></svg>
+                  <span id="pdpRatingVal" style="margin-left: 3px; color: var(--bc-text-dark, #0f172a); font-weight: 700;">4.9</span>
+                  <span id="pdpReviewsCount" class="pdp-mono" style="color: var(--bc-text-muted, #64748b); margin-left: 4px; font-size: 0.75rem;">(287 reviews)</span>
+                </div>
+                <span style="color: var(--line);">&bull;</span>
+                <span id="pdpEfficiencyTag" class="pdp-efficiency-tag">Certified High Efficiency</span>
+              </div>
+            </div>
+
+            <!-- Hero Pricing, Fulfillment Partner & Turnkey Buying Box -->
+            <div class="pdp-hero-action-box" id="pdpHeroActionBox">
+
+              <!-- Partner Header Row -->
+              <div class="pdp-box-partner-header">
+                <div class="pdp-partner-banner">
+                  <svg class="svg-icon" style="width:14px;height:14px;color:var(--bc-blue, #0074c6);" aria-hidden="true"><use href="#icon-award"></use></svg>
+                  <span>Designated Factory Authorized Partner</span>
+                </div>
+                <div class="pdp-rating-stars">
+                  <svg class="svg-icon" style="color:var(--yellow);width:14px;height:14px;" aria-hidden="true"><use href="#icon-star"></use></svg>
+                  <span style="font-weight:750; color:var(--bc-text-dark, #0f172a); margin-left:3px;">4.9</span>
+                  <span class="pdp-mono" style="font-size:0.75rem; color:var(--bc-text-muted, #64748b); margin-left:2px;">(312 verified installs)</span>
+                </div>
+              </div>
+
+              <!-- Dealer Info & Quick Fulfillment status -->
+              <div class="pdp-dealer-profile pdp-box-dealer-profile">
+                <div class="pdp-dealer-logo-box">
+                  <img src="images/best-comfort-logo.svg" alt="Best Comfort Heating &amp; Cooling Logo">
+                </div>
+                <div class="pdp-dealer-info">
+                  <div class="pdp-dealer-name">
+                    <span>Best Comfort Heating &amp; Cooling</span>
+                    <svg class="svg-icon" style="color:var(--bc-blue, #0074c6);width:16px;height:16px;" aria-hidden="true"><use href="#icon-check-circle"></use></svg>
+                  </div>
+                  <span class="pdp-dealer-badge-sub">Premier Factory Authorized Carrier &amp; Durastar Dealer</span>
+                </div>
+              </div>
+
+              <!-- Fulfillment Chips -->
+              <div class="pdp-fulfillment-chips pdp-box-fulfillment-chips">
+                <button type="button" id="pdpDeliveryPill" class="pdp-status-pill" title="Click to toggle pickup vs delivery">
+                  <svg class="svg-icon" style="width:14px;height:14px;color:var(--green);" aria-hidden="true"><use href="#icon-truck"></use></svg>
+                  <span>Local Delivery Included</span>
+                </button>
+                <div class="pdp-status-pill" style="cursor:default; color:var(--bc-blue, #0074c6);">
+                  <svg class="svg-icon" style="width:14px;height:14px;" aria-hidden="true"><use href="#icon-calendar"></use></svg>
+                  <span>Earliest Install: Thursday, Oct 19</span>
+                </div>
+              </div>
+
+              <!-- Pricing Row -->
+              <div class="pdp-hero-pricing">
+                <div class="pdp-hero-price-main">
+                  <span id="pdpHeroPrice">$3,250</span>
+                  <span class="pdp-hero-price-sub">Turnkey Total Installed</span>
+                </div>
+                <div class="pdp-hero-price-secondary">
+                  <span id="pdpHeroFinance">$59/mo</span> (60 mo 0% APR) &bull; <span class="pdp-hero-rebate-text" id="pdpHeroRebate">Save $650 Instant Utility Rebate</span>
+                </div>
+              </div>
+
+              <!-- CTA Buttons Row -->
+              <div class="pdp-hero-buttons-row">
+                <button type="button" class="btn btn-primary pdp-hero-primary-cta" id="pdpHeroCtaBtn">
+                  <span>Request Instant Turnkey Quote</span>
+                  <svg class="svg-icon" style="width:16px;height:16px;margin-left:4px;"><use href="#icon-arrow-right"></use></svg>
+                </button>
+                <a href="tel:7732494733" class="btn btn-outline pdp-hero-phone-cta">
+                  <svg class="svg-icon" style="width:15px;height:15px;margin-right:6px;"><use href="#icon-phone"></use></svg>
+                  <span>Call (773) 249-4733</span>
+                </a>
+              </div>
+
+              <!-- Turnkey Scope of Work Included in Price -->
+              <div class="pdp-hero-scope-section">
+                <div class="pdp-hero-scope-title">
+                  <svg class="svg-icon" style="width:15px;height:15px;color:var(--green);" aria-hidden="true"><use href="#icon-check-circle"></use></svg>
+                  <span>Turnkey Scope Included in Price:</span>
+                </div>
+                <ul class="pdp-hero-scope-list">
+                  <li>
+                    <svg class="svg-icon" style="width:13px;height:13px;color:var(--green);flex-shrink:0;" aria-hidden="true"><use href="#icon-check"></use></svg>
+                    <span>Full certified install &amp; digital commissioning</span>
+                  </li>
+                  <li>
+                    <svg class="svg-icon" style="width:13px;height:13px;color:var(--green);flex-shrink:0;" aria-hidden="true"><use href="#icon-check"></use></svg>
+                    <span>Chicago mechanical permits &amp; inspector sign-off</span>
+                  </li>
+                  <li>
+                    <svg class="svg-icon" style="width:13px;height:13px;color:var(--green);flex-shrink:0;" aria-hidden="true"><use href="#icon-check"></use></svg>
+                    <span>Old equipment haul-away &amp; EPA recovery</span>
+                  </li>
+                  <li>
+                    <svg class="svg-icon" style="width:13px;height:13px;color:var(--green);flex-shrink:0;" aria-hidden="true"><use href="#icon-check"></use></svg>
+                    <span id="pdpScopeGuarantee">1-Yr labor guarantee &amp; 10-Yr warranty registration</span>
+                  </li>
+                </ul>
+              </div>
+
             </div>
           </div>
         </section>
@@ -201,7 +311,7 @@
         </section>
 
         <!-- System Hardware Matrix -->
-        <section class="pdp-card" aria-label="System Hardware Matrix">
+        <section class="pdp-card" id="pdpHardwareMatrixCard" aria-label="System Hardware Matrix">
           <div class="pdp-card-header">
             <div class="pdp-card-title">
               <svg class="svg-icon" style="color:var(--cyan);width:18px;height:18px;" aria-hidden="true"><use href="#icon-cpu"></use></svg>
@@ -301,18 +411,20 @@
           </div>
         </section>
 
-        <!-- Interactive Technical Specifications -->
+        <!-- Interactive Technical Specifications with Parent-Child Accordion -->
         <section class="pdp-card" aria-label="Interactive Technical Specifications">
           <div class="pdp-card-header">
             <div class="pdp-card-title">
               <svg class="svg-icon" style="color:var(--cyan);width:18px;height:18px;" aria-hidden="true"><use href="#icon-sliders"></use></svg>
-              <span>Interactive Technical Specifications</span>
+              <span>Engineering Specifications &amp; Compliance</span>
             </div>
-            <span class="pdp-mono" style="font-size:0.75rem; color:var(--text-muted);">Live Telemetry</span>
+            <div style="display:flex; align-items:center; gap:8px;">
+              <button type="button" class="pdp-accordion-toggle-all-btn" id="pdpToggleAllAccordions">Expand All</button>
+            </div>
           </div>
 
-          <!-- Spec Tabs Scroller - dynamically populated by product-detail.js -->
-          <div class="pdp-tabs-scroller" role="tablist" aria-label="Component specifications">
+          <!-- Spec Tabs Scroller (for bundles only) -->
+          <div class="pdp-tabs-scroller" role="tablist" aria-label="Component specifications" id="pdpSpecTabsScroller">
             <!-- Tabs injected by JS based on componentSpecs keys -->
           </div>
 
@@ -321,115 +433,39 @@
             <!-- Filled by JS -->
           </div>
 
-          <!-- Full Engineering Specs Accordion -->
-          <details class="pdp-accordion-details">
-            <summary class="pdp-accordion-summary">
-              <div style="display: flex; align-items: center; gap: 0.5rem;">
-                <svg class="svg-icon" style="color:var(--cyan);width:18px;height:18px;" aria-hidden="true"><use href="#icon-tools"></use></svg>
-                <span class="pdp-display" style="font-weight: 800; font-size: 0.9rem; color: var(--text-white);">Full Engineering &amp; Compliance Specifications</span>
-              </div>
-              <svg class="svg-icon pdp-accordion-chevron" style="color:var(--text-muted);width:16px;height:16px;" aria-hidden="true"><use href="#icon-chevron-down"></use></svg>
-            </summary>
-            <div id="pdpTechSpecsList" class="pdp-specs-table-list">
-              <!-- Filled by JS -->
-            </div>
-          </details>
+          <!-- Parent-Child Accordion Menu Container -->
+          <div id="pdpParentChildAccordion" class="pdp-parent-child-accordion">
+            <!-- Dynamically populated with grouped Parent categories and Child spec rows -->
+          </div>
         </section>
 
-      </div>
-
-      <!-- Right Column: Installer Card (Sticky Sidebar) -->
-      <div class="pdp-sidebar-sticky" id="schedule">
-
-        <section class="pdp-installer-card" aria-label="Assigned Local Certified Installer">
-
-          <div class="pdp-partner-top-row">
-            <div class="pdp-partner-banner">
-              <svg class="svg-icon" style="width:14px;height:14px;color:var(--cyan);" aria-hidden="true"><use href="#icon-award"></use></svg>
-              <span>Designated Fulfillment Partner</span>
+        <!-- 3-Step Turnkey Installation Process & Flow Card -->
+        <section class="pdp-card pdp-process-card" aria-label="Turnkey Installation Process">
+          <div class="pdp-card-header">
+            <div class="pdp-card-title">
+              <svg class="svg-icon" style="color:var(--green);width:18px;height:18px;" aria-hidden="true"><use href="#icon-calendar"></use></svg>
+              <span>Our 3-Step Turnkey Installation Process</span>
             </div>
-            <div class="pdp-rating-stars">
-              <svg class="svg-icon" style="color:var(--yellow);width:14px;height:14px;" aria-hidden="true"><use href="#icon-star"></use></svg>
-              <span style="font-weight:700; color:var(--text-white); margin-left:3px;">4.9</span>
-              <span class="pdp-mono" style="font-size:0.75rem; color:var(--text-muted); margin-left:3px;">(312 installs)</span>
-            </div>
+            <span class="pdp-chip-badge pdp-chip-teal">Guaranteed Chicago Standards</span>
           </div>
 
-          <!-- Dealer Profile -->
-          <div class="pdp-dealer-profile">
-            <div class="pdp-dealer-logo-box">
-              <img src="images/best-comfort-logo.svg" alt="Best Comfort Heating &amp; Cooling Logo">
+          <div class="pdp-process-steps-grid">
+            <div class="pdp-step-card">
+              <div class="pdp-step-number">01</div>
+              <h4 class="pdp-step-title">Select Capacity &amp; Lock Price</h4>
+              <p class="pdp-step-desc">Pick your equipment BTU size online or speak with Chicago dispatch for upfront guaranteed pricing with zero unexpected fees.</p>
             </div>
-            <div class="pdp-dealer-info">
-              <div class="pdp-dealer-name">
-                <span>Best Comfort Heating &amp; Cooling</span>
-                <svg class="svg-icon" style="color:var(--cyan);width:18px;height:18px;" aria-hidden="true"><use href="#icon-check-circle"></use></svg>
-              </div>
-              <span class="pdp-dealer-badge-sub">Premier Factory Authorized Carrier Dealer</span>
+            <div class="pdp-step-card">
+              <div class="pdp-step-number">02</div>
+              <h4 class="pdp-step-title">Free On-Site Sizing &amp; Permits</h4>
+              <p class="pdp-step-desc">A licensed master HVAC technician conducts Manual J heat-loss calculations and pulls all municipal city permits.</p>
             </div>
-          </div>
-
-          <!-- Fulfillment Chips -->
-          <div class="pdp-fulfillment-chips">
-            <button type="button" id="pdpDeliveryPill" class="pdp-status-pill" title="Click to toggle pickup vs delivery">
-              <svg class="svg-icon" style="width:14px;height:14px;color:var(--green);" aria-hidden="true"><use href="#icon-truck"></use></svg>
-              <span>Local Delivery Included</span>
-            </button>
-            <div class="pdp-status-pill" style="cursor:default; color:var(--cyan);">
-              <svg class="svg-icon" style="width:14px;height:14px;" aria-hidden="true"><use href="#icon-calendar"></use></svg>
-              <span>Earliest Install: Thursday, Oct 19</span>
+            <div class="pdp-step-card">
+              <div class="pdp-step-number">03</div>
+              <h4 class="pdp-step-title">1-Day Turnkey Install &amp; Test</h4>
+              <p class="pdp-step-desc">Full installation, EPA refrigerant recovery, old furnace haul-away, digital commissioning, and 10-year warranty registration.</p>
             </div>
           </div>
-
-          <!-- Turnkey Scope of Work -->
-          <div class="pdp-scope-box">
-            <div style="display:flex; align-items:center; gap:6px; font-weight:700; color:var(--text-white); margin-bottom:0.5rem; font-size:0.8125rem;">
-              <svg class="svg-icon" style="width:14px;height:14px;color:var(--green);" aria-hidden="true"><use href="#icon-check-circle"></use></svg>
-              <span>Turnkey Scope of Work Included</span>
-            </div>
-            <ul class="pdp-scope-list" style="margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:0.35rem; font-size:0.775rem; color:var(--text-muted);">
-              <li style="display:flex; align-items:center; gap:6px;">
-                <svg class="svg-icon" style="width:13px;height:13px;color:var(--green);flex-shrink:0;" aria-hidden="true"><use href="#icon-check"></use></svg>
-                <span>Full certified installation &amp; digital commissioning</span>
-              </li>
-              <li style="display:flex; align-items:center; gap:6px;">
-                <svg class="svg-icon" style="width:13px;height:13px;color:var(--green);flex-shrink:0;" aria-hidden="true"><use href="#icon-check"></use></svg>
-                <span>Municipal mechanical permits &amp; inspector sign-off</span>
-              </li>
-              <li style="display:flex; align-items:center; gap:6px;">
-                <svg class="svg-icon" style="width:13px;height:13px;color:var(--green);flex-shrink:0;" aria-hidden="true"><use href="#icon-check"></use></svg>
-                <span>Old equipment haul-away &amp; EPA certified recovery</span>
-              </li>
-              <li style="display:flex; align-items:center; gap:6px;">
-                <svg class="svg-icon" style="width:13px;height:13px;color:var(--green);flex-shrink:0;" aria-hidden="true"><use href="#icon-check"></use></svg>
-                <span id="pdpScopeGuarantee">1-Year craftsmanship &amp; emergency labor guarantee</span>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Pricing Row -->
-          <div class="pdp-pricing-row">
-            <div>
-              <div id="pdpTotalPrice" class="pdp-total-price">$--</div>
-              <div class="pdp-price-sub">Turnkey Total Installed</div>
-            </div>
-            <div style="text-align: right;">
-              <div id="pdpFinancePrice" class="pdp-finance-price">$--/mo</div>
-              <div class="pdp-price-sub">60 mo 0% APR Financing</div>
-            </div>
-          </div>
-
-          <!-- CTA Button -->
-          <button type="button" id="pdpBtnOpenModal" class="pdp-cta-btn">
-            <span>Confirm Installation &amp; Schedule Visit</span>
-            <svg class="svg-icon" style="width:18px;height:18px;" aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
-          </button>
-
-          <!-- Dispatch Link -->
-          <a href="tel:7732494733" class="pdp-dispatch-link">
-            <svg class="svg-icon" style="width:15px;height:15px;color:var(--cyan);" aria-hidden="true"><use href="#icon-phone"></use></svg>
-            <span>Have questions? Call Best Comfort: <strong class="pdp-mono" style="color:var(--text-white);">(773) 249-4733</strong></span>
-          </a>
         </section>
 
       </div>
@@ -655,7 +691,33 @@
 
   <script src="js/icons.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/products-data.js?v=10.18"></script>
-  <script src="js/product-detail.js?v=10.18"></script>
+  <script src="js/products-data.js?v=10.31"></script>
+  <script src="js/product-detail.js?v=10.31"></script>
+
+  <!-- Sticky Bottom Conversion Bar -->
+  <div class="pdp-sticky-bar" id="pdpStickyBar">
+    <div class="pdp-sticky-container">
+      <div class="pdp-sticky-left">
+        <img id="pdpStickyThumb" src="images/durastar-furnace.png" alt="Equipment" class="pdp-sticky-img">
+        <div class="pdp-sticky-meta">
+          <span class="pdp-sticky-name" id="pdpStickyName">Durastar 96% Two-Stage Furnace</span>
+          <span class="pdp-sticky-sub" id="pdpStickySub">70,000 BTU &bull; 96.0% AFUE</span>
+        </div>
+      </div>
+      <div class="pdp-sticky-right">
+        <div class="pdp-sticky-pricing">
+          <span class="pdp-sticky-price" id="pdpStickyPrice">$3,250</span>
+          <span class="pdp-sticky-finance" id="pdpStickyFinance">$59/mo</span>
+        </div>
+        <button type="button" class="btn btn-primary btn-sm pdp-sticky-cta-btn" id="pdpStickyCtaBtn">
+          <span>Get Turnkey Quote &rarr;</span>
+        </button>
+        <a href="tel:7732494733" class="pdp-sticky-phone-btn" title="Call Chicago Dispatch">
+          <svg class="svg-icon" style="width:19px;height:19px;"><use href="#icon-phone"></use></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
