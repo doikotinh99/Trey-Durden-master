@@ -850,19 +850,19 @@ body {
 }
 
 /* ──────────────────────────────────────────────────────────────────────────
-   4. SERVICES & COVERAGE DIRECTORY (Light Theme with Project Variables)
-   Clean, crisp, modern card accordion adhering to Best Comfort brand system
+   4. SERVICES & COVERAGE DIRECTORY (Soft Contrast Theme with Left Arrows)
+   Tactile chevron toggle buttons on the left, soft contrast palette
    ────────────────────────────────────────────────────────────────────────── */
 .bc-directory-section,
 #services-directory {
   padding: 85px 0 95px;
-  background-color: var(--bc-bg-light);
+  background-color: #f1f5f9;
   background-image: 
-    linear-gradient(180deg, #ffffff 0%, var(--bc-bg-light) 12%, var(--bc-bg-light) 88%, #ffffff 100%),
-    radial-gradient(circle at 10% 20%, rgba(0, 114, 206, 0.04) 0%, transparent 40%),
-    radial-gradient(circle at 90% 80%, rgba(234, 76, 89, 0.04) 0%, transparent 40%);
-  border-top: 1px solid var(--bc-border);
-  border-bottom: 1px solid var(--bc-border);
+    linear-gradient(180deg, #e2e8f0 0%, #f1f5f9 12%, #f1f5f9 88%, #e2e8f0 100%),
+    radial-gradient(circle at 10% 20%, rgba(0, 114, 206, 0.03) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(234, 76, 89, 0.03) 0%, transparent 40%);
+  border-top: 1px solid #cbd5e1;
+  border-bottom: 1px solid #cbd5e1;
   position: relative;
   color: var(--bc-text-body);
 }
@@ -913,7 +913,7 @@ body {
   gap: 10px;
   padding: 8px 22px;
   background: var(--bc-white);
-  border: 1px solid var(--bc-border);
+  border: 1px solid #cbd5e1;
   border-radius: var(--bc-radius-pill);
   font-size: 0.86rem;
   font-weight: 700;
@@ -930,7 +930,7 @@ body {
 }
 
 /* ==========================================================================
-   SERVICES & COVERAGE DIRECTORY ACCORDION (Light Mode Card Design)
+   SERVICES & COVERAGE DIRECTORY ACCORDION (Tactile Left-Arrow Accordion)
    ========================================================================== */
 
 #servicesDirectoryAccordion {
@@ -945,28 +945,27 @@ body {
   width: 100%;
 }
 
-/* Master Accordion Card (Light Clean Surface) */
+/* Master Accordion Card (Soft Slate Contrast Surface) */
 #servicesDirectoryAccordion > .accordion-item {
   background: var(--bc-white);
-  border: 1px solid var(--bc-border) !important;
+  border: 1px solid #cbd5e1 !important;
   border-radius: var(--bc-radius-lg) !important;
   margin: 0 !important;
   overflow: hidden;
-  box-shadow: var(--bc-shadow-sm) !important;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04) !important;
   transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 #servicesDirectoryAccordion > .accordion-item:hover {
-  border-color: var(--bc-blue-border) !important;
-  box-shadow: var(--bc-shadow-md) !important;
-  transform: translateY(-2px);
+  border-color: #94a3b8 !important;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.08) !important;
 }
 
 /* Active / Expanded Accordion State */
 #servicesDirectoryAccordion > .accordion-item:has(> .accordion-header > .accordion-button:not(.collapsed)),
 #servicesDirectoryAccordion > .accordion-item.active {
   border-color: var(--bc-blue) !important;
-  box-shadow: 0 10px 32px rgba(0, 114, 206, 0.12), var(--bc-shadow-sm) !important;
+  box-shadow: 0 8px 24px rgba(0, 114, 206, 0.10) !important;
 }
 
 .accordion-header {
@@ -977,11 +976,11 @@ body {
 /* Level 1 Accordion Button */
 #servicesDirectoryAccordion > .accordion-item > .accordion-header > .accordion-button {
   width: 100%;
-  padding: 22px 28px;
+  padding: 20px 24px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 18px;
+  justify-content: flex-start;
+  gap: 16px;
   background: var(--bc-white);
   border: none;
   cursor: pointer;
@@ -992,7 +991,7 @@ body {
 }
 
 #servicesDirectoryAccordion > .accordion-item > .accordion-header > .accordion-button:hover {
-  background: var(--bc-bg-ice);
+  background: #f8fafc;
 }
 
 #servicesDirectoryAccordion > .accordion-item > .accordion-header > .accordion-button:focus {
@@ -1001,56 +1000,55 @@ body {
 }
 
 #servicesDirectoryAccordion > .accordion-item > .accordion-header > .accordion-button:not(.collapsed) {
-  background: var(--bc-bg-ice);
-  border-bottom: 1px solid var(--bc-blue-border);
+  background: #f0f7ff;
+  border-bottom: 1px solid #bae6fd;
   border-bottom-left-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
   box-shadow: none;
 }
 
-/* Circular Toggle Button (+) / (−) with Geometric SVG Centering */
+/* Tactile Chevron Arrow Button on the LEFT */
 #servicesDirectoryAccordion > .accordion-item > .accordion-header > .accordion-button::after {
-  width: 42px;
-  height: 42px;
-  min-width: 42px;
-  border-radius: 50%;
-  background-color: var(--bc-blue-soft);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230072ce' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='12' y1='5' x2='12' y2='19'%3E%3C/line%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E") !important;
+  order: -1;
+  margin-right: 14px;
+  margin-left: 0;
+  width: 38px;
+  height: 38px;
+  min-width: 38px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  border: 1.5px solid #cbd5e1;
+  box-shadow: 0 2px 4px rgba(15, 23, 42, 0.06);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230072ce' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='9 18 15 12 9 6'%3E%3C/polyline%3E%3C/svg%3E") !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
-  background-size: 18px 18px !important;
-  border: 1px solid var(--bc-blue-border);
+  background-size: 16px 16px !important;
   content: "" !important;
   flex-shrink: 0;
-  margin-left: auto;
-  transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: none;
-  transform: none !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  transform: rotate(0deg);
 }
 
 #servicesDirectoryAccordion > .accordion-item > .accordion-header > .accordion-button:hover::after {
-  background-color: var(--bc-blue);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='12' y1='5' x2='12' y2='19'%3E%3C/line%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E") !important;
   border-color: var(--bc-blue);
-  transform: scale(1.05) !important;
+  background-color: #e0f2fe;
+  box-shadow: 0 2px 8px rgba(0, 114, 206, 0.15);
 }
 
 #servicesDirectoryAccordion > .accordion-item > .accordion-header > .accordion-button:not(.collapsed)::after {
   background-color: var(--bc-coral) !important;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E") !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  background-size: 18px 18px !important;
   border-color: var(--bc-coral) !important;
-  content: "" !important;
-  box-shadow: 0 4px 14px var(--bc-coral-glow);
-  transform: none !important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='9 18 15 12 9 6'%3E%3C/polyline%3E%3C/svg%3E") !important;
+  box-shadow: 0 4px 12px var(--bc-coral-glow);
+  transform: rotate(90deg) !important;
 }
 
 #servicesDirectoryAccordion > .accordion-item > .accordion-header > .accordion-button:not(.collapsed):hover::after {
   background-color: var(--bc-coral-hover) !important;
   border-color: var(--bc-coral-hover) !important;
-  transform: scale(1.05) !important;
 }
 
 .accordion-collapse {
@@ -1064,7 +1062,7 @@ body {
 #servicesDirectoryAccordion > .accordion-item > .accordion-collapse > .accordion-body {
   padding: 24px 28px 30px 28px;
   background: var(--bc-white);
-  border-top: 1px solid var(--bc-border);
+  border-top: 1px solid #e2e8f0;
 }
 
 /* Accordion Header Title & Subtitle Layout */
@@ -1075,7 +1073,7 @@ body {
   gap: 5px;
   flex: 1;
   min-width: 0;
-  margin-right: 14px;
+  margin-right: 0;
 }
 
 .bs-acc-title {
@@ -1126,7 +1124,7 @@ body {
 }
 
 /* -------------------------------------------------------------
-   NESTED LEVEL 2 ACCORDION (Child Accordion Light Cards)
+   NESTED LEVEL 2 ACCORDION (Child Accordion with Left Arrow)
    ------------------------------------------------------------- */
 .bs-nested-accordion {
   display: flex;
@@ -1137,8 +1135,8 @@ body {
 }
 
 .bs-nested-accordion .accordion-item {
-  background: var(--bc-bg-light);
-  border: 1px solid var(--bc-border) !important;
+  background: #f8fafc;
+  border: 1px solid #cbd5e1 !important;
   border-radius: var(--bc-radius-md) !important;
   overflow: hidden;
   box-shadow: none !important;
@@ -1146,7 +1144,7 @@ body {
 }
 
 .bs-nested-accordion .accordion-item:hover {
-  border-color: var(--bc-blue-border) !important;
+  border-color: #94a3b8 !important;
   background: var(--bc-white);
   box-shadow: var(--bc-shadow-sm) !important;
 }
@@ -1160,7 +1158,7 @@ body {
 
 .bs-nested-accordion .accordion-button {
   width: 100%;
-  padding: 16px 20px;
+  padding: 14px 18px;
   background: transparent;
   border: none;
   border-radius: var(--bc-radius-md) !important;
@@ -1169,61 +1167,166 @@ body {
   font-size: 0.98rem;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   gap: 12px;
   transition: all 0.2s ease;
 }
 
 .bs-nested-accordion .accordion-button:hover {
-  background: var(--bc-bg-ice);
+  background: #f0f7ff;
   color: var(--bc-blue);
 }
 
 .bs-nested-accordion .accordion-button:not(.collapsed) {
-  background: var(--bc-bg-ice);
+  background: #f0f7ff;
   color: var(--bc-blue);
-  border-bottom: 1px solid var(--bc-blue-border);
+  border-bottom: 1px solid #bae6fd;
   border-bottom-left-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
   box-shadow: none;
 }
 
+/* Level 2 Left Arrow Button */
 .bs-nested-accordion .accordion-button::after {
-  width: 32px;
-  height: 32px;
-  min-width: 32px;
-  border-radius: 50%;
-  background-color: var(--bc-white);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230072ce' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='12' y1='5' x2='12' y2='19'%3E%3C/line%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E") !important;
+  order: -1;
+  margin-right: 12px;
+  margin-left: 0;
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+  border-radius: 6px;
+  background-color: #ffffff;
+  border: 1.5px solid #cbd5e1;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.05);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230072ce' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='9 18 15 12 9 6'%3E%3C/polyline%3E%3C/svg%3E") !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
-  background-size: 14px 14px !important;
-  border: 1px solid var(--bc-border);
+  background-size: 13px 13px !important;
   content: "" !important;
-  margin-left: auto;
-  transition: all 0.22s ease;
-  transform: none !important;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.22s ease, background-color 0.2s ease, border-color 0.2s ease;
+  transform: rotate(0deg);
 }
 
 .bs-nested-accordion .accordion-button:hover::after {
   border-color: var(--bc-blue);
-  background-color: var(--bc-blue-soft);
+  background-color: #e0f2fe;
 }
 
 .bs-nested-accordion .accordion-button:not(.collapsed)::after {
   background-color: var(--bc-coral) !important;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E") !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  background-size: 14px 14px !important;
   border-color: var(--bc-coral) !important;
-  content: "" !important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='9 18 15 12 9 6'%3E%3C/polyline%3E%3C/svg%3E") !important;
   box-shadow: 0 2px 8px var(--bc-coral-glow);
-  transform: none !important;
+  transform: rotate(90deg) !important;
 }
 
 .bs-nested-accordion .accordion-body {
   padding: 18px 20px 22px;
   background: var(--bc-white);
+}
+
+/* -------------------------------------------------------------
+   LEVEL 3 CHILD ACCORDION (Parent-Child grouping inside Counties)
+   ------------------------------------------------------------- */
+.bs-child-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  width: 100%;
+}
+
+.bs-child-accordion .accordion-item {
+  background: #ffffff;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 10px !important;
+  overflow: hidden;
+  box-shadow: none !important;
+  transition: all 0.2s ease;
+}
+
+.bs-child-accordion .accordion-item:hover {
+  border-color: #cbd5e1 !important;
+}
+
+.bs-child-accordion .accordion-item:has(> .accordion-header > .accordion-button:not(.collapsed)) {
+  border-color: var(--bc-blue-border) !important;
+  box-shadow: 0 2px 8px rgba(0, 114, 206, 0.08) !important;
+}
+
+.bs-child-accordion .accordion-button {
+  width: 100%;
+  padding: 12px 14px;
+  background: #f8fafc;
+  border: none;
+  border-radius: 10px !important;
+  color: var(--bc-text-dark);
+  font-weight: 650;
+  font-size: 0.93rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.bs-child-accordion .accordion-button:hover {
+  background: #f1f5f9;
+  color: var(--bc-blue);
+}
+
+.bs-child-accordion .accordion-button:not(.collapsed) {
+  background: #f0f7ff;
+  color: var(--bc-blue);
+  border-bottom: 1px solid #bae6fd;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.bs-child-accordion .accordion-button::after {
+  order: -1;
+  margin-right: 8px;
+  margin-left: 0;
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230072ce' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='9 18 15 12 9 6'%3E%3C/polyline%3E%3C/svg%3E") !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: 11px 11px !important;
+  content: "" !important;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  transform: rotate(0deg);
+}
+
+.bs-child-accordion .accordion-button:not(.collapsed)::after {
+  background-color: var(--bc-blue) !important;
+  border-color: var(--bc-blue) !important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='9 18 15 12 9 6'%3E%3C/polyline%3E%3C/svg%3E") !important;
+  transform: rotate(90deg) !important;
+}
+
+.bs-child-accordion .accordion-body {
+  padding: 12px 14px 16px;
+  background: #ffffff;
+}
+
+.bs-child-title {
+  font-weight: 650;
+  font-size: 0.93rem;
+  color: inherit;
 }
 
 .bs-sub-badge {
@@ -3069,33 +3172,35 @@ body {
     border-radius: 14px !important;
   }
   #servicesDirectoryAccordion > .accordion-item > .accordion-header > .accordion-button {
-    padding: 16px 18px;
+    padding: 14px 16px;
     gap: 12px;
   }
   #servicesDirectoryAccordion > .accordion-item > .accordion-header > .accordion-button::after {
-    width: 36px;
-    height: 36px;
-    min-width: 36px;
-    background-size: 15px 15px !important;
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    background-size: 13px 13px !important;
+    margin-right: 10px;
+    margin-left: 0;
   }
   .bs-acc-title-wrap {
     gap: 4px;
-    margin-right: 10px;
+    margin-right: 0;
   }
   .bs-acc-title {
-    font-size: 1.08rem;
+    font-size: 1.05rem;
     line-height: 1.32;
-    gap: 9px;
+    gap: 8px;
   }
   .bs-acc-title svg {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
   }
   .bs-acc-badge {
     font-size: 0.82rem;
   }
   #servicesDirectoryAccordion > .accordion-item > .accordion-collapse > .accordion-body {
-    padding: 16px 16px 20px 16px;
+    padding: 16px 14px 20px 14px;
   }
   .bs-nested-accordion {
     gap: 10px;
@@ -3104,15 +3209,29 @@ body {
     border-radius: 10px !important;
   }
   .bs-nested-accordion .accordion-button {
-    padding: 12px 14px;
+    padding: 12px 12px;
     font-size: 0.92rem;
     border-radius: 10px !important;
   }
   .bs-nested-accordion .accordion-button::after {
-    width: 28px;
-    height: 28px;
-    min-width: 28px;
-    background-size: 12px 12px !important;
+    width: 26px;
+    height: 26px;
+    min-width: 26px;
+    background-size: 11px 11px !important;
+    margin-right: 8px;
+    margin-left: 0;
+  }
+  .bs-child-accordion .accordion-button {
+    padding: 10px 10px;
+    font-size: 0.88rem;
+  }
+  .bs-child-accordion .accordion-button::after {
+    width: 22px;
+    height: 22px;
+    min-width: 22px;
+    background-size: 9px 9px !important;
+    margin-right: 6px;
+    margin-left: 0;
   }
   .bs-nested-accordion .accordion-body {
     padding: 14px 14px 16px;
